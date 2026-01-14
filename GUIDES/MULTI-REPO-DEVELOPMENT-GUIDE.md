@@ -60,19 +60,19 @@ cp .env.example .env
 # Editar .env com suas configurações locais
 cat > .env << 'EOF'
 # Database
-DATABASE_URL=postgresql://admin:secret123@localhost:5432/halalsphere
+SQL_HALALSPHERE_CONNECTION=postgresql://admin:secret123@localhost:5432/halalsphere
 
 # Redis
 REDIS_URL=redis://localhost:6379
 
-# JWT
-JWT_SECRET=local-dev-secret-min-32-characters
+# JWT (usar par de chaves RSA - gerar com: ssh-keygen -t rsa -b 2048)
+JWT_PUBLIC_KEY_HALALSPHERE_API=-----BEGIN PUBLIC KEY-----\n...\n-----END PUBLIC KEY-----
+JWT_PRIVATE_KEY_HALALSPHERE_API=-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----
 JWT_EXPIRES_IN=7d
 
 # AWS (desenvolvimento local)
 AWS_REGION=us-east-1
-AWS_ACCESS_KEY_ID=your-local-key
-AWS_SECRET_ACCESS_KEY=your-local-secret
+# AWS_ACCESS_KEY_ID e AWS_SECRET_ACCESS_KEY não são necessários - ECS usa IAM Roles
 
 # Server
 PORT=3333

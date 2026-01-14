@@ -108,12 +108,11 @@ Sprint 1 focou na preparação da aplicação para deploy em AWS ECS Fargate com
 
 **Obrigatórias:**
 ```bash
-DATABASE_URL=postgresql://user:pass@host:5432/halalsphere
+SQL_HALALSPHERE_CONNECTION=postgresql://user:pass@host:5432/halalsphere
 NODE_ENV=production
 TRUST_PROXY=true
 AWS_REGION=us-east-1
-AWS_ACCESS_KEY_ID=AKIAXXXXXXXXXXXXXXXX
-AWS_SECRET_ACCESS_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# AWS credentials não necessárias - ECS usa IAM Roles
 ```
 
 **Opcionais:**
@@ -121,7 +120,8 @@ AWS_SECRET_ACCESS_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 AWS_S3_ENDPOINT=http://localhost:4566  # Para LocalStack
 AUTO_MIGRATE=true                       # Rodar migrations no startup
 REDIS_URL=redis://host:6379            # Cache
-JWT_SECRET=your-secret-key             # Authentication
+JWT_PUBLIC_KEY_HALALSPHERE_API=-----BEGIN PUBLIC KEY-----\n...\n-----END PUBLIC KEY-----  # Authentication
+JWT_PRIVATE_KEY_HALALSPHERE_API=-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----
 ```
 
 ### Frontend Environment Variables

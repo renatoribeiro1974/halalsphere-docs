@@ -121,12 +121,12 @@ fastify.register(rateLimit, {
 aws secretsmanager get-secret-value --secret-id halalsphere/prod/db
 
 # Variáveis de ambiente (dev/staging)
-DATABASE_URL=postgresql://user:pass@localhost:5432/halalsphere
-JWT_SECRET=...
+SQL_HALALSPHERE_CONNECTION=postgresql://user:pass@localhost:5432/halalsphere
+JWT_PUBLIC_KEY_HALALSPHERE_API=-----BEGIN PUBLIC KEY-----\n...\n-----END PUBLIC KEY-----
+JWT_PRIVATE_KEY_HALALSPHERE_API=-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----
 OPENAI_API_KEY=sk-...
 STRIPE_SECRET_KEY=sk_live_...
-AWS_ACCESS_KEY_ID=...
-AWS_SECRET_ACCESS_KEY=...
+# AWS credentials não são necessárias - ECS usa IAM Roles
 ```
 
 **NUNCA** commitar secrets no código!

@@ -315,8 +315,8 @@ ports:
 # Verifique se o Docker está rodando
 docker-compose ps
 
-# Verifique o DATABASE_URL no .env
-DATABASE_URL="postgresql://admin:secret123@localhost:5432/halalsphere?schema=public"
+# Verifique o SQL_HALALSPHERE_CONNECTION no .env
+SQL_HALALSPHERE_CONNECTION="postgresql://admin:secret123@localhost:5432/halalsphere?schema=public"
 
 # Recrie o Prisma Client
 npm run prisma:generate
@@ -340,13 +340,14 @@ origin: 'http://localhost:5173'
 
 ```env
 # Database
-DATABASE_URL="postgresql://admin:secret123@localhost:5432/halalsphere?schema=public"
+SQL_HALALSPHERE_CONNECTION="postgresql://admin:secret123@localhost:5432/halalsphere?schema=public"
 
 # Redis
 REDIS_URL="redis://localhost:6379"
 
-# JWT
-JWT_SECRET="your-secret-key-change-in-production"
+# JWT (usar par de chaves RSA)
+JWT_PUBLIC_KEY_HALALSPHERE_API="-----BEGIN PUBLIC KEY-----\n...\n-----END PUBLIC KEY-----"
+JWT_PRIVATE_KEY_HALALSPHERE_API="-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----"
 JWT_EXPIRES_IN="7d"
 
 # Server
@@ -372,10 +373,13 @@ CORS_ORIGIN="http://localhost:5173"
 
 ```env
 NODE_ENV="production"
-DATABASE_URL="postgresql://user:pass@prod-db.com:5432/halalsphere"
+SQL_HALALSPHERE_CONNECTION="postgresql://user:pass@prod-db.com:5432/halalsphere"
 REDIS_URL="redis://prod-redis.com:6379"
-JWT_SECRET="<gere-secret-forte-256-bits>"
+JWT_PUBLIC_KEY_HALALSPHERE_API="-----BEGIN PUBLIC KEY-----\n...\n-----END PUBLIC KEY-----"
+JWT_PRIVATE_KEY_HALALSPHERE_API="-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----"
 CORS_ORIGIN="https://halalsphere.com"
+
+# AWS credentials não necessárias - ECS usa IAM Roles
 ```
 
 ### Build

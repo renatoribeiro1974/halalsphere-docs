@@ -184,24 +184,18 @@ locals {
 
   # Montar JSON com todos os secrets
   secrets_json = jsonencode({
-    DATABASE_URL           = var.database_url
-    REDIS_URL              = var.redis_url
-    JWT_SECRET             = var.jwt_secret != "" ? var.jwt_secret : random_password.jwt_secret[0].result
-    JWT_EXPIRES_IN         = var.jwt_expires_in
-    AWS_ACCESS_KEY_ID      = var.aws_access_key_id
-    AWS_SECRET_ACCESS_KEY  = var.aws_secret_access_key
-    SMTP_USER              = var.smtp_user
-    SMTP_PASSWORD          = var.smtp_password
+    SQL_HALALSPHERE_CONNECTION       = var.database_url
+    REDIS_URL                        = var.redis_url
+    JWT_PUBLIC_KEY_HALALSPHERE_API   = var.jwt_public_key
+    JWT_PRIVATE_KEY_HALALSPHERE_API  = var.jwt_private_key
+    JWT_EXPIRES_IN                   = var.jwt_expires_in
+    SMTP_USER                        = var.smtp_user
+    SMTP_PASSWORD                    = var.smtp_password
   })
 }
 
-# Gerar JWT secret aleatório se não fornecido
-resource "random_password" "jwt_secret" {
-  count = var.jwt_secret == "" ? 1 : 0
-
-  length  = 64
-  special = true
-}
+# Nota: JWT keys devem ser fornecidas externamente (par de chaves RSA)
+# Não geramos automaticamente pois é um par público/privado
 
 # Secret principal
 resource "aws_secretsmanager_secret" "app_secrets" {
@@ -250,11 +244,7 @@ output "secret_name" {
   value       = local.secret_name
 }
 
-output "jwt_secret_generated" {
-  description = "Indica se JWT secret foi gerado automaticamente"
-  value       = var.jwt_secret == ""
-  sensitive   = true
-}
+# Output removido - JWT keys são sempre fornecidas externamente
 ```
 
 ### modules/secrets-manager/variables.tf
@@ -278,11 +268,16 @@ variable "redis_url" {
   default     = ""
 }
 
-variable "jwt_secret" {
-  description = "JWT secret (leave empty to generate)"
+variable "jwt_public_key" {
+  description = "JWT public key (RSA)"
   type        = string
   sensitive   = true
-  default     = ""
+}
+
+variable "jwt_private_key" {
+  description = "JWT private key (RSA)"
+  type        = string
+  sensitive   = true
 }
 
 variable "jwt_expires_in" {
@@ -291,17 +286,7 @@ variable "jwt_expires_in" {
   default     = "7d"
 }
 
-variable "aws_access_key_id" {
-  description = "AWS Access Key ID for S3"
-  type        = string
-  sensitive   = true
-}
-
-variable "aws_secret_access_key" {
-  description = "AWS Secret Access Key for S3"
-  type        = string
-  sensitive   = true
-}
+# AWS credentials removidas - ECS usa IAM Roles
 
 variable "smtp_user" {
   description = "SMTP user"
@@ -614,10 +599,9 @@ module "secrets_manager" {
   environment            = local.environment
   database_url           = var.database_url
   redis_url              = var.redis_url
-  jwt_secret             = var.jwt_secret
+  jwt_public_key         = var.jwt_public_key
+  jwt_private_key        = var.jwt_private_key
   jwt_expires_in         = "7d"
-  aws_access_key_id      = var.s3_access_key_id
-  aws_secret_access_key  = var.s3_secret_access_key
   smtp_user              = var.smtp_user
   smtp_password          = var.smtp_password
 
@@ -672,9 +656,8 @@ require_email_verification = true
 # Use terraform.tfvars.secret ou variáveis de ambiente
 # database_url          = "postgresql://..."
 # redis_url             = "redis://..."
-# jwt_secret            = ""  # Deixe vazio para gerar automaticamente
-# s3_access_key_id      = "AKIAXXXXXXXX"
-# s3_secret_access_key  = "xxxxxxxx"
+# jwt_public_key        = "-----BEGIN PUBLIC KEY-----\n...\n-----END PUBLIC KEY-----"
+# jwt_private_key       = "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----"
 # smtp_user             = "user@domain.com"
 # smtp_password         = "password"
 
@@ -738,18 +721,12 @@ variable "redis_url" {
   default   = ""
 }
 
-variable "jwt_secret" {
-  type      = string
-  sensitive = true
-  default   = ""
-}
-
-variable "s3_access_key_id" {
+variable "jwt_public_key" {
   type      = string
   sensitive = true
 }
 
-variable "s3_secret_access_key" {
+variable "jwt_private_key" {
   type      = string
   sensitive = true
 }
@@ -778,9 +755,8 @@ variable "s3_bucket_arns" {
 # terraform.tfvars.secret (adicionar ao .gitignore)
 database_url          = "postgresql://admin:PASSWORD@rds-prod.amazonaws.com:5432/halalsphere"
 redis_url             = "redis://:PASSWORD@elasticache-prod.amazonaws.com:6379"
-jwt_secret            = ""  # Gera automaticamente
-s3_access_key_id      = "AKIAXXXXXXXXXXXXXXXX"
-s3_secret_access_key  = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+jwt_public_key        = "-----BEGIN PUBLIC KEY-----\n...\n-----END PUBLIC KEY-----"
+jwt_private_key       = "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----"
 smtp_user             = "noreply@halalsphere.com"
 smtp_password         = "app-password-here"
 ```
@@ -790,8 +766,8 @@ smtp_password         = "app-password-here"
 ```bash
 export TF_VAR_database_url="postgresql://..."
 export TF_VAR_redis_url="redis://..."
-export TF_VAR_s3_access_key_id="AKIAXXXXXXXX"
-export TF_VAR_s3_secret_access_key="xxxxxxxx"
+export TF_VAR_jwt_public_key="$(cat jwt-public.pem)"
+export TF_VAR_jwt_private_key="$(cat jwt-private.pem)"
 export TF_VAR_smtp_user="user@domain.com"
 export TF_VAR_smtp_password="password"
 ```

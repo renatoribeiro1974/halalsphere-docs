@@ -431,7 +431,85 @@ halalsphere-docs/
 
 ---
 
+## 🔧 INFRAESTRUTURA AWS - MUDANÇAS JANEIRO 2026
+
+### Resumo das Mudanças ⚡
+
+Em **14 de Janeiro de 2026**, a equipe de infraestrutura solicitou ajustes importantes para adequação à arquitetura AWS ECS:
+
+#### 1. Renomeação de Secrets
+- ❌ `DATABASE_URL` → ✅ `SQL_HALALSPHERE_CONNECTION`
+- ❌ `JWT_SECRET` → ✅ `JWT_PUBLIC_KEY_HALALSPHERE_API` + `JWT_PRIVATE_KEY_HALALSPHERE_API`
+
+#### 2. Remoção de Credenciais AWS
+- ❌ `AWS_ACCESS_KEY_ID` e `AWS_SECRET_ACCESS_KEY` removidos
+- ✅ ECS Task Role fornece credenciais via IAM Roles
+
+#### 3. JWT - Migração para Criptografia Assimétrica
+- ❌ HS256 (simétrico) → ✅ RS256 (assimétrico - RSA 2048)
+- ✅ Maior segurança
+- ✅ Chave pública pode ser distribuída
+- ✅ Facilita rotação de chaves
+
+### Documentação Atualizada ✅
+
+1. **[AWS-INFRA-CHANGES-2026.md](../ARCHITECTURE/AWS-INFRA-CHANGES-2026.md)**
+   - Comparação antes/depois
+   - Breaking changes detalhados
+   - Migration guide completo
+   - IAM Policy examples
+
+2. **[CONFIGLOADER-UPDATE-GUIDE.md](../ARCHITECTURE/CONFIGLOADER-UPDATE-GUIDE.md)**
+   - Código completo do ConfigLoader atualizado
+   - JWT Service update (RS256)
+   - Storage Manager update (sem AWS credentials)
+   - Testes e validação
+
+3. **Outros documentos atualizados**:
+   - [AWS-CONFIG-MANAGEMENT.md](../ARCHITECTURE/AWS-CONFIG-MANAGEMENT.md)
+   - [TERRAFORM-CONFIG-INTEGRATION.md](../ARCHITECTURE/TERRAFORM-CONFIG-INTEGRATION.md)
+   - [SETUP.md](../GUIDES/SETUP.md)
+   - [MULTI-REPO-DEVELOPMENT-GUIDE.md](../GUIDES/MULTI-REPO-DEVELOPMENT-GUIDE.md)
+   - [05-security.md](../02-technical/05-security.md)
+
+### Breaking Changes ⚠️
+
+**CRITICAL**: Estas mudanças requerem atualização do código backend:
+
+1. **ConfigLoader Service** - Mapear novos nomes de secrets
+2. **JWT Service** - Implementar RS256 ao invés de HS256
+3. **Storage Manager** - Remover referências a AWS credentials
+4. **Environment Variables** - Atualizar .env locais
+
+### Status da Migração
+
+- ✅ Documentação atualizada (100%)
+- ⚠️ Código backend precisa ser atualizado
+- ⚠️ Secrets AWS precisam ser atualizados
+- ⚠️ ECS Task Role precisa ter permissões corretas
+
+**Detalhes completos**: [AWS-INFRA-CHANGES-2026.md](../ARCHITECTURE/AWS-INFRA-CHANGES-2026.md)
+
+---
+
 ## 📋 PRÓXIMOS PASSOS
+
+### Fase 0: Infra Updates (URGENTE - 2-3 dias)
+
+1. **Atualizar Backend Code** (1-2 dias)
+   - [ ] Atualizar ConfigLoader Service
+   - [ ] Implementar JWT Service com RS256
+   - [ ] Atualizar Storage Manager
+   - [ ] Gerar par de chaves JWT RSA 2048
+   - [ ] Testar localmente
+
+2. **Atualizar AWS Infrastructure** (1 dia)
+   - [ ] Criar/atualizar secrets no Secrets Manager
+   - [ ] Configurar ECS Task Role com permissões
+   - [ ] Atualizar Task Definition
+   - [ ] Validar em staging
+
+**Referência**: [CONFIGLOADER-UPDATE-GUIDE.md](../ARCHITECTURE/CONFIGLOADER-UPDATE-GUIDE.md)
 
 ### Fase 1: Pre-Production (1-2 semanas)
 

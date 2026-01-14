@@ -366,17 +366,17 @@ User (Usuários)
 
 ```bash
 # Database
-DATABASE_URL=postgresql://user:password@host:5432/halalsphere
+SQL_HALALSPHERE_CONNECTION=postgresql://user:password@host:5432/halalsphere
 
-# JWT
-JWT_SECRET=your-secret-key
+# JWT (par de chaves RSA)
+JWT_PUBLIC_KEY_HALALSPHERE_API=-----BEGIN PUBLIC KEY-----\n...\n-----END PUBLIC KEY-----
+JWT_PRIVATE_KEY_HALALSPHERE_API=-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----
 JWT_EXPIRES_IN=7d
 
 # Storage (escolher um)
 STORAGE_PROVIDER=aws-s3 | azure | google-cloud
 AWS_S3_BUCKET=your-bucket
-AWS_ACCESS_KEY_ID=your-key
-AWS_SECRET_ACCESS_KEY=your-secret
+# AWS credentials não necessárias - ECS usa IAM Roles em produção
 
 # E-Signature (escolher um)
 ESIGNATURE_PROVIDER=docusign | adobe-sign | clicksign

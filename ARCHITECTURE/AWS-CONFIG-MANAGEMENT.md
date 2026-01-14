@@ -30,13 +30,14 @@ Usado para configurações que **não contêm credenciais ou dados sensíveis**:
 
 Usado para **credenciais e dados sensíveis** armazenados como um único JSON:
 
-- DATABASE_URL (connection string com senha)
+- SQL_HALALSPHERE_CONNECTION (connection string com senha)
 - REDIS_URL (connection string com senha)
-- JWT_SECRET
-- AWS_ACCESS_KEY_ID
-- AWS_SECRET_ACCESS_KEY
+- JWT_PUBLIC_KEY_HALALSPHERE_API (chave pública RSA para JWT)
+- JWT_PRIVATE_KEY_HALALSPHERE_API (chave privada RSA para JWT)
 - SMTP_USER
 - SMTP_PASSWORD
+
+**Nota:** AWS_ACCESS_KEY_ID e AWS_SECRET_ACCESS_KEY foram removidos pois o ECS usa IAM Roles para permissões
 
 **Vantagens:**
 - ✅ Criptografia automática com AWS KMS
@@ -178,12 +179,11 @@ resource "aws_ssm_parameter" "base_url" {
 
 ```json
 {
-  "DATABASE_URL": "postgresql://user:password@host:5432/halalsphere",
+  "SQL_HALALSPHERE_CONNECTION": "postgresql://user:password@host:5432/halalsphere",
   "REDIS_URL": "redis://:password@host:6379",
-  "JWT_SECRET": "your-jwt-secret-min-32-chars",
+  "JWT_PUBLIC_KEY_HALALSPHERE_API": "-----BEGIN PUBLIC KEY-----\n...\n-----END PUBLIC KEY-----",
+  "JWT_PRIVATE_KEY_HALALSPHERE_API": "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----",
   "JWT_EXPIRES_IN": "7d",
-  "AWS_ACCESS_KEY_ID": "AKIAXXXXXXXXXXXXXXXX",
-  "AWS_SECRET_ACCESS_KEY": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
   "SMTP_USER": "smtp-user@gmail.com",
   "SMTP_PASSWORD": "smtp-password-or-app-password"
 }
@@ -197,12 +197,11 @@ aws secretsmanager create-secret \
   --name halalsphere/production/secrets \
   --description "HalalSphere Production Secrets" \
   --secret-string '{
-    "DATABASE_URL": "postgresql://admin:CHANGE_ME@rds-prod.amazonaws.com:5432/halalsphere",
+    "SQL_HALALSPHERE_CONNECTION": "postgresql://admin:CHANGE_ME@rds-prod.amazonaws.com:5432/halalsphere",
     "REDIS_URL": "redis://:CHANGE_ME@elasticache-prod.amazonaws.com:6379",
-    "JWT_SECRET": "CHANGE_ME_MIN_32_CHARACTERS_LONG",
+    "JWT_PUBLIC_KEY_HALALSPHERE_API": "-----BEGIN PUBLIC KEY-----\nCHANGE_ME\n-----END PUBLIC KEY-----",
+    "JWT_PRIVATE_KEY_HALALSPHERE_API": "-----BEGIN PRIVATE KEY-----\nCHANGE_ME\n-----END PRIVATE KEY-----",
     "JWT_EXPIRES_IN": "7d",
-    "AWS_ACCESS_KEY_ID": "AKIAXXXXXXXXXXXXXXXX",
-    "AWS_SECRET_ACCESS_KEY": "CHANGE_ME_SECRET_ACCESS_KEY",
     "SMTP_USER": "noreply@halalsphere.com",
     "SMTP_PASSWORD": "CHANGE_ME_SMTP_PASSWORD"
   }'
@@ -212,12 +211,11 @@ aws secretsmanager create-secret \
   --name halalsphere/staging/secrets \
   --description "HalalSphere Staging Secrets" \
   --secret-string '{
-    "DATABASE_URL": "postgresql://admin:CHANGE_ME@rds-staging.amazonaws.com:5432/halalsphere",
+    "SQL_HALALSPHERE_CONNECTION": "postgresql://admin:CHANGE_ME@rds-staging.amazonaws.com:5432/halalsphere",
     "REDIS_URL": "redis://:CHANGE_ME@elasticache-staging.amazonaws.com:6379",
-    "JWT_SECRET": "CHANGE_ME_STAGING_JWT_SECRET",
+    "JWT_PUBLIC_KEY_HALALSPHERE_API": "-----BEGIN PUBLIC KEY-----\nCHANGE_ME\n-----END PUBLIC KEY-----",
+    "JWT_PRIVATE_KEY_HALALSPHERE_API": "-----BEGIN PRIVATE KEY-----\nCHANGE_ME\n-----END PRIVATE KEY-----",
     "JWT_EXPIRES_IN": "7d",
-    "AWS_ACCESS_KEY_ID": "AKIAXXXXXXXXXXXXXXXX",
-    "AWS_SECRET_ACCESS_KEY": "CHANGE_ME_SECRET_ACCESS_KEY",
     "SMTP_USER": "staging@halalsphere.com",
     "SMTP_PASSWORD": "CHANGE_ME_SMTP_PASSWORD"
   }'
@@ -230,12 +228,11 @@ aws secretsmanager create-secret \
 aws secretsmanager update-secret \
   --secret-id halalsphere/production/secrets \
   --secret-string '{
-    "DATABASE_URL": "postgresql://admin:NEW_PASSWORD@rds-prod.amazonaws.com:5432/halalsphere",
+    "SQL_HALALSPHERE_CONNECTION": "postgresql://admin:NEW_PASSWORD@rds-prod.amazonaws.com:5432/halalsphere",
     "REDIS_URL": "redis://:NEW_PASSWORD@elasticache-prod.amazonaws.com:6379",
-    "JWT_SECRET": "NEW_JWT_SECRET",
+    "JWT_PUBLIC_KEY_HALALSPHERE_API": "-----BEGIN PUBLIC KEY-----\n...\n-----END PUBLIC KEY-----",
+    "JWT_PRIVATE_KEY_HALALSPHERE_API": "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----",
     "JWT_EXPIRES_IN": "7d",
-    "AWS_ACCESS_KEY_ID": "AKIAXXXXXXXXXXXXXXXX",
-    "AWS_SECRET_ACCESS_KEY": "NEW_SECRET_ACCESS_KEY",
     "SMTP_USER": "noreply@halalsphere.com",
     "SMTP_PASSWORD": "NEW_SMTP_PASSWORD"
   }'
@@ -257,20 +254,14 @@ resource "aws_secretsmanager_secret" "app_secrets" {
 resource "aws_secretsmanager_secret_version" "app_secrets_version" {
   secret_id = aws_secretsmanager_secret.app_secrets.id
   secret_string = jsonencode({
-    DATABASE_URL           = var.database_url
-    REDIS_URL             = var.redis_url
-    JWT_SECRET            = random_password.jwt_secret.result
-    JWT_EXPIRES_IN        = "7d"
-    AWS_ACCESS_KEY_ID     = var.aws_access_key_id
-    AWS_SECRET_ACCESS_KEY = var.aws_secret_access_key
-    SMTP_USER             = var.smtp_user
-    SMTP_PASSWORD         = var.smtp_password
+    SQL_HALALSPHERE_CONNECTION       = var.database_url
+    REDIS_URL                        = var.redis_url
+    JWT_PUBLIC_KEY_HALALSPHERE_API   = var.jwt_public_key
+    JWT_PRIVATE_KEY_HALALSPHERE_API  = var.jwt_private_key
+    JWT_EXPIRES_IN                   = "7d"
+    SMTP_USER                        = var.smtp_user
+    SMTP_PASSWORD                    = var.smtp_password
   })
-}
-
-resource "random_password" "jwt_secret" {
-  length  = 64
-  special = true
 }
 ```
 
@@ -418,8 +409,9 @@ resource "aws_iam_role_policy" "ecs_task_policy" {
 ```bash
 # backend/.env
 NODE_ENV=development
-DATABASE_URL=postgresql://admin:secret123@localhost:5432/halalsphere
-JWT_SECRET=local-dev-secret-key
+SQL_HALALSPHERE_CONNECTION=postgresql://admin:secret123@localhost:5432/halalsphere
+JWT_PUBLIC_KEY_HALALSPHERE_API=-----BEGIN PUBLIC KEY-----\n...\n-----END PUBLIC KEY-----
+JWT_PRIVATE_KEY_HALALSPHERE_API=-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----
 AWS_REGION=us-east-1
 # ... demais variáveis
 ```

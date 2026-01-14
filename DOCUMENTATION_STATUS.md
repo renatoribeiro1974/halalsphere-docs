@@ -124,6 +124,8 @@ halalsphere-docs/
 ├── ARCHITECTURE/                      # Architecture Decisions
 │   ├── AWS-CONFIG-MANAGEMENT.md
 │   ├── TERRAFORM-CONFIG-INTEGRATION.md
+│   ├── AWS-INFRA-CHANGES-2026.md         # ⭐ NEW - Infra changes Jan 2026
+│   ├── CONFIGLOADER-UPDATE-GUIDE.md      # ⭐ NEW - ConfigLoader update
 │   ├── BACKEND-IMPLEMENTADO.md
 │   ├── KANBAN_IMPLEMENTATION.md
 │   ├── INTERNACIONALIZACAO-SISTEMA.md
@@ -305,6 +307,20 @@ halalsphere-docs/
    - Deployment readiness
    - Next steps
 
+4. **AWS-INFRA-CHANGES-2026.md** ⭐ NEW (14 Jan 2026)
+   - Mudanças de infraestrutura AWS
+   - DATABASE_URL → SQL_HALALSPHERE_CONNECTION
+   - JWT_SECRET → JWT_PUBLIC_KEY + JWT_PRIVATE_KEY (RS256)
+   - Remoção de AWS credentials (usa IAM Roles)
+   - Breaking changes e migration guide
+
+5. **CONFIGLOADER-UPDATE-GUIDE.md** ⭐ NEW (14 Jan 2026)
+   - Guia completo de atualização do ConfigLoader
+   - Implementação com novos nomes de secrets
+   - JWT Service update (RS256 asymmetric)
+   - Storage Manager update (sem AWS credentials)
+   - Testes e validação
+
 ### GitHub Pages Setup
 
 - ✅ `_config.yml` - Jekyll configuration
@@ -355,6 +371,8 @@ halalsphere-docs/
 - [🔐 Security](02-technical/05-security.md)
 - [☁️ AWS Config](ARCHITECTURE/AWS-CONFIG-MANAGEMENT.md)
 - [🔧 Terraform](ARCHITECTURE/TERRAFORM-CONFIG-INTEGRATION.md)
+- [⚡ AWS Infra Changes 2026](ARCHITECTURE/AWS-INFRA-CHANGES-2026.md) ⭐ NEW
+- [🔄 ConfigLoader Update Guide](ARCHITECTURE/CONFIGLOADER-UPDATE-GUIDE.md) ⭐ NEW
 
 ---
 
