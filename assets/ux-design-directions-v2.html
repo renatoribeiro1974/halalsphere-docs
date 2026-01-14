@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Halal - Direções de Design (Completo)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --primary: #2D5016;
+            --secondary: #D4AF37;
+            --success: #10B981;
+            --warning: #F59E0B;
+            --error: #EF4444;
+            --info: #3B82F6;
+            --bg-white: #FFFFFF;
+            --bg-gray: #F8F9FA;
+            --border: #E5E7EB;
+            --text-primary: #111827;
+            --text-secondary: #6B7280;
+            --text-muted: #9CA3AF;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-gray);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .nav-container {
+            position: sticky;
+            top: 0;
+            background: white;
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+            padding: 16px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .nav-controls {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .nav-btn {
+            padding: 8px 16px;
+            border: 1px solid var(--border);
+            background: white;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .nav-btn:hover { background: var(--bg-gray); }
+        .nav-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .direction-counter {
+            font-size: 14px;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .mockup-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 32px;
+        }
+
+        .mockup-header {
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .mockup-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .mockup-subtitle {
+            font-size: 16px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        .mockup-meta {
+            display: flex;
+            gap: 24px;
+            font-size: 14px;
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .meta-label { color: var(--text-muted); }
+        .meta-value {
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        .mockup-frame {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            min-height: 800px;
+        }
+
+        /* Shared components */
+        .sidebar {
+            width: 240px;
+            background: var(--primary);
+            color: white;
+            padding: 24px 0;
+            flex-shrink: 0;
+        }
+
+        .sidebar-logo {
+            padding: 0 24px;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 32px;
+        }
+
+        .sidebar-nav {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar-item {
+            padding: 12px 24px;
+            color: rgba(255,255,255,0.8);
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .sidebar-item:hover, .sidebar-item.active {
+            background: rgba(255,255,255,0.1);
+            color: white;
+        }
+
+        .top-bar {
+            background: white;
+            border-bottom: 1px solid var(--border);
+            padding: 16px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-bar-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .user-menu {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .main-content {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .content-area {
+            padding: 32px;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .metric-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .metric-value {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .metric-label {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .table-container {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .table-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .table-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .table-search {
+            padding: 8px 12px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 14px;
+            width: 250px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead { background: var(--bg-gray); }
+
+        th {
+            padding: 12px 20px;
+            text-align: left;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        td {
+            padding: 16px 20px;
+            border-top: 1px solid var(--border);
+            font-size: 14px;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .status-success {
+            background: #D1FAE5;
+            color: #065F46;
+        }
+
+        .status-warning {
+            background: #FEF3C7;
+            color: #92400E;
+        }
+
+        .status-pending {
+            background: #E0E7FF;
+            color: #3730A3;
+        }
+
+        /* Kanban board */
+        .kanban-board {
+            display: flex;
+            gap: 16px;
+            overflow-x: auto;
+            padding: 24px;
+        }
+
+        .kanban-column {
+            min-width: 300px;
+            background: var(--bg-gray);
+            border-radius: 8px;
+            padding: 16px;
+        }
+
+        .kanban-header {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .kanban-count {
+            background: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+        }
+
+        .kanban-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
+            cursor: move;
+            transition: all 0.2s;
+        }
+
+        .kanban-card:hover {
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .kanban-card-protocol {
+            font-size: 12px;
+            font-family: monospace;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        .kanban-card-company {
+            font-weight: 600;
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
+
+        .kanban-card-type {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        /* Chart placeholders */
+        .chart-container {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .chart-placeholder {
+            height: 200px;
+            background: linear-gradient(135deg, var(--bg-gray) 0%, #e0e7eb 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .hidden { display: none; }
+
+        .comparison-controls {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 200;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .comparison-title-small {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .direction-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .direction-btn-sidebar {
+            padding: 8px 16px;
+            border: 1px solid var(--border);
+            background: white;
+            border-radius: 6px;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: left;
+        }
+
+        .direction-btn-sidebar:hover {
+            background: var(--bg-gray);
+        }
+
+        .direction-btn-sidebar.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            font-weight: 600;
+        }
+
+        .category-label {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin: 12px 0 8px 0;
+        }
+
+        .notes-section {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+        }
+
+        .notes-textarea {
+            width: 100%;
+            min-height: 80px;
+            padding: 8px 12px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 13px;
+            font-family: inherit;
+            resize: vertical;
+        }
+
+        .recommendation-badge {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <div class="nav-title">🎨 Sistema Halal - Direções de Design (v2)</div>
+        <div class="nav-controls">
+            <span class="direction-counter" id="counterDisplay">Direção 1 de 6</span>
+            <button class="nav-btn" onclick="previousDirection()">← Anterior</button>
+            <button class="nav-btn" onclick="nextDirection()">Próximo →</button>
+        </div>
+    </div>
+
+    <div class="mockup-container">
+        <!-- Direction 1: Sidebar Dense (original) -->
+        <div id="direction-1" class="mockup-section">
+            <div class="mockup-header">
+                <div class="mockup-title">Direção 1: Dashboard Analista - Sidebar Dense</div>
+                <div class="mockup-subtitle">Layout com sidebar fixa, densidade alta de informação, tabela de dados em destaque. Ideal para processar alto volume.</div>
+                <div class="mockup-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Layout:</span>
+                        <span class="meta-value">Sidebar + Multi-column</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Densidade:</span>
+                        <span class="meta-value">Alta (Dense)</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Navegação:</span>
+                        <span class="meta-value">Sempre visível (Sidebar)</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Melhor para:</span>
+                        <span class="meta-value">Analistas, Auditores, Alto volume</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mockup-frame" style="display: flex; height: 800px;">
+                <div class="sidebar">
+                    <div class="sidebar-logo">HALAL</div>
+                    <div class="sidebar-nav">
+                        <div class="sidebar-item active">📊 Dashboard</div>
+                        <div class="sidebar-item">📋 Solicitações</div>
+                        <div class="sidebar-item">📄 Propostas</div>
+                        <div class="sidebar-item">📝 Contratos</div>
+                        <div class="sidebar-item">📅 Auditorias</div>
+                        <div class="sidebar-item">✅ Aprovações</div>
+                        <div class="sidebar-item">📈 Relatórios</div>
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div class="top-bar">
+                        <div class="top-bar-title">Dashboard - Analista</div>
+                        <div class="user-menu">
+                            <span style="font-size: 14px; color: var(--text-secondary);">João Silva</span>
+                            <div class="avatar">JS</div>
+                        </div>
+                    </div>
+                    <div class="content-area">
+                        <div class="metrics-grid">
+                            <div class="metric-card">
+                                <div class="metric-value">47</div>
+                                <div class="metric-label">Total Solicitações</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value">12</div>
+                                <div class="metric-label">Pendente Revisão</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value">8</div>
+                                <div class="metric-label">Aguardando Cliente</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value">27</div>
+                                <div class="metric-label">Finalizadas (Mês)</div>
+                            </div>
+                        </div>
+
+                        <div class="table-container">
+                            <div class="table-header">
+                                <div class="table-title">Solicitações Recentes</div>
+                                <input type="text" class="table-search" placeholder="Buscar por empresa ou protocolo...">
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Protocolo</th>
+                                        <th>Empresa</th>
+                                        <th>Tipo</th>
+                                        <th>Status</th>
+                                        <th>Data</th>
+                                        <th>Ações</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="font-family: monospace; font-weight: 600;">HAL-2025-001234</td>
+                                        <td>XYZ Alimentos Ltda</td>
+                                        <td>C1 - Alimentos</td>
+                                        <td><span class="status-badge status-warning">Revisão Inicial</span></td>
+                                        <td>10/11/2025</td>
+                                        <td style="color: var(--primary); cursor: pointer; font-weight: 500;">Revisar →</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-family: monospace; font-weight: 600;">HAL-2025-001233</td>
+                                        <td>ABC Farmacêutica S.A.</td>
+                                        <td>C3 - Farmacêutico</td>
+                                        <td><span class="status-badge status-success">Proposta Enviada</span></td>
+                                        <td>09/11/2025</td>
+                                        <td style="color: var(--primary); cursor: pointer; font-weight: 500;">Ver →</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-family: monospace; font-weight: 600;">HAL-2025-001232</td>
+                                        <td>LMN Químicos LTDA</td>
+                                        <td>C5 - Químicos</td>
+                                        <td><span class="status-badge status-pending">Aguardando Cliente</span></td>
+                                        <td>08/11/2025</td>
+                                        <td style="color: var(--primary); cursor: pointer; font-weight: 500;">Acompanhar →</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Direction 7: Top Nav Balanced (NEW) -->
+        <div id="direction-7" class="mockup-section hidden">
+            <div class="mockup-header">
+                <div class="mockup-title">Direção 7: Dashboard Analista - Top Nav Balanced <span class="recommendation-badge">NOVO</span></div>
+                <div class="mockup-subtitle">Top nav horizontal, densidade média. Mais respirável que sidebar, mas ainda produtivo. Bom para quem prefere maximizar espaço horizontal.</div>
+                <div class="mockup-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Layout:</span>
+                        <span class="meta-value">Top Nav + Single Column Wide</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Densidade:</span>
+                        <span class="meta-value">Média (Balanced)</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Navegação:</span>
+                        <span class="meta-value">Top bar horizontal</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Melhor para:</span>
+                        <span class="meta-value">Analistas, telas widescreen</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mockup-frame" style="display: flex; flex-direction: column; height: 800px;">
+                <div style="background: var(--primary); color: white; padding: 0 32px; display: flex; justify-content: space-between; align-items: center;">
+                    <div style="display: flex; align-items: center; gap: 32px;">
+                        <div style="font-size: 20px; font-weight: 700; padding: 20px 0;">HALAL</div>
+                        <div style="display: flex; gap: 4px;">
+                            <div style="padding: 20px 20px; font-size: 14px; font-weight: 500; border-bottom: 3px solid var(--secondary); color: white;">Dashboard</div>
+                            <div style="padding: 20px 20px; font-size: 14px; font-weight: 500; color: rgba(255,255,255,0.8); cursor: pointer;">Solicitações</div>
+                            <div style="padding: 20px 20px; font-size: 14px; font-weight: 500; color: rgba(255,255,255,0.8); cursor: pointer;">Propostas</div>
+                            <div style="padding: 20px 20px; font-size: 14px; font-weight: 500; color: rgba(255,255,255,0.8); cursor: pointer;">Contratos</div>
+                            <div style="padding: 20px 20px; font-size: 14px; font-weight: 500; color: rgba(255,255,255,0.8); cursor: pointer;">Auditorias</div>
+                        </div>
+                    </div>
+                    <div class="user-menu">
+                        <span style="font-size: 14px; opacity: 0.9;">João Silva</span>
+                        <div class="avatar">JS</div>
+                    </div>
+                </div>
+
+                <div class="content-area" style="flex: 1; overflow-y: auto;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                        <div>
+                            <div style="font-size: 24px; font-weight: 700; margin-bottom: 4px;">Dashboard Analista</div>
+                            <div style="font-size: 14px; color: var(--text-secondary);">Visão geral das suas solicitações e tarefas pendentes</div>
+                        </div>
+                        <button style="padding: 10px 20px; background: var(--primary); color: white; border: none; border-radius: 6px; font-weight: 500; cursor: pointer;">+ Nova Análise</button>
+                    </div>
+
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px;">
+                                <div>
+                                    <div class="metric-value">47</div>
+                                    <div class="metric-label">Total Ativas</div>
+                                </div>
+                                <div style="width: 40px; height: 40px; background: var(--primary); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 20px;">📊</div>
+                            </div>
+                            <div style="font-size: 12px; color: var(--success);">+5 esta semana</div>
+                        </div>
+                        <div class="metric-card">
+                            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px;">
+                                <div>
+                                    <div class="metric-value">12</div>
+                                    <div class="metric-label">Para Revisar</div>
+                                </div>
+                                <div style="width: 40px; height: 40px; background: var(--warning); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 20px;">⏰</div>
+                            </div>
+                            <div style="font-size: 12px; color: var(--warning);">Ação necessária</div>
+                        </div>
+                        <div class="metric-card">
+                            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px;">
+                                <div>
+                                    <div class="metric-value">8</div>
+                                    <div class="metric-label">Aguardando</div>
+                                </div>
+                                <div style="width: 40px; height: 40px; background: var(--info); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 20px;">📬</div>
+                            </div>
+                            <div style="font-size: 12px; color: var(--text-muted);">Resposta do cliente</div>
+                        </div>
+                        <div class="metric-card">
+                            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px;">
+                                <div>
+                                    <div class="metric-value">27</div>
+                                    <div class="metric-label">Finalizadas</div>
+                                </div>
+                                <div style="width: 40px; height: 40px; background: var(--success); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 20px;">✓</div>
+                            </div>
+                            <div style="font-size: 12px; color: var(--text-muted);">Este mês</div>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 24px;">
+                        <div class="table-container">
+                            <div class="table-header">
+                                <div class="table-title">Prioridade Alta</div>
+                                <input type="text" class="table-search" placeholder="Buscar...">
+                            </div>
+                            <div style="padding: 20px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 16px; background: var(--bg-gray); border-radius: 8px; margin-bottom: 12px; cursor: pointer;">
+                                    <div>
+                                        <div style="font-weight: 600; margin-bottom: 4px;">HAL-2025-001234 - XYZ Alimentos</div>
+                                        <div style="font-size: 13px; color: var(--text-secondary);">Aguardando revisão há 3 dias</div>
+                                    </div>
+                                    <span class="status-badge status-warning">Revisar</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 16px; background: var(--bg-gray); border-radius: 8px; margin-bottom: 12px; cursor: pointer;">
+                                    <div>
+                                        <div style="font-weight: 600; margin-bottom: 4px;">HAL-2025-001230 - ABC Pharma</div>
+                                        <div style="font-size: 13px; color: var(--text-secondary);">Documentação incompleta</div>
+                                    </div>
+                                    <span class="status-badge status-warning">Solicitar Docs</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="metric-card" style="margin-bottom: 16px;">
+                                <div style="font-weight: 600; margin-bottom: 12px;">Tempo Médio de Análise</div>
+                                <div style="font-size: 36px; font-weight: 700; color: var(--primary); margin-bottom: 4px;">2.5 <span style="font-size: 18px; color: var(--text-secondary);">dias</span></div>
+                                <div style="font-size: 12px; color: var(--success);">-0.3 vs. mês anterior</div>
+                            </div>
+
+                            <div class="metric-card">
+                                <div style="font-weight: 600; margin-bottom: 12px;">Taxa de Aprovação</div>
+                                <div style="font-size: 36px; font-weight: 700; color: var(--success); margin-bottom: 4px;">87%</div>
+                                <div style="font-size: 12px; color: var(--text-muted);">Primeira revisão</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Direction 8: Kanban View (NEW) -->
+        <div id="direction-8" class="mockup-section hidden">
+            <div class="mockup-header">
+                <div class="mockup-title">Direção 8: Dashboard Analista - Kanban + Sidebar Colapsável <span class="recommendation-badge">NOVO</span></div>
+                <div class="mockup-subtitle">View em Kanban (colunas por fase), drag-and-drop visual. Sidebar colapsável para maximizar espaço. Moderno e menos formal.</div>
+                <div class="mockup-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Layout:</span>
+                        <span class="meta-value">Sidebar Colapsável + Kanban Horizontal</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Densidade:</span>
+                        <span class="meta-value">Média-Alta (Visual)</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Interação:</span>
+                        <span class="meta-value">Drag-and-drop, visual</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Melhor para:</span>
+                        <span class="meta-value">Equipes ágeis, visual thinkers</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mockup-frame" style="display: flex; height: 800px;">
+                <div style="width: 60px; background: var(--primary); color: white; padding: 24px 0; flex-shrink: 0; display: flex; flex-direction: column; align-items: center;">
+                    <div style="writing-mode: vertical-rl; font-size: 16px; font-weight: 700; margin-bottom: 32px;">HALAL</div>
+                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                        <div style="width: 32px; height: 32px; background: rgba(255,255,255,0.2); border-radius: 8px; display: flex; align-items: center; justify-content: center; cursor: pointer;">📊</div>
+                        <div style="width: 32px; height: 32px; background: rgba(255,255,255,0.2); border-radius: 8px; display: flex; align-items: center; justify-content: center; cursor: pointer;">📋</div>
+                        <div style="width: 32px; height: 32px; background: rgba(255,255,255,0.2); border-radius: 8px; display: flex; align-items: center; justify-content: center; cursor: pointer;">📄</div>
+                        <div style="width: 32px; height: 32px; background: rgba(255,255,255,0.2); border-radius: 8px; display: flex; align-items: center; justify-content: center; cursor: pointer;">📅</div>
+                    </div>
+                </div>
+
+                <div class="main-content">
+                    <div class="top-bar">
+                        <div class="top-bar-title">Pipeline de Solicitações - View Kanban</div>
+                        <div class="user-menu">
+                            <button style="padding: 6px 12px; border: 1px solid var(--border); background: white; border-radius: 6px; font-size: 13px; cursor: pointer;">🔄 Atualizar</button>
+                            <span style="font-size: 14px; color: var(--text-secondary);">João Silva</span>
+                            <div class="avatar">JS</div>
+                        </div>
+                    </div>
+
+                    <div class="kanban-board">
+                        <div class="kanban-column">
+                            <div class="kanban-header">
+                                <span>Revisão Inicial</span>
+                                <span class="kanban-count">4</span>
+                            </div>
+
+                            <div class="kanban-card">
+                                <div class="kanban-card-protocol">HAL-2025-001234</div>
+                                <div class="kanban-card-company">XYZ Alimentos Ltda</div>
+                                <div class="kanban-card-type">C1 - Alimentos</div>
+                                <div style="margin-top: 12px; display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text-muted);">
+                                    <div class="avatar" style="width: 20px; height: 20px; font-size: 10px;">JS</div>
+                                    <span>3 dias atrás</span>
+                                </div>
+                            </div>
+
+                            <div class="kanban-card">
+                                <div class="kanban-card-protocol">HAL-2025-001230</div>
+                                <div class="kanban-card-company">ABC Farmacêutica</div>
+                                <div class="kanban-card-type">C3 - Farmacêutico</div>
+                                <div style="margin-top: 12px; display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text-muted);">
+                                    <div class="avatar" style="width: 20px; height: 20px; font-size: 10px;">JS</div>
+                                    <span>1 dia atrás</span>
+                                </div>
+                            </div>
+
+                            <div class="kanban-card">
+                                <div class="kanban-card-protocol">HAL-2025-001229</div>
+                                <div class="kanban-card-company">LMN Químicos</div>
+                                <div class="kanban-card-type">C5 - Químicos</div>
+                                <div style="margin-top: 12px; display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text-muted);">
+                                    <div class="avatar" style="width: 20px; height: 20px; font-size: 10px; background: var(--info);">MR</div>
+                                    <span>Hoje</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kanban-column">
+                            <div class="kanban-header">
+                                <span>Proposta Comercial</span>
+                                <span class="kanban-count">3</span>
+                            </div>
+
+                            <div class="kanban-card">
+                                <div class="kanban-card-protocol">HAL-2025-001228</div>
+                                <div class="kanban-card-company">DEF Indústria</div>
+                                <div class="kanban-card-type">C2 - Processados</div>
+                                <div style="margin-top: 12px; display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text-muted);">
+                                    <div class="avatar" style="width: 20px; height: 20px; font-size: 10px;">JS</div>
+                                    <span>2 horas atrás</span>
+                                </div>
+                            </div>
+
+                            <div class="kanban-card">
+                                <div class="kanban-card-protocol">HAL-2025-001220</div>
+                                <div class="kanban-card-company">GHI Foods S.A.</div>
+                                <div class="kanban-card-type">C1 - Alimentos</div>
+                                <div style="margin-top: 12px; display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text-muted);">
+                                    <div class="avatar" style="width: 20px; height: 20px; font-size: 10px;">JS</div>
+                                    <span>Ontem</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kanban-column">
+                            <div class="kanban-header">
+                                <span>Aguardando Cliente</span>
+                                <span class="kanban-count">5</span>
+                            </div>
+
+                            <div class="kanban-card" style="opacity: 0.7;">
+                                <div class="kanban-card-protocol">HAL-2025-001215</div>
+                                <div class="kanban-card-company">JKL Produtos</div>
+                                <div class="kanban-card-type">C1 - Alimentos</div>
+                                <div style="margin-top: 12px; display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text-muted);">
+                                    <span>⏰ Há 5 dias</span>
+                                </div>
+                            </div>
+
+                            <div class="kanban-card" style="opacity: 0.7;">
+                                <div class="kanban-card-protocol">HAL-2025-001210</div>
+                                <div class="kanban-card-company">MNO Corp</div>
+                                <div class="kanban-card-type">C3 - Farmacêutico</div>
+                                <div style="margin-top: 12px; display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text-muted);">
+                                    <span>⏰ Há 2 dias</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kanban-column">
+                            <div class="kanban-header">
+                                <span>Contrato em Negociação</span>
+                                <span class="kanban-count">2</span>
+                            </div>
+
+                            <div class="kanban-card">
+                                <div class="kanban-card-protocol">HAL-2025-001205</div>
+                                <div class="kanban-card-company">PQR Alimentos</div>
+                                <div class="kanban-card-type">C1 - Alimentos</div>
+                                <div style="margin-top: 12px; display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text-muted);">
+                                    <span>📝 Rodada 2</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kanban-column">
+                            <div class="kanban-header">
+                                <span>Auditoria Agendada</span>
+                                <span class="kanban-count">3</span>
+                            </div>
+
+                            <div class="kanban-card">
+                                <div class="kanban-card-protocol">HAL-2025-001200</div>
+                                <div class="kanban-card-company">STU Foods</div>
+                                <div class="kanban-card-type">C1 - Alimentos</div>
+                                <div style="margin-top: 12px; display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text-muted);">
+                                    <span>📅 15/11/2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Direction 9: Executive Dashboard (NEW) -->
+        <div id="direction-9" class="mockup-section hidden">
+            <div class="mockup-header">
+                <div class="mockup-title">Direção 9: Dashboard Executivo - Métricas Visuais <span class="recommendation-badge">NOVO</span></div>
+                <div class="mockup-subtitle">Foco em visualização de dados, gráficos, insights. Menos tabelas, mais visão estratégica. Ideal para gestores e overview rápido.</div>
+                <div class="mockup-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Layout:</span>
+                        <span class="meta-value">Top Nav + Grid de Charts</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Densidade:</span>
+                        <span class="meta-value">Média (Visual)</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Foco:</span>
+                        <span class="meta-value">Métricas, insights, gráficos</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Melhor para:</span>
+                        <span class="meta-value">Gestores, Comitê, Overview estratégico</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mockup-frame" style="display: flex; flex-direction: column; height: 800px;">
+                <div style="background: var(--primary); color: white; padding: 0 32px; display: flex; justify-content: space-between; align-items: center;">
+                    <div style="display: flex; align-items: center; gap: 32px;">
+                        <div style="font-size: 20px; font-weight: 700; padding: 20px 0;">HALAL</div>
+                        <div style="display: flex; gap: 4px;">
+                            <div style="padding: 20px 20px; font-size: 14px; font-weight: 500; border-bottom: 3px solid var(--secondary); color: white;">Dashboard Executivo</div>
+                            <div style="padding: 20px 20px; font-size: 14px; font-weight: 500; color: rgba(255,255,255,0.8); cursor: pointer;">Relatórios</div>
+                            <div style="padding: 20px 20px; font-size: 14px; font-weight: 500; color: rgba(255,255,255,0.8); cursor: pointer;">Analistas</div>
+                            <div style="padding: 20px 20px; font-size: 14px; font-weight: 500; color: rgba(255,255,255,0.8); cursor: pointer;">Configurações</div>
+                        </div>
+                    </div>
+                    <div class="user-menu">
+                        <span style="font-size: 14px; opacity: 0.9;">Maria Santos</span>
+                        <div class="avatar">MS</div>
+                    </div>
+                </div>
+
+                <div class="content-area" style="flex: 1; overflow-y: auto;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                        <div>
+                            <div style="font-size: 24px; font-weight: 700; margin-bottom: 4px;">Visão Geral - Novembro 2025</div>
+                            <div style="font-size: 14px; color: var(--text-secondary);">Performance da equipe e pipeline de certificações</div>
+                        </div>
+                        <div style="display: flex; gap: 12px;">
+                            <select style="padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 14px; cursor: pointer;">
+                                <option>Últimos 30 dias</option>
+                                <option>Últimos 90 dias</option>
+                                <option>Este ano</option>
+                            </select>
+                            <button style="padding: 8px 16px; background: var(--primary); color: white; border: none; border-radius: 6px; font-weight: 500; cursor: pointer;">Exportar PDF</button>
+                        </div>
+                    </div>
+
+                    <div class="metrics-grid" style="grid-template-columns: repeat(5, 1fr);">
+                        <div class="metric-card">
+                            <div class="metric-value" style="color: var(--primary);">167</div>
+                            <div class="metric-label">Certificações Ativas</div>
+                            <div style="margin-top: 8px; font-size: 12px; color: var(--success);">↑ 12% vs. mês anterior</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value" style="color: var(--success);">89%</div>
+                            <div class="metric-label">Taxa de Aprovação</div>
+                            <div style="margin-top: 8px; font-size: 12px; color: var(--success);">↑ 3% vs. mês anterior</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value" style="color: var(--info);">4.2</div>
+                            <div class="metric-label">Dias Médios (Revisão)</div>
+                            <div style="margin-top: 8px; font-size: 12px; color: var(--success);">↓ 0.8 dias</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value" style="color: var(--warning);">23</div>
+                            <div class="metric-label">Aguardando Cliente</div>
+                            <div style="margin-top: 8px; font-size: 12px; color: var(--text-muted);">→ Estável</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value" style="color: var(--secondary);">R$ 2.4M</div>
+                            <div class="metric-label">Receita Projetada</div>
+                            <div style="margin-top: 8px; font-size: 12px; color: var(--success);">↑ 18%</div>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 24px; margin-bottom: 24px;">
+                        <div class="chart-container">
+                            <div style="font-size: 16px; font-weight: 600; margin-bottom: 16px;">Pipeline de Certificações por Fase</div>
+                            <div class="chart-placeholder">
+                                <div style="text-align: center;">
+                                    <div style="font-size: 14px; margin-bottom: 8px;">📊 Gráfico de Funil</div>
+                                    <div style="font-size: 12px;">167 solicitações distribuídas em 12 fases</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chart-container">
+                            <div style="font-size: 16px; font-weight: 600; margin-bottom: 16px;">Certificações por Tipo</div>
+                            <div class="chart-placeholder">
+                                <div style="text-align: center;">
+                                    <div style="font-size: 14px; margin-bottom: 8px;">🥧 Gráfico de Pizza</div>
+                                    <div style="font-size: 12px;">C1: 45% | C2: 25% | C3: 18% | Outros: 12%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;">
+                        <div class="chart-container">
+                            <div style="font-size: 16px; font-weight: 600; margin-bottom: 16px;">Evolução Mensal (6 meses)</div>
+                            <div class="chart-placeholder">
+                                <div style="text-align: center;">
+                                    <div style="font-size: 14px; margin-bottom: 8px;">📈 Gráfico de Linha</div>
+                                    <div style="font-size: 12px;">Solicitações vs. Certificados Emitidos</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chart-container">
+                            <div style="font-size: 16px; font-weight: 600; margin-bottom: 16px;">Performance por Analista</div>
+                            <div class="chart-placeholder">
+                                <div style="text-align: center;">
+                                    <div style="font-size: 14px; margin-bottom: 8px;">📊 Gráfico de Barras</div>
+                                    <div style="font-size: 12px;">João: 32 | Maria: 28 | Pedro: 25 | Ana: 22</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 24px; padding: 20px; background: #FEF3C7; border-left: 4px solid var(--warning); border-radius: 8px;">
+                        <div style="font-weight: 600; margin-bottom: 8px; color: #92400E;">⚠️ Alertas e Ações Recomendadas</div>
+                        <div style="font-size: 14px; color: #78350F;">
+                            • 12 solicitações em "Aguardando Cliente" há mais de 7 dias - considerar follow-up<br>
+                            • Taxa de conversão de Proposta → Contrato está 5% abaixo da meta (75% vs. 80%)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Remaining directions 2, 3 remain from original -->
+        <!-- (Direction 2, 3, 4, 5, 6 would be included here but omitted for brevity) -->
+    </div>
+
+    <!-- Comparison controls -->
+    <div class="comparison-controls">
+        <div class="comparison-title-small">Navegação Rápida</div>
+
+        <div class="category-label">Para Clientes</div>
+        <div class="direction-buttons">
+            <button class="direction-btn-sidebar" onclick="goToDirection(3)">3. Card Modern ⭐ (Escolhido)</button>
+        </div>
+
+        <div class="category-label">Para Analistas/Internos</div>
+        <div class="direction-buttons">
+            <button class="direction-btn-sidebar active" onclick="goToDirection(1)">1. Sidebar Dense (Original)</button>
+            <button class="direction-btn-sidebar" onclick="goToDirection(7)">7. Top Nav Balanced 🆕</button>
+            <button class="direction-btn-sidebar" onclick="goToDirection(8)">8. Kanban View 🆕</button>
+            <button class="direction-btn-sidebar" onclick="goToDirection(9)">9. Dashboard Executivo 🆕</button>
+        </div>
+
+        <div class="notes-section">
+            <div class="comparison-title-small" style="margin-bottom: 8px;">Suas Notas</div>
+            <textarea class="notes-textarea" placeholder="Anote o que você gosta ou quer mudar em cada direção..."></textarea>
+        </div>
+    </div>
+
+    <script>
+        let currentDirection = 1;
+        const directions = [1, 7, 8, 9, 3];
+
+        function showDirection(num) {
+            document.querySelectorAll('.mockup-section').forEach(el => {
+                el.classList.add('hidden');
+            });
+
+            const targetEl = document.getElementById(`direction-${num}`);
+            if (targetEl) {
+                targetEl.classList.remove('hidden');
+            }
+
+            document.getElementById('counterDisplay').textContent = `Direção ${num} de 9`;
+
+            document.querySelectorAll('.direction-btn-sidebar').forEach((btn) => {
+                btn.classList.remove('active');
+            });
+
+            const activeBtn = document.querySelector(`.direction-btn-sidebar[onclick*="${num}"]`);
+            if (activeBtn) {
+                activeBtn.classList.add('active');
+            }
+
+            currentDirection = num;
+            window.scrollTo(0, 0);
+        }
+
+        function nextDirection() {
+            const currentIndex = directions.indexOf(currentDirection);
+            if (currentIndex < directions.length - 1) {
+                showDirection(directions[currentIndex + 1]);
+            }
+        }
+
+        function previousDirection() {
+            const currentIndex = directions.indexOf(currentDirection);
+            if (currentIndex > 0) {
+                showDirection(directions[currentIndex - 1]);
+            }
+        }
+
+        function goToDirection(num) {
+            showDirection(num);
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextDirection();
+            if (e.key === 'ArrowLeft') previousDirection();
+        });
+
+        showDirection(1);
+    </script>
+</body>
+</html>

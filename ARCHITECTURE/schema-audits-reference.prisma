@@ -1,0 +1,770 @@
+// ============================================================================
+// HALALSPHERE - AUDIT MANAGEMENT SCHEMA
+// ============================================================================
+// This schema extends the main database with comprehensive audit functionality
+// based on FAMBRAS HALAL requirements (DT 7.1 Rev 14)
+// ============================================================================
+
+// ============================================================================
+// AUDIT MODELS
+// ============================================================================
+
+model Audit {
+  id                String              @id @default(uuid())
+  auditNumber       String              @unique // Format: AUD-YYYY-000123
+
+  // Relationships
+  processId         String
+  process           Process             @relation(fields: [processId], references: [id])
+  auditorId         String
+  auditor           User                @relation("AuditorAudits", fields: [auditorId], references: [id])
+  companyId         String
+  company           Company             @relation(fields: [companyId], references: [id])
+
+  // Audit Classification
+  stage             AuditStage          // STAGE_1 or STAGE_2
+  type              AuditType           // INITIAL, SURVEILLANCE, RENEWAL, SPECIAL
+  categories        String[]            // ["C1", "C2", "C3", "C4", "K"]
+
+  // Scheduling
+  scheduledDate     DateTime?
+  scheduledStartTime DateTime?
+  scheduledEndTime  DateTime?
+  actualStartTime   DateTime?
+  actualEndTime     DateTime?
+  durationHours     Float?
+
+  // Status & Workflow
+  status            AuditStatus
+  phase             AuditPhase          // Planning, Pre-Audit, Execution, Reporting, Completed
+
+  // Pre-Audit AI Analysis
+  preAuditAnalysis  PreAuditAnalysis?
+
+  // Audit Execution
+  checklists        AuditChecklist[]
+  evidences         AuditEvidence[]
+  nonConformities   NonConformity[]
+  observations      AuditObservation[]
+
+  // Report
+  report            AuditReport?
+
+  // Audit Team
+  teamMembers       AuditTeamMember[]
+  muslimSupervisor  String?             // Required for meat/gelatin products
+
+  // Metadata
+  location          String              // Company address
+  gpsCoordinates    String?             // For mobile navigation
+  weatherConditions String?
+  accessNotes       String?             // Special access instructions
+
+  // Audit Scope
+  scopeDescription  String              @db.Text
+  productsToAudit   Json                // List of products in scope
+  areasToVisit      String[]            // ["Production", "Storage", "Laboratory"]
+  criticalPoints    Json                // Category-specific critical points
+
+  // Results Summary
+  totalCheckpoints  Int                 @default(0)
+  conformPoints     Int                 @default(0)
+  minorNCs          Int                 @default(0)
+  majorNCs          Int                 @default(0)
+  naPoints          Int                 @default(0)
+  conformityRate    Float?              // Percentage
+
+  // Final Decision
+  recommendation    AuditRecommendation?
+  recommendationNotes String?           @db.Text
+  certificateIssued Boolean             @default(false)
+
+  // Synchronization (for offline mobile app)
+  lastSyncedAt      DateTime?
+  isOfflineMode     Boolean             @default(false)
+  syncVersion       Int                 @default(1)
+
+  // Audit timestamps
+  createdAt         DateTime            @default(now())
+  updatedAt         DateTime            @updatedAt
+  submittedAt       DateTime?
+  approvedAt        DateTime?
+
+  @@index([processId])
+  @@index([auditorId])
+  @@index([companyId])
+  @@index([status])
+  @@index([scheduledDate])
+}
+
+// ============================================================================
+// PRE-AUDIT AI ANALYSIS
+// ============================================================================
+
+model PreAuditAnalysis {
+  id                    String                @id @default(uuid())
+  auditId               String                @unique
+  audit                 Audit                 @relation(fields: [auditId], references: [id], onDelete: Cascade)
+
+  // AI Processing Status
+  status                AIAnalysisStatus      // PENDING, PROCESSING, COMPLETED, FAILED
+  processedAt           DateTime?
+  processingTimeSeconds Int?
+
+  // Document Analysis
+  documentsAnalyzed     Int                   @default(0)
+  documentsSummary      Json                  // List of analyzed documents with metadata
+
+  // Extracted Information
+  productsIdentified    Json                  // List of products with details
+  ingredientsExtracted  Json                  // Complete ingredient list with origins
+  suppliersMapping      Json                  // Suppliers and their certificates
+  manufacturingProcesses Json                 // Identified processes
+
+  // Critical Points Identification
+  criticalIngredients   CriticalIngredient[]
+  riskAssessment        Json                  // Risk matrix by category
+
+  // AI Recommendations
+  priorityChecks        Json                  // What to focus on during audit
+  estimatedDuration     Float?                // Hours
+  suggestedApproach     String?               @db.Text
+  potentialIssues       Json                  // Predicted problems
+
+  // Executive Summary (Auto-generated)
+  executiveSummary      String                @db.Text
+  keyFindings           String[]
+
+  // Auditor Feedback
+  auditorNotes          String?               @db.Text
+  auditorRating         Int?                  // 1-5 stars on AI accuracy
+
+  createdAt             DateTime              @default(now())
+  updatedAt             DateTime              @updatedAt
+
+  @@index([auditId])
+  @@index([status])
+}
+
+model CriticalIngredient {
+  id                      String              @id @default(uuid())
+  preAuditAnalysisId      String
+  preAuditAnalysis        PreAuditAnalysis    @relation(fields: [preAuditAnalysisId], references: [id], onDelete: Cascade)
+
+  // Ingredient Details
+  name                    String
+  eNumber                 String?             // E.g., E322, E422
+  category                IngredientCategory  // ANIMAL_ORIGIN, PLANT_ORIGIN, MINERAL, SYNTHETIC
+  riskLevel               RiskLevel           // HIGH, MEDIUM, LOW
+
+  // Origin & Traceability
+  origin                  String?
+  supplier                String?
+  supplierCertificate     String?
+  certificateStatus       CertificateStatus   // VALID, EXPIRED, MISSING, NOT_REQUIRED
+  certificateExpiryDate   DateTime?
+
+  // Halal Concerns
+  halalConcerns           String[]            // ["May contain animal derivatives", "Alcohol in processing"]
+  requiresCertificate     Boolean             @default(false)
+  requiresSupervisor      Boolean             @default(false)
+
+  // Verification Status
+  verifiedDuringAudit     Boolean             @default(false)
+  verificationNotes       String?             @db.Text
+
+  // AI Confidence
+  aiConfidence            Float               // 0.0 to 1.0
+
+  createdAt               DateTime            @default(now())
+  updatedAt               DateTime            @updatedAt
+
+  @@index([preAuditAnalysisId])
+  @@index([riskLevel])
+}
+
+// ============================================================================
+// AUDIT CHECKLIST SYSTEM
+// ============================================================================
+
+model AuditChecklist {
+  id                String                  @id @default(uuid())
+  auditId           String
+  audit             Audit                   @relation(fields: [auditId], references: [id], onDelete: Cascade)
+
+  // Checklist Structure
+  section           ChecklistSection        // FACILITIES, RAW_MATERIALS, PRODUCTION, STORAGE, PERSONNEL, DOCUMENTATION
+  sectionOrder      Int
+  title             String
+  description       String?                 @db.Text
+
+  // Checklist Items
+  items             ChecklistItem[]
+
+  // Section Results
+  totalItems        Int                     @default(0)
+  conformItems      Int                     @default(0)
+  minorNCItems      Int                     @default(0)
+  majorNCItems      Int                     @default(0)
+  naItems           Int                     @default(0)
+
+  // Progress
+  completedAt       DateTime?
+  reviewedBy        String?
+
+  createdAt         DateTime                @default(now())
+  updatedAt         DateTime                @updatedAt
+
+  @@index([auditId])
+  @@index([section])
+}
+
+model ChecklistItem {
+  id                    String                @id @default(uuid())
+  checklistId           String
+  checklist             AuditChecklist        @relation(fields: [checklistId], references: [id], onDelete: Cascade)
+
+  // Item Details
+  itemNumber            String                // e.g., "1.1.3"
+  requirement           String                @db.Text
+  dtReference           String?               // Reference to DT 7.1 section
+  gsoReference          String?               // GSO 2055-2 reference
+
+  // Verification
+  verificationMethod    VerificationMethod    // DOCUMENT_REVIEW, VISUAL_INSPECTION, INTERVIEW, TESTING, MEASUREMENT
+  isApplicable          Boolean               @default(true)
+  isCritical            Boolean               @default(false)
+  isMandatory           Boolean               @default(true)
+
+  // Category-Specific
+  applicableCategories  String[]              // ["C1", "C2"]
+  productTypes          String[]              // Product types this applies to
+
+  // Response
+  status                CheckpointStatus?     // CONFORM, MINOR_NC, MAJOR_NC, NA
+  evidence              String?               @db.Text
+  auditorNotes          String?               @db.Text
+  checkedAt             DateTime?
+  checkedBy             String?
+
+  // Attachments
+  evidenceFiles         AuditEvidence[]       @relation("ChecklistItemEvidence")
+
+  // Non-Conformity Link
+  nonConformityId       String?
+  nonConformity         NonConformity?        @relation(fields: [nonConformityId], references: [id])
+
+  createdAt             DateTime              @default(now())
+  updatedAt             DateTime              @updatedAt
+
+  @@index([checklistId])
+  @@index([status])
+}
+
+// ============================================================================
+// EVIDENCE & DOCUMENTATION
+// ============================================================================
+
+model AuditEvidence {
+  id                String              @id @default(uuid())
+  auditId           String
+  audit             Audit               @relation(fields: [auditId], references: [id], onDelete: Cascade)
+
+  // Evidence Type
+  type              EvidenceType        // PHOTO, DOCUMENT, VIDEO, AUDIO, CERTIFICATE, LABEL
+  category          EvidenceCategory    // CONFORMITY, NON_CONFORMITY, OBSERVATION, GENERAL
+
+  // File Details
+  fileName          String
+  fileUrl           String              // S3/Cloudinary URL
+  thumbnailUrl      String?
+  fileSize          Int                 // Bytes
+  mimeType          String
+
+  // Context
+  title             String?
+  description       String?             @db.Text
+  location          String?             // Where in facility
+  capturedAt        DateTime            @default(now())
+
+  // Tags & Classification
+  tags              String[]            // ["Storage Area", "Temperature Control"]
+  relatedTo         String?             // What checkpoint/NC this relates to
+
+  // Annotations
+  hasAnnotations    Boolean             @default(false)
+  annotationsData   Json?               // Drawing/markup data
+
+  // Relationships
+  checklistItems    ChecklistItem[]     @relation("ChecklistItemEvidence")
+  nonConformities   NonConformity[]     @relation("NonConformityEvidence")
+
+  // Metadata
+  uploadedBy        String
+  gpsLocation       String?
+  deviceInfo        String?
+  isOfflineCapture  Boolean             @default(false)
+  syncedAt          DateTime?
+
+  createdAt         DateTime            @default(now())
+  updatedAt         DateTime            @updatedAt
+
+  @@index([auditId])
+  @@index([type])
+  @@index([category])
+}
+
+// ============================================================================
+// NON-CONFORMITY MANAGEMENT
+// ============================================================================
+
+model NonConformity {
+  id                    String                  @id @default(uuid())
+  ncNumber              String                  @unique // Format: NC-2025-000123-001
+
+  // Relationships
+  auditId               String
+  audit                 Audit                   @relation(fields: [auditId], references: [id], onDelete: Cascade)
+  companyId             String
+  company               Company                 @relation(fields: [companyId], references: [id])
+
+  // Classification
+  severity              NCSeverity              // MAJOR, MINOR, OBSERVATION
+  category              NCCategory              // DOCUMENTATION, FACILITY, PROCESS, PERSONNEL, TRACEABILITY
+
+  // Description
+  title                 String
+  description           String                  @db.Text
+  location              String?                 // Where in facility
+
+  // Standards Reference
+  dtSection             String?                 // DT 7.1 section violated
+  gsoClause             String?                 // GSO 2055-2 clause
+  requirementText       String?                 @db.Text
+
+  // Evidence
+  evidenceFiles         AuditEvidence[]         @relation("NonConformityEvidence")
+  checklistItems        ChecklistItem[]
+
+  // Root Cause Analysis
+  rootCause             String?                 @db.Text
+  immediateAction       String?                 @db.Text
+
+  // Corrective Action Plan
+  correctiveAction      String?                 @db.Text
+  preventiveAction      String?                 @db.Text
+  responsiblePerson     String?
+  targetDate            DateTime?
+
+  // Status & Workflow
+  status                NCStatus                // OPEN, COMPANY_RESPONSE, UNDER_REVIEW, APPROVED, REJECTED, CLOSED
+
+  // Company Response
+  companyResponse       String?                 @db.Text
+  companyEvidences      Json?                   // URLs to uploaded evidence
+  respondedAt           DateTime?
+  respondedBy           String?
+
+  // Auditor Review
+  auditorReview         String?                 @db.Text
+  reviewedAt            DateTime?
+  reviewedBy            String?
+  approvalStatus        NCApprovalStatus?       // PENDING, APPROVED, NEEDS_MORE_INFO, REJECTED
+
+  // Follow-up
+  requiresFollowUpAudit Boolean                 @default(false)
+  followUpDate          DateTime?
+  closedAt              DateTime?
+  closedBy              String?
+
+  // Communication
+  comments              NCComment[]
+
+  // Timestamps
+  identifiedAt          DateTime                @default(now())
+  createdAt             DateTime                @default(now())
+  updatedAt             DateTime                @updatedAt
+
+  @@index([auditId])
+  @@index([companyId])
+  @@index([status])
+  @@index([severity])
+  @@index([ncNumber])
+}
+
+model NCComment {
+  id                String            @id @default(uuid())
+  ncId              String
+  nonConformity     NonConformity     @relation(fields: [ncId], references: [id], onDelete: Cascade)
+
+  userId            String
+  user              User              @relation(fields: [userId], references: [id])
+
+  content           String            @db.Text
+  attachments       Json?             // File URLs
+  isInternal        Boolean           @default(false) // Internal notes not visible to company
+
+  createdAt         DateTime          @default(now())
+  updatedAt         DateTime          @updatedAt
+
+  @@index([ncId])
+  @@index([userId])
+}
+
+// ============================================================================
+// AUDIT OBSERVATIONS & OPPORTUNITIES
+// ============================================================================
+
+model AuditObservation {
+  id                String            @id @default(uuid())
+  auditId           String
+  audit             Audit             @relation(fields: [auditId], references: [id], onDelete: Cascade)
+
+  type              ObservationType   // GOOD_PRACTICE, IMPROVEMENT_OPPORTUNITY, COMMENT, WARNING
+  category          String            // Area of observation
+
+  title             String
+  description       String            @db.Text
+  recommendation    String?           @db.Text
+
+  priority          Priority?         // HIGH, MEDIUM, LOW
+
+  createdBy         String
+  createdAt         DateTime          @default(now())
+  updatedAt         DateTime          @updatedAt
+
+  @@index([auditId])
+  @@index([type])
+}
+
+// ============================================================================
+// AUDIT REPORT
+// ============================================================================
+
+model AuditReport {
+  id                    String              @id @default(uuid())
+  auditId               String              @unique
+  audit                 Audit               @relation(fields: [auditId], references: [id], onDelete: Cascade)
+
+  reportNumber          String              @unique // Format: REL-2025-000123
+
+  // Report Metadata
+  generatedAt           DateTime            @default(now())
+  generatedBy           String
+  approvedAt            DateTime?
+  approvedBy            String?
+
+  // Report Structure (Auto-generated from templates)
+  executiveSummary      String              @db.Text
+  auditScope            String              @db.Text
+  methodology           String              @db.Text
+
+  // Findings
+  conformities          Json                // List of strong points
+  nonConformitiesSummary Json               // Summary of NCs
+  observations          Json                // General observations
+
+  // Statistical Summary
+  statistics            Json                // Charts data, percentages
+
+  // Conclusions
+  overallAssessment     String              @db.Text
+  recommendations       String              @db.Text
+  nextSteps             String              @db.Text
+
+  // Documents
+  pdfUrl                String?             // Final PDF report
+  attachments           Json?               // Supporting documents
+
+  // Audit Trail
+  versions              ReportVersion[]
+
+  // Signatures
+  auditorSignature      String?             // Digital signature
+  auditorSignedAt       DateTime?
+  reviewerSignature     String?
+  reviewerSignedAt      DateTime?
+
+  // Distribution
+  sentToCompany         Boolean             @default(false)
+  sentToCompanyAt       DateTime?
+  companyAcknowledged   Boolean             @default(false)
+  acknowledgedAt        DateTime?
+
+  createdAt             DateTime            @default(now())
+  updatedAt             DateTime            @updatedAt
+
+  @@index([auditId])
+  @@index([reportNumber])
+}
+
+model ReportVersion {
+  id                String            @id @default(uuid())
+  reportId          String
+  report            AuditReport       @relation(fields: [reportId], references: [id], onDelete: Cascade)
+
+  versionNumber     Int
+  changeDescription String?           @db.Text
+  pdfUrl            String
+
+  createdBy         String
+  createdAt         DateTime          @default(now())
+
+  @@index([reportId])
+}
+
+// ============================================================================
+// AUDIT TEAM
+// ============================================================================
+
+model AuditTeamMember {
+  id                String            @id @default(uuid())
+  auditId           String
+  audit             Audit             @relation(fields: [auditId], references: [id], onDelete: Cascade)
+
+  userId            String
+  user              User              @relation(fields: [userId], references: [id])
+
+  role              AuditRole         // LEAD_AUDITOR, AUDITOR, TECHNICAL_EXPERT, OBSERVER, SUPERVISOR
+  responsibilities  String?           @db.Text
+
+  assignedSections  String[]          // Checklist sections assigned
+
+  joinedAt          DateTime          @default(now())
+  leftAt            DateTime?
+
+  @@index([auditId])
+  @@index([userId])
+
+  @@unique([auditId, userId])
+}
+
+// ============================================================================
+// AUDIT TEMPLATES & CONFIGURATION
+// ============================================================================
+
+model AuditChecklistTemplate {
+  id                String            @id @default(uuid())
+  name              String
+  description       String?           @db.Text
+
+  // Applicability
+  stage             AuditStage        // STAGE_1, STAGE_2
+  categories        String[]          // ["C1", "C2"]
+  productTypes      String[]
+
+  // Template Structure
+  sections          Json              // Checklist structure
+
+  isActive          Boolean           @default(true)
+  isDefault         Boolean           @default(false)
+
+  // Version Control
+  version           String
+  previousVersionId String?
+
+  createdBy         String
+  createdAt         DateTime          @default(now())
+  updatedAt         DateTime          @updatedAt
+
+  @@index([stage])
+  @@index([isActive])
+}
+
+// ============================================================================
+// ENUMS
+// ============================================================================
+
+enum AuditStage {
+  STAGE_1           // Documentation review, system readiness
+  STAGE_2           // Full on-site audit, implementation verification
+}
+
+enum AuditType {
+  INITIAL           // First certification
+  SURVEILLANCE      // Periodic surveillance
+  RENEWAL           // Certificate renewal
+  SPECIAL           // Follow-up, complaint investigation
+}
+
+enum AuditStatus {
+  SCHEDULED
+  CONFIRMED
+  IN_PROGRESS
+  PAUSED
+  COMPLETED
+  CANCELLED
+  RESCHEDULED
+}
+
+enum AuditPhase {
+  PLANNING          // Audit being planned
+  PRE_AUDIT         // AI analysis in progress
+  READY             // Ready for execution
+  IN_EXECUTION      // Audit happening
+  REPORTING         // Report being prepared
+  UNDER_REVIEW      // Report under review
+  COMPLETED         // Fully completed
+}
+
+enum AuditRecommendation {
+  APPROVE           // Recommend certification
+  APPROVE_WITH_CONDITIONS // Approve after minor corrections
+  REJECT            // Do not certify
+  FOLLOW_UP_REQUIRED // Need follow-up audit
+}
+
+enum AIAnalysisStatus {
+  PENDING
+  PROCESSING
+  COMPLETED
+  FAILED
+  SKIPPED
+}
+
+enum IngredientCategory {
+  ANIMAL_ORIGIN
+  PLANT_ORIGIN
+  MINERAL
+  SYNTHETIC
+  MICROBIOLOGICAL
+  MIXED
+}
+
+enum RiskLevel {
+  HIGH              // Requires certificate, major Halal concern
+  MEDIUM            // Needs verification, moderate concern
+  LOW               // Pre-approved, minimal concern
+}
+
+enum CertificateStatus {
+  VALID
+  EXPIRED
+  MISSING
+  NOT_REQUIRED
+  PENDING_VERIFICATION
+}
+
+enum ChecklistSection {
+  LEGAL_COMPLIANCE
+  RAW_MATERIALS
+  SUPPLIERS
+  PRODUCTION_AREA
+  MANUFACTURING_PROCESS
+  STORAGE_TRANSPORT
+  LABELING
+  QUALITY_SYSTEMS
+  DOCUMENTATION
+  PERSONNEL
+  FACILITIES
+}
+
+enum VerificationMethod {
+  DOCUMENT_REVIEW
+  VISUAL_INSPECTION
+  INTERVIEW
+  TESTING
+  MEASUREMENT
+  SAMPLING
+  RECORD_REVIEW
+}
+
+enum CheckpointStatus {
+  CONFORM           // ✅ Compliant
+  MINOR_NC          // ⚠️ Minor non-conformity
+  MAJOR_NC          // ❌ Major non-conformity
+  NA                // ➖ Not applicable
+}
+
+enum EvidenceType {
+  PHOTO
+  DOCUMENT
+  VIDEO
+  AUDIO
+  CERTIFICATE
+  LABEL
+  SAMPLE
+  SCREENSHOT
+}
+
+enum EvidenceCategory {
+  CONFORMITY
+  NON_CONFORMITY
+  OBSERVATION
+  GENERAL
+  CRITICAL_POINT
+}
+
+enum NCSeverity {
+  MAJOR             // Critical, prevents certification
+  MINOR             // Important, requires correction
+  OBSERVATION       // Recommendation, not blocking
+}
+
+enum NCCategory {
+  DOCUMENTATION
+  FACILITY
+  EQUIPMENT
+  PROCESS
+  PERSONNEL
+  TRACEABILITY
+  LABELING
+  STORAGE
+  HYGIENE
+  QUALITY_SYSTEM
+}
+
+enum NCStatus {
+  OPEN              // Just identified
+  COMPANY_NOTIFIED  // Company has been notified
+  COMPANY_RESPONSE  // Company submitted response
+  UNDER_REVIEW      // Auditor reviewing response
+  APPROVED          // Response approved
+  REJECTED          // Response rejected, need more
+  CLOSED            // Fully resolved
+}
+
+enum NCApprovalStatus {
+  PENDING
+  APPROVED
+  NEEDS_MORE_INFO
+  REJECTED
+}
+
+enum ObservationType {
+  GOOD_PRACTICE
+  IMPROVEMENT_OPPORTUNITY
+  COMMENT
+  WARNING
+}
+
+enum Priority {
+  HIGH
+  MEDIUM
+  LOW
+}
+
+enum AuditRole {
+  LEAD_AUDITOR
+  AUDITOR
+  TECHNICAL_EXPERT
+  MUSLIM_SUPERVISOR
+  OBSERVER
+  TRAINEE
+}
+
+// ============================================================================
+// RELATIONS TO EXISTING MODELS (Add to main schema)
+// ============================================================================
+
+// Add to User model:
+// auditsAsAuditor       Audit[]              @relation("AuditАudits")
+// auditTeamMemberships  AuditTeamMember[]
+// ncComments            NCComment[]
+
+// Add to Company model:
+// audits                Audit[]
+// nonConformities       NonConformity[]
+
+// Add to Process model:
+// audits                Audit[]

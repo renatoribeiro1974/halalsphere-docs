@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluções para Alto Volume - Sistema Halal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --primary: #2D5016;
+            --secondary: #D4AF37;
+            --success: #10B981;
+            --warning: #F59E0B;
+            --error: #EF4444;
+            --info: #3B82F6;
+            --bg-white: #FFFFFF;
+            --bg-gray: #F8F9FA;
+            --border: #E5E7EB;
+            --text-primary: #111827;
+            --text-secondary: #6B7280;
+            --text-muted: #9CA3AF;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-gray);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .header {
+            background: white;
+            border-bottom: 2px solid var(--primary);
+            padding: 24px 32px;
+            margin-bottom: 32px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 16px;
+            color: var(--text-secondary);
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 0 32px 32px;
+        }
+
+        .solution-section {
+            background: white;
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 32px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .solution-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .solution-subtitle {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .problem-box {
+            background: #FEE2E2;
+            border-left: 4px solid var(--error);
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+
+        .problem-title {
+            font-weight: 600;
+            color: #991B1B;
+            margin-bottom: 4px;
+        }
+
+        .problem-text {
+            font-size: 14px;
+            color: #7F1D1D;
+        }
+
+        .solution-box {
+            background: #D1FAE5;
+            border-left: 4px solid var(--success);
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+        }
+
+        .solution-box-title {
+            font-weight: 600;
+            color: #065F46;
+            margin-bottom: 8px;
+        }
+
+        .solution-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .solution-list li {
+            padding: 4px 0 4px 20px;
+            font-size: 14px;
+            color: #047857;
+            position: relative;
+        }
+
+        .solution-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+        }
+
+        /* Mock UI Components */
+        .mockup-frame {
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+            background: white;
+        }
+
+        .toolbar {
+            background: var(--bg-gray);
+            border-bottom: 1px solid var(--border);
+            padding: 16px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .filter-group {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .filter-label {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        .filter-select {
+            padding: 8px 12px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 13px;
+            background: white;
+            cursor: pointer;
+            min-width: 150px;
+        }
+
+        .filter-input {
+            padding: 8px 12px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 13px;
+            min-width: 250px;
+        }
+
+        .filter-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            background: var(--primary);
+            color: white;
+            border-radius: 16px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .filter-badge-close {
+            cursor: pointer;
+            font-weight: 700;
+        }
+
+        .view-toggle {
+            display: flex;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .view-toggle-btn {
+            padding: 8px 16px;
+            border: none;
+            background: white;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .view-toggle-btn.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        .kanban-mini {
+            display: flex;
+            gap: 12px;
+            padding: 16px;
+            overflow-x: auto;
+        }
+
+        .kanban-column-mini {
+            min-width: 280px;
+            background: var(--bg-gray);
+            border-radius: 8px;
+            padding: 12px;
+        }
+
+        .kanban-header-mini {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+        }
+
+        .kanban-count {
+            background: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+        }
+
+        .kanban-card-mini {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 12px;
+            margin-bottom: 8px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .kanban-load-more {
+            text-align: center;
+            padding: 8px;
+            font-size: 12px;
+            color: var(--primary);
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .table-compact {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table-compact thead {
+            background: var(--bg-gray);
+        }
+
+        .table-compact th {
+            padding: 10px 12px;
+            text-align: left;
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .table-compact td {
+            padding: 12px;
+            font-size: 13px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .table-compact tbody tr:hover {
+            background: var(--bg-gray);
+            cursor: pointer;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+        }
+
+        .pagination-info {
+            color: var(--text-secondary);
+        }
+
+        .pagination-controls {
+            display: flex;
+            gap: 8px;
+        }
+
+        .pagination-btn {
+            padding: 6px 12px;
+            border: 1px solid var(--border);
+            background: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+
+        .pagination-btn:hover:not(:disabled) {
+            background: var(--bg-gray);
+        }
+
+        .pagination-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .pagination-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .priority-marker {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+        }
+
+        .priority-high { background: var(--error); }
+        .priority-medium { background: var(--warning); }
+        .priority-low { background: var(--text-muted); }
+
+        .grouped-section {
+            margin-bottom: 24px;
+        }
+
+        .group-header {
+            background: var(--bg-gray);
+            padding: 12px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 6px;
+            margin-bottom: 8px;
+        }
+
+        .group-count {
+            font-size: 12px;
+            background: white;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-weight: 500;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+
+        .status-warning { background: #FEF3C7; color: #92400E; }
+        .status-success { background: #D1FAE5; color: #065F46; }
+        .status-info { background: #E0E7FF; color: #3730A3; }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        .comparison-card {
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .comparison-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 4px 8px rgba(45, 80, 22, 0.1);
+        }
+
+        .comparison-card.recommended {
+            border-color: var(--secondary);
+            background: linear-gradient(135deg, #FFFBEB 0%, white 100%);
+        }
+
+        .comparison-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .comparison-desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        .pros-cons {
+            font-size: 12px;
+        }
+
+        .pros-cons-title {
+            font-weight: 600;
+            margin: 12px 0 6px;
+            color: var(--text-primary);
+        }
+
+        .pros-cons li {
+            padding: 2px 0;
+            color: var(--text-secondary);
+        }
+
+        .recommended-badge {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎯 Soluções para Alto Volume de Certificações</h1>
+        <p>Como lidar com centenas de solicitações simultâneas sem poluir a interface</p>
+    </div>
+
+    <div class="container">
+        <!-- Problem Statement -->
+        <div class="solution-section">
+            <div class="solution-title">O Desafio</div>
+            <div class="solution-subtitle">Seu cenário real de produção</div>
+
+            <div class="problem-box">
+                <div class="problem-title">❌ Problema: Poluição Visual com Alto Volume</div>
+                <div class="problem-text">
+                    Com <strong>600-700 empresas certificadas simultaneamente</strong> e <strong>22 auditores</strong> processando múltiplas solicitações, as interfaces podem ficar:<br>
+                    • Kanban com 50+ cards por coluna = scroll infinito<br>
+                    • Tabelas com centenas de linhas = impossível encontrar nada<br>
+                    • Dashboards sobrecarregados = paralisia por informação<br>
+                    • Analistas perdem tempo procurando ao invés de agir
+                </div>
+            </div>
+
+            <div class="solution-box">
+                <div class="solution-box-title">✅ Solução: Arquitetura de Informação Escalonável</div>
+                <ul class="solution-list">
+                    <li><strong>Filtros inteligentes</strong> - Mostrar apenas o relevante (meu trabalho, ações hoje, prioridade alta)</li>
+                    <li><strong>Agrupamento dinâmico</strong> - Colapsar/expandir por analista, fase, data</li>
+                    <li><strong>Paginação + lazy loading</strong> - Carregar 20 itens por vez, load more sob demanda</li>
+                    <li><strong>Search avançada</strong> - Busca rápida por protocolo, empresa, CNPJ, analista</li>
+                    <li><strong>Views contextuais</strong> - "Minhas tarefas hoje" vs "Visão geral do pipeline"</li>
+                    <li><strong>Priorização visual</strong> - Destacar apenas o que PRECISA de ação urgente</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Solution 1: Top Nav com Filtros -->
+        <div class="solution-section">
+            <div class="solution-title">Solução 1: Top Nav + Filtros Inteligentes</div>
+            <div class="solution-subtitle">Direção 7 otimizada para alto volume</div>
+
+            <div class="mockup-frame">
+                <div class="toolbar">
+                    <div class="filter-group">
+                        <span class="filter-label">Busca Rápida:</span>
+                        <input type="text" class="filter-input" placeholder="Protocolo, empresa, CNPJ...">
+                    </div>
+
+                    <div class="filter-group">
+                        <span class="filter-label">Status:</span>
+                        <select class="filter-select">
+                            <option>Todos (167)</option>
+                            <option>Para Revisar (12)</option>
+                            <option>Aguardando Cliente (23)</option>
+                            <option>Proposta Enviada (18)</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <span class="filter-label">Analista:</span>
+                        <select class="filter-select">
+                            <option>Todos</option>
+                            <option>Minhas Solicitações (47)</option>
+                            <option>João Silva (32)</option>
+                            <option>Maria Santos (28)</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <span class="filter-label">Prioridade:</span>
+                        <select class="filter-select">
+                            <option>Todas</option>
+                            <option>Alta (8)</option>
+                            <option>Média (25)</option>
+                            <option>Baixa (14)</option>
+                        </select>
+                    </div>
+
+                    <div class="view-toggle">
+                        <button class="view-toggle-btn active">Minhas Tarefas</button>
+                        <button class="view-toggle-btn">Visão Geral</button>
+                    </div>
+                </div>
+
+                <div style="padding: 16px;">
+                    <div class="filter-badge">
+                        Status: Para Revisar
+                        <span class="filter-badge-close">×</span>
+                    </div>
+                    <div class="filter-badge">
+                        Analista: João Silva
+                        <span class="filter-badge-close">×</span>
+                    </div>
+                </div>
+
+                <table class="table-compact">
+                    <thead>
+                        <tr>
+                            <th width="5%"></th>
+                            <th width="15%">Protocolo</th>
+                            <th width="25%">Empresa</th>
+                            <th width="15%">Tipo</th>
+                            <th width="15%">Status</th>
+                            <th width="15%">Última Atualização</th>
+                            <th width="10%">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="priority-marker priority-high"></span></td>
+                            <td style="font-family: monospace; font-weight: 600;">HAL-2025-001234</td>
+                            <td>XYZ Alimentos Ltda</td>
+                            <td>C1 - Alimentos</td>
+                            <td><span class="status-badge status-warning">Revisão</span></td>
+                            <td>Há 3 dias</td>
+                            <td style="color: var(--primary); font-weight: 500;">Revisar →</td>
+                        </tr>
+                        <tr>
+                            <td><span class="priority-marker priority-high"></span></td>
+                            <td style="font-family: monospace; font-weight: 600;">HAL-2025-001230</td>
+                            <td>ABC Farmacêutica S.A.</td>
+                            <td>C3 - Farmacêutico</td>
+                            <td><span class="status-badge status-warning">Revisão</span></td>
+                            <td>Há 2 dias</td>
+                            <td style="color: var(--primary); font-weight: 500;">Revisar →</td>
+                        </tr>
+                        <tr>
+                            <td><span class="priority-marker priority-medium"></span></td>
+                            <td style="font-family: monospace; font-weight: 600;">HAL-2025-001228</td>
+                            <td>LMN Químicos LTDA</td>
+                            <td>C5 - Químicos</td>
+                            <td><span class="status-badge status-warning">Revisão</span></td>
+                            <td>Há 1 dia</td>
+                            <td style="color: var(--primary); font-weight: 500;">Revisar →</td>
+                        </tr>
+                        <tr>
+                            <td><span class="priority-marker priority-medium"></span></td>
+                            <td style="font-family: monospace; font-weight: 600;">HAL-2025-001225</td>
+                            <td>DEF Produtos Alimentícios</td>
+                            <td>C1 - Alimentos</td>
+                            <td><span class="status-badge status-warning">Revisão</span></td>
+                            <td>Hoje</td>
+                            <td style="color: var(--primary); font-weight: 500;">Revisar →</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="pagination">
+                    <div class="pagination-info">
+                        Mostrando 1-20 de 47 solicitações
+                    </div>
+                    <div class="pagination-controls">
+                        <button class="pagination-btn" disabled>← Anterior</button>
+                        <button class="pagination-btn active">1</button>
+                        <button class="pagination-btn">2</button>
+                        <button class="pagination-btn">3</button>
+                        <button class="pagination-btn">Próximo →</button>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 16px; padding: 16px; background: #E0F2FE; border-radius: 8px; font-size: 14px; color: #075985;">
+                <strong>💡 Como funciona:</strong> Filtros reduzem 600+ solicitações para apenas as 12 que João precisa revisar HOJE. Paginação mostra 20 por vez. Prioridade visual (bolinha vermelha) destaca urgências.
+            </div>
+        </div>
+
+        <!-- Solution 2: Kanban com Limite e Load More -->
+        <div class="solution-section">
+            <div class="solution-title">Solução 2: Kanban Limitado + Lazy Loading</div>
+            <div class="solution-subtitle">Direção 8 otimizada - Mostra top 5 por coluna + "Carregar mais"</div>
+
+            <div class="mockup-frame">
+                <div class="toolbar">
+                    <div class="filter-group">
+                        <span class="filter-label">Filtrar por:</span>
+                        <select class="filter-select">
+                            <option>Minhas Solicitações (47)</option>
+                            <option>Todas (167)</option>
+                            <option>Por Analista...</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <span class="filter-label">Prioridade:</span>
+                        <select class="filter-select">
+                            <option>Alta e Média</option>
+                            <option>Todas</option>
+                            <option>Apenas Alta</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-left: auto; font-size: 13px; color: var(--text-secondary);">
+                        <strong>Total no pipeline:</strong> 167 solicitações
+                    </div>
+                </div>
+
+                <div class="kanban-mini">
+                    <div class="kanban-column-mini">
+                        <div class="kanban-header-mini">
+                            <span>Revisão Inicial</span>
+                            <span class="kanban-count">12</span>
+                        </div>
+                        <div class="kanban-card-mini">
+                            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 4px;">HAL-2025-001234</div>
+                            <div style="font-weight: 600; font-size: 13px;">XYZ Alimentos</div>
+                            <div style="margin-top: 8px; font-size: 11px; color: var(--error); font-weight: 500;">⚠️ Há 3 dias</div>
+                        </div>
+                        <div class="kanban-card-mini">
+                            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 4px;">HAL-2025-001230</div>
+                            <div style="font-weight: 600; font-size: 13px;">ABC Farmacêutica</div>
+                            <div style="margin-top: 8px; font-size: 11px; color: var(--error); font-weight: 500;">⚠️ Há 2 dias</div>
+                        </div>
+                        <div class="kanban-card-mini">
+                            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 4px;">HAL-2025-001228</div>
+                            <div style="font-weight: 600; font-size: 13px;">LMN Químicos</div>
+                            <div style="margin-top: 8px; font-size: 11px; color: var(--text-secondary);">Há 1 dia</div>
+                        </div>
+                        <div class="kanban-card-mini">
+                            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 4px;">HAL-2025-001225</div>
+                            <div style="font-weight: 600; font-size: 13px;">DEF Produtos</div>
+                            <div style="margin-top: 8px; font-size: 11px; color: var(--text-secondary);">Hoje</div>
+                        </div>
+                        <div class="kanban-card-mini">
+                            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 4px;">HAL-2025-001220</div>
+                            <div style="font-weight: 600; font-size: 13px;">GHI Foods</div>
+                            <div style="margin-top: 8px; font-size: 11px; color: var(--text-secondary);">Ontem</div>
+                        </div>
+                        <div class="kanban-load-more">+ Carregar mais 7 solicitações</div>
+                    </div>
+
+                    <div class="kanban-column-mini">
+                        <div class="kanban-header-mini">
+                            <span>Proposta Comercial</span>
+                            <span class="kanban-count">8</span>
+                        </div>
+                        <div class="kanban-card-mini">
+                            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 4px;">HAL-2025-001218</div>
+                            <div style="font-weight: 600; font-size: 13px;">JKL Indústria</div>
+                            <div style="margin-top: 8px; font-size: 11px; color: var(--text-secondary);">2 horas atrás</div>
+                        </div>
+                        <div class="kanban-card-mini">
+                            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 4px;">HAL-2025-001215</div>
+                            <div style="font-weight: 600; font-size: 13px;">MNO Foods</div>
+                            <div style="margin-top: 8px; font-size: 11px; color: var(--text-secondary);">Hoje</div>
+                        </div>
+                        <div class="kanban-card-mini">
+                            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 4px;">HAL-2025-001210</div>
+                            <div style="font-weight: 600; font-size: 13px;">PQR Corp</div>
+                            <div style="margin-top: 8px; font-size: 11px; color: var(--text-secondary);">Ontem</div>
+                        </div>
+                        <div class="kanban-load-more">+ Carregar mais 5 solicitações</div>
+                    </div>
+
+                    <div class="kanban-column-mini">
+                        <div class="kanban-header-mini">
+                            <span>Aguardando Cliente</span>
+                            <span class="kanban-count">23</span>
+                        </div>
+                        <div class="kanban-card-mini" style="opacity: 0.7;">
+                            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 4px;">HAL-2025-001205</div>
+                            <div style="font-weight: 600; font-size: 13px;">STU Alimentos</div>
+                            <div style="margin-top: 8px; font-size: 11px; color: var(--text-muted);">⏰ Há 5 dias</div>
+                        </div>
+                        <div class="kanban-card-mini" style="opacity: 0.7;">
+                            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 4px;">HAL-2025-001200</div>
+                            <div style="font-weight: 600; font-size: 13px;">VWX Pharma</div>
+                            <div style="margin-top: 8px; font-size: 11px; color: var(--text-muted);">⏰ Há 3 dias</div>
+                        </div>
+                        <div class="kanban-load-more">+ Carregar mais 21 solicitações</div>
+                    </div>
+
+                    <div class="kanban-column-mini">
+                        <div class="kanban-header-mini">
+                            <span>Contrato</span>
+                            <span class="kanban-count">15</span>
+                        </div>
+                        <div class="kanban-card-mini">
+                            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 4px;">HAL-2025-001195</div>
+                            <div style="font-weight: 600; font-size: 13px;">YZA Foods</div>
+                            <div style="margin-top: 8px; font-size: 11px; color: var(--text-secondary);">Rodada 2</div>
+                        </div>
+                        <div class="kanban-load-more">+ Carregar mais 14 solicitações</div>
+                    </div>
+
+                    <div class="kanban-column-mini">
+                        <div class="kanban-header-mini">
+                            <span>Auditoria</span>
+                            <span class="kanban-count">18</span>
+                        </div>
+                        <div class="kanban-card-mini">
+                            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 4px;">HAL-2025-001190</div>
+                            <div style="font-weight: 600; font-size: 13px;">BCD Indústria</div>
+                            <div style="margin-top: 8px; font-size: 11px; color: var(--info); font-weight: 500;">📅 15/11/2025</div>
+                        </div>
+                        <div class="kanban-load-more">+ Carregar mais 17 solicitações</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 16px; padding: 16px; background: #E0F2FE; border-radius: 8px; font-size: 14px; color: #075985;">
+                <strong>💡 Como funciona:</strong> Cada coluna mostra apenas os 5 mais relevantes (prioridade + data). Contador mostra total. Botão "Carregar mais" expande sob demanda. Filtro no topo reduz para "Minhas solicitações".
+            </div>
+        </div>
+
+        <!-- Solution 3: Agrupamento com Colapso -->
+        <div class="solution-section">
+            <div class="solution-title">Solução 3: Agrupamento Inteligente + Colapso</div>
+            <div class="solution-subtitle">Agrupar por analista, data ou fase - expandir apenas o relevante</div>
+
+            <div class="mockup-frame">
+                <div class="toolbar">
+                    <div class="filter-group">
+                        <span class="filter-label">Agrupar por:</span>
+                        <select class="filter-select">
+                            <option>Analista Responsável</option>
+                            <option>Status</option>
+                            <option>Data (Hoje / Esta semana / Antigas)</option>
+                            <option>Prioridade</option>
+                            <option>Sem agrupamento</option>
+                        </select>
+                    </div>
+                    <input type="text" class="filter-input" placeholder="Buscar...">
+                </div>
+
+                <div style="padding: 16px;">
+                    <div class="grouped-section">
+                        <div class="group-header">
+                            <span>▼ João Silva (Eu)</span>
+                            <span class="group-count">47 solicitações</span>
+                        </div>
+                        <table class="table-compact">
+                            <tbody>
+                                <tr>
+                                    <td width="20%">HAL-2025-001234</td>
+                                    <td width="35%">XYZ Alimentos Ltda</td>
+                                    <td width="20%"><span class="status-badge status-warning">Revisão</span></td>
+                                    <td width="15%">Há 3 dias</td>
+                                    <td width="10%">→</td>
+                                </tr>
+                                <tr>
+                                    <td>HAL-2025-001230</td>
+                                    <td>ABC Farmacêutica S.A.</td>
+                                    <td><span class="status-badge status-warning">Revisão</span></td>
+                                    <td>Há 2 dias</td>
+                                    <td>→</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5" style="text-align: center; padding: 8px; color: var(--primary); font-weight: 500; cursor: pointer;">
+                                        Mostrar todas as 47 solicitações →
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="grouped-section">
+                        <div class="group-header">
+                            <span>▶ Maria Santos</span>
+                            <span class="group-count">32 solicitações</span>
+                        </div>
+                    </div>
+
+                    <div class="grouped-section">
+                        <div class="group-header">
+                            <span>▶ Pedro Costa</span>
+                            <span class="group-count">28 solicitações</span>
+                        </div>
+                    </div>
+
+                    <div class="grouped-section">
+                        <div class="group-header">
+                            <span>▶ Ana Silva</span>
+                            <span class="group-count">25 solicitações</span>
+                        </div>
+                    </div>
+
+                    <div class="grouped-section">
+                        <div class="group-header">
+                            <span>▶ Não Atribuídas</span>
+                            <span class="group-count" style="background: var(--warning); color: white;">35 solicitações</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 16px; padding: 16px; background: #E0F2FE; border-radius: 8px; font-size: 14px; color: #075985;">
+                <strong>💡 Como funciona:</strong> 167 solicitações agrupadas por analista. Apenas o grupo do João está expandido (47 itens). Outros grupos colapsados (clique para expandir). Reduz sobrecarga cognitiva dramaticamente.
+            </div>
+        </div>
+
+        <!-- Recommendation -->
+        <div class="solution-section">
+            <div class="solution-title">🎯 Minha Recomendação Final</div>
+            <div class="solution-subtitle">Com base no seu cenário de alto volume (600-700 empresas simultâneas)</div>
+
+            <div class="comparison-grid">
+                <div class="comparison-card">
+                    <div class="comparison-title">Direção 7 + Filtros</div>
+                    <div class="comparison-desc">Top Nav com filtros inteligentes, paginação, priorização visual</div>
+
+                    <div class="pros-cons">
+                        <div class="pros-cons-title">✅ Prós:</div>
+                        <ul>
+                            <li>Familiar (tabela)</li>
+                            <li>Filtros poderosos</li>
+                            <li>Fácil de escanear</li>
+                            <li>Rápido para encontrar</li>
+                        </ul>
+
+                        <div class="pros-cons-title">⚠️ Contras:</div>
+                        <ul>
+                            <li>Menos visual</li>
+                            <li>Não mostra fluxo</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="comparison-card recommended">
+                    <div class="comparison-title">
+                        Direção 8 Kanban + Limites
+                        <span class="recommended-badge">Recomendado</span>
+                    </div>
+                    <div class="comparison-desc">Kanban com top 5 por coluna, lazy loading, filtro "Minhas tarefas"</div>
+
+                    <div class="pros-cons">
+                        <div class="pros-cons-title">✅ Prós:</div>
+                        <ul>
+                            <li>Visual e intuitivo</li>
+                            <li>Mostra fluxo do pipeline</li>
+                            <li>Drag-drop para mover</li>
+                            <li>Limites evitam poluição</li>
+                            <li>Moderno e ágil</li>
+                        </ul>
+
+                        <div class="pros-cons-title">⚠️ Contras:</div>
+                        <ul>
+                            <li>Menos denso que tabela</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="comparison-card">
+                    <div class="comparison-title">Agrupamento + Colapso</div>
+                    <div class="comparison-desc">Grupos colapsáveis por analista/status/data</div>
+
+                    <div class="pros-cons">
+                        <div class="pros-cons-title">✅ Prós:</div>
+                        <ul>
+                            <li>Organização clara</li>
+                            <li>Foco no seu trabalho</li>
+                            <li>Escalável</li>
+                        </ul>
+
+                        <div class="pros-cons-title">⚠️ Contras:</div>
+                        <ul>
+                            <li>Cliques extras (expandir)</li>
+                            <li>Não vê tudo de uma vez</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 32px; padding: 24px; background: linear-gradient(135deg, #D1FAE5 0%, white 100%); border-left: 4px solid var(--success); border-radius: 8px;">
+                <div style="font-size: 18px; font-weight: 700; margin-bottom: 12px; color: #065F46;">✅ Decisão Recomendada</div>
+                <div style="font-size: 15px; color: #047857; margin-bottom: 16px;">
+                    <strong>Direção 8 (Kanban Limitado)</strong> com filtro padrão em "Minhas Solicitações" + lazy loading
+                </div>
+                <div style="font-size: 14px; color: #065F46;">
+                    <strong>Por quê:</strong><br>
+                    • Visual e moderno, mas CONTROLADO (limite de 5 cards por coluna)<br>
+                    • Mostra o FLUXO do pipeline (stakeholders entendem visualmente onde estão os gargalos)<br>
+                    • Drag-and-drop torna mudanças de fase naturais<br>
+                    • Filtro "Minhas Solicitações" reduz 600 para 47, depois limites reduzem para ~30 visíveis<br>
+                    • Lazy loading ("Carregar mais") permite explorar sem sobrecarregar<br>
+                    • Contadores mostram volume total sem poluir a tela
+                </div>
+            </div>
+
+            <div style="margin-top: 16px; padding: 16px; background: #FEF3C7; border-radius: 8px; font-size: 14px; color: #78350F;">
+                <strong>💡 Híbrido opcional:</strong> Ofereça TOGGLE entre Kanban (visual) e Tabela (densa). Cada analista escolhe sua preferência. shadcn/ui tem components prontos para ambos.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

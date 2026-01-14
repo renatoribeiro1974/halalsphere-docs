@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornada Empresa - Wizard com IA Embarcada | Sistema Halal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #F9FAFB;
+            color: #1F2937;
+            line-height: 1.6;
+        }
+
+        .page-header {
+            background: white;
+            border-bottom: 1px solid #E5E7EB;
+            padding: 1.5rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .page-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2D5016;
+        }
+
+        .page-subtitle {
+            font-size: 0.875rem;
+            color: #6B7280;
+            margin-top: 0.25rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Layout Principal */
+        .wizard-layout {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        /* Sidebar de Navegação */
+        .wizard-sidebar {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            height: fit-content;
+            position: sticky;
+            top: 100px;
+        }
+
+        .wizard-progress {
+            margin-bottom: 1rem;
+        }
+
+        .progress-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #6B7280;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .progress-bar-container {
+            background: #E5E7EB;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 0.5rem;
+        }
+
+        .progress-bar-fill {
+            background: linear-gradient(90deg, #2D5016, #3D6A1E);
+            height: 100%;
+            transition: width 0.3s ease;
+        }
+
+        .progress-text {
+            font-size: 0.875rem;
+            color: #6B7280;
+        }
+
+        .wizard-steps {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+
+        .wizard-step {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .wizard-step:hover {
+            background: #F3F4F6;
+        }
+
+        .wizard-step.completed {
+            color: #2D5016;
+        }
+
+        .wizard-step.active {
+            background: #F0F4ED;
+            color: #2D5016;
+            font-weight: 600;
+        }
+
+        .wizard-step.disabled {
+            color: #D1D5DB;
+            cursor: not-allowed;
+        }
+
+        .wizard-step.disabled:hover {
+            background: transparent;
+        }
+
+        .step-number {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-right: 0.75rem;
+            flex-shrink: 0;
+        }
+
+        .wizard-step.completed .step-number {
+            background: #2D5016;
+            color: white;
+        }
+
+        .wizard-step.active .step-number {
+            background: #2D5016;
+            color: white;
+        }
+
+        .wizard-step.disabled .step-number {
+            background: #F3F4F6;
+            color: #D1D5DB;
+            border: 2px solid #E5E7EB;
+        }
+
+        .step-label {
+            font-size: 0.875rem;
+        }
+
+        .step-check {
+            margin-left: auto;
+            color: #2D5016;
+            font-weight: bold;
+        }
+
+        /* Área de Conteúdo */
+        .wizard-content {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            min-height: 600px;
+        }
+
+        .step-header {
+            margin-bottom: 2rem;
+        }
+
+        .step-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1F2937;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-description {
+            color: #6B7280;
+            font-size: 0.95rem;
+        }
+
+        /* Toggle entre Chat e Formulário */
+        .mode-toggle {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            background: #F3F4F6;
+            padding: 0.25rem;
+            border-radius: 8px;
+            width: fit-content;
+        }
+
+        .mode-btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            background: transparent;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #6B7280;
+        }
+
+        .mode-btn.active {
+            background: white;
+            color: #2D5016;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        /* Modo Chat */
+        .chat-container {
+            border: 1px solid #E5E7EB;
+            border-radius: 12px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chat-messages {
+            flex: 1;
+            padding: 1.5rem;
+            overflow-y: auto;
+            background: #F9FAFB;
+        }
+
+        .chat-message {
+            margin-bottom: 1rem;
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .chat-message.ai {
+            align-items: flex-start;
+        }
+
+        .chat-message.user {
+            align-items: flex-end;
+            flex-direction: row-reverse;
+        }
+
+        .message-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.875rem;
+            flex-shrink: 0;
+        }
+
+        .chat-message.ai .message-avatar {
+            background: linear-gradient(135deg, #2D5016, #3D6A1E);
+            color: white;
+        }
+
+        .chat-message.user .message-avatar {
+            background: #E5E7EB;
+            color: #6B7280;
+        }
+
+        .message-content {
+            max-width: 70%;
+        }
+
+        .message-bubble {
+            padding: 0.75rem 1rem;
+            border-radius: 12px;
+            font-size: 0.95rem;
+        }
+
+        .chat-message.ai .message-bubble {
+            background: white;
+            border: 1px solid #E5E7EB;
+            border-bottom-left-radius: 4px;
+        }
+
+        .chat-message.user .message-bubble {
+            background: #2D5016;
+            color: white;
+            border-bottom-right-radius: 4px;
+        }
+
+        .message-timestamp {
+            font-size: 0.75rem;
+            color: #9CA3AF;
+            margin-top: 0.25rem;
+            padding: 0 0.5rem;
+        }
+
+        .auto-filled-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            background: #D1FAE5;
+            color: #065F46;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            margin-top: 0.5rem;
+        }
+
+        .chat-input-area {
+            padding: 1rem;
+            border-top: 1px solid #E5E7EB;
+            background: white;
+        }
+
+        .chat-input-wrapper {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .chat-input {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            border: 1px solid #E5E7EB;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-family: inherit;
+        }
+
+        .chat-input:focus {
+            outline: none;
+            border-color: #2D5016;
+            box-shadow: 0 0 0 3px rgba(45, 80, 22, 0.1);
+        }
+
+        .chat-send-btn {
+            padding: 0.75rem 1.5rem;
+            background: #2D5016;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .chat-send-btn:hover {
+            background: #3D6A1E;
+        }
+
+        /* Modo Formulário */
+        .form-container {
+            max-width: 700px;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: #374151;
+            font-size: 0.95rem;
+        }
+
+        .form-label.required::after {
+            content: " *";
+            color: #EF4444;
+        }
+
+        .form-input,
+        .form-select,
+        .form-textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid #D1D5DB;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            transition: all 0.2s;
+        }
+
+        .form-input:focus,
+        .form-select:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: #2D5016;
+            box-shadow: 0 0 0 3px rgba(45, 80, 22, 0.1);
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-hint {
+            font-size: 0.875rem;
+            color: #6B7280;
+            margin-top: 0.25rem;
+        }
+
+        .form-error {
+            font-size: 0.875rem;
+            color: #EF4444;
+            margin-top: 0.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .form-success {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            color: #059669;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+
+        /* Cards de Tipo de Certificação */
+        .cert-type-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .cert-type-card {
+            border: 2px solid #E5E7EB;
+            border-radius: 12px;
+            padding: 1.25rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: white;
+        }
+
+        .cert-type-card:hover {
+            border-color: #2D5016;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .cert-type-card.selected {
+            border-color: #2D5016;
+            background: #F0F4ED;
+        }
+
+        .cert-type-code {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #2D5016;
+            margin-bottom: 0.5rem;
+        }
+
+        .cert-type-name {
+            font-size: 0.875rem;
+            color: #6B7280;
+        }
+
+        /* Botões de Navegação */
+        .wizard-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #E5E7EB;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: none;
+            font-size: 0.95rem;
+        }
+
+        .btn-secondary {
+            background: #F3F4F6;
+            color: #6B7280;
+        }
+
+        .btn-secondary:hover {
+            background: #E5E7EB;
+        }
+
+        .btn-primary {
+            background: #2D5016;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #3D6A1E;
+        }
+
+        .btn-primary:disabled {
+            background: #D1D5DB;
+            cursor: not-allowed;
+        }
+
+        /* Preview Lateral */
+        .preview-sidebar {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 320px;
+            height: 100vh;
+            background: white;
+            border-left: 1px solid #E5E7EB;
+            padding: 2rem;
+            overflow-y: auto;
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .preview-sidebar.visible {
+            transform: translateX(0);
+        }
+
+        .preview-title {
+            font-weight: 700;
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+            color: #1F2937;
+        }
+
+        .preview-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .preview-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #6B7280;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .preview-value {
+            font-size: 0.95rem;
+            color: #1F2937;
+        }
+
+        .preview-empty {
+            font-size: 0.875rem;
+            color: #9CA3AF;
+            font-style: italic;
+        }
+
+        /* Seção de Documentos */
+        .document-upload-area {
+            border: 2px dashed #D1D5DB;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: #F9FAFB;
+        }
+
+        .document-upload-area:hover {
+            border-color: #2D5016;
+            background: #F0F4ED;
+        }
+
+        .upload-icon {
+            font-size: 3rem;
+            color: #9CA3AF;
+            margin-bottom: 1rem;
+        }
+
+        .upload-text {
+            color: #6B7280;
+            margin-bottom: 0.5rem;
+        }
+
+        .upload-hint {
+            font-size: 0.875rem;
+            color: #9CA3AF;
+        }
+
+        .document-list {
+            margin-top: 1.5rem;
+        }
+
+        .document-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            background: #F9FAFB;
+            border: 1px solid #E5E7EB;
+            border-radius: 8px;
+            margin-bottom: 0.75rem;
+        }
+
+        .document-icon {
+            width: 40px;
+            height: 40px;
+            background: #2D5016;
+            color: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            margin-right: 1rem;
+        }
+
+        .document-info {
+            flex: 1;
+        }
+
+        .document-name {
+            font-weight: 500;
+            color: #1F2937;
+            margin-bottom: 0.25rem;
+        }
+
+        .document-meta {
+            font-size: 0.875rem;
+            color: #6B7280;
+        }
+
+        .document-remove {
+            color: #EF4444;
+            cursor: pointer;
+            font-size: 1.25rem;
+            padding: 0.5rem;
+        }
+
+        /* Revisão Final */
+        .review-section {
+            border: 1px solid #E5E7EB;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .review-section-title {
+            font-weight: 600;
+            color: #1F2937;
+        }
+
+        .review-edit-btn {
+            color: #2D5016;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .review-item {
+            margin-bottom: 0.75rem;
+        }
+
+        .review-item-label {
+            font-size: 0.875rem;
+            color: #6B7280;
+            margin-bottom: 0.25rem;
+        }
+
+        .review-item-value {
+            color: #1F2937;
+            font-weight: 500;
+        }
+
+        /* Confirmação de Envio */
+        .success-message {
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            background: #D1FAE5;
+            color: #065F46;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            margin: 0 auto 1.5rem;
+        }
+
+        .success-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #1F2937;
+            margin-bottom: 0.5rem;
+        }
+
+        .success-subtitle {
+            color: #6B7280;
+            margin-bottom: 1.5rem;
+        }
+
+        .protocol-box {
+            background: #F0F4ED;
+            border: 2px solid #2D5016;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem auto;
+            max-width: 400px;
+        }
+
+        .protocol-label {
+            font-size: 0.875rem;
+            color: #6B7280;
+            margin-bottom: 0.5rem;
+        }
+
+        .protocol-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #2D5016;
+            font-family: 'Courier New', monospace;
+        }
+
+        /* Responsivo */
+        @media (max-width: 1024px) {
+            .wizard-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .wizard-sidebar {
+                position: static;
+            }
+
+            .preview-sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .wizard-content {
+                padding: 1.5rem;
+            }
+
+            .review-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cert-type-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animações */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .wizard-content > * {
+            animation: slideIn 0.3s ease;
+        }
+
+        /* Typing Indicator */
+        .typing-indicator {
+            display: flex;
+            gap: 0.25rem;
+            padding: 0.75rem 1rem;
+            background: white;
+            border: 1px solid #E5E7EB;
+            border-radius: 12px;
+            border-bottom-left-radius: 4px;
+            width: fit-content;
+        }
+
+        .typing-dot {
+            width: 8px;
+            height: 8px;
+            background: #9CA3AF;
+            border-radius: 50%;
+            animation: typing 1.4s infinite;
+        }
+
+        .typing-dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .typing-dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes typing {
+            0%, 60%, 100% {
+                transform: translateY(0);
+                opacity: 0.7;
+            }
+            30% {
+                transform: translateY(-10px);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-header">
+        <div class="page-title">Nova Solicitação de Certificação Halal</div>
+        <div class="page-subtitle">Assistente inteligente para te guiar passo a passo</div>
+    </div>
+
+    <div class="container">
+        <div class="wizard-layout">
+
+            <!-- Sidebar de Navegação -->
+            <aside class="wizard-sidebar">
+                <div class="wizard-progress">
+                    <div class="progress-label">Progresso</div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" style="width: 16.67%;"></div>
+                    </div>
+                    <div class="progress-text">Etapa 1 de 6</div>
+                </div>
+
+                <ul class="wizard-steps">
+                    <li class="wizard-step active">
+                        <div class="step-number">1</div>
+                        <div class="step-label">Tipo de Certificação</div>
+                    </li>
+                    <li class="wizard-step disabled">
+                        <div class="step-number">2</div>
+                        <div class="step-label">Produtos e Matérias-Primas</div>
+                    </li>
+                    <li class="wizard-step disabled">
+                        <div class="step-number">3</div>
+                        <div class="step-label">Fornecedores</div>
+                    </li>
+                    <li class="wizard-step disabled">
+                        <div class="step-number">4</div>
+                        <div class="step-label">Capacidade Produtiva</div>
+                    </li>
+                    <li class="wizard-step disabled">
+                        <div class="step-number">5</div>
+                        <div class="step-label">Documentos</div>
+                    </li>
+                    <li class="wizard-step disabled">
+                        <div class="step-number">6</div>
+                        <div class="step-label">Revisão Final</div>
+                    </li>
+                </ul>
+            </aside>
+
+            <!-- Área de Conteúdo -->
+            <main class="wizard-content">
+
+                <!-- ETAPA 1: Tipo de Certificação -->
+                <div class="step-content" id="step-1">
+                    <div class="step-header">
+                        <h2 class="step-title">Qual tipo de certificação você precisa?</h2>
+                        <p class="step-description">Vamos identificar a categoria certa para seus produtos. Você pode conversar com nossa IA ou escolher diretamente.</p>
+                    </div>
+
+                    <!-- Toggle Modo Chat / Formulário -->
+                    <div class="mode-toggle">
+                        <button class="mode-btn active">💬 Conversar com IA</button>
+                        <button class="mode-btn">📝 Escolher Diretamente</button>
+                    </div>
+
+                    <!-- Modo Chat -->
+                    <div class="chat-container">
+                        <div class="chat-messages">
+
+                            <!-- Mensagem da IA -->
+                            <div class="chat-message ai">
+                                <div class="message-avatar">AI</div>
+                                <div class="message-content">
+                                    <div class="message-bubble">
+                                        Olá! 👋 Sou o assistente Halal e vou te ajudar a preencher sua solicitação de certificação.<br><br>
+                                        Para começar, me conta: <strong>que tipo de produto sua empresa fabrica?</strong><br><br>
+                                        Por exemplo: alimentos, cosméticos, medicamentos, produtos químicos...
+                                    </div>
+                                    <div class="message-timestamp">10:23</div>
+                                </div>
+                            </div>
+
+                            <!-- Mensagem do Usuário -->
+                            <div class="chat-message user">
+                                <div class="message-avatar">EU</div>
+                                <div class="message-content">
+                                    <div class="message-bubble">
+                                        Fabricamos biscoitos, bolos e massas
+                                    </div>
+                                    <div class="message-timestamp">10:24</div>
+                                </div>
+                            </div>
+
+                            <!-- Mensagem da IA com Auto-fill -->
+                            <div class="chat-message ai">
+                                <div class="message-avatar">AI</div>
+                                <div class="message-content">
+                                    <div class="message-bubble">
+                                        Perfeito! Produtos de panificação se enquadram na categoria <strong>C1 - Produtos de Origem Animal</strong> ou <strong>C3 - Origem Mista</strong>, dependendo dos ingredientes.<br><br>
+                                        Seus produtos contêm ingredientes de origem animal? (ovos, leite, manteiga, etc.)
+                                    </div>
+                                    <div class="auto-filled-badge">
+                                        ✓ Categoria identificada
+                                    </div>
+                                    <div class="message-timestamp">10:24</div>
+                                </div>
+                            </div>
+
+                            <!-- Mensagem do Usuário -->
+                            <div class="chat-message user">
+                                <div class="message-avatar">EU</div>
+                                <div class="message-content">
+                                    <div class="message-bubble">
+                                        Sim, usamos ovos e leite
+                                    </div>
+                                    <div class="message-timestamp">10:25</div>
+                                </div>
+                            </div>
+
+                            <!-- Mensagem da IA Confirmando -->
+                            <div class="chat-message ai">
+                                <div class="message-avatar">AI</div>
+                                <div class="message-content">
+                                    <div class="message-bubble">
+                                        Entendido! Como seus produtos contêm ingredientes tanto de origem animal quanto vegetal, a certificação correta é:<br><br>
+                                        <strong>C3 - Produtos de Origem Mista</strong><br><br>
+                                        Já preenchi isso para você! ✓<br><br>
+                                        Quer continuar por aqui conversando ou prefere preencher o restante diretamente no formulário?
+                                    </div>
+                                    <div class="auto-filled-badge">
+                                        ✓ C3 - Origem Mista selecionado
+                                    </div>
+                                    <div class="message-timestamp">10:25</div>
+                                </div>
+                            </div>
+
+                            <!-- Typing Indicator (opcional) -->
+                            <!-- <div class="chat-message ai">
+                                <div class="message-avatar">AI</div>
+                                <div class="typing-indicator">
+                                    <div class="typing-dot"></div>
+                                    <div class="typing-dot"></div>
+                                    <div class="typing-dot"></div>
+                                </div>
+                            </div> -->
+
+                        </div>
+
+                        <div class="chat-input-area">
+                            <div class="chat-input-wrapper">
+                                <input type="text" class="chat-input" placeholder="Digite sua mensagem...">
+                                <button class="chat-send-btn">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modo Formulário (oculto inicialmente, mostra ao clicar no toggle) -->
+                    <div class="form-container" style="display: none;">
+                        <div class="form-group">
+                            <label class="form-label required">Tipo de Certificação</label>
+                            <div class="cert-type-grid">
+                                <div class="cert-type-card">
+                                    <div class="cert-type-code">C1</div>
+                                    <div class="cert-type-name">Produtos de Origem Animal</div>
+                                </div>
+                                <div class="cert-type-card">
+                                    <div class="cert-type-code">C2</div>
+                                    <div class="cert-type-name">Produtos de Origem Vegetal</div>
+                                </div>
+                                <div class="cert-type-card selected">
+                                    <div class="cert-type-code">C3</div>
+                                    <div class="cert-type-name">Origem Mista (Animal + Vegetal)</div>
+                                </div>
+                                <div class="cert-type-card">
+                                    <div class="cert-type-code">C4</div>
+                                    <div class="cert-type-name">Farmacêuticos</div>
+                                </div>
+                                <div class="cert-type-card">
+                                    <div class="cert-type-code">C5</div>
+                                    <div class="cert-type-name">Químicos</div>
+                                </div>
+                                <div class="cert-type-card">
+                                    <div class="cert-type-code">C6</div>
+                                    <div class="cert-type-name">Cosméticos</div>
+                                </div>
+                            </div>
+                            <div class="form-success">✓ C3 - Origem Mista selecionado pela IA</div>
+                        </div>
+                    </div>
+
+                    <div class="wizard-actions">
+                        <button class="btn btn-secondary">← Voltar</button>
+                        <button class="btn btn-primary">Próxima Etapa →</button>
+                    </div>
+                </div>
+
+            </main>
+
+        </div>
+
+        <!-- SEÇÃO: Comparação de Abordagens -->
+        <section style="margin-top: 4rem; padding: 3rem; background: white; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+            <h2 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1.5rem; color: #1F2937;">🎯 Estrutura Completa do Wizard com IA Embarcada</h2>
+
+            <div style="margin-bottom: 3rem;">
+                <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: #2D5016;">📋 Etapa 1: Tipo de Certificação</h3>
+                <div style="background: #F9FAFB; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #2D5016;">
+                    <p style="margin-bottom: 0.75rem;"><strong>Chat IA pergunta:</strong></p>
+                    <ul style="list-style-position: inside; color: #6B7280; line-height: 1.8;">
+                        <li>"Que tipo de produto sua empresa fabrica?"</li>
+                        <li>"Seus produtos contêm ingredientes de origem animal?"</li>
+                        <li>IA sugere categoria (C1-C6) baseado nas respostas</li>
+                    </ul>
+                    <p style="margin-top: 1rem; margin-bottom: 0.75rem;"><strong>Formulário direto:</strong></p>
+                    <ul style="list-style-position: inside; color: #6B7280; line-height: 1.8;">
+                        <li>6 cards clicáveis (C1-C6) com descrições</li>
+                        <li>Hover mostra exemplos de produtos</li>
+                    </ul>
+                    <p style="margin-top: 1rem; color: #059669; font-weight: 500;">✓ Auto-fill: Campo "certificationType" preenchido</p>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 3rem;">
+                <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: #2D5016;">📦 Etapa 2: Produtos e Matérias-Primas</h3>
+                <div style="background: #F9FAFB; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #2D5016;">
+                    <p style="margin-bottom: 0.75rem;"><strong>Chat IA pergunta:</strong></p>
+                    <ul style="list-style-position: inside; color: #6B7280; line-height: 1.8;">
+                        <li>"Quais produtos específicos você quer certificar?"</li>
+                        <li>Usuário: "Biscoito de chocolate, bolo de cenoura, massa de pizza"</li>
+                        <li>IA extrai lista: ["Biscoito de chocolate", "Bolo de cenoura", "Massa de pizza"]</li>
+                        <li>"Quais as principais matérias-primas de cada um?"</li>
+                        <li>IA identifica origem (animal/vegetal) automaticamente</li>
+                    </ul>
+                    <p style="margin-top: 1rem; margin-bottom: 0.75rem;"><strong>Formulário direto:</strong></p>
+                    <ul style="list-style-position: inside; color: #6B7280; line-height: 1.8;">
+                        <li>Tabela dinâmica: "Adicionar Produto"</li>
+                        <li>Campos: Nome do produto, Matérias-primas (textarea), Origem (dropdown)</li>
+                    </ul>
+                    <p style="margin-top: 1rem; color: #059669; font-weight: 500;">✓ Auto-fill: Array de produtos estruturado</p>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 3rem;">
+                <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: #2D5016;">🏭 Etapa 3: Fornecedores</h3>
+                <div style="background: #F9FAFB; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #2D5016;">
+                    <p style="margin-bottom: 0.75rem;"><strong>Chat IA pergunta:</strong></p>
+                    <ul style="list-style-position: inside; color: #6B7280; line-height: 1.8;">
+                        <li>"De quem vocês compram as matérias-primas principais?"</li>
+                        <li>Usuário: "Compramos farinha da Moinho ABC, ovos da Granja XYZ"</li>
+                        <li>IA extrai: [{"nome": "Moinho ABC", "produto": "Farinha"}, ...]</li>
+                        <li>"Esses fornecedores têm certificação Halal?"</li>
+                    </ul>
+                    <p style="margin-top: 1rem; margin-bottom: 0.75rem;"><strong>Formulário direto:</strong></p>
+                    <ul style="list-style-position: inside; color: #6B7280; line-height: 1.8;">
+                        <li>Formulário repetível: "Adicionar Fornecedor"</li>
+                        <li>Campos: Nome, CNPJ, Produto fornecido, Certificação Halal? (sim/não)</li>
+                    </ul>
+                    <p style="margin-top: 1rem; color: #059669; font-weight: 500;">✓ Auto-fill: Lista de fornecedores estruturada</p>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 3rem;">
+                <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: #2D5016;">⚙️ Etapa 4: Capacidade Produtiva</h3>
+                <div style="background: #F9FAFB; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #2D5016;">
+                    <p style="margin-bottom: 0.75rem;"><strong>Chat IA pergunta:</strong></p>
+                    <ul style="list-style-position: inside; color: #6B7280; line-height: 1.8;">
+                        <li>"Quantos turnos de produção vocês operam?" → Usuário: "2 turnos"</li>
+                        <li>"Quantas toneladas produzem por hora?" → Usuário: "5 toneladas"</li>
+                        <li>"Vocês já têm outras certificações de qualidade?" → Usuário: "Sim, ANVISA e ISO 9001"</li>
+                    </ul>
+                    <p style="margin-top: 1rem; margin-bottom: 0.75rem;"><strong>Formulário direto:</strong></p>
+                    <ul style="list-style-position: inside; color: #6B7280; line-height: 1.8;">
+                        <li>Select: Número de turnos (1, 2, 3)</li>
+                        <li>Input numérico: Toneladas/hora</li>
+                        <li>Checkbox: Certificações existentes (ANVISA, ISO, HACCP, etc.)</li>
+                    </ul>
+                    <p style="margin-top: 1rem; color: #059669; font-weight: 500;">✓ Auto-fill: Campos de capacidade preenchidos</p>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 3rem;">
+                <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: #2D5016;">📄 Etapa 5: Documentos Obrigatórios</h3>
+                <div style="background: #F9FAFB; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #2D5016;">
+                    <p style="margin-bottom: 0.75rem;"><strong>Chat IA orienta:</strong></p>
+                    <ul style="list-style-position: inside; color: #6B7280; line-height: 1.8;">
+                        <li>"Agora preciso que você envie alguns documentos:"</li>
+                        <li>IA lista documentos obrigatórios baseado no tipo C3</li>
+                        <li>Usuário pode arrastar arquivos no chat OU clicar para upload</li>
+                        <li>IA valida formato (PDF/JPG/PNG) e tamanho (máx 50MB)</li>
+                        <li>IA confirma: "✓ Licença de funcionamento recebida"</li>
+                    </ul>
+                    <p style="margin-top: 1rem; margin-bottom: 0.75rem;"><strong>Formulário direto:</strong></p>
+                    <ul style="list-style-position: inside; color: #6B7280; line-height: 1.8;">
+                        <li>Lista de documentos obrigatórios (checkboxes)</li>
+                        <li>Botão "Upload" para cada documento</li>
+                        <li>Preview de arquivos enviados</li>
+                        <li>Validação em tempo real</li>
+                    </ul>
+                    <p style="margin-top: 1rem; color: #059669; font-weight: 500;">✓ Auto-fill: Arquivos anexados ao application</p>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 3rem;">
+                <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: #2D5016;">✅ Etapa 6: Revisão Final</h3>
+                <div style="background: #F9FAFB; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #2D5016;">
+                    <p style="margin-bottom: 0.75rem;"><strong>Tela de Revisão:</strong></p>
+                    <ul style="list-style-position: inside; color: #6B7280; line-height: 1.8;">
+                        <li>Resumo visual de TODAS as etapas em seções colapsáveis</li>
+                        <li>Cada seção tem botão "Editar" que volta para aquela etapa</li>
+                        <li>Checklist de validação: "✓ Todos os campos obrigatórios preenchidos"</li>
+                        <li>Preview em PDF da solicitação completa</li>
+                        <li>Checkbox: "Confirmo que as informações estão corretas"</li>
+                        <li>Botão: "Enviar Solicitação" (verde, destaque)</li>
+                    </ul>
+                    <p style="margin-top: 1rem; color: #059669; font-weight: 500;">✓ Ao enviar: Gera protocolo HAL-2025-XXXXXX</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 3rem; padding: 2rem; background: #FEF3C7; border-radius: 8px; border-left: 4px solid #D97706;">
+                <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: #92400E;">💡 Funcionalidades Inteligentes</h3>
+                <ul style="list-style-position: inside; color: #78350F; line-height: 1.8;">
+                    <li><strong>Auto-save a cada campo:</strong> Nunca perde progresso</li>
+                    <li><strong>Validação em tempo real:</strong> IA avisa se algo está errado ANTES de enviar</li>
+                    <li><strong>Modo híbrido:</strong> Pode começar no chat, terminar no formulário (ou vice-versa)</li>
+                    <li><strong>Preview lateral (desktop):</strong> Vê o que já preencheu em tempo real</li>
+                    <li><strong>Mobile-friendly:</strong> Chat funciona perfeitamente no celular</li>
+                    <li><strong>Multilíngue:</strong> IA detecta idioma e responde em PT/EN/ES/AR</li>
+                    <li><strong>Escalação para humano:</strong> Botão "Falar com Analista" sempre visível</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- SEÇÃO: Tela de Sucesso (Confirmação de Envio) -->
+        <section style="margin-top: 2rem; padding: 3rem; background: white; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+            <h2 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1.5rem; color: #1F2937;">🎉 Tela de Confirmação de Envio</h2>
+
+            <div class="success-message">
+                <div class="success-icon">✓</div>
+                <h3 class="success-title">Solicitação Enviada com Sucesso!</h3>
+                <p class="success-subtitle">Recebemos sua solicitação e já começamos a análise inicial.</p>
+
+                <div class="protocol-box">
+                    <div class="protocol-label">Número do Protocolo</div>
+                    <div class="protocol-number">HAL-2025-001234</div>
+                </div>
+
+                <p style="color: #6B7280; margin-bottom: 2rem;">
+                    Você receberá um email em <strong>eric@empresa.com</strong> com os próximos passos.<br>
+                    Tempo estimado para revisão inicial: <strong>2-3 dias úteis</strong>.
+                </p>
+
+                <div style="display: flex; gap: 1rem; justify-content: center;">
+                    <button class="btn btn-primary">Ver Minha Solicitação</button>
+                    <button class="btn btn-secondary">Voltar ao Dashboard</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: Vantagens desta Abordagem -->
+        <section style="margin-top: 2rem; padding: 3rem; background: #F0F4ED; border-radius: 12px;">
+            <h2 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1.5rem; color: #1F2937;">✨ Por que esta abordagem funciona?</h2>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                    <div style="font-size: 2rem; margin-bottom: 0.75rem;">🎯</div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.5rem; color: #1F2937;">Progressão Clara</h3>
+                    <p style="color: #6B7280; font-size: 0.95rem;">Sidebar mostra exatamente onde você está, quantas etapas faltam, e permite navegar entre etapas já completadas.</p>
+                </div>
+
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                    <div style="font-size: 2rem; margin-bottom: 0.75rem;">💬</div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.5rem; color: #1F2937;">Conversação Natural</h3>
+                    <p style="color: #6B7280; font-size: 0.95rem;">IA faz perguntas em linguagem humana, não jargão técnico. Cliente responde como se estivesse falando com uma pessoa.</p>
+                </div>
+
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                    <div style="font-size: 2rem; margin-bottom: 0.75rem;">⚡</div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.5rem; color: #1F2937;">Modo Rápido para Experientes</h3>
+                    <p style="color: #6B7280; font-size: 0.95rem;">Usuários avançados podem pular o chat e preencher formulário direto, reduzindo tempo de 15min para 5min.</p>
+                </div>
+
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                    <div style="font-size: 2rem; margin-bottom: 0.75rem;">✅</div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.5rem; color: #1F2937;">Validação Preventiva</h3>
+                    <p style="color: #6B7280; font-size: 0.95rem;">IA valida em tempo real. Se cliente digitar CNPJ errado, IA avisa ANTES de ir para próxima etapa.</p>
+                </div>
+
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                    <div style="font-size: 2rem; margin-bottom: 0.75rem;">💾</div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.5rem; color: #1F2937;">Nunca Perde Progresso</h3>
+                    <p style="color: #6B7280; font-size: 0.95rem;">Auto-save a cada campo. Cliente pode fechar navegador e voltar depois - tudo estará lá.</p>
+                </div>
+
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                    <div style="font-size: 2rem; margin-bottom: 0.75rem;">📱</div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.5rem; color: #1F2937;">Mobile-First</h3>
+                    <p style="color: #6B7280; font-size: 0.95rem;">Chat funciona perfeitamente em celular. Cliente pode começar no desktop, continuar no celular.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SEÇÃO: Métricas de Sucesso -->
+        <section style="margin-top: 2rem; padding: 3rem; background: white; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+            <h2 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1.5rem; color: #1F2937;">📊 Métricas de Sucesso Esperadas</h2>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+
+                <div style="text-align: center; padding: 1.5rem; background: #F0F4ED; border-radius: 8px;">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: #2D5016; margin-bottom: 0.5rem;">85%</div>
+                    <div style="color: #6B7280; font-size: 0.95rem;">Taxa de Conclusão<br>(vs. 50% atual)</div>
+                </div>
+
+                <div style="text-align: center; padding: 1.5rem; background: #F0F4ED; border-radius: 8px;">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: #2D5016; margin-bottom: 0.5rem;">12min</div>
+                    <div style="color: #6B7280; font-size: 0.95rem;">Tempo Médio<br>(vs. 45min atual)</div>
+                </div>
+
+                <div style="text-align: center; padding: 1.5rem; background: #F0F4ED; border-radius: 8px;">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: #2D5016; margin-bottom: 0.5rem;">95%</div>
+                    <div style="color: #6B7280; font-size: 0.95rem;">Solicitações Completas<br>(vs. 60% atual)</div>
+                </div>
+
+                <div style="text-align: center; padding: 1.5rem; background: #F0F4ED; border-radius: 8px;">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: #2D5016; margin-bottom: 0.5rem;">-70%</div>
+                    <div style="color: #6B7280; font-size: 0.95rem;">Contatos Reativos<br>(menos "o que falta?")</div>
+                </div>
+
+            </div>
+
+            <div style="margin-top: 2rem; padding: 1.5rem; background: #FEF3C7; border-radius: 8px; border-left: 4px solid #D97706;">
+                <p style="color: #78350F; font-size: 0.95rem;">
+                    <strong>Impacto no objetivo principal:</strong> Com 95% de solicitações completas na primeira tentativa (vs. 60% atual),
+                    reduzimos o loop de correções de ~30 dias para ~5 dias, contribuindo diretamente para o objetivo de
+                    reduzir certificação de 7-8 meses para 2-3 meses.
+                </p>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

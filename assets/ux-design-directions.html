@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Halal - Direções de Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2D5016;
+            --secondary: #D4AF37;
+            --success: #10B981;
+            --warning: #F59E0B;
+            --error: #EF4444;
+            --info: #3B82F6;
+            --bg-white: #FFFFFF;
+            --bg-gray: #F8F9FA;
+            --border: #E5E7EB;
+            --text-primary: #111827;
+            --text-secondary: #6B7280;
+            --text-muted: #9CA3AF;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-gray);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .nav-container {
+            position: sticky;
+            top: 0;
+            background: white;
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+            padding: 16px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .nav-controls {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .nav-btn {
+            padding: 8px 16px;
+            border: 1px solid var(--border);
+            background: white;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .nav-btn:hover {
+            background: var(--bg-gray);
+        }
+
+        .nav-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .direction-counter {
+            font-size: 14px;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .mockup-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 32px;
+        }
+
+        .mockup-header {
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .mockup-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .mockup-subtitle {
+            font-size: 16px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        .mockup-meta {
+            display: flex;
+            gap: 24px;
+            font-size: 14px;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .meta-label {
+            color: var(--text-muted);
+        }
+
+        .meta-value {
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        .mockup-frame {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            min-height: 800px;
+        }
+
+        /* Direction 1: Sidebar Dense Dashboard */
+        .direction-1 {
+            display: flex;
+            height: 800px;
+        }
+
+        .sidebar {
+            width: 240px;
+            background: var(--primary);
+            color: white;
+            padding: 24px 0;
+            flex-shrink: 0;
+        }
+
+        .sidebar-logo {
+            padding: 0 24px;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 32px;
+        }
+
+        .sidebar-nav {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar-item {
+            padding: 12px 24px;
+            color: rgba(255,255,255,0.8);
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .sidebar-item:hover, .sidebar-item.active {
+            background: rgba(255,255,255,0.1);
+            color: white;
+        }
+
+        .main-content {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .top-bar {
+            background: white;
+            border-bottom: 1px solid var(--border);
+            padding: 16px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-bar-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .user-menu {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .content-area {
+            padding: 32px;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .metric-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .metric-value {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .metric-label {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .table-container {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .table-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .table-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .table-search {
+            padding: 8px 12px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 14px;
+            width: 250px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background: var(--bg-gray);
+        }
+
+        th {
+            padding: 12px 20px;
+            text-align: left;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        td {
+            padding: 16px 20px;
+            border-top: 1px solid var(--border);
+            font-size: 14px;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .status-success {
+            background: #D1FAE5;
+            color: #065F46;
+        }
+
+        .status-warning {
+            background: #FEF3C7;
+            color: #92400E;
+        }
+
+        .status-pending {
+            background: #E0E7FF;
+            color: #3730A3;
+        }
+
+        /* Direction 2: Top Nav Spacious */
+        .direction-2 {
+            display: flex;
+            flex-direction: column;
+            height: 800px;
+        }
+
+        .top-nav {
+            background: var(--primary);
+            color: white;
+            padding: 0 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-nav-brand {
+            font-size: 20px;
+            font-weight: 700;
+            padding: 20px 0;
+        }
+
+        .top-nav-menu {
+            display: flex;
+            gap: 4px;
+        }
+
+        .top-nav-item {
+            padding: 20px 20px;
+            color: rgba(255,255,255,0.8);
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 14px;
+            font-weight: 500;
+            border-bottom: 3px solid transparent;
+        }
+
+        .top-nav-item:hover, .top-nav-item.active {
+            color: white;
+            border-bottom-color: var(--secondary);
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary) 0%, #1a3a0f 100%);
+            color: white;
+            padding: 48px 32px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-title {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .hero-subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 24px;
+        }
+
+        .progress-tracker {
+            display: flex;
+            gap: 8px;
+            margin-top: 32px;
+        }
+
+        .progress-step {
+            flex: 1;
+            height: 8px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .progress-step.completed {
+            background: var(--secondary);
+        }
+
+        .progress-step.active {
+            background: var(--secondary);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .cards-grid {
+            max-width: 1200px;
+            margin: -40px auto 0;
+            padding: 0 32px 32px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .action-card {
+            background: white;
+            border-radius: 12px;
+            padding: 32px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .action-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+
+        .card-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .card-description {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        .card-action {
+            color: var(--primary);
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* Direction 3: Card-Based Modern */
+        .direction-3 {
+            background: var(--bg-gray);
+            padding: 32px;
+            min-height: 800px;
+        }
+
+        .direction-3 .top-bar {
+            background: transparent;
+            border: none;
+            padding: 0 0 24px 0;
+        }
+
+        .status-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .status-header {
+            background: linear-gradient(135deg, var(--primary) 0%, #3a7020 100%);
+            color: white;
+            padding: 32px;
+        }
+
+        .status-protocol {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-bottom: 8px;
+        }
+
+        .status-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .status-timeline {
+            display: flex;
+            gap: 12px;
+            overflow-x: auto;
+            padding: 24px 32px;
+            background: white;
+        }
+
+        .timeline-item {
+            min-width: 120px;
+            text-align: center;
+        }
+
+        .timeline-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--bg-gray);
+            border: 2px solid var(--border);
+            margin: 0 auto 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .timeline-item.completed .timeline-icon {
+            background: var(--success);
+            border-color: var(--success);
+            color: white;
+        }
+
+        .timeline-item.active .timeline-icon {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: white;
+        }
+
+        .timeline-label {
+            font-size: 11px;
+            color: var(--text-secondary);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .quick-actions {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .quick-action-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .quick-action-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 4px 8px rgba(45, 80, 22, 0.1);
+        }
+
+        .comparison-controls {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 200;
+        }
+
+        .comparison-title-small {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .direction-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .direction-btn {
+            padding: 8px 16px;
+            border: 1px solid var(--border);
+            background: white;
+            border-radius: 6px;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: left;
+        }
+
+        .direction-btn:hover {
+            background: var(--bg-gray);
+        }
+
+        .direction-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            font-weight: 600;
+        }
+
+        .notes-section {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+        }
+
+        .notes-textarea {
+            width: 100%;
+            min-height: 80px;
+            padding: 8px 12px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 13px;
+            font-family: inherit;
+            resize: vertical;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <div class="nav-title">🎨 Sistema Halal - Direções de Design</div>
+        <div class="nav-controls">
+            <span class="direction-counter" id="counterDisplay">Direção 1 de 6</span>
+            <button class="nav-btn" onclick="previousDirection()">← Anterior</button>
+            <button class="nav-btn nav-btn-primary" onclick="nextDirection()">Próximo →</button>
+        </div>
+    </div>
+
+    <div class="mockup-container">
+        <!-- Direction 1: Dashboard Analista - Sidebar Dense -->
+        <div id="direction-1" class="mockup-section">
+            <div class="mockup-header">
+                <div class="mockup-title">Direção 1: Dashboard Analista - Sidebar Dense</div>
+                <div class="mockup-subtitle">Layout com sidebar fixa, densidade alta de informação, ideal para usuários internos que processam alto volume</div>
+                <div class="mockup-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Layout:</span>
+                        <span class="meta-value">Sidebar + Multi-column</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Densidade:</span>
+                        <span class="meta-value">Alta (Dense)</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Navegação:</span>
+                        <span class="meta-value">Sempre visível</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Melhor para:</span>
+                        <span class="meta-value">Analistas, Auditores</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mockup-frame direction-1">
+                <div class="sidebar">
+                    <div class="sidebar-logo">HALAL</div>
+                    <div class="sidebar-nav">
+                        <div class="sidebar-item active">📊 Dashboard</div>
+                        <div class="sidebar-item">📋 Solicitações</div>
+                        <div class="sidebar-item">📄 Propostas</div>
+                        <div class="sidebar-item">📝 Contratos</div>
+                        <div class="sidebar-item">📅 Auditorias</div>
+                        <div class="sidebar-item">✅ Aprovações</div>
+                        <div class="sidebar-item">📈 Relatórios</div>
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div class="top-bar">
+                        <div class="top-bar-title">Dashboard - Analista</div>
+                        <div class="user-menu">
+                            <span style="font-size: 14px; color: var(--text-secondary);">João Silva</span>
+                            <div class="avatar">JS</div>
+                        </div>
+                    </div>
+                    <div class="content-area">
+                        <div class="metrics-grid">
+                            <div class="metric-card">
+                                <div class="metric-value">47</div>
+                                <div class="metric-label">Total Solicitações</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value">12</div>
+                                <div class="metric-label">Pendente Revisão</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value">8</div>
+                                <div class="metric-label">Aguardando Cliente</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value">27</div>
+                                <div class="metric-label">Finalizadas (Mês)</div>
+                            </div>
+                        </div>
+
+                        <div class="table-container">
+                            <div class="table-header">
+                                <div class="table-title">Solicitações Recentes</div>
+                                <input type="text" class="table-search" placeholder="Buscar por empresa ou protocolo...">
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Protocolo</th>
+                                        <th>Empresa</th>
+                                        <th>Tipo</th>
+                                        <th>Status</th>
+                                        <th>Data</th>
+                                        <th>Ações</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="font-family: monospace; font-weight: 600;">HAL-2025-001234</td>
+                                        <td>XYZ Alimentos Ltda</td>
+                                        <td>C1 - Alimentos</td>
+                                        <td><span class="status-badge status-warning">Revisão Inicial</span></td>
+                                        <td>10/11/2025</td>
+                                        <td style="color: var(--primary); cursor: pointer; font-weight: 500;">Revisar →</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-family: monospace; font-weight: 600;">HAL-2025-001233</td>
+                                        <td>ABC Farmacêutica S.A.</td>
+                                        <td>C3 - Farmacêutico</td>
+                                        <td><span class="status-badge status-success">Proposta Enviada</span></td>
+                                        <td>09/11/2025</td>
+                                        <td style="color: var(--primary); cursor: pointer; font-weight: 500;">Ver →</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-family: monospace; font-weight: 600;">HAL-2025-001232</td>
+                                        <td>LMN Químicos LTDA</td>
+                                        <td>C5 - Químicos</td>
+                                        <td><span class="status-badge status-pending">Aguardando Cliente</span></td>
+                                        <td>08/11/2025</td>
+                                        <td style="color: var(--primary); cursor: pointer; font-weight: 500;">Acompanhar →</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Direction 2: Dashboard Cliente - Top Nav Spacious -->
+        <div id="direction-2" class="mockup-section hidden">
+            <div class="mockup-header">
+                <div class="mockup-title">Direção 2: Dashboard Cliente - Top Nav Spacious</div>
+                <div class="mockup-subtitle">Layout com navegação superior, design espaçoso com hero section, ideal para clientes externos</div>
+                <div class="mockup-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Layout:</span>
+                        <span class="meta-value">Top Nav + Single Column</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Densidade:</span>
+                        <span class="meta-value">Baixa (Spacious)</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Navegação:</span>
+                        <span class="meta-value">Top bar</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Melhor para:</span>
+                        <span class="meta-value">Clientes, Portal público</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mockup-frame direction-2">
+                <div class="top-nav">
+                    <div class="top-nav-brand">HALAL</div>
+                    <div class="top-nav-menu">
+                        <div class="top-nav-item active">Dashboard</div>
+                        <div class="top-nav-item">Minha Solicitação</div>
+                        <div class="top-nav-item">Documentos</div>
+                        <div class="top-nav-item">Ajuda</div>
+                    </div>
+                    <div class="user-menu">
+                        <span style="font-size: 14px; opacity: 0.9;">Carlos Mendes</span>
+                        <div class="avatar" style="background: var(--secondary);">CM</div>
+                    </div>
+                </div>
+
+                <div class="hero-section">
+                    <div class="hero-content">
+                        <div class="hero-title">Bem-vindo, Carlos!</div>
+                        <div class="hero-subtitle">Sua certificação HAL-2025-001234 está em andamento</div>
+                        <div style="font-size: 14px; opacity: 0.9; margin-bottom: 8px;">Fase atual: Revisão Inicial (Fase 2 de 12)</div>
+                        <div class="progress-tracker">
+                            <div class="progress-step completed"></div>
+                            <div class="progress-step active"></div>
+                            <div class="progress-step"></div>
+                            <div class="progress-step"></div>
+                            <div class="progress-step"></div>
+                            <div class="progress-step"></div>
+                            <div class="progress-step"></div>
+                            <div class="progress-step"></div>
+                            <div class="progress-step"></div>
+                            <div class="progress-step"></div>
+                            <div class="progress-step"></div>
+                            <div class="progress-step"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="action-card">
+                        <div class="card-icon">📄</div>
+                        <div class="card-title">Proposta Comercial</div>
+                        <div class="card-description">Aguardando geração da proposta comercial pelo analista</div>
+                        <div class="card-action">Ver detalhes →</div>
+                    </div>
+                    <div class="action-card">
+                        <div class="card-icon">📁</div>
+                        <div class="card-title">Documentos</div>
+                        <div class="card-description">7 documentos enviados, todos aprovados</div>
+                        <div class="card-action">Gerenciar documentos →</div>
+                    </div>
+                    <div class="action-card">
+                        <div class="card-icon">💬</div>
+                        <div class="card-title">Falar com Analista</div>
+                        <div class="card-description">Tire dúvidas ou solicite informações adicionais</div>
+                        <div class="card-action">Iniciar conversa →</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Direction 3: Dashboard Cliente - Card-Based Modern -->
+        <div id="direction-3" class="mockup-section hidden">
+            <div class="mockup-header">
+                <div class="mockup-title">Direção 3: Cliente - Card-Based Modern</div>
+                <div class="mockup-subtitle">Cards grandes com visual moderno, foco em clareza e orientação visual</div>
+                <div class="mockup-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Layout:</span>
+                        <span class="meta-value">Grid Cards</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Densidade:</span>
+                        <span class="meta-value">Média</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Hierarquia:</span>
+                        <span class="meta-value">Visual forte</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Melhor para:</span>
+                        <span class="meta-value">Clientes, mobile-friendly</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mockup-frame direction-3">
+                <div class="top-bar">
+                    <div style="display: flex; align-items: center; gap: 16px;">
+                        <div style="font-size: 24px; font-weight: 700; color: var(--primary);">HALAL</div>
+                        <div style="font-size: 14px; color: var(--text-muted);">|</div>
+                        <div style="font-size: 14px; color: var(--text-secondary);">Dashboard</div>
+                    </div>
+                    <div class="user-menu">
+                        <div class="avatar">CM</div>
+                    </div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-header">
+                        <div class="status-protocol">Protocolo HAL-2025-001234</div>
+                        <div class="status-title">XYZ Alimentos Ltda</div>
+                        <div style="font-size: 16px; opacity: 0.95;">Certificação C1 - Produtos Alimentícios</div>
+                    </div>
+                    <div class="status-timeline">
+                        <div class="timeline-item completed">
+                            <div class="timeline-icon">✓</div>
+                            <div class="timeline-label">Solicitação</div>
+                        </div>
+                        <div class="timeline-item active">
+                            <div class="timeline-icon">⏳</div>
+                            <div class="timeline-label">Revisão</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">2</div>
+                            <div class="timeline-label">Proposta</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">3</div>
+                            <div class="timeline-label">Contrato</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">4</div>
+                            <div class="timeline-label">Auditoria</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">5</div>
+                            <div class="timeline-label">Certificado</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quick-actions">
+                    <div class="quick-action-card">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px;">
+                            <div style="font-size: 18px; font-weight: 600; color: var(--text-primary);">Próxima Etapa</div>
+                            <div style="width: 48px; height: 48px; background: var(--primary); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px;">📋</div>
+                        </div>
+                        <div style="font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;">Aguardando conclusão da revisão inicial pelo analista João Silva. Estimativa: 2-3 dias úteis.</div>
+                        <div style="padding: 12px; background: var(--bg-gray); border-radius: 8px; font-size: 13px; color: var(--text-secondary);">
+                            <strong style="color: var(--text-primary);">O que fazer agora:</strong> Nenhuma ação necessária. Você receberá uma notificação quando a revisão for concluída.
+                        </div>
+                    </div>
+
+                    <div class="quick-action-card">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px;">
+                            <div style="font-size: 18px; font-weight: 600; color: var(--text-primary);">Documentos</div>
+                            <div style="width: 48px; height: 48px; background: var(--success); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px;">✓</div>
+                        </div>
+                        <div style="font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;">7 de 7 documentos aprovados</div>
+                        <div style="color: var(--primary); font-weight: 500; font-size: 14px; cursor: pointer;">Ver todos os documentos →</div>
+                    </div>
+                </div>
+
+                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 24px;">
+                    <div style="font-size: 18px; font-weight: 600; margin-bottom: 16px; color: var(--text-primary);">Precisa de ajuda?</div>
+                    <div style="display: flex; gap: 12px;">
+                        <button style="flex: 1; padding: 12px; background: var(--primary); color: white; border: none; border-radius: 8px; font-weight: 500; cursor: pointer;">💬 Assistente IA</button>
+                        <button style="flex: 1; padding: 12px; background: white; border: 1px solid var(--border); border-radius: 8px; font-weight: 500; cursor: pointer;">📞 Falar com Analista</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Direction 4-6 placeholders -->
+        <div id="direction-4" class="mockup-section hidden">
+            <div class="mockup-header">
+                <div class="mockup-title">Direção 4: Wizard - Step by Step Linear</div>
+                <div class="mockup-subtitle">Formulário guiado com steps lineares, validação em tempo real, progress bar destacado</div>
+            </div>
+            <div class="mockup-frame" style="display: flex; align-items: center; justify-content: center; background: var(--bg-gray); color: var(--text-muted);">
+                <div style="text-align: center;">
+                    <div style="font-size: 48px; margin-bottom: 16px;">🚧</div>
+                    <div style="font-size: 18px; font-weight: 600;">Mockup em desenvolvimento</div>
+                    <div style="font-size: 14px; margin-top: 8px;">Este mockup será adicionado na próxima iteração</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="direction-5" class="mockup-section hidden">
+            <div class="mockup-header">
+                <div class="mockup-title">Direção 5: Dashboard Auditor - Calendário Focus</div>
+                <div class="mockup-subtitle">Layout focado em calendário, agenda visual, briefing de IA em destaque</div>
+            </div>
+            <div class="mockup-frame" style="display: flex; align-items: center; justify-content: center; background: var(--bg-gray); color: var(--text-muted);">
+                <div style="text-align: center;">
+                    <div style="font-size: 48px; margin-bottom: 16px;">🚧</div>
+                    <div style="font-size: 18px; font-weight: 600;">Mockup em desenvolvimento</div>
+                    <div style="font-size: 14px; margin-top: 8px;">Este mockup será adicionado na próxima iteração</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="direction-6" class="mockup-section hidden">
+            <div class="mockup-header">
+                <div class="mockup-title">Direção 6: Contrato Colaborativo - Split View</div>
+                <div class="mockup-subtitle">Layout split: cláusulas à esquerda, comentários/histórico à direita, editing inline</div>
+            </div>
+            <div class="mockup-frame" style="display: flex; align-items: center; justify-content: center; background: var(--bg-gray); color: var(--text-muted);">
+                <div style="text-align: center;">
+                    <div style="font-size: 48px; margin-bottom: 16px;">🚧</div>
+                    <div style="font-size: 18px; font-weight: 600;">Mockup em desenvolvimento</div>
+                    <div style="font-size: 14px; margin-top: 8px;">Este mockup será adicionado na próxima iteração</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comparison controls -->
+    <div class="comparison-controls">
+        <div class="comparison-title-small">Navegação Rápida</div>
+        <div class="direction-buttons">
+            <button class="direction-btn active" onclick="goToDirection(1)">1. Analista - Sidebar Dense</button>
+            <button class="direction-btn" onclick="goToDirection(2)">2. Cliente - Top Nav Spacious</button>
+            <button class="direction-btn" onclick="goToDirection(3)">3. Cliente - Card Modern</button>
+            <button class="direction-btn" onclick="goToDirection(4)">4. Wizard - Linear Steps</button>
+            <button class="direction-btn" onclick="goToDirection(5)">5. Auditor - Calendário</button>
+            <button class="direction-btn" onclick="goToDirection(6)">6. Contrato - Split View</button>
+        </div>
+        <div class="notes-section">
+            <div class="comparison-title-small" style="margin-bottom: 8px;">Suas Notas</div>
+            <textarea class="notes-textarea" placeholder="Anote o que você gosta ou quer mudar em cada direção..."></textarea>
+        </div>
+    </div>
+
+    <script>
+        let currentDirection = 1;
+        const totalDirections = 6;
+
+        function showDirection(num) {
+            // Hide all
+            for (let i = 1; i <= totalDirections; i++) {
+                document.getElementById(`direction-${i}`).classList.add('hidden');
+            }
+            // Show selected
+            document.getElementById(`direction-${num}`).classList.remove('hidden');
+
+            // Update counter
+            document.getElementById('counterDisplay').textContent = `Direção ${num} de ${totalDirections}`;
+
+            // Update buttons
+            document.querySelectorAll('.direction-btn').forEach((btn, idx) => {
+                btn.classList.toggle('active', idx + 1 === num);
+            });
+
+            currentDirection = num;
+            window.scrollTo(0, 0);
+        }
+
+        function nextDirection() {
+            if (currentDirection < totalDirections) {
+                showDirection(currentDirection + 1);
+            }
+        }
+
+        function previousDirection() {
+            if (currentDirection > 1) {
+                showDirection(currentDirection - 1);
+            }
+        }
+
+        function goToDirection(num) {
+            showDirection(num);
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextDirection();
+            if (e.key === 'ArrowLeft') previousDirection();
+        });
+
+        // Initialize
+        showDirection(1);
+    </script>
+</body>
+</html>

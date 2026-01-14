@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Halal - Temas de Cor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #F8F9FA;
+            color: #111827;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 32px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 12px;
+        }
+
+        .header p {
+            font-size: 18px;
+            color: #6B7280;
+        }
+
+        .theme-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+            gap: 32px;
+            margin-bottom: 48px;
+        }
+
+        .theme-card {
+            background: white;
+            border-radius: 12px;
+            padding: 32px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .theme-header {
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #E5E7EB;
+        }
+
+        .theme-name {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .theme-description {
+            font-size: 14px;
+            color: #6B7280;
+        }
+
+        .color-palette {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .color-swatch {
+            text-align: center;
+        }
+
+        .color-box {
+            height: 80px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            border: 1px solid #E5E7EB;
+        }
+
+        .color-label {
+            font-size: 12px;
+            font-weight: 500;
+            color: #111827;
+            margin-bottom: 4px;
+        }
+
+        .color-hex {
+            font-size: 11px;
+            color: #6B7280;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .components-section {
+            margin-top: 32px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #111827;
+        }
+
+        /* Buttons */
+        .button-group {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            opacity: 0.9;
+        }
+
+        .btn-secondary {
+            background: var(--secondary);
+            color: white;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-ghost {
+            background: transparent;
+            color: var(--primary);
+        }
+
+        /* Cards */
+        .card-example {
+            background: white;
+            border: 1px solid #E5E7EB;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+
+        .card-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #111827;
+        }
+
+        .card-text {
+            font-size: 14px;
+            color: #6B7280;
+        }
+
+        /* Status Badges */
+        .badge-group {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+        }
+
+        .badge {
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .badge-success {
+            background: #D1FAE5;
+            color: #065F46;
+        }
+
+        .badge-warning {
+            background: #FEF3C7;
+            color: #92400E;
+        }
+
+        .badge-error {
+            background: #FEE2E2;
+            color: #991B1B;
+        }
+
+        /* Forms */
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 6px;
+            color: #374151;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #D1D5DB;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.2s;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(45, 80, 22, 0.1);
+        }
+
+        /* Themes */
+        .theme-1 {
+            --primary: #2D5016;
+            --secondary: #D4AF37;
+            --success: #10B981;
+            --warning: #F59E0B;
+            --error: #EF4444;
+        }
+
+        .theme-2 {
+            --primary: #1E4620;
+            --secondary: #C9A961;
+            --success: #059669;
+            --warning: #D97706;
+            --error: #DC2626;
+        }
+
+        .theme-3 {
+            --primary: #3D6B2F;
+            --secondary: #E8C468;
+            --success: #14B8A6;
+            --warning: #F59E0B;
+            --error: #F43F5E;
+        }
+
+        .theme-4 {
+            --primary: #2C5F2D;
+            --secondary: #B8933D;
+            --success: #22C55E;
+            --warning: #EAB308;
+            --error: #EF4444;
+        }
+
+        .comparison-section {
+            background: white;
+            border-radius: 12px;
+            padding: 32px;
+            margin-top: 48px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .comparison-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+
+        .comparison-item {
+            text-align: center;
+            padding: 16px;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .comparison-item:hover {
+            border-color: var(--primary);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .comparison-item.selected {
+            border-color: var(--primary);
+            background: #F0FDF4;
+        }
+
+        .theme-preview {
+            width: 100%;
+            height: 80px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎨 Sistema Halal - Temas de Cor</h1>
+            <p>Explore 4 direções de cor diferentes para o sistema. Cada tema mantém a identidade Halal mas com personalidades visuais distintas.</p>
+        </div>
+
+        <div class="theme-grid">
+            <!-- Theme 1: Autoridade Clássica -->
+            <div class="theme-card theme-1">
+                <div class="theme-header">
+                    <div class="theme-name">Tema 1: Autoridade Clássica</div>
+                    <div class="theme-description">Verde Halal tradicional + Dourado premium. Sério, confiável, institucional.</div>
+                </div>
+
+                <div class="color-palette">
+                    <div class="color-swatch">
+                        <div class="color-box" style="background: #2D5016;"></div>
+                        <div class="color-label">Primary</div>
+                        <div class="color-hex">#2D5016</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-box" style="background: #D4AF37;"></div>
+                        <div class="color-label">Secondary</div>
+                        <div class="color-hex">#D4AF37</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-box" style="background: #10B981;"></div>
+                        <div class="color-label">Success</div>
+                        <div class="color-hex">#10B981</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-box" style="background: #F59E0B;"></div>
+                        <div class="color-label">Warning</div>
+                        <div class="color-hex">#F59E0B</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-box" style="background: #EF4444;"></div>
+                        <div class="color-label">Error</div>
+                        <div class="color-hex">#EF4444</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-box" style="background: #F8F9FA;"></div>
+                        <div class="color-label">Background</div>
+                        <div class="color-hex">#F8F9FA</div>
+                    </div>
+                </div>
+
+                <div class="components-section">
+                    <div class="section-title">Botões</div>
+                    <div class="button-group">
+                        <button class="btn btn-primary">Primary</button>
+                        <button class="btn btn-secondary">Secondary</button>
+                        <button class="btn btn-outline">Outline</button>
+                        <button class="btn btn-ghost">Ghost</button>
+                    </div>
+
+                    <div class="section-title">Status Badges</div>
+                    <div class="badge-group">
+                        <span class="badge badge-success">Aprovado</span>
+                        <span class="badge badge-warning">Pendente</span>
+                        <span class="badge badge-error">Rejeitado</span>
+                    </div>
+
+                    <div class="section-title">Card Component</div>
+                    <div class="card-example">
+                        <div class="card-title">Solicitação HAL-2025-001234</div>
+                        <div class="card-text">Empresa XYZ Foods | Status: Revisão Inicial | Analista: João Silva</div>
+                    </div>
+
+                    <div class="section-title">Form Input</div>
+                    <div class="form-group">
+                        <label class="form-label">CNPJ da Empresa</label>
+                        <input type="text" class="form-input" placeholder="00.000.000/0000-00">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Theme 2: Profissional Sólido -->
+            <div class="theme-card theme-2">
+                <div class="theme-header">
+                    <div class="theme-name">Tema 2: Profissional Sólido</div>
+                    <div class="theme-description">Verde mais escuro + Dourado terroso. Corporativo, estável, robusto.</div>
+                </div>
+
+                <div class="color-palette">
+                    <div class="color-swatch">
+                        <div class="color-box" style="background: #1E4620;"></div>
+                        <div class="color-label">Primary</div>
+                        <div class="color-hex">#1E4620</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-box" style="background: #C9A961;"></div>
+                        <div class="color-label">Secondary</div>
+                        <div class="color-hex">#C9A961</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-box" style="background: #059669;"></div>
+                        <div class="color-label">Success</div>
+                        <div class="color-hex">#059669</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-box" style="background: #D97706;"></div>
+                        <div class="color-label">Warning</div>
+                        <div class="color-hex">#D97706</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-box" style="background: #DC2626;"></div>
+                        <div class="color-label">Error</div>
+                        <div class="color-hex">#DC2626</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-box" style="background: #F8F9FA;"></div>
+                        <div class="color-label">Background</div>
+                        <div class="color-hex">#F8F9FA</div>
+                    </div>
+                </div>
+
+                <div class="components-section">
+                    <div class="section-title">Botões</div>
+                    <div class="button-group">
+                        <button class="btn btn-primary">Primary</button>
+                        <button class="btn btn-secondary">Secondary</button>
+                        <button class="btn btn-outline">Outline</button>
+                        <button class="btn btn-ghost">Ghost</button>
+                    </div>
+
+                    <div class="section-title">Status Badges</div>
+                    <div class="badge-group">
+                        <span class="badge badge-success">Aprovado</span>
+                        <span class="badge badge-warning">Pendente</span>
+                        <span class="badge badge-error">Rejeitado</span>
+                    </div>
+
+                    <div class="section-title">Card Component</div>
+                    <div class="card-example">
+                        <div class="card-title">Solicitação HAL-2025-001234</div>
+                        <div class="card-text">Empresa XYZ Foods | Status: Revisão Inicial | Analista: João Silva</div>
+                    </div>
+
+                    <div class="section-title">Form Input</div>
+                    <div class="form-group">
+                        <label class="form-label">CNPJ da Empresa</label>
+                        <input type="text" class="form-input" placeholder="00.000.000/0000-00">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Theme 3: Moderno Vibrante -->
+            <div class="theme-card theme-3">
+                <div class="theme-header">
+                    <div class="theme-name">Tema 3: Moderno Vibrante</div>
+                    <div class="theme-description">Verde médio + Dourado luminoso. Contemporâneo, energético, acessível.</div>
+                </div>
+
+                <div class="color-palette">
+                    <div class="color-swatch">
+                        <div class="color-box" style="background: #3D6B2F;"></div>
+                        <div class="color-label">Primary</div>
+                        <div class="color-hex">#3D6B2F</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-box" style="background: #E8C468;"></div>
+                        <div class="color-label">Secondary</div>
+                        <div class="color-hex">#E8C468</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-box" style="background: #14B8A6;"></div>
+                        <div class="color-label">Success</div>
+                        <div class="color-hex">#14B8A6</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-box" style="background: #F59E0B;"></div>
+                        <div class="color-label">Warning</div>
+                        <div class="color-hex">#F59E0B</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-box" style="background: #F43F5E;"></div>
+                        <div class="color-label">Error</div>
+                        <div class="color-hex">#F43F5E</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-box" style="background: #F8F9FA;"></div>
+                        <div class="color-label">Background</div>
+                        <div class="color-hex">#F8F9FA</div>
+                    </div>
+                </div>
+
+                <div class="components-section">
+                    <div class="section-title">Botões</div>
+                    <div class="button-group">
+                        <button class="btn btn-primary">Primary</button>
+                        <button class="btn btn-secondary">Secondary</button>
+                        <button class="btn btn-outline">Outline</button>
+                        <button class="btn btn-ghost">Ghost</button>
+                    </div>
+
+                    <div class="section-title">Status Badges</div>
+                    <div class="badge-group">
+                        <span class="badge badge-success">Aprovado</span>
+                        <span class="badge badge-warning">Pendente</span>
+                        <span class="badge badge-error">Rejeitado</span>
+                    </div>
+
+                    <div class="section-title">Card Component</div>
+                    <div class="card-example">
+                        <div class="card-title">Solicitação HAL-2025-001234</div>
+                        <div class="card-text">Empresa XYZ Foods | Status: Revisão Inicial | Analista: João Silva</div>
+                    </div>
+
+                    <div class="section-title">Form Input</div>
+                    <div class="form-group">
+                        <label class="form-label">CNPJ da Empresa</label>
+                        <input type="text" class="form-input" placeholder="00.000.000/0000-00">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Theme 4: Equilibrado Natural -->
+            <div class="theme-card theme-4">
+                <div class="theme-header">
+                    <div class="theme-name">Tema 4: Equilibrado Natural</div>
+                    <div class="theme-description">Verde natural + Dourado suave. Harmonioso, confiável, orgânico.</div>
+                </div>
+
+                <div class="color-palette">
+                    <div class="color-swatch">
+                        <div class="color-box" style="background: #2C5F2D;"></div>
+                        <div class="color-label">Primary</div>
+                        <div class="color-hex">#2C5F2D</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-box" style="background: #B8933D;"></div>
+                        <div class="color-label">Secondary</div>
+                        <div class="color-hex">#B8933D</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-box" style="background: #22C55E;"></div>
+                        <div class="color-label">Success</div>
+                        <div class="color-hex">#22C55E</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-box" style="background: #EAB308;"></div>
+                        <div class="color-label">Warning</div>
+                        <div class="color-hex">#EAB308</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-box" style="background: #EF4444;"></div>
+                        <div class="color-label">Error</div>
+                        <div class="color-hex">#EF4444</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-box" style="background: #F8F9FA;"></div>
+                        <div class="color-label">Background</div>
+                        <div class="color-hex">#F8F9FA</div>
+                    </div>
+                </div>
+
+                <div class="components-section">
+                    <div class="section-title">Botões</div>
+                    <div class="button-group">
+                        <button class="btn btn-primary">Primary</button>
+                        <button class="btn btn-secondary">Secondary</button>
+                        <button class="btn btn-outline">Outline</button>
+                        <button class="btn btn-ghost">Ghost</button>
+                    </div>
+
+                    <div class="section-title">Status Badges</div>
+                    <div class="badge-group">
+                        <span class="badge badge-success">Aprovado</span>
+                        <span class="badge badge-warning">Pendente</span>
+                        <span class="badge badge-error">Rejeitado</span>
+                    </div>
+
+                    <div class="section-title">Card Component</div>
+                    <div class="card-example">
+                        <div class="card-title">Solicitação HAL-2025-001234</div>
+                        <div class="card-text">Empresa XYZ Foods | Status: Revisão Inicial | Analista: João Silva</div>
+                    </div>
+
+                    <div class="section-title">Form Input</div>
+                    <div class="form-group">
+                        <label class="form-label">CNPJ da Empresa</label>
+                        <input type="text" class="form-input" placeholder="00.000.000/0000-00">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comparison-section">
+            <h2 class="comparison-title">💡 Comparação Rápida</h2>
+            <p style="color: #6B7280; margin-bottom: 24px;">Clique em um tema para destacá-lo. Qual transmite melhor "Autoridade Eficiente" para certificação Halal?</p>
+
+            <div class="comparison-grid">
+                <div class="comparison-item theme-1" onclick="selectTheme(1)">
+                    <div class="theme-preview" style="background: linear-gradient(135deg, #2D5016 0%, #D4AF37 100%);">
+                        Tema 1
+                    </div>
+                    <div style="font-weight: 500; margin-bottom: 4px;">Autoridade Clássica</div>
+                    <div style="font-size: 12px; color: #6B7280;">Tradicional, institucional</div>
+                </div>
+
+                <div class="comparison-item theme-2" onclick="selectTheme(2)">
+                    <div class="theme-preview" style="background: linear-gradient(135deg, #1E4620 0%, #C9A961 100%);">
+                        Tema 2
+                    </div>
+                    <div style="font-weight: 500; margin-bottom: 4px;">Profissional Sólido</div>
+                    <div style="font-size: 12px; color: #6B7280;">Corporativo, robusto</div>
+                </div>
+
+                <div class="comparison-item theme-3" onclick="selectTheme(3)">
+                    <div class="theme-preview" style="background: linear-gradient(135deg, #3D6B2F 0%, #E8C468 100%);">
+                        Tema 3
+                    </div>
+                    <div style="font-weight: 500; margin-bottom: 4px;">Moderno Vibrante</div>
+                    <div style="font-size: 12px; color: #6B7280;">Contemporâneo, energético</div>
+                </div>
+
+                <div class="comparison-item theme-4" onclick="selectTheme(4)">
+                    <div class="theme-preview" style="background: linear-gradient(135deg, #2C5F2D 0%, #B8933D 100%);">
+                        Tema 4
+                    </div>
+                    <div style="font-weight: 500; margin-bottom: 4px;">Equilibrado Natural</div>
+                    <div style="font-size: 12px; color: #6B7280;">Harmonioso, orgânico</div>
+                </div>
+            </div>
+
+            <div style="margin-top: 32px; padding: 20px; background: #F0FDF4; border-radius: 8px; border-left: 4px solid #2D5016;">
+                <div style="font-weight: 600; margin-bottom: 8px;">📌 Minha Recomendação: Tema 1 (Autoridade Clássica)</div>
+                <div style="font-size: 14px; color: #374151;">
+                    O Tema 1 mantém a identidade Halal original (#2D5016), transmite seriedade institucional necessária para certificação religiosa, e o dourado premium (#D4AF37) reforça qualidade. É o equilíbrio perfeito entre "Autoridade" e "Eficiência" que você pediu.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let selectedThemeNum = null;
+
+        function selectTheme(num) {
+            // Remove previous selection
+            document.querySelectorAll('.comparison-item').forEach(item => {
+                item.classList.remove('selected');
+            });
+
+            // Add selection to clicked theme
+            const items = document.querySelectorAll('.comparison-item');
+            items[num - 1].classList.add('selected');
+            selectedThemeNum = num;
+
+            console.log(`Tema ${num} selecionado!`);
+        }
+    </script>
+</body>
+</html>

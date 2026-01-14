@@ -1,0 +1,2404 @@
+================================================================================
+TRANSCRIÇÃO: sistemaHalal.mp4
+Data: 10/11/2025 11:11:38
+Modelo: Whisper base
+================================================================================
+
+ Um dia. Acredito, ver Pelas desculpas aí, está pedindo aí a environments, eu não posso итогa mesmo, é que eu só acordei o radically do nossolying упer não puntos boneios, a gente está pedindo a atuação de você de uma administração originária. Primeiro saudades, faz tempo que você põe no globo ou não? Não fui, eu estou aqui meio complicado aqui de coisas, eu tive que ficar por aqui. Acabou não, não indo. Tranquilo, mas deixa falar, seria interessante aí você está participando com o LOSCA, na verdade isso tem a ver com uma iniciativa nossa filial lá da colombia, e nós somos ouvintes, vamos entender o que eles têm para propor dentro da área, que nós temos que ter a validação ou não da ecorralã, um sentido de fazer a acusição desse projeto ou não, tá bom? É por isso que eu pedi o gente não adiantava eu só estar assistindo para depois repassar para vocês. Então a gente daqui a pouco, só estamos resolvendo um problema de cabo aqui, sempre o resolvendo, a gente está juntos, tá bom? Sem problema nenhum, estamos à disposição. Obrigado, Eric, abraço, grães, queridos, saudades. Vamos tomar um café, a ver se você aparece aí. Eu quero ver, na próxima vez que eu for para São Paulo, eu aviso que eu vou a gente tomar um café juntos. Tá bom, abraço, querido. Valeu. Bom, nós estamos com o problema da câmera, a gente vai deixar a câmera desligada. Esse é Eric e o doctor Ali chamou, é da ecorralão. Ele gritou para mirar o que você está fazendo, mas eu vou deixar ninguém para mim, eu vou deixar ninguém para a câmera. Sim, sim. Claro, nós só vamos cerrar a pantalla, não é problema? Vale, graças, estamos lá escuchando e tu podemos empezar agora. Que é a coisa de todos? É, aqui foi o da início da Maria União, eu deu, com permitando estar usando o nosso que lido a dar, ficar aqui com o Nússico, estar aqui em São Paulo, a André, tem de um dos rindos da Colômbia. É, e se Deus quiser, vamos fazer Maria União, alguma volta, a primeira dela nós vamos falar sobre uma proposta de uma plataforma e aí acabou trazendo para essa reunião alguns diretores, aqui o nosso diretor da Simis Orbito, também é uma charrinha da Quico Nússico, a Elaine também, a Nadani, e também lá que é um sócio diretor da época, né? É, que essa empresa, que é o nosso braço tecnológico do Grupo que foi um braço, é importante a participação dele para entender um pouco melhor. Essa proposta, que é a nossa primeira palpa, a gente vai falar exatamente sobre isso. Agora eu passo a palavra que ela permite se apresentar e já dá início, então a apresentação para dar uma despezada da... Será uma legunção da... É, é... Pô, é dia a todos. É que é essa manhã, é... Pô, é dia a todos. É, o propósito dessa plataforma, que é se minimizar a esquiência do processo de la certificação e minimizar a interferência humana, o processo de la certificação. Então, é... Essa aplicação... é... é muito radio, que é o que é o Brasil. É muito bom, é muito bom. Pô, a informação de la certificação, quanto mais, teda resultado. Ok? Então, se teneu toda a informação, todos os normos de todos... de... de... de todos os interesses do mundo, ok? A AI pode analisar e sacar a forma ou respuesta necessita que estácta, ok? Para um processo de... de fala. Então, então, se quando um pieça com a certificação, com alcance à SMIC, ok? De uma vez, a AI vai... de hack SMIC sem interferência de outra forma. O processo... vai haver... o processo que... realmente... não... ai... não... ai... não... ai... não... temos sobre as normas. A AI está... assiendo o trabajando... o trabalho e a lidisando... e dar-se... o único que vai ser um empleado de... envolvido o processo do halal... é decir, ok. Ok? Em a porta-qual parte do processo, a porta-qual parte do processo pode revisar antes, de uma hora e visa depois. Então, se caluzir... a decisão se revisar todo, quando quer, em a porta-qual o momento, todo se vê frente a ela. Ok? Facilita muito o tema dos auditorios. Muito mais fácil. O firma de contrato, muito mais fácil, e isso é uma maneira muito mais fácil para me avisar. Honacamente, a renovação de uma renovação de uma processo de renovação pode desligar a máxima 4 dias e a uma certificação real pode desligar mais ou menos entre 8 e 12 dias. Esta é o plano. Agora estamos em um promedio de 90 dias de certificação. Ok? Então, se o plano desligar a deixar a interferência urbana para que a AI decide sobre todo o que nós transponemos. Então, se não você vai eliminar 90% o tema dos noco-por-metades que estamos recebendo hoje em dia. Esta é o caso de generar. Sim, entendeu. Porque, dificilamente, eu, eu, eu, eu, eu, eu sei o que é poliglota. Fala diversa de línguas. O espalhante é entre elas. Por supuesto. Então, tranquilo, acho que todos me derver. Então, falando, pode, pode dar início se nós estamos aqui com o dom de ele e o dom de ele, o dom de ele, o dom de ele, isso. Ok, a nossa área fica e a nossa área fica e a nossa área não está aqui. Então, fique apontado se ele puder já fazer participação e a a a a a a a a a. Então, então, fique balance mal com a nossa mão. Listo, ok. Bueno, bueno, os dias a todos eu vou acompanhar minha pantalla para poder explicar-lo. Listo. Não tem minha, pode enconfermar se podem perder a pantalla. E teremos. Ok, listo. A plataforma tem perdão, não, eu hablo português. Então, se eu pode falar em espanhadores, espero que me entiendam e por favor, se podem interrombir, se há algo que, que não está claro. E a plataforma como tal, vai tener um acessor, a plataforma está em escrita em talk script, isso é uma de uma que, em um framework, se chama react, isso é uma de os mais como avançados em não indirem para se desarrollar umas, umas, um web apoiou umas aplicaciones de web. Vamos, há mais de espacio, por favor. Ok, perdon, perdon, listo. Pode hablar mais de espacio. Ok, nós hemos criado uma plataforma para facilitar todo o processo de fazer a solicitude de uma certificação de HALAR. Eu sou um cliente, sou representante de Nesle, por exemplo, e eu quero ter o certificado de HALAR. Eu vou chegar a a plataforma para a página principal de HALAR. Pode ser esta, isso é um demo, esta não é a página de vocês, é uma réplica só para mostrar o concepto. Então, o cliente vai ter rezar a esta página de ustedes. E quando a terrisa vai salir estes botones que estão arriba de iniciar uma sessão. Se não tem, se não, se não tem uma conta, aqui pode criar como uma conta, é muito simples por se isso, se há um clica aqui e se a terrisa aqui é como a entrada para entrar a esta plataforma. Então, vamos fazer dois pantalhas, uma pantalla para o cliente e outra pantalla para um administrador porque, o que vai ser o cliente é diferente do que vai ser o administrador. Agora, eu vou mostrar. Então, vamos passar a outra, aqui, vou rezar como se for um cliente, sou de Nesle, ou qualquer outra presa. Então, aqui, vou registrar com um correo ou qualquer uma, vou registrar o mais fácil com Google. Então, vou rezar aqui com Google. E vou rezar aqui. Vou, obviamente, estar em um ambiente de montos. Então, uma vez que eu ingresso como cliente me vai pedir informação sobre a empresa. Então, vou poner o nombre de a empresa, vou poner o meu nome como tal a persona, obviamente, sou uma informação demo que é que é que é o que vai pedir, podemos poner o nome de a empresa, ou o Carlos, só para fazer como o demo e podemos poner que o aparelho é assim, então, se pone aqui o nome e o telefone e aqui, se guarda a informação. ready. Então, eu sou um cliente ingressê, e agora, quero fazer a sua ilusidade de la certificação. Aqui, me vai aparecer a parte. Se eu ingresso como admin, aqui, vou ingressar com outro usuário que é admin, para mostrar ele as diferencias, que se vê entre cada um de os dois. Então, como podem ver aqui, a cada admin tem como muito mais acessão a mais herramientas para fazer todas as tareas que já seriam um admin, então, se tem acessão, a todas essas herramientas que vão facilitar todo o processo. Então, vamos saber, vamos saber, em tempo real, como é isso que ocorre com o cliente e como vai refletir aqui, em tempo real. Então, eu sou como cliente, vou iniciar uma solução. Até o momento, tudo vai bem, para só para seguir. Tudo bem. Por favor, eu reduço a The time about a redução. Eu reduço e que? Eu introduço a The time about a okay. Um buen estágio. Ok. Então, vamos fazer um pequeño, aqui, uma pequena pausa. Se eu vou ir à página principal, por exemplo, é isso como a página réplica de ustedes. Então, em a página como tal, nós temos criado um assistente virtual. É esse assistente virtual, por exemplo. Eu sou uma empresa e quero saber sobre a certificação para que eu tenho muitas dudas. Obviamente, a página como tal tem informação. Mas eu quero que eu tenho dudas. Então, aqui, temos um assistente virtual e temos o foto do haja design. É como para que este é como uma de AI e para resolver qualquer duda. Então, eu posso preguntar uma coisa que é fámbras, halada, que certificação, obviamente, nós, enternamente, vocês, em este caso, alimentamos a artificial intergenção, sobre toda a informação, sobre a empresa e aqui, como todas as perguntas, tudo o que um cliente pode preguntar. E aqui, automáticamente, o que é que é que a resposta é que a resposta é que a resposta é que a resposta é que alguém diz isso, não. O cliente pode perguntar qualquer coisa. A entragem de a arte precisa de uma pergunta e busca a informação que tem guardado e responde, segura a informação que nós nós nos damos. Então, isso é como gran ajuda para qualquer cliente que tem a duda, em vez de llamar, ou em vez de perder com muito tempo, de intercomo de este mesmo chat. Então, isso é como para, obviamente, aqui, não tem como alimentar a mucha informação, mas, a ideia é que podemos alimentar com toda a informação que nós estamos, e ele pode responder com todo o que nós queremos que responda a clientes. Então, isso é como a arte virtual. Uma vez que termina como as dudas, como o que nós já pensamos, aqui, a empresa e aqui, vai estar, este é o exemplo que nós precisamos fazer. Isso é isso. E do meu tipo. Ah, eu quero saber, libe a séria que sensibilização. Se a gente abaça esse, esse a com isso, ele conseguiria responder. Senhor. Sim. Todo o que nós temos. É isso que, o que está dizendo, o senor Abdares, aqui, não há barreda de idiomas. Se alguém escreve na arabé, respondem na arabé. Se alguém escreve em español, responde español, o importo que é isso, responde em inglês. Então, é a vantagem que vocês podem entender, que podem entender clientes de qualquer rincônde do mundo, e eles podem resolver qualquer dudas sem nenhum problema. O mesmo de le idioma que está em Chathbot, afuera de asestentes, nós temos dentro de a plataforma. Então, a plataforma é só actualmente agregamos o español e português. Eu sou algo esto, todo se cambia português. Se você tem dado conta de que o español pode dar o español, então, após o español, então, após o cliente, aqui, pode agregar em inglês e mais idiomas, mas como para o demo, podemos mostrar isso. Então, isso é como a vantagem de não ter como muitas barreiras e em idiomas, e também com todo a parte de manual. Vamos bem? Podemos seguir? Sim, Sim. Sim. É bem. É listo. Aqui, como podem ver, o cliente, como tal, quando vamos que o mesmo ejemplo, tem que iniciar um processo de disso-luisitude. Então, quando ingressa uma nova disso-luisitude, o objetivo que o cliente, todo o que achia em o formato, por exemplo, em o formato de vocês, me recordam o número de disso-luisitude. Sim. Sim. Sim. É como... Sim. E vai adiciar um número de disso-luisitude. Sim. Sim, eu acho que é zero, zero, zero, zero, zero, zero, zero, zero, zero. Sim. É que é este, é que os custos enterem. Este mesmo documento, o que hemos hecho, é poder convertir ele um pouquinho mais de um processo mais dinâmico para poder facilitar este processo e analisar este. É porque ingressa, é porque... Ok, vamos lá. Porque a ideia de a plataforma, não é algo que você deve ter ingência primeiro sobre o estudo e, luego, não. Aí, de esta, ponemos coisas para atrapalhar de todos lados e a inclinência artificial forma, solicitude ou forma de documento, forma... Formas. Nós é, neste túal, vai dizer porque, porque esta informação está aqui. Está aqui, porque, depois, vai generar sola, ok, a propuesta comercial sinar mal, a propuesta corciar. Vai generar o contrato sinar mal contra ela, ok? Sim. É isso, está o filosofia ou o tecnologismo, a ideia... A ideia... Sim, é isso, vamos saber agora. Ahorita, vamos saber como todo, como coche convierte a ir a firma. Signora? Não, acá, estava explicando a lena que cogimos o empé, o metal quad e o tromto, e, é só a lena. É isso, o justo do que eu queria de, como ressaltar, u tà que, slices de prensa de um pinksai, um identivo com esse formação de santa ur, compro gray, em todoanto só,rei kok х le queria, ir a é simplesmente uma entrada IT, não courageous, Vamos imaginar uma solicitude normal para que podemos ver o que faz o cliente. Pode imaginar uma informação de modo normal. Nós podemos fazer qualquer número que não seja real. O telefone pode ser assim, ou o fundemo. E isso pode ser um estudo com algo assim. E aqui, uma vez que escolhe, vai dizer o país de que o país é o cliente. Então, pode fazer colombia, por exemplo, para o demo. Pode dizer assim, caíso. Só há uma informação de modo normal. Que, no principio, está algo assim. E aqui, se põe o contato, por exemplo, a pessoa que está fazendo a solicitude, se põe a informação. É o mesmo que se ocorre em vida real, actualmente. Então, a pessoa de contato com quem, ou seja, a pessoa de fambras com o time, com o que se chama. Então, pode dizer, o mesmo que está llenando o formulário, ou, por exemplo, para dizer, os ocorreos. Só um demo. E podemos ser, se, ou algo assim. Pode ser qualquer, então, esses colombias, coisas, o código de colombia. E aqui, pode também agregar o cliente mesmo, pode agregar um segundo contacto, se existe, se não existe, não tem que marcarlo. E vai dizer, seguinte. Aqui, a seguinte, é uma parte muito interessante, onde se llena mais informação. Então, aqui, são detalhes sobre a empresa. Então, se sale, o grupo industrial, então, sacasta. É o mesmo que você maneja em documento, então, está agricultura, está contigo, está... Todas como as categorias, e pode escoger este exemplo. Ele vai ser, depois, o grupo, o grupo industrial, então, vai aparecer esses. Então, pode dizer que está, por exemplo. Quando as coisas, ele vai dar, ou seja, subcategoria. É o mesmo de documentação de vocês. Vai escoger produtos mixedos, por exemplo. Uma vez que o cliente llena essa informação, automaticamente, a plataforma, ele vai dizer, está indústria, é a indústria C3. Então, já, é automaticamente, sabemos, segun lo que llena o cliente, que categorias. E quando se llena isso, há um par de perguntas para definir ou determinar se esta categoria ou este cliente se necessita um supervisor ou não necessita. Então, se a planta tem elementos de origem animais, então, se pode dizer que é si ou pode dizer que não. Então, se escorro esta si, esta, não. Então, vai dizer que, se este serviço tem requerido um supervisor. Para que o cliente sepa que isto vai ter, necessita um supervisor para sua trabalho. Quis bien, e a mesma informação, ele está manio de uma empresa, porque isto vai determinar a propuesta comercial que se vai aparecer. Então, se vai escoger isto, se vai escoger os ingressos, isso é um exemplo. E acá está o representante legal. Então, aqui me pergunta, quem é que a pessoa que vai afirmar o contrato com os outros confabras. Então, aqui se vai decidir, vou dizer que a mesma pessoa, porque se decidiu algo assim. Então, o cargo é assim, queerencia outro exemplo. E, aqui, de uma vez, dependendo do país, aqui se pode subir os documentos requeridos. Então, acá está pedindo dois documentos. O documento de root, se é em Colombia, por exemplo, ou em la Cámara Comerção. Então, se há um clica aqui, e aqui, ele permite alquilhente cargar o documento como tal, e aqui se cargar os dois documentos. Una vez se cargar os documentos, se passa a la seguinte parte. La seguinte parte, onde nós temos toda a parte que tem que ver sobre a fabricação. Então, aqui que marca que tem. Então, depois, ele é leche, ele é agua. Estou inventando para dar o exemplo. E, aqui, está dizendo que, se há marcas de terceiro, aqui, também, se pode agregar marcas de terceiro. Se eles venden marcas de terceiro, e, aqui, está como cada marca de terceiro, tem um costa adicional de certificação, para que o cliente, quando está llenando a informação, tem como toda a informação alcance para não ter nenhuma duda. Acasta o detalhe de produção, que, quantos turnos são, um, dois ou três, poescoje, dois. Quantas líneas de produção tem, tem só uma línea. Quanto é sempre a dos turnos, pode ser 50. Aqui, há número de produtos, pode ser que tenho cinco produtos, por exemplo. Aqui, me vai perguntar se eu tenho certificação Hassab, então, aqui, pode dizer que, se eu tenho, não tenho. Então, isso depende, se digo que sim, vai dizer qual é o número de estudos. Se digo que não, não me vai permitir que acerlo. Se tenho esse certificado, pode dizer que sigo, não, se eu sou cobe o cliente, em caso que, aqui, se pode cargar a certificação. Se eu tenho certificação, aqui, me permite agregar e carcar o documento de certificação a plataforma, a qual permite, a desempenhado, em outro lado, ver toda essa informação. Então, aqui, eu vou ir à seguinte, ao seguinte ponto, vou escolher isso, assim, rápido. Uma, cinco. Aqui, pode dizer que não, e aqui, pode dizer que não. E vou dizer, seguinte, aqui, viene, o documento que vocês entrem, os quadros que vienen como anexos, a solução, aqui, pode agregar todos os corzales, aqui, pode agregar e poder, como toda a informação, em vez de, de genar-la, em outro formato, aqui, pode de uma forma fácil, aqui, também, se genar. Aqui, se ele pergunta, alcance do produto que o país está decidindo exportar, então, pode ser rarabezadita, por exemplo, se tem, sub contratadas, então, isso é muito importante, se também, o cliente lollena, informação de consultoria, se existe ou não, existe, se genar da informação base, e aqui, pode dizer, seguinte, uma voz que se termina, é o formato de Ustaz, como a Ustaz maneja. Então, aqui, ele mostra como um review de todo o formato, é, se os outros dois quadros que têm a informação está aí, podemos ver, e acosta o formato lleno. Uma vez que o cliente termina, pode, como, firmar-lo, enviar-lo, e quando ela faz esta forma, se vai guardar, como tal, em la vacídatos, como solicitude, e, automaticamente, o cliente, ele vai aparecer, em la solicitude, já está enviada. E a ventaja que isso, em tiempo real, vai dar o cliente uma informação, em que estado está sua solicitude? Ou seja, aqui está, ele pode ter como uma projeção de todos os passos que ele precisa, para antes de firmar o contrato, e depois enviar-se a segunda fase, já depois de firmar o contrato, até ter o certificado, e posterior a estudar a tutoria, etc. Então, aqui está a solicitude enviada, então, isso está a fase, e isso é o passo, de esta fase, a solicitude enviada. Se eu vou ao outro lado, por exemplo, eu sou um empriado, eu ingresar aqui como Andrea, então, aqui, me chega a dar uma forma que há uma solicitude nova, então, já em grisou uma solicitude nova, eu quero ver, então, aqui, pode chegar em solicitudes, como um piado, e, aqui, pode ver que há uma solicitude aqui, me chega, então, eu posso ver isso aqui, facilmente. Então, aqui, agora, eu sou ingreso como cliente, então, já dei a atual informação que há ali, que é nada, o cliente, no outro lado, eu, por eu, eu posso ver, eu posso pedir, que, eu necessito, e aqui a informação está muito claro. Uma vez que eu la reviso, então, eu vou dizer aqui, este botão, que já está revisado, então, eu vou dizer um clica aqui, e a revisão aprovada, ou seja, a solicitude está correcta, a documentação está correcta, e todo está correcto, eu vou dizer, aprovar, a revisão, então, eu vou dizer aqui. Uma vez que eu hago esto, se eu vou ao cliente, automaticamente, o cliente já se notifica, não necessito mandar a informação, enxomar-lhe, automaticamente, que está dizendo que, agora, a revisão completa, e agora, fambras está criando uma proposta comercial, então, é isso que o cliente, ele sale para estar, o dia como está o tempo, o que está acontecendo em vida real. Para aqui, para os nossos empleados internos, aqui podem ver que, o estado atual, é proposta comercial, então, eu vou fazer um clica aqui, eu quero criar a proposta comercial, então, se eu hago um clica aqui, vou ir dar, vou estar pedrigido a esta plataforma, a esta parte de a plataforma, onde está calco, uma calculadora que me vai ajudar, a mim, como um privilhado, como administrador, para justiunar esta solicitude. Aqui, eu tenho aqui, se há mais de uma solicitude, a calva não aparecer todos, assim, um row, para aparecer todos. Eu posso dar um clica aqui, e dizer, cargar em la calcorraver. Uma vez que eu localgo, então, me vale, e é bom, esta solicitude, tem este, é de c3, e esse c3 necessita um supervisor. Estos, um costo demos, um costo calculador, calculado, mas, por la informação, não é real, mas, isso, se pode, também, editar e modificar. Então, aqui, eu posso dizer, porque, eu escogi, por exemplo, na certificação, que é, de origem animal e digital, então, eu puso, que saliu, como todos, a informação de certificado, e acá está, como, o costo aproximado, do supervisor, o costo mensual, o costo de auditoria, como tal. E, acá, é como, a informação que eu posso editar, então, eu posso cambiar, o que quero, necessito, se isso vai agregar, se isso não, se, o cambio está em formação, não vai permitir a mim, cambiar este número, então, eu posso editar e poner, a cifra que quero, como sou, o eladmen, e, esto é lo que considero, é, simplesmente, aqui, ele é, aí, o que é, é, escolher a informação, e, fazer um pequeno cálculo, ele vota, e ele disse, isso, é o cálculo inicial, tu pode modificar, tu pode acertar, según, as necessidades. Aqui, se pode... Vamos, vamos, vamos, vamos, vamos. A calculadora, agora, na área, não é mais, não é mais um costo fico para uma certificação. Então, se há uma pessoa que tem a casa, e tem 22 mil, é muito mais preparado de uma empresa, que todavía estão plantando a casa, que é muito mais trabalho para nós para trabalhar e para ver o sistema de algo apotable e o sistema, muito mais trabalho, muito mais horas. Essa é a questão muito mais de um senhor que te entrega o apotable e te entrega todo o programa que tu estou buscando. Então, o costo não é fico por uma certificação, e, se há uma calculadora, um pouco complicada para calcular, exatamente, que a gente, em ser, está muito preparado, não necessitamos dois dias de auditoria, três dias de auditoria, o costo de certificação serve totalmente diferente, certificação de auditoria, totalmente diferente de um costo de uma empresa pequena que não tem estes, não está preparada para uma auditoria, não é? Então, se varia por cada cliente, não é costo fico de nada. É costoso acarcer o mesmo risco, entre uma de risco, mas costoso, não é risco, não é risco. É isso, eu não sei, eu não sei, eu não sei, eu não sei. Mas ainda assim, você pode digitar os costos, né? Por exemplo, se você não sei a basear na calculadora, você consegue mexer. Eu estou olhando pro humor, por que? Sim, é, sim. Não havia nesta momento? Um novo momento, porque, bem, isso, né? Porque, eu hablava de esse passeio de um ver, por que? Porque, mas até nos porque, por que? Por que, o que eu penso? Tem 10 por tomário, sem vez, tem 1.500. Eu não penso de tonal de Torio, penso na treel de Torvian. Então, verificar o comento, essa treel de Torio aqui acontece, os documentos que enviados analistas, estão no trabalho, então, sem empresa, tem grande ou pequeno, muitos produtos que eles vão certificando, estão para a gente aqui, para a basear o mesmo. Então, você pega o figuríf, por exemplo, que a bate sei lá, 4.000 horas por dia, o figurífio que a bate, e o tecá, quantas mil horas por dia, para, eternamente, trabalhando mesmo. Então, eles é mais trabalho para o figuríf, mas para a gente, é mesmo coisa. Não muda nada, mesmo trabalho, ou mesmo gas, o mesmo entende, mas para nós não muda nada. O gaso deles é maior, é, pera, não pode ter por aí. Então, não é verdade, nós, para agora, que for fazer culto diferente, depender do mundo, dentro de preso, aí, como depois, isso é a interessante ideia, tudo aquilo, a gente não sei, a gente não está olhando, o tempo não enxerando, o tempo não é meio do preço, é igual, não, espendo, e isso foi um erro, a ideia do sistema, o sistema que você pode, para a gente que não sei, se ainda é para o futuro. E tu tira uma opção, outra coisa, tu tira uma opção de canviar, eu vou deixar por ti personalmente, mas pode, que, jamais, ela vai ser, por favor, é uma empresa, ou é no tutorial, é uma empresa que não estamos, porque, através desse empresa, vou ter outra pessoa, pode durar, se, e dar, se, pode, pode, de canviar aqui. Na página, tu pode, de canviar, pode, pode, pode, pode, de canviar, da forma, não, você queria um modelo, e estabelecer, me considerando, os menores, maiores, quantidade horas que você usa para um, é o tutorial. Eu gosto de um versão, você tem 3, está bem lábio, de conflitear, contando de data, bem, de féssimo, pois, é, por favor, o preço, está todo o valor, é muito bom. E ela? E ela, está, aqui está como os dados de auditoria, então, isso aqui, se pode, a ideia é, é o uso interno, ou seja, a parte, não se vê o cliente para nada, ou seja, é a parte, eles entiendem bem? É. Ou seja, é isso que, ao cuidador, é tudo isso, é interno, não é, não é, não é nada, é o cliente, é isso, é só para aclarar todo essa informação, se cargar os dados aqui, e se pode ir, alimentando, e desitando, para sacar um, um data como tal. Listo, é isso como tanto a lo que, o que queríamos ter, que você pode criar a proposta, ou, uma vez que este, de acuerdo, e quando você criar a proposta, está, como toda a, a proposta já está echa, em segundos, segun a informação que se necessita, está, como todos, os termos, como podem ver, específicos, de cada uma, está, como toda a, o custo como tal, é um exemplo, e é assim como a produção, é, você leite, como toda a informação, é que você pode editar, o que pode, e aqui, firma, porque se dizem colombian, então, é essa casa, cada automáticamente, era a informação de colombia, de representante, elegar, se há, se é, o cliente é de outro, de outro, de outro acede, ou de outro país, aqui ele vai aparecer, automáticamente, representante, de tal país, sem, sem nenhum problema. Então, é isso, é como o, o que se pode ver, e acáabamos agregado opciones, é uma opção de, de un año, e uma opção de três anos, dependendo de, mentalmente, de que está capaz de, moder Virginia, então, é aqui, com um año, então, és al describes, é uma opção southeast, é a opção que pode ir, é a administrada, para, schwer parte de especificação, xécois de um, um exemplo dos dois, e uma vez que, ter, que termina, eu scordei, eu pofio, sabe mal, eaten, e tal, então, esse texto sendo conservado, comercial, eu posso enfermar-la tanto como o cliente como tal, se disse que não tem uma firma, eu posso criar uma firma aqui, eu posso guardar como uma firma como tal, que esta pode ser firma, eu aguardo, já que eu guardo a firma, então se eu vuelvo a mesma solicitude e a propuesta, então é ver a proposta que me vai salir e aqui eu posso enfermar como tal, a proposta já quedou informada, então se me chega a esta forma que já está enviada, então é ver a cliente, então aqui eu posso ver que já está proposta comercial enviada, então é ver a cliente como tal, eu posso ver os documentos, eu posso tomar a decisão, eu posso ter que enfermar-la, então é ver a cliente também, tem acesso a enfermar-la, uma vez que está criada, então é ver a cliente, a solicitude, o informador, pode descargar e etc. Então é ver a informação base que queremos enviar, mesmo passa com o contrato, aqui é ver a gente não ter muito descrevendo isto, eu vou mostrar como os vários modelos, como funcionando e em cada uno cada cerveto, o que temos visto é o calcorador para ver o costo, a gente pode terいつato esteference, só esta correndo, com algum momento. Então, timels, usamos conseguir a retiringva para embarkar e astralhar que você estáesse para️ que está muito hebt nato, vou saber, pois ele está tanto miserable porque essayer alguma coisa que nós temos, Mas você pode mostrar quando descarga o formulário? Sim, o formulário qual é o certificado da solicitude? Sim. O que é isso? O funcionário do FAMPAS? Como você deixa a ver com como é isso? Bem, o demo não vai ver porque está em demo, mas se vai ver tal qual como é isso. O documento como tal, o PDF, se vai ver o que ele é mostrado, se é um pouco sobre a solicitude. Se vai ver tal qual é assim, o PDF? Mas nada não interesse. É por que isso tema o local. Apesar de apresentar nosso sistema, em vez de ter que baixar e fazer uma cópia de pasta. Sim. Se tiver todas as informações validadas e revisadas, não preciso porque ficar baixando. Tem isso. O PDF vai ser bastante importante. Este é o que vai descargar para parecer assim, só por que está local, não está publicada, não se vai permitir a ser esta parte, mas esse é como o formato que se vai aparecer de a solicitude. O PDF tal qual é como este, e aqui em documentos, vai ver todos os documentos que carga o cliente. Por exemplo, o cliente pode subir por si eu lhegue aqui a proposta comercial, está, e o descargo vai aparecer normal. Então, aqui vai ver a solicitude, a proposta comercial, e o cliente pode descargar todos os documentos que você genera desde o outro lado. Aqui, ele vai ver tal qual como o formato. Só que aqui por tema de data, mas não se vê aqui, mas vai ver tal qual como lhe mostrado em o demo. E aqui o cliente, eu posso ver. O cliente mesmo pode subir também documentos. É decir, isso é como o cliente permite o cliente aqui subir documentos. Se o cliente quer enviar, em vez de enviar por correo, por exemplo, muita informação, o cliente pode descargar aqui, e por outro lado, o empilhado, quando o ingressa aqui, vai ver, aqui está Nestlé, e aqui vai ver todos os documentos que o cliente carga. É isso facilita um montón, o intercambio de documentos entre vocês e a empresa, para não enviar por correo e depois outra versão, depois, se aqui se pode eliminar uma versão e cargar outra nueva, facilmente, simplesmente cargar e descargar, e isso le permite, ao outro lado, fazer-lo de uma forma muito fácil de eliminar este factor de enviado de documentos. Essa parte está clara? E, até agora, o logro que estamos a falar, toda uma informação não é interpense de um termo-al. Não é que, ou olvidamos ponermos o supervisor, não é que é ter que ponermos o supervisor. Não é que é o corrio ou não é o corrio. Todo não é interpense humana até esta punta de nada, de nada, de nada, ele já está sendo todo, e está guardando todo. E, nesta sistema, se manhã, tu chega a cambiar a sistema, toda a informação está na casa. Não é que se perdiou, ou, ok, se der a nível de faimbras. Já, se eu vou corrup, ok, está aqui, ok? E está, o uso de três servers, ok? Para guardar em três lados diferentes, para não perder nenhum maneira, nenhum maneira, o novo é perder a informação, ok? E três servers, está trabalhando e guardando em três servers. Isso? Está tudo agora? É, listo. Só que o que estava dizendo, para não exender muito, é que, por exemplo, aqui, eu vou mostrar como todos os outros modelos, para que vocês tenham, vai ser um modelo, para que, se, os tempos, por exemplo, tem uma pessoa jurídica, encargada de contratos, se tu pode ter acesso a isso ou outra pessoa, etc. Então, aqui estão todos os modelos, a parte comercial, a parte de calcular como tanto o propósito, para gastar o contrato, para aparecer os contratos, para colocar comentários, etc. Aqui temos um que se chama reportes, e este reportes é um modelo, onde se vai poner, toda a informação que se necessita, em termos de autoridade ou de empate. Então, aqui, como eu administrador, eu posso cargar algumas observações, para o cliente, eu posso cargar uma reporte, aqui, eu posso subir a reporte, ou pode, com o cliente como tal, eu posso, por exemplo, este documento, vamos cambiar, este documento tem a versão 3, e a última atualização foi assim, se você, como empresa, quer encargar esta versão, pode eliminar, e pode cargar outro novo, e isso é o que vai permitir, que a informação que está aqui, é a informação mais atualizada, não precisa, é que é a versão anterior, toda a informação que está aí, e isso mesmo, pode ver o cliente, então, o cliente pode chegar aqui em paz, e aqui vai aparecer, as versões, as últimas versões, mas não, obviamente, não pode editar, só pode descargar elas. Então, aqui, eu vou ver o formulário, e aqui, só, ela aparece, segundo o categoria, ela aparece o que pertence a ela, então, ela pode descargar, de uma forma muito fácil, os documentos como tal. Se vocês, aqui, ele vai aparecer, e sempre descarga a última versão, do documento. Aqui, o admin de vocês tem que ter acesso, como a poder ver que, em que são os usuários, uno de vocês, e poder agregar um usuário novo, outro enviado saliu, e entrou-se, pode eliminar, e pode dar-lhe acesso a outro novo. Então, ela dá accesso absoluto a todas as pessoas que manejan sua plataforma. Esses é o controle que vocês podem entender. Tenhemos uma assistente para o auditor, este assistente de AI, é uma assistente que se vai dar me algumas informações, extras sobre a edasulisitude. Por exemplo, eu pode fazer um clica aqui, e aqui, o enviado pode chatear com a entregência artificial, sobre este e do com esta aplicação, em particular, por exemplo, qual são os elementos machu, os kilobens, os elementos halal, e todos os elementos, ele vai facilitar, o auditor, ter uma resposta muito rápida, com o apoio de entregência artificial, porque, em fundo, ou seja, aqui, quando você vai ter, esta conversação vai ser especializada com este cliente, não é uma informação general. Então, é o que permite a você ter, como todo o detalhe sobre esta solicitude, é a companhia, quantos produtos, ai, que são os produtos que tenho que ver, etc. Então, este apoio com AI ajuda muito a auditor a tomar decisões, etc. O último modelo, é o modelo de comite, isto vai aparecer só na agressão, e isto vai haver todas as solicitudes de generales, se ha chegado a uma, obviamente, aqui, não vai aparecer até que este terminado o contrato e todos os partes, aqui, vai aparecer que estamos teniendo tanto, e aqui, pode ver revisar o caso e vai haver todos os documentos que estão aqui, como detalhe de detalhe de detalhe de empresa, é só os documentos que foram, aqui está a solicitude, aqui está a proposta comercial, aqui está o contrato, e o comite, como tal, pode revisar o que querem, em caso que querem, e ai, a decisão final é aprovar ou não aprovar, é só o que vai aparecer a este modelo, aprovamos este modelo, aprovamos, em caso de aprovar, o sistema vai generar uma certificação, e se vai ser descargable, tanto por o cliente, e tanto enviar-lo de forma que você enconceira. É só um resumen para não extender muito mais, e se tengan alguma duda, pode, com muito gusto, estaria resumindo. Como, como, explica, explica como, como, como, como, o editorial, como passamos por o editorial, como já dámos documentos, como, chega o contrato, explica como, está, como, facilita,mos do contrato. Por favor, por favor, , eu não vou, eu não vou, eu vou, eu vou, comitário, facilita a tu comercial, mas, mood, ai uma parte, Você só lê isso, é o cliente Ben. O remunete comigo, Hala, é isso. Estou entrando isso, e em tempo real, listo, está a solicitude. Acepto, não acepta, listo. Aceptamos, iniciamos processos. É muito rápido. Mas, há uma parte que vai para os analistas, onde sugera o cliente das materias primas, da lista de materias primas, laia de subreda. Ojo porque estão necessitados a certificação Hala. Ojo porque está na lista positiva. Ojo, e isso, vai ser muito mais fácil para que analista de processos terminamos rápido, e se enfoque, o que realmente precisa de cliente que te faz os documentos, e que pede os formesadores com a informação que é mais rápido. Sim. Não é o ideal, para que você não demora 7 meses e 8 meses para certificar. Ok? O contrário, está a melhor rendimento em sua mão, para certificar. Ok? Mas não explicas, depois do contrário, a seguinte parte. É isso, o que explica Andréa Osano. Quero exterrar muito em explicar os detalhes, mas eu posso responder. Vamos tiempo. Vamos tiempo. Vamos a campo. E que, a L'Ovea. Ok. Estos passos que nós estamos dizendo, aqui, por exemplo, o cliente está em a fase. Depois de a fase, está como o salto. Sim. Sim. Então, esse aqui, o cliente, o que tem que fazer, é ter este archivo, a solicitude, ela pode subir, uma vez que ela está fermando, ou seja, a descarga, a firma, a suba, eu aqui como cliente, já he recebido esta documentação, obviamente, gostaria de ir a esto. Então, aqui, vou ver a proposta fermada, a proposta comercial, a casta fermada, uma vez que este formado, ela é a assistente, como tal, se vai chegar aqui e vai adicionar a preparação em contrato. Quando ele diz preparação em contrato, o cliente como tal, em sua página, ele vai chegar aqui, que estão fazendo, estão fazendo a preparação de contrato. Aqui, em preparação de contrato, o que vai dizer é criar um contrato. Quando eu quero criar um contrato, vou ir a contrato, essa é a pessoa encargada, porque, obviamente, a pessoa que faz o contrato é diferente a autor, diferente a técnica, e aqui, me vai chegar ao contrato, este é o modo de contrato, aqui está o contrato enviado, vou haver o contrato. E te parece a identificação de lá, de lá, se peam, salem o contrato, o código, o contrato, e perdonças, é um error de lá, de lá, vaciados, mas aqui, se vai aparecer, como tal, o contenido, isto passa um error, porque não é muito llenado como toda a informação completa, mas aqui, se vai aparecer, como tal, o contrato, salem-se com o lado, ou, ou, ou, ou, e lá, que nós estamos juntos? Que nós fizemos o contrato? Porque podemos nos contrato, estamos, ok? Um contrato, um contrato, estándar, é uns 20 faixinhos, não dizemos isso. O ultimário. Desparamos para a gráfico, para a gráfico. O entende, o avocado de cliente poder poder realizar cada para a gráfico e poder comentar em cada para a gráfico, em cada para a gráfico, poder comentar, ok? E devolver. Então, o contrato não é uns 15 faixinhos, que tem que tener tempo, e meus abogados para leer, e não sei que, não, não é mais esta. Ele poder realizar para a gráfico, para a gráfico, guardar para a gráfico, para a gráfico. Vai almoçar e regresar com o contrato, ok? Los contrato são estándar para industrial para para para a gráfico, e estes são estándar, ok? estão abertos para modificar, mas, em tempo muito compacto e muito limite, ok? Nós fizemos isso em esta maneira, para que não quem se diz, estamos revisando o contrato. Bem, o tempo estava, o contrato está nois e tenamos. Ok? Vamos. Vamos. Sim, então aqui, se vai ver, é a parte que, que o seu laptop estava dizendo, pode editar. Se pode poner comentário e pode visir ao cliente, o cliente vai fazer o mesmo processo, uma vez que está, internamente também, em todos casos, se pode aqui cargar, como tal todo o documento, eu quero cargar a nisso, então, eu lligo aqui, pode cargar este documento a ellos, para que eles lo podem ver. E o cliente aqui, eu posso ver como tal, em documento. Isso pode ser, como entimbrir. É isso que ajuda, isso ajuda, que o contrato que vai aparecer aqui, é o contrato, o que é, não é uma versão anterior, etc. Então, ele facilita muito ter vários documentos e ter só um documento que é a última atualização, etc. Uma vez que este o estado do contrato, como tal, fermado por ambos partes, aqui, o administrador pode ter marcado como fermado, já está fermado. E quando já está fermado, o cliente também le nutifica, quando está aqui, que agora já contrato está informado e faunbras já em seu próprio estúdio. Ou seja, fermar o contrato, empieza a fazer 2, a fase 2, se iniciar com o estúdio. E é isso que estava como explicando aqui, a parte de reportes, onde, uma vez com o AI, é o primeiro passo, depois do contrato, o auditor, chega aqui com o AI e vai chatear com o AI sobre esta solucitude. Agora, aqui é isso que quero ver, este vai a dizer uma lista de produtos, é isso, os produtos que têm que analisar, aqui, te diz o estado, o contrato, e já está fermado, já puedes avançar e te dar toda a informação. Uma vez que terem toda a informação, o auditor mesmo, pode ir a reportes e cargar, que tem 3 aspectos fundamentais em este mol. Uma, a caso pode cargar, unos observações, por exemplo, eu quero cargar tal cliente, eu posso, primeiro, criar uma planilla. Uma planilla, é isso, ela é cada auditor. Pode ter uma planilla especializada de units, etc. e que pode criar, para que guardar uma vez e depois enviar-la em caso que é necessário a outro cliente. E aqui pode ver, como o que é as plantillas disponíveis que eu ai criado, como auditor. Isso é um demo. Ou seja, são reales, são não só um exemplo, mas a ideia aqui, cada uno, aqui pode, cada auditor, pode ter, tem a esta como uma herramienta, para poder gestionar e cargar todas as observações que ele quer, que o cliente pode chequear. E aqui em reportes, se já auditor tem suporto final, aqui pode cargar, normalmente, e em tiempo real ele vai chegar ao cliente. Então, o cliente, quando vai reportes, aqui pode ver, aqui, reportes que foi enviado por auditor. Então, ele facilita em tiempo real. Pode ser que o auditor está em visitar em lugar e uma vez que o carga vai aparecer aqui a entenda real, ao cliente e não precisa esperar muito tempo para que envia o reportes. Por que, pode ouvir que o momento, eu tenho uma duda, ele reporte, basa, por exemplo, ele reporte é genado durante ela auditoria. Ah, ai, controla e de pragas, ai, estos vão ser genados em la plataforma, tem? La plataforma e porque a pai está me dizendo de cargar, mas não necessitando cargar ele em forte, ele em forte. Os pontos estão aqui. Estão novo. É claro, um besesse de ele e o leones, boa volta. Mato está viajando. Mírculo está um encador viernes, está um fósforo. Ok, quando você reporte, quando regressa, ok? Gá, não há mais isto. É ele la plataforma, está terminando reporte e reportando directamente. A cliente e a cliente passa comığını e cały jornal. É departas que始 temps. Le ano wrapping que esta prova. É nosso namorado. em viem. É a única coisa que me pensa, por exemplo, que às vezes, hay pontos que necessitam de validação, por exemplo, de responsável técnico, em um uniforme. Mas o problema é perfecto. Sim, ou seja, isso vai tener contorro absoluto, essa é a pessoa técnica, essa é a seção de pessoa tecnicar de todo o técnico. E aqui, ou seja, uma vez que eu quero, o que ele vai criar, o que quer para este cliente, se quer ir de uma forma muito fácil, ou seja, desde o celular, ele pode fazer, é muito fácil, eu posso criar, e uma vez que eu quero, aí eu posso segmentar para a plana, eu posso segmentar para um cliente. Então, aqui é a única cliente, é a única cliente que retenemos como de demo, e eu vou criar, e se quer ir de uma forma automática, então, esse cliente vai aqui, em repórter, então, isso vai aparecer em tempo, e ela é o cliente, então, isso vai aparecer, isso é o que é, obviamente isso é um demo, mas o cliente, o autor pode poner o que quer, então, aqui ele vai aparecer o que tem que fazer, e o que quer fazer, o que quer fazer, o que quer fazer, sim, sim, com o que quer. É um exemplo, para como funciona, mas isso, você pode exponer o que quer, ou seja, o templet que quer, você pode encargar, e aqui você vai ver o cliente, você pode ver, já é hecho isso, então, eu vou marcar como completo, já é hecho isso, eu vou marcar como completo, já é hecho isso, e deixo isso pendiente, então, é o autor mesmo, também pode tener em conta o que é hecho, é isso, então, isso ajuda o cliente como tal, o autor como tal, tem esta informação, então, aqui, disse que já é completo, é isso, já é completo, é isso, ele falta isso. Então, isso é uma forma muito fácil para que a comunicação, não é que está entre os dois, uma vez que este completo, eu como auditor, eu posso já eliminar isto, já sei que ele vai hecho, etc. Listo, esta parte está clara? Sim, é isso. Listo, isso é uma vez que está, ou seja, a última parte, é isso por isso, reporte, isso, o que diz é cargar, isso, é algo, por exemplo, escrito a mano, há algo como extra que não está aqui, pode subir, que seja, ou seja, aqui, como uma opção de mandar um reporte, de uma forma que não está em a plataforma, algo, algum documento, pode ter em PDF e a cargar, isso é como para facilitar. Listo, isto, isto, todo, se tem alguma pergunta, não quero hablar muito, e esta é a ideia, e que me dizem, se tem ganado algo, não é? Depois está o controle do dia, o controle do dia não vai aponhar o mano, vai decidir, não é? E passa para o Comité e o Comité, sabe-se, etc. Sim, aqui por exemplo, uma vez que isto já está firmado, aqui só ele sale, o Comité é só ele sale, os contratos firmados, antes de isto, não vai aparecer nada, isso é para sua marra a decisão. Então, isto aqui, eles podem ver resumen, como o que ha passado, podem ver, obviamente, as pessoas de Comité e o Comité e o Traneira estão também a todo, e aqui se pode ter, que você pode ter, sem problema, então, podem aprovar ou rechazar. Se o cliente antes de isto, diziam como fazer uma reunião, por exemplo, então, o cliente como tal, agora, tenho uma duda, necessito, como generar uma recebada, reservar como um espaço com auditoria e perguntar sobre algo, então, eu como cliente, tenho acesso. Esta é muito importante, isto aí, isto é muito importante. Esta página, lá d'Ocno, esta é muito importante, temos 22 auditores em fambras, temos 600 ou 700 empresas em fambras, todos vão seguir um calendário, não há que decir, não há auditoria. É impossível que decir que não há auditoria. Já, esta calendário nunca vai ser conflito entre os auditores, dos même dia para um solo auditoria. Todos, todos, todos, os 22 auditores vão estar em esta calendário e lá ai vai mandar a auditores que têm em tiempo, vai apuntar a fecha de auditoria. Então, o auditor não decide que, se eu cedo ou não cedo, o departamento industrial não decide que eu cedo ou não cedo, o departamento do foco é cada vez que não decide. Esta é o calendário que decide o tempo de auditoria, e auditores sim conflito em tempos e auditores. E como o calendário considera o trajeto de la viaje? Aqui, do que é, do que é, do que é... Porque esta é muito importante, muitas vezes, eu não sei se tomaste, mas para ir volvindo o que é no auditoria. Esta é o meu maior problema. Se eu cero em dia, certo? De la viaje? Não entendi a pergunta, perdon. Não se toma a decisão por si mesma. Ou seja, se toma a decisão, segunos para metros, dependendo de, por exemplo, vocês dizem que em Brasil, temos tantos auditores, temos tantos técnicos, temos, podemos... Cada um vai ter um usuário aqui. Aqui, no tema de aqui, em usuários, vamos ter todos os que estão disponíveis, todos os nossos usuários, em todas as 6, com o seu rol. Então, aqui eu posso ver quem é quem. Uma vez que tenho isto, o AI por dentro, já pode saber o calendário de cada uno. Se eu vou agregar uma nova, um novo calendário, pode dar uma coisa que seja. E aqui, vai aparecer, como toda a lista, de lo que os auditores disponíveis. Esta disponibilidade, perdon, e viene, viene, segun, o calendário de cada auditor. E isto é o que se me vai determinar. Então, se você está aqui, você já pode determinar. E na área também, pode também acertar, digamos, industrializados químicos, industrializados alimentos, industrializados formacos, e ele já te saca, qual é isto? É isto? É químico, isso não é... Perdona. Esta não é... Esta é esclógica, por exemplo, os têm de determinar os auditores, é o mesmo que trabaja em tempo, e é assim que é só ler, e é fazer poder feitar esta<|tr|> segunidade, isto é o que é isto? Bom, muito. O auditorice terão de onde eles vão sair sem... Alguns estão saindo de um lugar, então, tem o ponto de origem. Obviamente, dá basicá o celular, basear uma situação de logística do país. Tem que ser legal, ele está livre, mas você tem a distância, a viagem, tudo aquilo que ele... Eu acho que é possível colocar parâmetros, de dizer quando ele vai estar disponível naquele local. Mas o que é isto? Descolar uma auditoricep, basear o vene, é para a gente de origem, onde ele está. Isaú, e há, há, e há, e há, e há, e é, e há, e há, e há, e há, e há, e há, e há, e há, e há, e há, e há, e há... Há, e há, e há, e há, e há, e há, e há, e há, e há, e há, e há, e há, e há, e há, e há, e há, e há, e há... é a auditor bem fa? Não. Então, a mão que filala, é a 6. Então, a gente precisa, efetivamente, ter a quantidade de adequado de auditores, educar e colocar nossos contratos para as empresas, ter que receber auditoria no tempo que nós determinamos, não no tempo que eles quiserem, aqui não acumulha os teorias para poucos auditores que temos, mas isso não é um problema do sistema, isso é um programa de origem que nós temos corrigir antes do sistema. Então, esse talvez seja poucos aqui que não estão no médio, então, a gente tem que analisar o sistema de si, sem discutir os problemas que nós já temos hoje, que precisamos fazer o problema. Sim. Para fugir de amor? Olá, oura, assim, você tem alguma pergunta sobre isso ou o outro? É geral, quando venha a ecohaleia aqui, pro contexto, é que a ecohaleia que possa nos direcionar, faz as plataformas, elas estão inquecíveis de nós implementarmos dentro de um plano geral que nós queremos. Faz as perguntas agora. A ecohaleia tem dentro do seu escopro, um projeto similar a isso, essa é uma pergunta. Não, não tem dentro do seu escopro, um projeto similar, vocês passariam a discutir com estes marmotas, a ideia ou conceito dessa estrutura, desse projeto é claro que vocês fazem uma análise técnica, de enuguagem, segurança inúvida, explica o que precisa, desse projeto ser incorporado dentro do padrão faler de controle e essa é a ideia. Então, acho que seria interessante a gente aproveitar os estes marmotas para fazer perguntas agora, para fazer perguntas sobre aquilo que nós, efetivamente, temos dúvidas com relação ao próprio sistema que foi apresentado aqui. Eu vou confessar algo aqui, para traduzir por um poespa, primeiro que eu estou muito feliz de ter observado a apresentação desse sistema. Este sistema tocou em pontos, são debates que nós temos aqui, há muito tempo para tentar agilizar processos. Este é uma falando em questões aqui, que é como utilizar essa ferramenta necessária que era a inteligência artificial em vários setores. Eu vou se estar alguns aqui, setores como, por exemplo, SAC, a ideia de você automatizar isso sem demandar tempo de pessoas e são caro, tempo das pessoas aqui, um valor cátric, eu vim aqui, algo bastante importante que é um problema que temos, que é a entre a proposta comercial e o processo como um todo, a quantidade de dias assim como a dar uma firma de fato, é esse sim. Nós perdemos clientes por conta desse período de demora que nós temos aqui dentro da estrutura. A nossa estrutura ainda, ela é uma estrutura, eu diria, manual. Manual e segura. Ela precisa ser segura e não manual. E é o que está se propondo aqui. Então, eu vi muitos pontos que vocês devem estar enfrentando dificuldades lá na Colombe, nós aqui, e que foi abordado aqui como tentar resolver esses pontos, esses problemas que nós estamos enfrentando como um grupo. A única questão, que é assim, nós temos uma empresa que é a Corralhalla. É Corralhalla uma empresa similar que vocês marram o que faz. A corralhalla é que dá os rumos do que nós estamos fazendo. Mas lá atrás nós discutimos o que precisava fazer. E está para um, e está para dois, e está para três, até chegar a astralhabilidade. Então nós estamos em curso, isso já está acontecendo. O que é importante daqui? É importante que aja um encontro, uma sinergia entre o que a corralhalla está fazendo e o que está sendo propósito. Então, a ideia é que a corralhalla possa conversar com este esmermêutro. E na minha opinião, se está fora do esclopo do que está sendo feito, trazer o que adentro pro projeto. Essa é minha opinião. A grosso modo, porque eu ouvi aqui, mas é claro que nós temos conversável, com a época para entender isso melhor. E mais do que isso. E você tem uma questão que é uma proposta comercial desse projeto. Quanto vai apostar de que maneira eles estão sendo construídos. Eu já vi que tem agora um piloto já pronto. Ele mostrou que isso já está quase em funcionamento. E esta vez, em chara, em cada vez, na época, a corralhalla achei um zabete do mundo. Essa é a minha observação. É que agora vocês, todos, favorem fazer ter butas. E aí, fica a boa forma. Comprende-se. Pode eu traduzir? Só no momento. Deja-me só traduzir a ela que eu não compreendo tudo. A ideia é traer este projeto de Marmon, dentro do que eu estou com a corralhalla. Então, o Dr. Alivio viu muitas coisas buenas em este projeto que vão fazer mais rápido coisas que hoje são manuales. Então, isso vai dar a realidade a nosso processo. E ele vê o uso da inteligência artificial em vários sectores. Por exemplo, esta inteligência artificial é automatizar o contato de cliente que é zécio inelicite. E que isso é algo que, hoje, por exemplo, a qualidade tem que responder, outros departamentos respondem. E custa tempo, porque custa me tempo e me tempo é splata. Então, nós temos que automatizar isto. E ele também vê com muito os olhos que vão se quedar mais rápidas, como o tempo entre a propuesta e ele pesca o processo de dar documentação de cliente. Por exemplo, o Omar diz que a cliente está pronto e acha que linda ou em pé, você vai falar com o cliente há tempo e a plataforma, a inteligência artificial vai fazer isto ser mais rápido. Então, ele gosta muito porque você traz maneiras de resolver, frailidades do grupo que tu enfrentas em colombia, nós outros enfrentamos, tendrás tudo. Então, isso é muito importante que existe uma sinergia, sinergia entre um ecuhalal e a propuesta que vocês estão atraindo. Por isso, ele gostaria, por exemplo, que é erica que é representante de ecuhalal? Há perguntas a Mahmoud, a respeito de a seguridad de estes dados, de como vão ser. E a doutora também lep�es pensar, por exemplo, sobre o custo deste projeto. Com os custos comerciales para traer-lo. E também, ele gostaria saber se, hoje, em ecuhalal, já havia algo hecho similar a isto, se aún você vai ser desenvolvido, se você quer estar em um planejamento de ecuhalal, então, você também vai entender como um todo, para isso me dámente. Vou começar com uma pergunta, então. E ele gostaria de começar com uma pergunta a Mahmoud. Claro, claro. E o que você disse? É a inteligência artificial, de que nós nos infelizamos. É uma inteligência artificial que ainda está se formando. Alguns conteúdos ainda requerem se consolidem dentro da inteligência artificial. Então, isso leva a irros. A irros bastante evidentes, principalmente quando você fala do Slay, e principalmente quando você fala do Alcaler. O dá um exemplo que simpense. A questão da do Alcaler é bastante complexo dentro do Alcaler. A inteligência artificial, se você for consultada acerca das questões do Alcaler, obviamente que ela não tem a resposta absoluta para essas questões, porque existem quatos diversas, visões diferentes, e mesmo dentro da norma, existem duvios com relação a isso. A pergunta que eu faço, essa inteligência artificial que vocês vão estar falando, é a mesma que nós usamos no nosso dia a dia, porque nós alimentamos ela de maneira separada. Ele já tinha adiantado esse tema, mas eu vou deixar ele responder, mas ele falou simplesmente a alimentaria. Marludo, ela pergunta as outras das questões do Alcaler. Eu acho que ele vai entender o que está usando a americana. Confendi-se. Eu acho que sim. Foi o de responder. Obviamente, isso é muito importante saber se eu vou, por exemplo, a Shadjipit. E ele é a água a pergunta a Shadjipit. Shadjipit, o que é material? O que está de produtos? Tem que ter uma pergunta. A resposta é muito génerica. Nós não podemos confiar em essas respuestas, porque não tem contexto. Ou seja, pode ser algo bom, pode ser algo malo. Isso não tem contexto, não entende. Você pode buscar por internet, mas a informação não é confiada. O que nós temos aqui, a diferença entre Shadjipit e Shadjipit, por exemplo, Shadjipit tem toda a informação de vocês. Por exemplo, Andrea me compatou todas as resoluciones. É o momento. É o momento. É o momento. Ainda não tem a creatividade. Não tem a creatividade em esta pergunta. Ser o que é a creatividade. O que você com a Lei Ausk, é o prohibido trair de uma resposta de outra parte do mundo. É porque é muito confiável. O que nós temos, você pode ponhar uma biblioteca com o tempo. 10 milígros você pode ponhar. E você diz a Lei Ausk, só 10 milígros. Não há outra coisa de outra pessoa. Sim, é isso. Em resumen aqui, a Lei Ausk está alimentado com a informação confiável que vocês consideram de um fuente confiável. E esta informação. Adicionalmente a isto, a Lei Ausk está integrado com toda a documentação e a informação que está aprovido por o cliente. O que é este cliente? O que é que o material tem? Então, tem muito mais contexto que eu vou já dividir e eu pregunto algo porque não tem nada de contexto. Esta é a grande diferença, a grande vantagem é isto. Tercero, eu posso aqui em Gbiti cargar as coisas. Por exemplo, cargaram as coisas depois de perguntar-lhe. Mas é quando eu hago este processo de cargar a informação, esta está na nuvem de Chat GPT, ou seja, não tem acesso. Então estão usando meus dados, pode ser algo crítico, pode ser algo não seguro, mas pular a informação crítica aqui. Entre as que é a cânere e o sistema, toda a informação de esta é, está protegida, está em uma nuvem, é uma vacilada se llada, não se pode, nada mais, pode comunicar, só através de a plataforma, pode comunicar ou fazer o uso de esta informação guardada. Então, por a nível de seguridade, é muito mais seguro, e a nível de confiar em a informação é muito mais sofisticado em fazer este tipo de análises. Não sei se, com isto, eu entendi o bem na pergunta. Entendi o labid. Outra coisa muito boa na esta aticação. Pode, por favor, a ver igual, me vão descarro o processo de pronaca, de... de... de... de boia aqui, e que passou, por favor, com os meus confórtidos. Acomente. O que você precisa, Tatiem? Obviamente, para você consultar, como é que nós fazemos para consultar este processo? Sim, eu estou sempre perguntando a qualidade, que é a gente que está muito distinto. É uma necessidade. Sim, assim, você tem que fazer o caso, e a gente vai saber, saber, ok? Você tem um processo. Ok? Eu não necessito chamar a nadie. Eu não quero escuchar bem a nem. Eu quero saber, onde está o processo, o momento que você precisa. Ok? Você está frente a sua cliente. E está aproveitando o curso de suprisos. Ok? Quanto vezes você vai chamar, vai chamar a 15 pessoas. A 15 pessoas. Você tem problema em uma certificação de canal? Ok? Oh, la, la, la, la, la, la, la, la, la, la, la, la, la, la, la, la. El fin. Passim. Por favor, terminame. Esta está passando sempre. E em todo, e perguntar como se há. Exáctimente. É. É. É. E está a esta idea. É. Vai dar a ideia de autonomia. Então, se a Bélia está fazendo uma reunião por você perguntar, A questão da planta X, se abre na forma da sua mão e vê a planta X. É. É. É isso. É isso. Isso é muito importante, Dr. Ali, que sabe as vinte. Que esta é um parte solamente, um parte de algo completo. Então, se conv予 de um galco, tinte, ai para cá. É um projeto mais grande que inclui a marketing da AI, a administração da AI. Tu tene a la siviana na Vlick. A questão do máximo, nós não vamos debater hoje. É a questão da marketing da uma saída, hoje? Não há nada. Mas eu entendi claramente o que isso faz parte de um médio. Se você foi implementar no marketing para conseguir mais clientes, você tem como agilizar todo esse processo. Se foi implementar na inteligência comercial, que já temos o sistema que foi comprar por nós, já temos como então integrar a minha preocupação à dada, abreia, esteja sempre. Nós não podemos ter movimentos em separar. A nossa cultura é uma só. Nós precisamos o que beneficia o Brasil, beneficia o Paraguai, beneficia a Argentina, colômbia, qualquer lugar que seja. Quais ser um sistema unho? Essa é a ideia, o conceito. Então, se esse sistema, como está se mostrando, é um sistema que pode nos atender, então esse será o sistema utilizar para todo mundo. Então, aqui eu tenho um cuidado enorme, que às vezes a qualidade nem me pediu. Para comprar um sistema, a inteligência nem me pedia para comprar um sistema. Porque eles querem resolver o problema deles, eles têm razão. Quando você permite essa compra de vários sistemas, vira uma coisa que não era um padrão da FAMBLAS FAMBLAS FAMBLAS. Nós precisamos, aqui, essa reunião para a medida, ela começa com a ideia como conceito que nós precisamos ter o padrão falado. Para o grupo, como o teu, que isso tem que ser utilizado por todos. Essa é a ideia. Se comprensa? É... Não sei se entendi bem, mas eu queria dizer algo que é o que tem que ver com o que é entendido sobre a integração com o EcoHalal. Essa plataforma, se pode integrar, ou seja, está escrita em um linguagem, é o que mais usado em um dia em desarrollo de aplicação no web. Se pode... Uma consulta permiso. Claro, e eu estou mirando aqui, estou gostando muito muito o que estou mirando. Mas há uma dura, essa plataforma que você desenvolve este e está em produção, não é? Está local, não está, mas está em local, podemos fazer de implementos em qualquer momento. Ah, é perfeito. E é possível então, então, nós podemos ter uma charla e compartilhamos a informação e compartilhamos os dados, porque... Eu acho que nós temos, em um plano de produto de EcoHalal, de EcoHalal, algo muito, muito parecido, que não é um pouco distinto. E podemos reutilizar totalmente para que nós temos tanto nem Brasil como em toda a América de Sur, a mesma plataforma. Eu gostaria muito de ter uma charla com este separado, para que nós não... Nós temos coisas em distinto, porque se nós temos a mesma plataforma, nós temos a mesma direção em uma sua companhia e em uma sua implia, nós temos que trabalhar juntos, eu me gostou muito, e podemos acelerar muito o desarrollo de todo o projeto, se compartilhamos o desarrollo de EcoHalal e o desarrollo da FAMBA das Pasta Fúram, e que eu estou a mirar aqui. O que é isso? O que seria muito interessante, vou falar em português aqui para vocês. Eu acho que eu posso entender depois dessa minha ilha para a Espanha. Eu comecei a entender um pouco melhor a ideia, você está perfeito. O primeiro, você manifestou que gostou demais do que eu ouviu, mas está dentro de um escopo contratado por nós, para que a EcoHalal é o desenvolver esse projeto na área de governança. E o Estesis marcou, ele só mostrou a parte um pedaço, porque tem a parte do Marte, tem outras partes também, que interessa para nós e se encontram e essa se energia para que a gente possa se alavancar tanto o Estesis, o Marmolto como nós. Então eu acho que concordo que você tem que ter essa... Eu só... como é que eu ouviu? Não, não, não, não. É um bate-papo, na verdade. Então o que nós podemos fazer,is que a Dala pode organizar essa reunião entre vocês, essa Dala, e vocês, e vocês podem então dialogar no sentido de a gente tomar uma decidão. E essa decisão são várias, que podendo se tomar dentro da... o que eu me parece, depois dessa sua reunião, que você entender, tecnicamente, que o Estesismar botou uma proposta que já totalmente adaptava para nós, depois de estar tecnicando, e nuvem, segurança, linguagem, vocês sabem se está, você tem uma... Aí nós vamos receber, estesismarbrou de uma proposta comercial, e aí a gente volta a conversar com calma, ecorhaler, fã braço, e a própria empresa de César Marmolto, para que a gente possa viabilizar essa... Essa junção, vamos chamar assim, muito bem vindo. Sim, é uma coisa de editar. E uma coisa de editar. Claro, uma das coisas só que me chamou atenção, e é por isso que eu quero conversar com eles, Ali. É que ainda não está em produção, isso é apenas um projeto. Então, existem muitas coisas aí, a serem definidas, parte de segurança de dados, parte de maturidade, do processo, etc. Que a gente tem que conversar. Mas sim, como estamos indo no mesmo caminho, ali a gente pode conversar com eles e de repente juntar essas forças a esse foro caso. É mais, a gente tem que entender se vai ser esse caso. Mas já está, essa rojada é um sugrame parte. Todos os formulários do CPM, e fã braço já estão em la plataforma. Las normas também. Os critérios da selección, Harami, Halal, já está. O que é a plataforma? A plataforma está que está vindo, é lista para o deployment. Então, assim podemos fazer, ou seja, terem todas as partes. Claro, claro. Vamos, vamos tener uma, uma charla aqui entre nós, os acais. E Ali, se também podemos começar uma terra com eles, depois de, de la nuestra charla, eu me gostaria muito. Mas vamos alinhar completamente primeiro e ver como está o Proyecto em Brasil. E aí se conversar com você, a respeito de toda a plataforma que é presente. Perfecto. É realmente, eu acho, muito promissor à nossa reunião. Eu me entendi aqui, que vários pontos que foram tocados aqui, nós vamos ter que trazer, e resolver, dentro da nossa própria estrutura, essa é uma preocupação que nós temos de algum tempo. Para bem-nisso, a dar de ter buscado soluções, os caminhos que ele encontrou para trazer para nós, também vocês marcam outro projeto em si. Agora, uma próxima etapa seria, de fato, uma reunião muito rápida, Vuevich, com o ex-adar poder organizar. Para você tirar todas as dúvidas, para a gente poder, então, abasear na sua anuência, a gente buscar uma proposta comercial, a gente poder tentar integrar tudo isso, porque aparentemente, pelo que vi, isso já está formatado e consolidado. Ali, ali, já está desenhado, já tem um caminho muito grande, já está pronto, né? Foi a primeira pergunta que você fez para ele, né? Quando ele fala que já está em atividade local, isso significa que é um sistema que já está funcionando, obviamente. Não, não, quando ele falou que é local, é que o ambiente, onde ele está rodando, ali, é na máquina dele, tá ali. Mas eu já entendi, ele está pronto para produção, eu acho que é só a gente fazer realmente o deploy, mas eu acho que o nosso ponto aqui é além disso, tá? Eu acho que não é tecnologia, não é nada disso, até porque eles utilizam, basicamente, a mesma tecnologia que nós. Mais assuntos comerciais estratégicos, a interessa corralal e essa plataforma, tá? Perfeito, perfeito. Ok, eu fiz. Termina pra você? É, você não tem. Você não tem que falar ou não, não tem jeito de falar, pede. Não, porém, é um momento, não, é só que não entendi essa última parte, mas se não há a tradução, está bem, não sei, eu quedo atento. A última parte é que depois Eric de acuhar a Lava, vai falar com você, e quem vai fazer esse cambio de informação que você e Eric, é sabidalo, por orientação de doctoral, sí? Perfeito, sim. O que necessita, eu quedo muito atento qualquer coisa com muito tempo. Perfeito. Eu vou involucar Flavio e Sintio, que é o de My Team, que Flavio é o CEO de a companhia, também, que nós temos que falar com eles, primeiro, e assim que nós nós falamos aqui, já marcamos uma fecha para falamos. Perfeito. Perfeito, perfeito, sim, um muito gostoso. E depois, dá-nos dois opções para poder concordar bem, na fecha seria, porém, vocês que vão... E não, é qualquer momento que... Sim, Andrea, que eu não estava falando, quando... Sim. Não é problema, se não é problema, se acuadramos e me dizem, é o dia de fecha, e não tem nenhum problema. Estava desvundida, de acuhar a Lava, em um que... Nós temos um ritmo um pouco rápido de trabalhos. É o estator do trabalho que fizemos, realizamos, em menos de três meses. Em um, nos três em... Não, em julho, em julho, empezamos, certamente, como é? Sim, sim, sim, melhor. Ok, esta está lista, esta... está perfecta completa em... em... em... em octubre. Então, se nós estamos... de uma aplicação completa, plataforma completa de junho, é octubre, ok? E podemos terminar outras projetos, tenhamos necessitados o apoio de... e desvundida de acuhar a Lava, para participar em o projeto. Que é possível ir nos pases, dois fechas tentativas para a próxima semana, dentro da cursa de esta semana, a mais tardar, é ver, não é? É possível? Completamente, é possível. Eu vou tentar... eu vou tentar do... doz de cá, para cá. Ah, uma curiosidade. Ustedes já estão utilizando Inteligência Artificial para o processo de desarrollo, toda dia? Ou não? Claro, o... o ea está como assistente para a revisión, revisión dicoidico, está... 100% com os outros... os melhores modelos, obviamente. Isso é uma coisa muito por isso. Ah, por supuesto. Gracias. Gracias, gracias. Claro que é isso. É porque a paz seja com todos estes, mafom, barca, lafique. Não é pra que não sutem, não sutem. Ah, muito obrigado. Jogado. Jogado. Eu não tenho tempo para te refletir. Chucran, mas... Estar o ego, coenze muito. Chucran.
+
+================================================================================
+SEGMENTOS COM TIMESTAMPS
+================================================================================
+
+[210.00s -> 212.00s] Um dia.
+[212.00s -> 221.20s] Acredito, ver Pelas desculpas aí, está pedindo aí a
+[221.20s -> 230.64s] environments, eu não posso итогa mesmo, é que eu só
+[230.64s -> 237.90s] acordei o radically do nossolying упer não puntos boneios,
+[237.90s -> 240.70s] a gente está pedindo a
+[240.70s -> 242.54s] atuação de você de uma
+[242.54s -> 244.20s] administração originária.
+[244.20s -> 245.30s] Primeiro saudades, faz tempo que
+[245.30s -> 247.30s] você põe no globo ou não?
+[247.30s -> 250.70s] Não fui, eu estou aqui meio complicado
+[250.70s -> 252.10s] aqui de coisas, eu tive que ficar
+[252.10s -> 253.10s] por aqui.
+[253.10s -> 254.60s] Acabou não, não indo.
+[254.60s -> 256.60s] Tranquilo, mas deixa falar,
+[256.60s -> 258.10s] seria interessante aí você está
+[258.10s -> 260.10s] participando com o LOSCA,
+[260.10s -> 262.10s] na verdade isso tem a ver com uma
+[262.10s -> 264.10s] iniciativa nossa filial lá da
+[264.10s -> 267.30s] colombia, e nós somos ouvintes,
+[267.30s -> 269.50s] vamos entender o que eles têm
+[269.50s -> 271.50s] para propor dentro da área,
+[271.50s -> 273.00s] que nós temos que ter a
+[273.00s -> 274.20s] validação ou não da
+[274.20s -> 276.70s] ecorralã, um sentido de fazer
+[276.70s -> 278.50s] a acusição desse projeto ou
+[278.50s -> 279.50s] não, tá bom?
+[279.50s -> 281.50s] É por isso que eu pedi o gente
+[281.50s -> 283.50s] não adiantava eu só estar
+[283.50s -> 285.20s] assistindo para depois repassar
+[285.20s -> 286.20s] para vocês.
+[286.20s -> 287.70s] Então a gente daqui a pouco,
+[287.70s -> 288.70s] só estamos resolvendo um
+[288.70s -> 290.70s] problema de cabo aqui,
+[290.70s -> 293.20s] sempre o resolvendo, a gente
+[293.20s -> 294.70s] está juntos, tá bom?
+[294.70s -> 295.90s] Sem problema nenhum,
+[295.90s -> 296.90s] estamos à disposição.
+[296.90s -> 298.70s] Obrigado, Eric, abraço,
+[298.70s -> 300.30s] grães, queridos, saudades.
+[300.30s -> 301.30s] Vamos tomar um café,
+[301.30s -> 303.00s] a ver se você aparece aí.
+[303.00s -> 304.20s] Eu quero ver, na próxima vez
+[304.20s -> 305.00s] que eu for para São Paulo,
+[305.00s -> 306.00s] eu aviso que eu vou a gente
+[306.00s -> 307.50s] tomar um café juntos.
+[307.50s -> 309.30s] Tá bom, abraço, querido.
+[309.30s -> 310.30s] Valeu.
+[416.90s -> 429.50s] Bom, nós estamos com o
+[429.50s -> 432.50s] problema da câmera,
+[432.50s -> 433.50s] a gente vai deixar a
+[433.50s -> 434.50s] câmera desligada.
+[434.50s -> 437.50s] Esse é Eric e o
+[437.50s -> 439.20s] doctor Ali chamou, é da
+[439.20s -> 440.20s] ecorralão.
+[440.20s -> 444.10s] Ele gritou para mirar
+[444.10s -> 445.50s] o que você está fazendo,
+[445.50s -> 449.10s] mas eu vou deixar
+[449.10s -> 451.50s] ninguém para mim,
+[451.50s -> 453.50s] eu vou deixar ninguém para
+[453.50s -> 454.50s] a câmera.
+[454.50s -> 458.50s] Sim, sim.
+[458.50s -> 460.30s] Claro, nós só vamos
+[460.30s -> 461.70s] cerrar a pantalla, não é
+[461.70s -> 462.70s] problema?
+[462.70s -> 464.50s] Vale, graças,
+[464.50s -> 466.90s] estamos lá escuchando e
+[466.90s -> 470.50s] tu podemos empezar agora.
+[471.10s -> 473.10s] Que é a coisa de todos?
+[473.10s -> 475.10s] É, aqui foi o da
+[475.10s -> 477.10s] início da Maria União,
+[477.10s -> 478.60s] eu deu, com permitando
+[478.60s -> 480.80s] estar usando o nosso
+[480.80s -> 481.60s] que lido a dar,
+[481.60s -> 482.80s] ficar aqui com o Nússico,
+[482.80s -> 484.30s] estar aqui em São Paulo,
+[484.30s -> 485.50s] a André, tem de
+[485.50s -> 487.30s] um dos rindos da Colômbia.
+[487.30s -> 489.60s] É, e se Deus quiser,
+[489.60s -> 491.10s] vamos fazer Maria União,
+[491.10s -> 492.80s] alguma volta, a primeira
+[492.80s -> 494.80s] dela nós vamos falar sobre
+[494.80s -> 496.10s] uma proposta de uma
+[496.10s -> 498.90s] plataforma e aí acabou
+[498.90s -> 500.70s] trazendo para essa reunião
+[500.70s -> 501.70s] alguns diretores,
+[501.70s -> 502.90s] aqui o nosso diretor
+[502.90s -> 504.50s] da Simis Orbito,
+[504.50s -> 505.50s] também é uma charrinha
+[505.50s -> 507.70s] da Quico Nússico,
+[507.70s -> 509.70s] a Elaine também,
+[509.70s -> 511.10s] a Nadani,
+[511.10s -> 512.70s] e também lá que é um
+[512.70s -> 514.70s] sócio diretor da época,
+[514.70s -> 515.70s] né?
+[515.70s -> 517.40s] É, que essa empresa,
+[517.40s -> 518.30s] que é o nosso braço
+[518.30s -> 519.50s] tecnológico do Grupo
+[519.50s -> 520.90s] que foi um braço,
+[520.90s -> 522.40s] é importante a participação
+[522.40s -> 523.40s] dele para entender um
+[523.40s -> 524.90s] pouco melhor.
+[524.90s -> 525.90s] Essa proposta,
+[525.90s -> 527.10s] que é a nossa primeira
+[527.10s -> 528.90s] palpa, a gente vai falar
+[528.90s -> 530.90s] exatamente sobre isso.
+[530.90s -> 531.90s] Agora eu passo a palavra
+[531.90s -> 533.90s] que ela permite se apresentar
+[533.90s -> 534.90s] e já dá início,
+[534.90s -> 535.90s] então a apresentação
+[535.90s -> 536.90s] para dar uma despezada
+[536.90s -> 537.90s] da...
+[537.90s -> 538.90s] Será uma legunção da...
+[538.90s -> 539.90s] É, é...
+[544.50s -> 546.30s] Pô, é dia a todos.
+[546.30s -> 547.90s] É que é essa manhã,
+[547.90s -> 549.90s] é... Pô, é dia a todos.
+[549.90s -> 551.30s] É, o propósito
+[551.30s -> 553.30s] dessa plataforma,
+[553.30s -> 554.10s] que é se minimizar
+[554.10s -> 555.50s] a esquiência do processo
+[555.50s -> 556.90s] de la certificação
+[556.90s -> 559.10s] e minimizar
+[559.10s -> 562.70s] a interferência humana,
+[562.70s -> 565.50s] o processo de la certificação.
+[565.50s -> 567.50s] Então, é...
+[567.50s -> 568.70s] Essa aplicação...
+[568.70s -> 569.70s] é...
+[571.90s -> 573.30s] é muito radio,
+[573.30s -> 574.90s] que é o que é o Brasil.
+[574.90s -> 576.90s] É muito bom, é muito bom.
+[576.90s -> 578.70s] Pô, a informação
+[578.70s -> 579.50s] de la certificação,
+[579.50s -> 580.10s] quanto mais,
+[580.10s -> 581.70s] teda resultado.
+[581.70s -> 582.50s] Ok?
+[582.50s -> 583.30s] Então,
+[583.30s -> 584.90s] se teneu toda a informação,
+[584.90s -> 586.70s] todos os normos
+[586.70s -> 587.70s] de todos...
+[587.70s -> 588.70s] de...
+[588.70s -> 589.70s] de...
+[589.70s -> 590.50s] de todos os interesses
+[590.50s -> 591.50s] do mundo,
+[591.50s -> 592.50s] ok?
+[592.50s -> 593.70s] A AI
+[593.70s -> 594.70s] pode analisar
+[594.70s -> 596.70s] e sacar a forma
+[596.70s -> 598.10s] ou respuesta necessita
+[598.10s -> 599.30s] que estácta,
+[599.30s -> 599.70s] ok?
+[599.70s -> 602.10s] Para um processo de...
+[602.10s -> 603.10s] de fala.
+[603.10s -> 604.10s] Então, então,
+[604.10s -> 605.10s] se quando um pieça
+[605.10s -> 605.70s] com a certificação,
+[605.70s -> 607.10s] com alcance à SMIC,
+[607.10s -> 607.70s] ok?
+[607.70s -> 609.30s] De uma vez, a AI
+[609.30s -> 610.30s] vai...
+[610.30s -> 611.10s] de hack SMIC
+[611.10s -> 612.30s] sem interferência
+[612.30s -> 614.30s] de outra forma.
+[614.70s -> 616.10s] O processo...
+[616.10s -> 617.10s] vai haver...
+[617.10s -> 618.50s] o processo que...
+[618.50s -> 619.50s] realmente...
+[619.50s -> 619.90s] não...
+[619.90s -> 620.40s] ai...
+[620.40s -> 620.70s] não...
+[620.70s -> 620.90s] ai...
+[620.90s -> 621.90s] não...
+[621.90s -> 622.90s] ai...
+[622.90s -> 623.90s] não...
+[623.90s -> 625.10s] temos sobre as normas.
+[625.10s -> 626.10s] A AI está...
+[626.10s -> 627.10s] assiendo o trabajando...
+[627.10s -> 629.10s] o trabalho e a lidisando...
+[629.10s -> 630.10s] e dar-se...
+[630.10s -> 632.10s] o único que vai ser um empleado
+[632.10s -> 633.10s] de...
+[633.10s -> 635.10s] envolvido o processo
+[635.10s -> 637.10s] do halal...
+[637.10s -> 638.50s] é decir, ok.
+[638.50s -> 639.50s] Ok?
+[639.50s -> 641.50s] Em a porta-qual parte
+[641.50s -> 642.50s] do processo,
+[642.50s -> 643.70s] a porta-qual parte
+[643.70s -> 644.70s] do processo
+[644.70s -> 646.10s] pode revisar antes,
+[646.10s -> 647.90s] de uma hora e visa depois.
+[647.90s -> 649.90s] Então, se caluzir...
+[649.90s -> 651.30s] a decisão
+[651.30s -> 652.70s] se revisar todo,
+[652.70s -> 653.50s] quando quer,
+[653.50s -> 654.70s] em a porta-qual o momento,
+[654.70s -> 655.30s] todo se vê
+[655.30s -> 656.70s] frente a ela.
+[656.70s -> 656.90s] Ok?
+[656.90s -> 657.70s] Facilita muito
+[657.70s -> 658.70s] o tema
+[658.70s -> 661.30s] dos auditorios.
+[661.30s -> 662.90s] Muito mais fácil.
+[662.90s -> 663.50s] O firma
+[663.50s -> 664.30s] de contrato,
+[664.30s -> 665.70s] muito mais fácil,
+[665.70s -> 666.90s] e isso é uma maneira
+[666.90s -> 668.10s] muito mais fácil
+[668.10s -> 669.30s] para me avisar.
+[669.30s -> 670.10s] Honacamente,
+[670.10s -> 671.30s] a renovação
+[671.50s -> 673.50s] de uma renovação
+[673.50s -> 675.30s] de uma
+[675.30s -> 677.50s] processo de renovação
+[677.50s -> 680.10s] pode desligar a máxima 4 dias
+[680.10s -> 682.10s] e a uma certificação real
+[682.10s -> 683.10s] pode desligar
+[683.10s -> 685.70s] mais ou menos entre 8 e 12 dias.
+[685.70s -> 687.10s] Esta é o plano.
+[687.10s -> 688.10s] Agora estamos
+[688.10s -> 690.90s] em um promedio de 90 dias de certificação.
+[690.90s -> 691.90s] Ok?
+[691.90s -> 693.70s] Então, se o plano desligar
+[693.70s -> 694.70s] a deixar
+[694.70s -> 697.50s] a interferência urbana
+[697.50s -> 699.50s] para que a AI decide
+[699.50s -> 701.70s] sobre todo o que nós transponemos.
+[701.70s -> 703.10s] Então, se não
+[703.10s -> 704.90s] você vai eliminar 90%
+[704.90s -> 705.70s] o tema
+[705.70s -> 707.70s] dos noco-por-metades
+[707.70s -> 709.30s] que estamos recebendo
+[709.30s -> 710.50s] hoje em dia.
+[710.50s -> 712.10s] Esta é o caso de generar.
+[712.10s -> 713.10s] Sim, entendeu.
+[713.10s -> 714.30s] Porque, dificilamente,
+[714.30s -> 715.50s] eu, eu, eu, eu, eu,
+[715.50s -> 716.70s] eu sei o que é poliglota.
+[716.70s -> 718.30s] Fala diversa de línguas.
+[718.30s -> 720.90s] O espalhante é entre elas.
+[720.90s -> 722.90s] Por supuesto.
+[725.90s -> 728.90s] Então, tranquilo, acho que todos me derver.
+[728.90s -> 730.10s] Então, falando, pode,
+[730.10s -> 730.90s] pode dar início
+[730.90s -> 733.10s] se nós estamos aqui com o dom de ele
+[733.10s -> 734.10s] e o dom de ele,
+[734.10s -> 735.10s] o dom de ele, o dom de ele,
+[735.10s -> 736.10s] isso.
+[736.10s -> 737.10s] Ok, a nossa área fica
+[737.10s -> 739.10s] e a nossa área fica
+[739.10s -> 742.10s] e a nossa área não está aqui.
+[742.10s -> 743.30s] Então, fique apontado
+[743.30s -> 745.30s] se ele puder já fazer participação
+[745.30s -> 747.10s] e a a a a a a a a a.
+[747.10s -> 748.34s] Então, então, fique
+[748.34s -> 749.70s] balance mal com a nossa mão.
+[749.70s -> 750.70s] Listo, ok.
+[750.70s -> 753.70s] Bueno, bueno, os dias a todos
+[753.70s -> 754.90s] eu vou acompanhar
+[754.90s -> 758.70s] minha pantalla para poder explicar-lo.
+[762.90s -> 763.90s] Listo.
+[763.90s -> 764.90s] Não tem minha, pode
+[764.90s -> 765.70s] enconfermar se podem
+[765.70s -> 766.70s] perder a pantalla.
+[769.30s -> 770.30s] E teremos.
+[771.70s -> 773.30s] Ok, listo.
+[773.30s -> 774.70s] A plataforma tem
+[774.70s -> 776.10s] perdão, não,
+[776.10s -> 777.10s] eu hablo português.
+[777.10s -> 777.90s] Então, se eu pode falar
+[777.90s -> 778.50s] em espanhadores,
+[778.50s -> 779.50s] espero que me entiendam
+[779.50s -> 780.50s] e por favor,
+[780.50s -> 781.50s] se podem interrombir,
+[781.50s -> 783.30s] se há algo que, que não está claro.
+[783.90s -> 785.30s] E a plataforma como tal,
+[785.30s -> 786.90s] vai tener um acessor,
+[786.90s -> 787.90s] a plataforma está
+[787.90s -> 790.90s] em escrita
+[790.90s -> 791.90s] em talk script,
+[791.90s -> 793.30s] isso é uma de uma
+[793.30s -> 794.50s] que, em um framework,
+[794.50s -> 795.10s] se chama react,
+[795.10s -> 795.90s] isso é uma de os mais
+[795.90s -> 796.70s] como avançados
+[796.70s -> 797.70s] em não indirem para
+[797.70s -> 798.70s] se desarrollar
+[798.70s -> 799.50s] umas,
+[799.50s -> 800.10s] umas,
+[800.10s -> 800.90s] um web apoiou
+[800.90s -> 801.90s] umas aplicaciones
+[801.90s -> 802.90s] de web.
+[802.90s -> 803.90s] Vamos,
+[803.90s -> 805.70s] há mais de espacio,
+[805.70s -> 807.50s] por favor.
+[807.50s -> 808.50s] Ok, perdon,
+[808.50s -> 809.30s] perdon, listo.
+[809.30s -> 811.70s] Pode hablar mais de espacio.
+[811.90s -> 814.90s] Ok,
+[814.90s -> 817.30s] nós hemos criado
+[817.30s -> 819.30s] uma plataforma
+[819.30s -> 820.50s] para facilitar
+[820.50s -> 822.50s] todo o processo
+[822.50s -> 824.30s] de
+[824.30s -> 826.70s] fazer a solicitude
+[826.70s -> 828.30s] de uma certificação
+[828.30s -> 829.30s] de HALAR.
+[829.30s -> 830.50s] Eu sou um cliente,
+[830.50s -> 833.30s] sou representante de Nesle,
+[833.30s -> 834.50s] por exemplo,
+[834.50s -> 835.70s] e eu quero
+[835.70s -> 838.90s] ter o certificado de HALAR.
+[838.90s -> 841.10s] Eu vou chegar a a plataforma
+[841.10s -> 842.70s] para a página principal
+[842.70s -> 843.90s] de HALAR.
+[843.90s -> 844.90s] Pode ser esta,
+[844.90s -> 845.90s] isso é um demo,
+[845.90s -> 847.10s] esta não é a página de
+[847.10s -> 847.90s] vocês,
+[847.90s -> 848.90s] é uma réplica
+[848.90s -> 849.90s] só para mostrar
+[849.90s -> 851.50s] o concepto.
+[851.50s -> 851.90s] Então,
+[851.90s -> 853.10s] o cliente vai ter
+[853.10s -> 855.10s] rezar a esta página de
+[855.10s -> 856.10s] ustedes.
+[856.10s -> 857.50s] E quando a terrisa
+[857.50s -> 858.90s] vai salir estes botones
+[858.90s -> 859.90s] que estão arriba
+[859.90s -> 861.70s] de iniciar uma sessão.
+[861.70s -> 862.70s] Se não tem,
+[862.70s -> 863.30s] se não,
+[863.30s -> 864.90s] se não tem uma conta,
+[864.90s -> 866.30s] aqui pode criar como uma conta,
+[866.30s -> 867.10s] é muito simples por
+[867.10s -> 867.50s] se isso,
+[867.50s -> 868.90s] se há um clica aqui
+[868.90s -> 869.90s] e se a terrisa aqui
+[869.90s -> 871.10s] é como a entrada
+[871.10s -> 873.50s] para entrar a esta plataforma.
+[873.50s -> 874.30s] Então,
+[874.30s -> 875.50s] vamos fazer
+[875.50s -> 877.10s] dois pantalhas,
+[877.10s -> 877.90s] uma pantalla
+[877.90s -> 879.30s] para o cliente
+[879.30s -> 880.50s] e outra pantalla
+[880.50s -> 882.50s] para um administrador
+[882.50s -> 883.10s] porque,
+[883.10s -> 884.90s] o que vai ser o cliente
+[884.90s -> 885.90s] é diferente
+[885.90s -> 887.50s] do que vai ser
+[887.50s -> 889.10s] o administrador.
+[889.10s -> 889.70s] Agora,
+[889.70s -> 890.70s] eu vou mostrar.
+[890.70s -> 891.70s] Então,
+[891.70s -> 893.50s] vamos passar a outra,
+[893.50s -> 893.70s] aqui,
+[893.70s -> 894.30s] vou rezar
+[894.30s -> 895.70s] como se for
+[895.70s -> 897.30s] um cliente,
+[897.30s -> 898.30s] sou de Nesle,
+[898.30s -> 899.70s] ou qualquer outra presa.
+[899.70s -> 900.70s] Então,
+[900.70s -> 901.30s] aqui,
+[901.30s -> 902.50s] vou registrar
+[902.50s -> 903.50s] com um correo
+[903.50s -> 904.50s] ou qualquer uma,
+[904.50s -> 905.50s] vou registrar o mais fácil com Google.
+[905.50s -> 906.50s] Então,
+[906.50s -> 907.50s] vou rezar aqui com Google.
+[912.90s -> 914.50s] E vou rezar aqui.
+[915.50s -> 916.50s] Vou, obviamente,
+[916.50s -> 917.90s] estar em um ambiente de montos.
+[917.90s -> 918.90s] Então,
+[918.90s -> 919.90s] uma vez que eu ingresso
+[919.90s -> 920.90s] como cliente
+[920.90s -> 921.90s] me vai pedir
+[921.90s -> 922.90s] informação sobre
+[922.90s -> 923.90s] a empresa.
+[923.90s -> 924.90s] Então,
+[924.90s -> 925.90s] vou poner
+[925.90s -> 926.90s] o nombre de a empresa,
+[926.90s -> 927.90s] vou poner
+[927.90s -> 928.90s] o meu nome como tal
+[928.90s -> 929.90s] a persona,
+[929.90s -> 930.90s] obviamente,
+[930.90s -> 931.90s] sou uma informação demo
+[931.90s -> 933.50s] que é que é que é o que vai pedir,
+[933.50s -> 934.50s] podemos poner
+[934.50s -> 935.50s] o nome de a empresa,
+[935.50s -> 936.50s] ou o Carlos,
+[936.50s -> 939.70s] só para fazer
+[939.70s -> 940.90s] como o demo
+[940.90s -> 941.90s] e podemos poner
+[941.90s -> 943.10s] que o aparelho
+[943.10s -> 944.10s] é assim,
+[944.10s -> 944.70s] então,
+[944.70s -> 945.70s] se pone aqui
+[945.70s -> 946.70s] o nome
+[946.70s -> 947.70s] e o telefone
+[947.70s -> 948.30s] e aqui,
+[948.30s -> 950.30s] se guarda a informação.
+[950.30s -> 951.30s] ready.
+[951.30s -> 952.30s] Então,
+[952.30s -> 953.10s] eu sou um cliente
+[953.10s -> 954.10s] ingressê,
+[954.10s -> 955.10s] e agora,
+[955.10s -> 956.10s] quero fazer
+[956.10s -> 957.10s] a sua ilusidade
+[957.10s -> 958.10s] de la certificação.
+[958.10s -> 959.10s] Aqui, me vai aparecer
+[959.10s -> 960.10s] a parte.
+[960.10s -> 961.10s] Se eu ingresso como
+[961.10s -> 963.10s] admin,
+[963.10s -> 964.10s] aqui,
+[964.10s -> 965.10s] vou ingressar
+[965.10s -> 966.10s] com outro usuário
+[966.10s -> 967.10s] que é admin,
+[967.10s -> 968.10s] para mostrar
+[968.10s -> 969.10s] ele as diferencias,
+[969.10s -> 971.10s] que se vê entre cada
+[971.10s -> 976.10s] um de os dois.
+[976.10s -> 977.10s] Então,
+[977.10s -> 978.10s] como podem ver
+[978.10s -> 979.10s] aqui,
+[979.10s -> 980.10s] a cada admin
+[980.10s -> 981.10s] tem como
+[981.10s -> 982.10s] muito mais acessão
+[982.10s -> 983.10s] a mais herramientas para
+[983.10s -> 984.10s] fazer
+[984.10s -> 985.10s] todas as tareas
+[985.10s -> 986.10s] que já seriam
+[986.10s -> 987.10s] um admin,
+[987.10s -> 988.10s] então,
+[988.10s -> 989.10s] se tem acessão,
+[989.10s -> 990.10s] a todas essas
+[990.10s -> 991.10s] herramientas
+[991.10s -> 992.10s] que vão facilitar
+[992.10s -> 993.10s] todo o processo.
+[993.10s -> 994.10s] Então,
+[994.10s -> 995.10s] vamos saber,
+[995.10s -> 996.10s] vamos saber,
+[996.10s -> 997.10s] em tempo real,
+[997.10s -> 999.10s] como é isso que ocorre com o cliente
+[999.10s -> 1000.10s] e como vai refletir
+[1000.10s -> 1002.10s] aqui, em tempo real.
+[1002.10s -> 1003.10s] Então,
+[1003.10s -> 1004.10s] eu sou como cliente,
+[1004.10s -> 1005.10s] vou iniciar
+[1005.10s -> 1006.10s] uma solução.
+[1006.10s -> 1007.10s] Até
+[1007.10s -> 1008.10s] o momento,
+[1008.10s -> 1009.10s] tudo vai bem,
+[1009.10s -> 1010.10s] para só para seguir.
+[1010.10s -> 1011.10s] Tudo bem.
+[1011.10s -> 1012.10s] Por favor,
+[1012.10s -> 1013.10s] eu reduço
+[1013.10s -> 1014.10s] a The time
+[1014.10s -> 1015.10s] about
+[1015.10s -> 1016.10s] a redução.
+[1016.10s -> 1017.10s] Eu reduço
+[1017.10s -> 1018.10s] e que?
+[1018.10s -> 1019.10s] Eu introduço
+[1019.10s -> 1020.10s] a The time
+[1020.10s -> 1021.10s] about
+[1021.10s -> 1022.10s] a okay.
+[1022.10s -> 1023.10s] Um
+[1023.10s -> 1024.10s] buen
+[1024.10s -> 1025.10s] estágio.
+[1025.10s -> 1026.10s] Ok.
+[1026.10s -> 1027.10s] Então,
+[1027.10s -> 1028.10s] vamos fazer um
+[1028.10s -> 1029.10s] pequeño,
+[1029.10s -> 1030.10s] aqui,
+[1030.10s -> 1032.10s] uma pequena pausa.
+[1032.10s -> 1033.10s] Se eu vou
+[1033.10s -> 1034.10s] ir à página principal,
+[1034.10s -> 1035.10s] por exemplo,
+[1035.10s -> 1036.10s] é isso como
+[1036.10s -> 1037.10s] a página réplica
+[1037.10s -> 1038.10s] de
+[1038.10s -> 1040.10s] ustedes.
+[1040.10s -> 1041.10s] Então,
+[1041.10s -> 1042.10s] em a página como
+[1042.10s -> 1043.10s] tal,
+[1043.10s -> 1044.10s] nós temos criado
+[1044.10s -> 1050.10s] um
+[1050.10s -> 1051.10s] assistente virtual.
+[1051.10s -> 1053.10s] É esse assistente virtual, por exemplo.
+[1053.10s -> 1054.10s] Eu sou uma empresa
+[1054.10s -> 1056.10s] e quero saber sobre a certificação
+[1056.10s -> 1058.10s] para que eu tenho muitas dudas.
+[1058.10s -> 1059.10s] Obviamente,
+[1059.10s -> 1060.10s] a página como tal
+[1060.10s -> 1061.10s] tem informação.
+[1061.10s -> 1063.10s] Mas eu quero que eu tenho dudas.
+[1063.10s -> 1064.10s] Então, aqui,
+[1064.10s -> 1066.10s] temos um assistente virtual
+[1066.10s -> 1067.10s] e temos
+[1067.10s -> 1068.10s] o foto
+[1068.10s -> 1069.10s] do haja design.
+[1069.10s -> 1070.10s] É como
+[1070.10s -> 1071.10s] para que este
+[1071.10s -> 1072.10s] é como
+[1072.10s -> 1074.10s] uma
+[1074.10s -> 1075.10s] de
+[1075.10s -> 1076.10s] AI
+[1076.10s -> 1077.10s] e para resolver
+[1077.10s -> 1078.10s] qualquer
+[1078.10s -> 1079.10s] duda.
+[1079.10s -> 1080.10s] Então, eu posso
+[1080.10s -> 1081.10s] preguntar
+[1081.10s -> 1082.10s] uma coisa
+[1082.10s -> 1083.10s] que é
+[1083.10s -> 1084.10s] fámbras, halada,
+[1084.10s -> 1085.10s] que certificação, obviamente,
+[1085.10s -> 1086.10s] nós,
+[1086.10s -> 1087.10s] enternamente,
+[1087.10s -> 1088.10s] vocês,
+[1088.10s -> 1089.10s] em este caso,
+[1089.10s -> 1090.10s] alimentamos
+[1090.10s -> 1092.10s] a artificial intergenção,
+[1092.10s -> 1093.10s] sobre toda a
+[1093.10s -> 1094.10s] informação,
+[1094.10s -> 1095.10s] sobre
+[1095.10s -> 1096.10s] a empresa
+[1096.10s -> 1097.10s] e aqui, como todas as
+[1097.10s -> 1098.10s] perguntas,
+[1098.10s -> 1099.10s] tudo o que
+[1099.10s -> 1100.10s] um cliente pode preguntar.
+[1100.10s -> 1101.10s] E aqui, automáticamente,
+[1101.10s -> 1102.10s] o que é que
+[1102.10s -> 1103.10s] é que
+[1103.10s -> 1104.10s] a resposta é que
+[1104.10s -> 1105.10s] a resposta é que
+[1105.10s -> 1106.10s] a resposta é que
+[1106.10s -> 1107.10s] a resposta é que
+[1107.10s -> 1108.10s] alguém
+[1108.10s -> 1109.10s] diz isso,
+[1109.10s -> 1110.10s] não.
+[1110.10s -> 1111.10s] O cliente pode
+[1111.10s -> 1112.10s] perguntar
+[1112.10s -> 1113.10s] qualquer coisa.
+[1113.10s -> 1114.10s] A entragem de
+[1114.10s -> 1115.10s] a arte precisa de uma
+[1115.10s -> 1116.10s] pergunta e
+[1116.10s -> 1117.10s] busca a informação
+[1117.10s -> 1118.10s] que tem guardado
+[1118.10s -> 1119.10s] e responde,
+[1119.10s -> 1120.10s] segura a informação
+[1120.10s -> 1121.10s] que nós
+[1121.10s -> 1122.10s] nós nos damos.
+[1122.10s -> 1123.10s] Então, isso é como
+[1123.10s -> 1124.10s] gran ajuda
+[1124.10s -> 1125.10s] para qualquer
+[1125.10s -> 1126.10s] cliente que tem a duda,
+[1126.10s -> 1127.10s] em vez de
+[1127.10s -> 1128.10s] llamar,
+[1128.10s -> 1129.10s] ou em vez de perder
+[1129.10s -> 1130.10s] com muito tempo,
+[1130.10s -> 1131.10s] de intercomo
+[1131.10s -> 1132.10s] de este mesmo
+[1132.10s -> 1133.10s] chat.
+[1133.10s -> 1134.10s] Então, isso é como
+[1134.10s -> 1135.10s] para, obviamente,
+[1135.10s -> 1136.10s] aqui, não
+[1136.10s -> 1137.10s] tem como
+[1137.10s -> 1138.10s] alimentar a
+[1138.10s -> 1139.10s] mucha
+[1139.10s -> 1140.10s] informação,
+[1140.10s -> 1141.10s] mas, a ideia é que podemos
+[1141.10s -> 1142.10s] alimentar
+[1142.10s -> 1143.10s] com toda a informação que
+[1143.10s -> 1144.10s] nós estamos, e
+[1144.10s -> 1145.10s] ele pode responder com
+[1145.10s -> 1146.10s] todo o que nós
+[1146.10s -> 1147.10s] queremos que responda
+[1147.10s -> 1148.10s] a clientes.
+[1148.10s -> 1149.10s] Então, isso é como
+[1149.10s -> 1150.10s] a arte
+[1150.10s -> 1151.10s] virtual.
+[1151.10s -> 1152.10s] Uma vez que termina como
+[1152.10s -> 1153.10s] as dudas, como
+[1153.10s -> 1154.10s] o que nós
+[1154.10s -> 1155.10s] já pensamos,
+[1155.10s -> 1156.10s] aqui, a empresa
+[1156.10s -> 1157.10s] e aqui,
+[1157.10s -> 1158.10s] vai estar,
+[1158.10s -> 1159.10s] este é o exemplo que nós
+[1189.10s -> 1190.10s] precisamos fazer.
+[1190.10s -> 1191.10s] Isso é isso.
+[1191.10s -> 1192.10s] E do meu tipo.
+[1192.10s -> 1193.10s] Ah, eu quero saber,
+[1193.10s -> 1195.10s] libe a séria que
+[1195.10s -> 1196.10s] sensibilização.
+[1196.10s -> 1197.10s] Se a gente
+[1197.10s -> 1198.10s] abaça esse, esse
+[1198.10s -> 1199.10s] a com isso, ele
+[1199.10s -> 1200.10s] conseguiria responder.
+[1200.10s -> 1201.10s] Senhor.
+[1201.10s -> 1202.10s] Sim.
+[1202.10s -> 1204.10s] Todo o que nós
+[1204.10s -> 1205.10s] temos.
+[1205.10s -> 1206.10s] É isso
+[1206.10s -> 1207.10s] que,
+[1207.10s -> 1208.10s] o que está dizendo,
+[1208.10s -> 1209.10s] o senor Abdares,
+[1209.10s -> 1210.10s] aqui, não
+[1210.10s -> 1211.10s] há barreda de idiomas.
+[1211.10s -> 1212.10s] Se alguém
+[1212.10s -> 1213.10s] escreve na arabé,
+[1213.10s -> 1214.10s] respondem na arabé.
+[1214.10s -> 1215.10s] Se alguém escreve em
+[1215.10s -> 1216.10s] español, responde
+[1216.10s -> 1217.10s] español,
+[1217.10s -> 1218.10s] o importo que é isso,
+[1218.10s -> 1219.10s] responde em inglês.
+[1219.10s -> 1220.10s] Então,
+[1220.10s -> 1221.10s] é a vantagem que
+[1221.10s -> 1222.10s] vocês podem entender,
+[1222.10s -> 1223.10s] que podem entender
+[1223.10s -> 1224.10s] clientes de qualquer
+[1224.10s -> 1225.10s] rincônde do mundo,
+[1225.10s -> 1228.10s] e eles podem resolver
+[1228.10s -> 1229.10s] qualquer dudas
+[1229.10s -> 1230.10s] sem nenhum problema.
+[1230.10s -> 1231.10s] O mesmo
+[1231.10s -> 1232.10s] de le idioma que está
+[1232.10s -> 1233.10s] em Chathbot,
+[1233.10s -> 1234.10s] afuera de
+[1234.10s -> 1235.10s] asestentes,
+[1235.10s -> 1236.10s] nós temos dentro
+[1236.10s -> 1237.10s] de
+[1237.10s -> 1238.10s] a plataforma.
+[1238.10s -> 1239.10s] Então, a plataforma
+[1239.10s -> 1240.10s] é só actualmente
+[1240.10s -> 1241.10s] agregamos o español
+[1241.10s -> 1242.10s] e português.
+[1242.10s -> 1243.10s] Eu sou
+[1243.10s -> 1244.10s] algo esto,
+[1244.10s -> 1245.10s] todo se cambia
+[1245.10s -> 1246.10s] português.
+[1246.10s -> 1247.10s] Se você tem dado conta
+[1247.10s -> 1248.10s] de que o español
+[1248.10s -> 1250.10s] pode dar
+[1250.10s -> 1251.10s] o español,
+[1251.10s -> 1252.10s] então, após o español,
+[1252.10s -> 1253.10s] então, após o cliente,
+[1253.10s -> 1254.10s] aqui,
+[1254.10s -> 1255.10s] pode agregar em inglês
+[1255.10s -> 1256.10s] e mais idiomas,
+[1256.10s -> 1258.10s] mas como para o demo,
+[1258.10s -> 1260.10s] podemos mostrar isso.
+[1260.10s -> 1261.10s] Então, isso é como
+[1261.10s -> 1262.10s] a vantagem de
+[1262.10s -> 1263.10s] não ter como
+[1263.10s -> 1264.10s] muitas barreiras
+[1264.10s -> 1265.10s] e em idiomas,
+[1265.10s -> 1266.10s] e também com
+[1266.10s -> 1267.10s] todo
+[1267.10s -> 1268.10s] a parte
+[1268.10s -> 1269.10s] de manual.
+[1269.10s -> 1270.10s] Vamos bem?
+[1270.10s -> 1271.10s] Podemos seguir?
+[1271.10s -> 1272.10s] Sim,
+[1272.10s -> 1273.10s] Sim.
+[1273.10s -> 1274.10s] Sim.
+[1274.10s -> 1275.10s] É bem.
+[1275.10s -> 1276.10s] É listo.
+[1276.10s -> 1277.10s] Aqui, como podem ver,
+[1277.10s -> 1279.10s] o cliente, como tal,
+[1279.10s -> 1280.10s] quando vamos que
+[1280.10s -> 1281.10s] o mesmo ejemplo,
+[1281.10s -> 1283.10s] tem que iniciar um processo
+[1283.10s -> 1284.10s] de disso-luisitude.
+[1284.10s -> 1285.10s] Então,
+[1285.10s -> 1286.10s] quando ingressa
+[1286.10s -> 1287.10s] uma nova
+[1287.10s -> 1288.10s] disso-luisitude,
+[1288.10s -> 1289.10s] o objetivo que o cliente,
+[1289.10s -> 1290.10s] todo o que
+[1290.10s -> 1291.10s] achia em o formato,
+[1291.10s -> 1292.10s] por exemplo,
+[1292.10s -> 1294.10s] em o formato de
+[1294.10s -> 1295.10s] vocês,
+[1295.10s -> 1297.10s] me recordam
+[1297.10s -> 1298.10s] o número
+[1298.10s -> 1299.10s] de disso-luisitude.
+[1299.10s -> 1300.10s] Sim.
+[1300.10s -> 1301.10s] Sim.
+[1301.10s -> 1302.10s] Sim.
+[1302.10s -> 1303.10s] É como...
+[1303.10s -> 1304.10s] Sim.
+[1304.10s -> 1305.10s] E vai adiciar
+[1305.10s -> 1307.10s] um número de disso-luisitude.
+[1307.10s -> 1308.10s] Sim.
+[1308.10s -> 1309.10s] Sim, eu acho que
+[1309.10s -> 1310.10s] é zero, zero, zero, zero, zero, zero, zero, zero, zero.
+[1310.10s -> 1311.10s] Sim.
+[1311.10s -> 1312.10s] É que é este,
+[1312.10s -> 1313.10s] é que os custos enterem.
+[1313.10s -> 1314.10s] Este mesmo documento,
+[1314.10s -> 1315.10s] o que hemos hecho,
+[1315.10s -> 1316.10s] é poder convertir
+[1316.10s -> 1317.10s] ele um pouquinho mais
+[1317.10s -> 1318.10s] de um processo
+[1318.10s -> 1319.10s] mais dinâmico
+[1319.10s -> 1320.10s] para poder
+[1320.10s -> 1321.10s] facilitar este processo
+[1321.10s -> 1322.10s] e analisar este.
+[1322.10s -> 1323.10s] É porque
+[1323.10s -> 1324.10s] ingressa, é porque...
+[1324.10s -> 1326.10s] Ok, vamos lá.
+[1326.10s -> 1328.10s] Porque a ideia de
+[1328.10s -> 1329.10s] a plataforma,
+[1329.10s -> 1330.10s] não é algo que
+[1330.10s -> 1331.10s] você deve ter
+[1331.10s -> 1332.10s] ingência primeiro
+[1332.10s -> 1333.10s] sobre o estudo
+[1333.10s -> 1334.10s] e, luego,
+[1334.10s -> 1335.10s] não.
+[1335.10s -> 1336.10s] Aí, de esta,
+[1336.10s -> 1337.10s] ponemos coisas
+[1337.10s -> 1338.10s] para atrapalhar
+[1338.10s -> 1339.10s] de todos lados
+[1339.10s -> 1340.10s] e
+[1340.10s -> 1342.10s] a inclinência artificial
+[1342.10s -> 1344.10s] forma,
+[1344.10s -> 1345.10s] solicitude
+[1345.10s -> 1346.10s] ou forma
+[1346.10s -> 1347.10s] de documento, forma...
+[1347.10s -> 1348.10s] Formas.
+[1348.10s -> 1349.10s] Nós é,
+[1349.10s -> 1350.10s] neste túal,
+[1350.10s -> 1351.10s] vai dizer porque,
+[1351.10s -> 1352.10s] porque esta informação está aqui.
+[1352.10s -> 1353.10s] Está aqui,
+[1353.10s -> 1354.10s] porque,
+[1354.10s -> 1355.10s] depois, vai generar
+[1355.10s -> 1356.10s] sola,
+[1356.10s -> 1357.10s] ok,
+[1357.10s -> 1358.10s] a propuesta comercial
+[1358.10s -> 1359.10s] sinar mal,
+[1359.10s -> 1360.10s] a propuesta corciar.
+[1360.10s -> 1361.10s] Vai generar
+[1361.10s -> 1363.10s] o contrato sinar mal contra ela, ok?
+[1363.10s -> 1363.60s] Sim.
+[1363.60s -> 1364.60s] É isso,
+[1364.60s -> 1365.60s] está
+[1365.60s -> 1366.60s] o filosofia
+[1366.60s -> 1367.60s] ou o tecnologismo,
+[1367.60s -> 1368.60s] a ideia...
+[1368.60s -> 1369.60s] A ideia...
+[1369.60s -> 1370.60s] Sim,
+[1370.60s -> 1371.60s] é isso, vamos saber agora.
+[1371.60s -> 1372.60s] Ahorita,
+[1372.60s -> 1373.60s] vamos saber como
+[1373.60s -> 1374.60s] todo, como
+[1374.60s -> 1375.60s] coche convierte
+[1375.60s -> 1376.60s] a ir a
+[1376.60s -> 1377.60s] firma.
+[1377.60s -> 1378.60s] Signora?
+[1378.60s -> 1380.60s] Não, acá,
+[1380.60s -> 1381.60s] estava explicando a lena
+[1381.60s -> 1382.60s] que cogimos
+[1382.60s -> 1383.60s] o empé,
+[1383.60s -> 1384.60s] o metal quad
+[1384.60s -> 1385.60s] e o
+[1385.60s -> 1386.60s] tromto, e,
+[1386.60s -> 1387.60s] é só a lena.
+[1387.60s -> 1388.60s] É isso,
+[1388.60s -> 1389.60s] o justo do que
+[1389.60s -> 1391.60s] eu queria
+[1391.60s -> 1392.60s] de, como ressaltar,
+[1393.60s -> 1394.60s] u tà que, slices de
+[1394.60s -> 1394.80s] prensa de
+[1394.80s -> 1399.24s] um
+[1399.24s -> 1400.60s] pinksai,
+[1400.60s -> 1401.20s] um
+[1401.20s -> 1402.60s] identivo
+[1402.60s -> 1403.60s] com esse formação de
+[1403.60s -> 1403.98s] santa
+[1403.98s -> 1404.50s] ur,
+[1404.50s -> 1405.90s] compro gray,
+[1405.90s -> 1406.60s] em todoanto só,
+[1406.60s -> 1407.60s] rei
+[1407.60s -> 1409.22s] kok х
+[1409.22s -> 1409.60s] le queria,
+[1409.60s -> 1417.60s] ir a
+[1417.60s -> 1419.60s] é simplesmente
+[1419.60s -> 1420.60s] uma entrada
+[1420.60s -> 1421.12s] IT,
+[1421.12s -> 1421.32s] não courageous,
+[1421.32s -> 1430.32s] Vamos imaginar uma solicitude normal para que podemos ver o que faz o cliente.
+[1430.32s -> 1439.32s] Pode imaginar uma informação de modo normal.
+[1439.32s -> 1444.32s] Nós podemos fazer qualquer número que não seja real.
+[1444.32s -> 1448.32s] O telefone pode ser assim, ou o fundemo.
+[1448.32s -> 1453.32s] E isso pode ser um estudo com algo assim.
+[1453.32s -> 1460.32s] E aqui, uma vez que escolhe, vai dizer o país de que o país é o cliente.
+[1460.32s -> 1464.32s] Então, pode fazer colombia, por exemplo, para o demo.
+[1464.32s -> 1467.32s] Pode dizer assim, caíso.
+[1467.32s -> 1470.32s] Só há uma informação de modo normal.
+[1470.32s -> 1478.32s] Que, no principio, está algo assim.
+[1478.32s -> 1483.32s] E aqui, se põe o contato, por exemplo, a pessoa que está fazendo a solicitude, se põe a informação.
+[1483.32s -> 1487.32s] É o mesmo que se ocorre em vida real, actualmente.
+[1487.32s -> 1494.32s] Então, a pessoa de contato com quem, ou seja, a pessoa de fambras com o time, com o que se chama.
+[1494.32s -> 1502.32s] Então, pode dizer, o mesmo que está llenando o formulário, ou, por exemplo, para dizer, os ocorreos.
+[1502.32s -> 1514.32s] Só um demo.
+[1514.32s -> 1518.32s] E podemos ser, se, ou algo assim.
+[1518.32s -> 1522.32s] Pode ser qualquer, então, esses colombias, coisas, o código de colombia.
+[1522.32s -> 1529.32s] E aqui, pode também agregar o cliente mesmo, pode agregar um segundo contacto, se existe, se não existe, não tem que marcarlo.
+[1529.32s -> 1531.32s] E vai dizer, seguinte.
+[1531.32s -> 1535.32s] Aqui, a seguinte, é uma parte muito interessante, onde se llena mais informação.
+[1535.32s -> 1538.32s] Então, aqui, são detalhes sobre a empresa.
+[1538.32s -> 1541.32s] Então, se sale, o grupo industrial, então, sacasta.
+[1541.32s -> 1546.32s] É o mesmo que você maneja em documento, então, está agricultura, está contigo, está...
+[1547.32s -> 1553.32s] Todas como as categorias, e pode escoger este exemplo.
+[1553.32s -> 1558.32s] Ele vai ser, depois, o grupo, o grupo industrial, então, vai aparecer esses.
+[1558.32s -> 1562.32s] Então, pode dizer que está, por exemplo.
+[1562.32s -> 1565.32s] Quando as coisas, ele vai dar, ou seja, subcategoria.
+[1565.32s -> 1567.32s] É o mesmo de documentação de vocês.
+[1567.32s -> 1570.32s] Vai escoger produtos mixedos, por exemplo.
+[1570.32s -> 1575.32s] Uma vez que o cliente llena essa informação, automaticamente, a plataforma, ele vai dizer,
+[1575.32s -> 1578.32s] está indústria, é a indústria C3.
+[1578.32s -> 1583.32s] Então, já, é automaticamente, sabemos, segun lo que llena o cliente, que categorias.
+[1583.32s -> 1591.32s] E quando se llena isso, há um par de perguntas para definir ou determinar se esta categoria ou este cliente
+[1591.32s -> 1594.32s] se necessita um supervisor ou não necessita.
+[1594.32s -> 1603.32s] Então, se a planta tem elementos de origem animais, então, se pode dizer que é si ou pode dizer que não.
+[1603.32s -> 1605.32s] Então, se escorro esta si, esta, não.
+[1605.32s -> 1609.32s] Então, vai dizer que, se este serviço tem requerido um supervisor.
+[1609.32s -> 1617.32s] Para que o cliente sepa que isto vai ter, necessita um supervisor para sua trabalho.
+[1617.32s -> 1624.32s] Quis bien, e a mesma informação, ele está manio de uma empresa, porque isto vai determinar a propuesta comercial que se vai aparecer.
+[1624.32s -> 1630.32s] Então, se vai escoger isto, se vai escoger os ingressos, isso é um exemplo.
+[1630.32s -> 1639.32s] E acá está o representante legal. Então, aqui me pergunta, quem é que a pessoa que vai afirmar o contrato com os outros confabras.
+[1639.32s -> 1644.32s] Então, aqui se vai decidir, vou dizer que a mesma pessoa, porque se decidiu algo assim.
+[1645.32s -> 1652.32s] Então, o cargo é assim, queerencia outro exemplo.
+[1654.32s -> 1659.32s] E, aqui, de uma vez, dependendo do país, aqui se pode subir os documentos requeridos.
+[1659.32s -> 1662.32s] Então, acá está pedindo dois documentos.
+[1662.32s -> 1666.32s] O documento de root, se é em Colombia, por exemplo, ou em la Cámara Comerção.
+[1666.32s -> 1673.32s] Então, se há um clica aqui, e aqui, ele permite alquilhente cargar o documento como tal,
+[1673.32s -> 1675.32s] e aqui se cargar os dois documentos.
+[1675.32s -> 1678.32s] Una vez se cargar os documentos, se passa a la seguinte parte.
+[1678.32s -> 1684.32s] La seguinte parte, onde nós temos toda a parte que tem que ver sobre a fabricação.
+[1684.32s -> 1687.32s] Então, aqui que marca que tem.
+[1687.32s -> 1695.32s] Então, depois, ele é leche, ele é agua.
+[1695.32s -> 1698.32s] Estou inventando para dar o exemplo.
+[1698.32s -> 1705.32s] E, aqui, está dizendo que, se há marcas de terceiro, aqui, também, se pode agregar marcas de terceiro.
+[1705.32s -> 1709.32s] Se eles venden marcas de terceiro, e, aqui, está como cada marca de terceiro,
+[1709.32s -> 1714.32s] tem um costa adicional de certificação, para que o cliente, quando está llenando a informação,
+[1714.32s -> 1719.32s] tem como toda a informação alcance para não ter nenhuma duda.
+[1719.32s -> 1725.32s] Acasta o detalhe de produção, que, quantos turnos são, um, dois ou três, poescoje, dois.
+[1725.32s -> 1729.32s] Quantas líneas de produção tem, tem só uma línea.
+[1729.32s -> 1733.32s] Quanto é sempre a dos turnos, pode ser 50.
+[1733.32s -> 1739.32s] Aqui, há número de produtos, pode ser que tenho cinco produtos, por exemplo.
+[1739.32s -> 1747.32s] Aqui, me vai perguntar se eu tenho certificação Hassab, então, aqui, pode dizer que, se eu tenho, não tenho.
+[1747.32s -> 1751.32s] Então, isso depende, se digo que sim, vai dizer qual é o número de estudos.
+[1751.32s -> 1754.32s] Se digo que não, não me vai permitir que acerlo.
+[1754.32s -> 1759.32s] Se tenho esse certificado, pode dizer que sigo, não, se eu sou cobe o cliente, em caso que,
+[1759.32s -> 1761.32s] aqui, se pode cargar a certificação.
+[1761.32s -> 1767.32s] Se eu tenho certificação, aqui, me permite agregar e carcar o documento de certificação
+[1767.32s -> 1773.32s] a plataforma, a qual permite, a desempenhado, em outro lado, ver toda essa informação.
+[1773.32s -> 1776.32s] Então, aqui,
+[1777.32s -> 1784.32s] eu vou ir à seguinte, ao seguinte ponto, vou escolher isso, assim, rápido.
+[1784.32s -> 1788.32s] Uma, cinco.
+[1788.32s -> 1792.32s] Aqui, pode dizer que não, e aqui, pode dizer que não.
+[1792.32s -> 1799.32s] E vou dizer, seguinte, aqui, viene, o documento que vocês entrem, os quadros que vienen como anexos,
+[1799.32s -> 1807.32s] a solução, aqui, pode agregar todos os corzales, aqui, pode agregar e poder, como toda a informação,
+[1807.32s -> 1814.32s] em vez de, de genar-la, em outro formato, aqui, pode de uma forma fácil, aqui, também, se genar.
+[1814.32s -> 1821.32s] Aqui, se ele pergunta, alcance do produto que o país está decidindo exportar,
+[1821.32s -> 1828.32s] então, pode ser rarabezadita, por exemplo, se tem, sub contratadas, então, isso é muito importante,
+[1828.32s -> 1834.32s] se também, o cliente lollena, informação de consultoria, se existe ou não, existe,
+[1834.32s -> 1839.32s] se genar da informação base, e aqui, pode dizer, seguinte, uma voz que se termina,
+[1839.32s -> 1843.32s] é o formato de Ustaz, como a Ustaz maneja.
+[1843.32s -> 1847.32s] Então, aqui, ele mostra como um review de todo o formato,
+[1847.32s -> 1854.32s] é, se os outros dois quadros que têm a informação está aí, podemos ver, e acosta o formato lleno.
+[1854.32s -> 1858.32s] Uma vez que o cliente termina, pode, como, firmar-lo, enviar-lo,
+[1858.32s -> 1865.32s] e quando ela faz esta forma, se vai guardar, como tal, em la vacídatos, como solicitude,
+[1865.32s -> 1871.32s] e, automaticamente, o cliente, ele vai aparecer, em la solicitude, já está enviada.
+[1871.32s -> 1878.32s] E a ventaja que isso, em tiempo real, vai dar o cliente uma informação, em que estado está sua solicitude?
+[1878.32s -> 1884.32s] Ou seja, aqui está, ele pode ter como uma projeção de todos os passos que ele precisa,
+[1884.32s -> 1888.32s] para antes de firmar o contrato, e depois enviar-se a segunda fase,
+[1888.32s -> 1895.32s] já depois de firmar o contrato, até ter o certificado, e posterior a estudar a tutoria, etc.
+[1895.32s -> 1904.32s] Então, aqui está a solicitude enviada, então, isso está a fase, e isso é o passo, de esta fase, a solicitude enviada.
+[1904.32s -> 1909.32s] Se eu vou ao outro lado, por exemplo, eu sou um empriado, eu ingresar aqui como Andrea,
+[1909.32s -> 1913.32s] então, aqui, me chega a dar uma forma que há uma solicitude nova,
+[1913.32s -> 1919.32s] então, já em grisou uma solicitude nova, eu quero ver, então, aqui, pode chegar em solicitudes,
+[1919.32s -> 1929.32s] como um piado, e, aqui, pode ver que há uma solicitude aqui, me chega, então, eu posso ver isso aqui, facilmente.
+[1930.32s -> 1937.32s] Então, aqui, agora, eu sou ingreso como cliente, então, já dei a atual informação que há ali,
+[1937.32s -> 1944.32s] que é nada, o cliente, no outro lado, eu, por eu, eu posso ver, eu posso pedir, que, eu necessito, e aqui a informação está muito claro.
+[1944.32s -> 1951.32s] Uma vez que eu la reviso, então, eu vou dizer aqui, este botão, que já está revisado, então, eu vou dizer um clica aqui,
+[1951.32s -> 1956.32s] e a revisão aprovada, ou seja, a solicitude está correcta, a documentação está correcta,
+[1956.32s -> 1962.32s] e todo está correcto, eu vou dizer, aprovar, a revisão, então, eu vou dizer aqui.
+[1962.32s -> 1967.32s] Uma vez que eu hago esto, se eu vou ao cliente, automaticamente, o cliente já se notifica,
+[1967.32s -> 1972.32s] não necessito mandar a informação, enxomar-lhe, automaticamente, que está dizendo que,
+[1972.32s -> 1979.32s] agora, a revisão completa, e agora, fambras está criando uma proposta comercial,
+[1979.32s -> 1987.32s] então, é isso que o cliente, ele sale para estar, o dia como está o tempo, o que está acontecendo em vida real.
+[1987.32s -> 1997.32s] Para aqui, para os nossos empleados internos, aqui podem ver que, o estado atual, é proposta comercial,
+[1997.32s -> 2003.32s] então, eu vou fazer um clica aqui, eu quero criar a proposta comercial, então, se eu hago um clica aqui,
+[2003.32s -> 2010.32s] vou ir dar, vou estar pedrigido a esta plataforma, a esta parte de a plataforma,
+[2010.32s -> 2016.32s] onde está calco, uma calculadora que me vai ajudar, a mim, como um privilhado, como administrador,
+[2016.32s -> 2022.32s] para justiunar esta solicitude. Aqui, eu tenho aqui, se há mais de uma solicitude,
+[2022.32s -> 2025.32s] a calva não aparecer todos, assim, um row, para aparecer todos.
+[2025.32s -> 2029.32s] Eu posso dar um clica aqui, e dizer, cargar em la calcorraver.
+[2029.32s -> 2035.32s] Uma vez que eu localgo, então, me vale, e é bom, esta solicitude, tem este, é de c3,
+[2035.32s -> 2041.32s] e esse c3 necessita um supervisor. Estos, um costo demos, um costo calculador,
+[2041.32s -> 2047.32s] calculado, mas, por la informação, não é real, mas, isso, se pode, também, editar e modificar.
+[2047.32s -> 2054.32s] Então, aqui, eu posso dizer, porque, eu escogi, por exemplo, na certificação, que é, de origem animal e digital,
+[2054.32s -> 2059.32s] então, eu puso, que saliu, como todos, a informação de certificado,
+[2059.32s -> 2067.32s] e acá está, como, o costo aproximado, do supervisor, o costo mensual, o costo de auditoria, como tal.
+[2067.32s -> 2072.32s] E, acá, é como, a informação que eu posso editar, então, eu posso cambiar, o que quero,
+[2072.32s -> 2077.32s] necessito, se isso vai agregar, se isso não, se, o cambio está em formação,
+[2077.32s -> 2081.32s] não vai permitir a mim, cambiar este número, então, eu posso editar e poner,
+[2081.32s -> 2085.32s] a cifra que quero, como sou, o eladmen, e, esto é lo que considero,
+[2085.32s -> 2088.32s] é, simplesmente, aqui, ele é, aí, o que é, é, escolher a informação,
+[2088.32s -> 2093.32s] e, fazer um pequeno cálculo, ele vota, e ele disse, isso, é o cálculo inicial,
+[2093.32s -> 2097.32s] tu pode modificar, tu pode acertar, según, as necessidades.
+[2097.32s -> 2100.32s] Aqui, se pode...
+[2100.32s -> 2102.32s] Vamos, vamos, vamos, vamos, vamos.
+[2102.32s -> 2108.32s] A calculadora, agora, na área, não é mais, não é mais um costo fico para uma certificação.
+[2108.32s -> 2112.32s] Então, se há uma pessoa que tem a casa, e tem 22 mil,
+[2112.32s -> 2117.32s] é muito mais preparado de uma empresa, que todavía estão plantando a casa,
+[2117.32s -> 2123.32s] que é muito mais trabalho para nós para trabalhar e para ver o sistema de algo apotable
+[2123.32s -> 2127.32s] e o sistema, muito mais trabalho, muito mais horas.
+[2127.32s -> 2133.32s] Essa é a questão muito mais de um senhor que te entrega o apotable e te entrega todo o programa
+[2133.32s -> 2138.32s] que tu estou buscando. Então, o costo não é fico por uma certificação,
+[2138.32s -> 2143.32s] e, se há uma calculadora, um pouco complicada para calcular,
+[2143.32s -> 2148.32s] exatamente, que a gente, em ser, está muito preparado, não necessitamos
+[2148.32s -> 2155.32s] dois dias de auditoria, três dias de auditoria, o costo de certificação
+[2155.32s -> 2159.32s] serve totalmente diferente, certificação de auditoria,
+[2159.32s -> 2164.32s] totalmente diferente de um costo de uma empresa pequena que não tem
+[2164.32s -> 2169.32s] estes, não está preparada para uma auditoria, não é?
+[2169.32s -> 2174.32s] Então, se varia por cada cliente, não é costo fico de nada.
+[2174.32s -> 2178.32s] É costoso acarcer o mesmo risco, entre uma de risco,
+[2178.32s -> 2181.32s] mas costoso, não é risco, não é risco.
+[2181.32s -> 2185.32s] É isso, eu não sei, eu não sei, eu não sei, eu não sei.
+[2185.32s -> 2189.32s] Mas ainda assim, você pode digitar os costos, né?
+[2189.32s -> 2193.32s] Por exemplo, se você não sei a basear na calculadora, você consegue mexer.
+[2193.32s -> 2196.32s] Eu estou olhando pro humor, por que?
+[2196.32s -> 2199.32s] Sim, é, sim.
+[2199.32s -> 2201.32s] Não havia nesta momento?
+[2201.32s -> 2205.32s] Um novo momento, porque, bem, isso, né?
+[2205.32s -> 2209.32s] Porque, eu hablava de esse passeio de um ver, por que?
+[2209.32s -> 2211.32s] Porque, mas até nos porque, por que?
+[2211.32s -> 2213.32s] Por que, o que eu penso?
+[2213.32s -> 2217.32s] Tem 10 por tomário, sem vez, tem 1.500.
+[2217.32s -> 2221.32s] Eu não penso de tonal de Torio, penso na treel de Torvian.
+[2221.32s -> 2227.32s] Então, verificar o comento, essa treel de Torio aqui acontece,
+[2227.32s -> 2231.32s] os documentos que enviados analistas, estão no trabalho,
+[2231.32s -> 2235.32s] então, sem empresa, tem grande ou pequeno,
+[2235.32s -> 2239.32s] muitos produtos que eles vão certificando, estão para a gente aqui,
+[2239.32s -> 2241.32s] para a basear o mesmo.
+[2241.32s -> 2243.32s] Então, você pega o figuríf, por exemplo,
+[2243.32s -> 2247.32s] que a bate sei lá, 4.000 horas por dia,
+[2247.32s -> 2249.32s] o figurífio que a bate, e o tecá,
+[2249.32s -> 2253.32s] quantas mil horas por dia, para, eternamente,
+[2253.32s -> 2255.32s] trabalhando mesmo.
+[2255.32s -> 2257.32s] Então, eles é mais trabalho para o figuríf,
+[2257.32s -> 2259.32s] mas para a gente, é mesmo coisa.
+[2259.32s -> 2261.32s] Não muda nada, mesmo trabalho,
+[2261.32s -> 2263.32s] ou mesmo gas, o mesmo entende,
+[2263.32s -> 2265.32s] mas para nós não muda nada.
+[2265.32s -> 2268.32s] O gaso deles é maior, é, pera, não pode ter por aí.
+[2268.32s -> 2272.32s] Então, não é verdade, nós, para agora,
+[2272.32s -> 2274.32s] que for fazer culto diferente,
+[2274.32s -> 2276.32s] depender do mundo, dentro de preso,
+[2276.32s -> 2280.32s] aí, como depois, isso é a interessante ideia,
+[2280.32s -> 2282.32s] tudo aquilo, a gente não sei,
+[2282.32s -> 2284.32s] a gente não está olhando,
+[2284.32s -> 2286.32s] o tempo não enxerando,
+[2286.32s -> 2288.32s] o tempo não é meio do preço,
+[2288.32s -> 2290.32s] é igual, não, espendo,
+[2290.32s -> 2292.32s] e isso foi um erro,
+[2292.32s -> 2294.32s] a ideia do sistema,
+[2294.32s -> 2296.32s] o sistema que você pode,
+[2296.32s -> 2298.32s] para a gente que não sei,
+[2298.32s -> 2300.32s] se ainda é para o futuro.
+[2300.32s -> 2303.32s] E tu tira uma opção, outra coisa,
+[2303.32s -> 2305.32s] tu tira uma opção de canviar,
+[2305.32s -> 2308.32s] eu vou deixar por ti personalmente,
+[2308.32s -> 2310.32s] mas pode, que, jamais,
+[2310.32s -> 2311.32s] ela vai ser, por favor,
+[2311.32s -> 2313.32s] é uma empresa, ou é no tutorial,
+[2313.32s -> 2315.32s] é uma empresa que não estamos,
+[2315.32s -> 2316.32s] porque, através desse empresa,
+[2316.32s -> 2317.32s] vou ter outra pessoa,
+[2317.32s -> 2319.32s] pode durar, se,
+[2319.32s -> 2320.32s] e dar, se, pode, pode,
+[2320.32s -> 2321.32s] de canviar aqui.
+[2321.32s -> 2323.32s] Na página, tu pode, de canviar,
+[2323.32s -> 2325.32s] pode, pode, pode, pode, de canviar,
+[2325.32s -> 2326.32s] da forma,
+[2326.32s -> 2328.32s] não, você queria um modelo,
+[2328.32s -> 2330.32s] e estabelecer, me considerando,
+[2330.32s -> 2332.32s] os menores, maiores,
+[2332.32s -> 2334.32s] quantidade horas que você usa para um,
+[2334.32s -> 2335.32s] é o tutorial.
+[2335.32s -> 2337.32s] Eu gosto de um versão, você tem 3,
+[2337.32s -> 2338.32s] está bem lábio,
+[2338.32s -> 2339.32s] de conflitear,
+[2339.32s -> 2340.32s] contando de data,
+[2340.32s -> 2341.32s] bem,
+[2341.32s -> 2342.32s] de féssimo,
+[2342.32s -> 2343.32s] pois,
+[2343.32s -> 2344.32s] é, por favor,
+[2344.32s -> 2345.32s] o preço,
+[2345.32s -> 2346.32s] está todo o valor,
+[2346.32s -> 2347.32s] é muito bom.
+[2347.32s -> 2349.32s] E ela?
+[2349.32s -> 2350.32s] E ela,
+[2350.32s -> 2352.32s] está, aqui está como
+[2352.32s -> 2354.32s] os dados de auditoria,
+[2354.32s -> 2355.32s] então, isso aqui,
+[2355.32s -> 2356.32s] se pode,
+[2356.32s -> 2357.32s] a ideia é, é o uso interno,
+[2357.32s -> 2358.32s] ou seja, a parte, não se vê
+[2358.32s -> 2359.32s] o cliente para nada,
+[2359.32s -> 2360.32s] ou seja, é a parte,
+[2360.32s -> 2361.32s] eles entiendem bem?
+[2361.32s -> 2362.32s] É.
+[2362.32s -> 2364.32s] Ou seja,
+[2364.32s -> 2365.32s] é isso que, ao cuidador,
+[2365.32s -> 2366.32s] é tudo isso,
+[2366.32s -> 2367.32s] é interno,
+[2367.32s -> 2368.32s] não é, não é,
+[2368.32s -> 2369.32s] não é nada,
+[2369.32s -> 2370.32s] é o cliente,
+[2370.32s -> 2371.32s] é isso, é só para aclarar
+[2371.32s -> 2372.32s] todo essa informação,
+[2372.32s -> 2374.32s] se cargar os dados aqui,
+[2374.32s -> 2375.32s] e se pode ir,
+[2375.32s -> 2376.32s] alimentando,
+[2376.32s -> 2377.32s] e desitando,
+[2377.32s -> 2378.32s] para sacar um, um data como tal.
+[2379.32s -> 2380.32s] Listo,
+[2380.32s -> 2381.32s] é isso como tanto
+[2381.32s -> 2382.32s] a lo que,
+[2382.32s -> 2384.32s] o que queríamos ter,
+[2384.32s -> 2386.32s] que você pode criar a proposta,
+[2386.32s -> 2388.32s] ou, uma vez que este,
+[2388.32s -> 2389.32s] de acuerdo,
+[2389.32s -> 2390.32s] e quando você criar a proposta,
+[2390.32s -> 2392.32s] está, como toda a,
+[2392.32s -> 2394.32s] a proposta já está echa,
+[2394.32s -> 2395.32s] em segundos,
+[2395.32s -> 2397.32s] segun a informação que se necessita,
+[2397.32s -> 2398.32s] está, como todos,
+[2398.32s -> 2399.32s] os termos,
+[2399.32s -> 2400.32s] como podem ver,
+[2400.32s -> 2401.32s] específicos,
+[2401.32s -> 2402.32s] de cada uma,
+[2402.32s -> 2404.32s] está, como toda a,
+[2404.32s -> 2405.32s] o custo como tal,
+[2405.32s -> 2406.32s] é um exemplo,
+[2406.32s -> 2408.32s] e é assim como a produção,
+[2408.32s -> 2409.32s] é, você leite,
+[2409.32s -> 2410.32s] como toda a informação,
+[2410.32s -> 2411.32s] é que você pode editar,
+[2411.32s -> 2412.32s] o que pode,
+[2412.32s -> 2413.32s] e aqui, firma,
+[2413.32s -> 2414.32s] porque se dizem colombian,
+[2414.32s -> 2415.32s] então, é essa casa,
+[2415.32s -> 2416.32s] cada automáticamente,
+[2416.32s -> 2417.32s] era a informação de colombia,
+[2417.32s -> 2418.32s] de representante,
+[2418.32s -> 2419.32s] elegar,
+[2419.32s -> 2420.32s] se há,
+[2420.32s -> 2421.32s] se é,
+[2421.32s -> 2422.32s] o cliente é de outro,
+[2422.32s -> 2423.32s] de outro,
+[2423.32s -> 2424.32s] de outro acede,
+[2424.32s -> 2425.32s] ou de outro país,
+[2425.32s -> 2426.32s] aqui ele vai aparecer,
+[2426.32s -> 2427.32s] automáticamente,
+[2427.32s -> 2428.32s] representante,
+[2428.32s -> 2429.32s] de tal país,
+[2429.32s -> 2431.32s] sem, sem nenhum problema.
+[2431.32s -> 2432.32s] Então,
+[2432.32s -> 2433.32s] é isso,
+[2433.32s -> 2434.32s] é como o,
+[2434.32s -> 2435.32s] o que se pode ver,
+[2435.32s -> 2437.32s] e acáabamos agregado opciones,
+[2437.32s -> 2439.32s] é uma opção de,
+[2439.32s -> 2440.32s] de un año,
+[2440.32s -> 2441.36s] e uma opção de três anos,
+[2441.36s -> 2442.30s] dependendo de,
+[2442.30s -> 2443.34s] mentalmente,
+[2443.34s -> 2443.84s] de que está capaz de,
+[2443.84s -> 2444.84s] moder Virginia,
+[2444.84s -> 2445.36s] então, é aqui,
+[2445.36s -> 2446.36s] com um año,
+[2446.36s -> 2447.32s] então, és al describes,
+[2447.32s -> 2449.36s] é uma opção southeast,
+[2449.36s -> 2451.28s] é a opção que pode ir,
+[2451.28s -> 2453.28s] é a administrada,
+[2453.28s -> 2455.28s] para, schwer parte
+[2455.28s -> 2456.28s] de especificação,
+[2456.28s -> 2457.28s] xécois de um,
+[2457.28s -> 2458.10s] um exemplo
+[2458.10s -> 2459.10s] dos dois,
+[2459.10s -> 2459.42s] e uma vez que,
+[2459.42s -> 2460.32s] ter, que termina,
+[2460.32s -> 2461.32s] eu scordei,
+[2461.32s -> 2462.32s] eu pofio, sabe mal, eaten,
+[2462.32s -> 2463.32s] e tal,
+[2463.32s -> 2464.32s] então, esse texto sendo conservado,
+[2464.32s -> 2470.76s] comercial, eu posso enfermar-la tanto como o cliente como tal, se
+[2470.76s -> 2476.96s] disse que não tem uma firma, eu posso criar uma firma aqui,
+[2476.96s -> 2481.56s] eu posso guardar como uma firma como tal, que esta pode ser
+[2481.56s -> 2486.40s] firma, eu aguardo, já que eu guardo a firma, então se eu
+[2486.40s -> 2492.60s] vuelvo a mesma solicitude e a propuesta, então é ver a proposta que
+[2492.60s -> 2499.32s] me vai salir e aqui eu posso enfermar como tal, a proposta
+[2499.32s -> 2504.08s] já quedou informada, então se me chega a esta forma que já está
+[2504.08s -> 2508.60s] enviada, então é ver a cliente, então aqui eu posso ver que já
+[2508.60s -> 2512.88s] está proposta comercial enviada, então é ver a cliente como tal,
+[2512.88s -> 2516.80s] eu posso ver os documentos, eu posso tomar a decisão,
+[2516.80s -> 2520.48s] eu posso ter que enfermar-la, então é ver a cliente também,
+[2520.48s -> 2523.72s] tem acesso a enfermar-la, uma vez que está criada,
+[2523.72s -> 2528.32s] então é ver a cliente, a solicitude, o informador, pode descargar e etc.
+[2528.32s -> 2532.68s] Então é ver a informação base que queremos enviar,
+[2532.68s -> 2537.84s] mesmo passa com o contrato, aqui é ver a gente não ter muito
+[2537.84s -> 2542.04s] descrevendo isto, eu vou mostrar como os vários modelos,
+[2542.04s -> 2544.52s] como funcionando e em cada uno cada cerveto,
+[2544.52s -> 2547.28s] o que temos visto é o calcorador para ver o costo,
+[2547.42s -> 2549.42s] a gente pode terいつato esteference,
+[2549.42s -> 2553.48s] só esta correndo,
+[2553.54s -> 2557.58s] com algum momento.
+[2557.58s -> 2559.68s] Então, timels,
+[2559.68s -> 2565.00s] usamos conseguir a retiringva para embarkar e astralhar que você
+[2565.00s -> 2568.52s] estáesse para️ que está muito hebt nato,
+[2568.52s -> 2572.68s] vou saber, pois ele está tanto miserable porque essayer
+[2572.68s -> 2574.04s] alguma coisa que nós temos,
+[2574.04s -> 2579.04s] Mas você pode mostrar quando descarga o formulário?
+[2581.04s -> 2588.04s] Sim, o formulário qual é o certificado da solicitude?
+[2590.04s -> 2591.04s] Sim.
+[2591.04s -> 2595.04s] O que é isso? O funcionário do FAMPAS?
+[2595.04s -> 2598.04s] Como você deixa a ver com como é isso?
+[2599.04s -> 2606.04s] Bem, o demo não vai ver porque está em demo, mas se vai ver tal qual como é isso.
+[2606.04s -> 2613.04s] O documento como tal, o PDF, se vai ver o que ele é mostrado,
+[2613.04s -> 2615.04s] se é um pouco sobre a solicitude.
+[2615.04s -> 2617.04s] Se vai ver tal qual é assim, o PDF?
+[2617.04s -> 2619.04s] Mas nada não interesse.
+[2619.04s -> 2622.04s] É por que isso tema o local.
+[2622.04s -> 2624.04s] Apesar de apresentar nosso sistema,
+[2624.04s -> 2627.04s] em vez de ter que baixar e fazer uma cópia de pasta.
+[2627.04s -> 2628.04s] Sim.
+[2628.04s -> 2632.04s] Se tiver todas as informações validadas e revisadas, não preciso porque ficar baixando.
+[2636.04s -> 2637.04s] Tem isso.
+[2637.04s -> 2639.04s] O PDF vai ser bastante importante.
+[2639.04s -> 2642.04s] Este é o que vai descargar para parecer assim,
+[2642.04s -> 2648.04s] só por que está local, não está publicada, não se vai permitir a ser esta parte,
+[2648.04s -> 2651.04s] mas esse é como o formato que se vai aparecer de a solicitude.
+[2651.04s -> 2653.04s] O PDF tal qual é como este,
+[2653.04s -> 2655.04s] e aqui em documentos,
+[2655.04s -> 2658.04s] vai ver todos os documentos que carga o cliente.
+[2658.04s -> 2662.04s] Por exemplo, o cliente pode subir por si eu lhegue aqui a proposta comercial,
+[2662.04s -> 2664.04s] está, e o descargo vai aparecer normal.
+[2664.04s -> 2667.04s] Então, aqui vai ver a solicitude, a proposta comercial,
+[2667.04s -> 2674.04s] e o cliente pode descargar todos os documentos que você genera desde o outro lado.
+[2674.04s -> 2676.04s] Aqui, ele vai ver tal qual como o formato.
+[2676.04s -> 2679.04s] Só que aqui por tema de data,
+[2679.04s -> 2681.04s] mas não se vê aqui,
+[2681.04s -> 2684.04s] mas vai ver tal qual como lhe mostrado em o demo.
+[2684.04s -> 2686.04s] E aqui o cliente, eu posso ver.
+[2686.04s -> 2689.04s] O cliente mesmo pode subir também documentos.
+[2689.04s -> 2692.04s] É decir, isso é como o cliente
+[2692.04s -> 2694.04s] permite o cliente aqui subir documentos.
+[2694.04s -> 2698.04s] Se o cliente quer enviar, em vez de enviar por correo, por exemplo,
+[2698.04s -> 2701.04s] muita informação, o cliente pode descargar aqui,
+[2701.04s -> 2703.04s] e por outro lado,
+[2703.04s -> 2705.04s] o empilhado,
+[2705.04s -> 2707.04s] quando o ingressa aqui,
+[2707.04s -> 2709.04s] vai ver, aqui está Nestlé,
+[2709.04s -> 2712.04s] e aqui vai ver todos os documentos que o cliente carga.
+[2712.04s -> 2714.04s] É isso facilita um montón,
+[2714.04s -> 2717.04s] o intercambio de documentos entre vocês
+[2717.04s -> 2719.04s] e a empresa,
+[2719.04s -> 2722.04s] para não enviar por correo e depois outra versão,
+[2722.04s -> 2725.04s] depois, se aqui se pode eliminar uma versão
+[2725.04s -> 2727.04s] e cargar outra nueva, facilmente,
+[2727.04s -> 2729.04s] simplesmente cargar e descargar,
+[2729.04s -> 2731.04s] e isso le permite, ao outro lado,
+[2731.04s -> 2734.04s] fazer-lo de uma forma muito fácil
+[2734.04s -> 2737.04s] de eliminar este factor de enviado de documentos.
+[2737.04s -> 2740.04s] Essa parte está clara?
+[2740.04s -> 2743.04s] E, até agora,
+[2743.04s -> 2746.04s] o logro que estamos a falar,
+[2746.04s -> 2751.04s] toda uma informação não é interpense de um termo-al.
+[2751.04s -> 2755.04s] Não é que, ou olvidamos ponermos o supervisor,
+[2755.04s -> 2758.04s] não é que é ter que ponermos o supervisor.
+[2758.04s -> 2761.04s] Não é que é o corrio ou não é o corrio.
+[2761.04s -> 2765.04s] Todo não é interpense humana
+[2765.04s -> 2767.04s] até esta punta de nada,
+[2767.04s -> 2768.04s] de nada, de nada,
+[2768.04s -> 2770.04s] ele já está sendo todo,
+[2770.04s -> 2772.04s] e está guardando todo.
+[2772.04s -> 2774.04s] E, nesta sistema,
+[2774.04s -> 2777.04s] se manhã, tu chega a cambiar a sistema,
+[2777.04s -> 2779.04s] toda a informação está na casa.
+[2779.04s -> 2781.04s] Não é que se perdiou,
+[2781.04s -> 2782.04s] ou, ok,
+[2782.04s -> 2784.04s] se der a nível de faimbras.
+[2784.04s -> 2788.04s] Já, se eu vou corrup, ok, está aqui, ok?
+[2788.04s -> 2790.04s] E está,
+[2790.04s -> 2794.04s] o uso de três servers, ok?
+[2794.04s -> 2797.04s] Para guardar em três lados diferentes,
+[2797.04s -> 2799.04s] para não perder nenhum maneira,
+[2799.04s -> 2801.04s] nenhum maneira,
+[2801.04s -> 2803.04s] o novo é perder a informação, ok?
+[2803.04s -> 2805.04s] E três servers,
+[2805.04s -> 2807.04s] está trabalhando e guardando em três servers.
+[2807.04s -> 2808.04s] Isso?
+[2808.04s -> 2810.04s] Está tudo agora?
+[2810.04s -> 2811.04s] É, listo.
+[2811.04s -> 2813.04s] Só que o que estava dizendo,
+[2813.04s -> 2815.04s] para não exender muito,
+[2815.04s -> 2817.04s] é que, por exemplo,
+[2817.04s -> 2819.04s] aqui, eu vou mostrar como todos os outros modelos,
+[2819.04s -> 2821.04s] para que vocês tenham,
+[2821.04s -> 2823.04s] vai ser um modelo,
+[2823.04s -> 2825.04s] para que, se, os tempos,
+[2825.04s -> 2827.04s] por exemplo,
+[2827.04s -> 2829.04s] tem uma pessoa jurídica,
+[2829.04s -> 2831.04s] encargada de contratos,
+[2831.04s -> 2833.04s] se tu pode ter acesso a isso ou outra pessoa, etc.
+[2833.04s -> 2835.04s] Então, aqui estão todos os modelos,
+[2835.04s -> 2837.04s] a parte comercial,
+[2837.04s -> 2839.04s] a parte de calcular como tanto o propósito,
+[2839.04s -> 2841.04s] para gastar o contrato,
+[2841.04s -> 2843.04s] para aparecer os contratos,
+[2843.04s -> 2845.04s] para colocar comentários, etc.
+[2845.04s -> 2847.04s] Aqui temos um que se chama reportes,
+[2847.04s -> 2850.04s] e este reportes é um modelo,
+[2850.04s -> 2852.04s] onde se vai poner,
+[2852.04s -> 2854.04s] toda a informação que se necessita,
+[2854.04s -> 2857.04s] em termos de autoridade ou de empate.
+[2857.04s -> 2860.04s] Então, aqui, como eu administrador,
+[2860.04s -> 2862.04s] eu posso cargar algumas observações,
+[2862.04s -> 2863.04s] para o cliente,
+[2863.04s -> 2865.04s] eu posso cargar uma reporte,
+[2865.04s -> 2867.04s] aqui, eu posso subir a reporte,
+[2867.04s -> 2869.04s] ou pode, com o cliente como tal,
+[2869.04s -> 2870.04s] eu posso, por exemplo,
+[2870.04s -> 2871.04s] este documento,
+[2871.04s -> 2873.04s] vamos cambiar,
+[2873.04s -> 2875.04s] este documento tem a versão 3,
+[2875.04s -> 2877.04s] e a última atualização foi assim,
+[2877.04s -> 2879.04s] se você, como empresa,
+[2879.04s -> 2881.04s] quer encargar esta versão,
+[2881.04s -> 2882.04s] pode eliminar,
+[2882.04s -> 2884.04s] e pode cargar outro novo,
+[2884.04s -> 2886.04s] e isso é o que vai permitir,
+[2886.04s -> 2888.04s] que a informação que está aqui,
+[2888.04s -> 2889.04s] é a informação mais atualizada,
+[2889.04s -> 2890.04s] não precisa,
+[2890.04s -> 2892.04s] é que é a versão anterior,
+[2892.04s -> 2894.04s] toda a informação que está aí,
+[2894.04s -> 2895.04s] e isso mesmo,
+[2895.04s -> 2896.04s] pode ver o cliente,
+[2896.04s -> 2898.04s] então, o cliente pode chegar aqui em paz,
+[2898.04s -> 2899.04s] e aqui vai aparecer,
+[2899.04s -> 2900.04s] as versões,
+[2900.04s -> 2902.04s] as últimas versões,
+[2902.04s -> 2903.04s] mas não, obviamente,
+[2903.04s -> 2904.04s] não pode editar,
+[2904.04s -> 2906.04s] só pode descargar elas.
+[2906.04s -> 2907.04s] Então, aqui,
+[2907.04s -> 2908.04s] eu vou ver o formulário,
+[2908.04s -> 2909.04s] e aqui, só,
+[2909.04s -> 2910.04s] ela aparece,
+[2910.04s -> 2911.04s] segundo o categoria,
+[2911.04s -> 2913.04s] ela aparece o que pertence a ela,
+[2913.04s -> 2914.04s] então, ela pode descargar,
+[2914.04s -> 2916.04s] de uma forma muito fácil,
+[2916.04s -> 2917.04s] os documentos como tal.
+[2917.04s -> 2918.04s] Se vocês,
+[2918.04s -> 2920.04s] aqui, ele vai aparecer,
+[2920.04s -> 2922.04s] e sempre descarga a última versão,
+[2922.04s -> 2924.04s] do documento.
+[2924.04s -> 2926.04s] Aqui, o admin de vocês
+[2926.04s -> 2927.04s] tem que ter acesso,
+[2927.04s -> 2929.04s] como a poder ver
+[2929.04s -> 2932.04s] que, em que são os usuários,
+[2932.04s -> 2933.04s] uno de vocês,
+[2933.04s -> 2936.04s] e poder agregar um usuário novo,
+[2936.04s -> 2937.04s] outro enviado saliu,
+[2937.04s -> 2938.04s] e entrou-se,
+[2938.04s -> 2939.04s] pode eliminar,
+[2939.04s -> 2941.04s] e pode dar-lhe acesso a outro novo.
+[2941.04s -> 2943.04s] Então, ela dá accesso absoluto a todas as pessoas
+[2943.04s -> 2945.04s] que manejan sua plataforma.
+[2945.04s -> 2948.04s] Esses é o controle que vocês podem entender.
+[2948.04s -> 2951.04s] Tenhemos uma assistente para o auditor,
+[2951.04s -> 2953.04s] este assistente de AI,
+[2953.04s -> 2954.04s] é uma assistente
+[2954.04s -> 2956.04s] que se vai dar me algumas informações,
+[2956.04s -> 2960.04s] extras sobre a edasulisitude.
+[2960.04s -> 2961.04s] Por exemplo,
+[2961.04s -> 2963.04s] eu pode fazer um clica aqui,
+[2963.04s -> 2964.04s] e aqui,
+[2964.04s -> 2966.04s] o enviado pode chatear com a
+[2966.04s -> 2968.04s] entregência artificial,
+[2968.04s -> 2970.04s] sobre este e do com esta aplicação,
+[2970.04s -> 2971.04s] em particular,
+[2971.04s -> 2972.04s] por exemplo,
+[2972.04s -> 2974.04s] qual são os elementos machu,
+[2974.04s -> 2975.04s] os kilobens,
+[2975.04s -> 2976.04s] os elementos halal,
+[2976.04s -> 2978.04s] e todos os elementos,
+[2978.04s -> 2979.04s] ele vai facilitar,
+[2979.04s -> 2980.04s] o auditor,
+[2980.04s -> 2983.04s] ter uma resposta muito rápida,
+[2983.04s -> 2985.04s] com o apoio de entregência artificial,
+[2985.04s -> 2986.04s] porque, em fundo,
+[2986.04s -> 2987.04s] ou seja, aqui,
+[2987.04s -> 2988.04s] quando você vai ter,
+[2988.04s -> 2990.04s] esta conversação
+[2990.04s -> 2993.04s] vai ser especializada com este cliente,
+[2993.04s -> 2995.04s] não é uma informação general.
+[2995.04s -> 2997.04s] Então, é o que permite a você
+[2997.04s -> 3000.04s] ter, como todo o detalhe sobre esta
+[3000.04s -> 3001.04s] solicitude,
+[3001.04s -> 3002.04s] é a companhia,
+[3002.04s -> 3003.04s] quantos produtos,
+[3003.04s -> 3006.04s] ai, que são os produtos que tenho que ver, etc.
+[3006.04s -> 3009.04s] Então, este apoio com AI
+[3009.04s -> 3011.04s] ajuda muito a auditor
+[3011.04s -> 3013.04s] a tomar decisões, etc.
+[3013.04s -> 3015.04s] O último modelo,
+[3015.04s -> 3017.04s] é o modelo de comite,
+[3017.04s -> 3018.04s] isto vai aparecer
+[3018.04s -> 3020.04s] só na agressão,
+[3020.04s -> 3022.04s] e isto vai haver
+[3022.04s -> 3024.04s] todas as solicitudes de generales,
+[3024.04s -> 3025.04s] se ha chegado a uma,
+[3025.04s -> 3026.04s] obviamente, aqui, não vai aparecer
+[3026.04s -> 3028.04s] até que este terminado o contrato
+[3028.04s -> 3029.04s] e todos os partes,
+[3029.04s -> 3031.04s] aqui, vai aparecer que estamos
+[3031.04s -> 3032.04s] teniendo tanto,
+[3032.04s -> 3033.04s] e aqui,
+[3033.04s -> 3034.04s] pode ver revisar
+[3034.04s -> 3035.04s] o caso e vai haver
+[3035.04s -> 3036.04s] todos os documentos
+[3036.04s -> 3037.04s] que estão aqui,
+[3037.04s -> 3038.04s] como detalhe de
+[3038.04s -> 3039.36s] detalhe de
+[3039.36s -> 3041.04s] detalhe de empresa,
+[3041.04s -> 3042.04s] é só os documentos que foram,
+[3042.04s -> 3043.04s] aqui está a solicitude,
+[3043.04s -> 3044.04s] aqui está a proposta comercial,
+[3044.04s -> 3045.04s] aqui está o contrato,
+[3045.04s -> 3048.04s] e o comite, como tal,
+[3048.04s -> 3049.04s] pode revisar
+[3049.04s -> 3050.04s] o que querem, em caso que querem,
+[3050.04s -> 3051.04s] e ai,
+[3051.04s -> 3053.04s] a decisão final
+[3053.04s -> 3054.04s] é aprovar ou não aprovar,
+[3054.04s -> 3056.04s] é só o que vai aparecer
+[3056.04s -> 3057.04s] a este modelo,
+[3057.04s -> 3058.04s] aprovamos este modelo,
+[3058.04s -> 3060.04s] aprovamos, em caso de aprovar,
+[3060.04s -> 3062.04s] o sistema vai generar
+[3062.04s -> 3063.04s] uma certificação,
+[3063.04s -> 3065.04s] e se vai ser
+[3065.04s -> 3066.04s] descargable,
+[3066.04s -> 3067.04s] tanto por o cliente,
+[3067.04s -> 3069.04s] e tanto
+[3069.04s -> 3071.04s] enviar-lo de forma que você enconceira.
+[3072.04s -> 3073.04s] É só um resumen
+[3073.04s -> 3074.04s] para não extender
+[3074.04s -> 3075.04s] muito mais, e se tengan
+[3075.04s -> 3076.04s] alguma duda,
+[3076.04s -> 3077.04s] pode, com muito gusto,
+[3077.04s -> 3078.04s] estaria resumindo.
+[3078.04s -> 3079.04s] Como, como,
+[3079.04s -> 3081.04s] explica, explica como,
+[3081.04s -> 3082.04s] como, como,
+[3082.04s -> 3083.04s] como, o editorial, como passamos
+[3083.04s -> 3084.04s] por o editorial,
+[3084.04s -> 3085.04s] como já dámos documentos,
+[3085.04s -> 3087.04s] como, chega o contrato,
+[3087.04s -> 3089.04s] explica como, está, como,
+[3089.04s -> 3090.04s] facilita,mos do contrato.
+[3090.04s -> 3091.04s] Por favor,
+[3091.04s -> 3092.04s] por favor,
+[3093.04s -> 3094.04s] , eu não vou,
+[3094.04s -> 3095.04s] eu não vou,
+[3095.04s -> 3096.04s] eu vou,
+[3096.04s -> 3097.04s] eu vou,
+[3097.04s -> 3098.04s] comitário,
+[3098.04s -> 3099.04s] facilita a tu comercial,
+[3099.04s -> 3100.04s] mas, mood,
+[3100.04s -> 3101.04s] ai uma parte,
+[3101.04s -> 3102.82s] Você só lê isso, é o cliente Ben.
+[3102.82s -> 3104.42s] O remunete comigo, Hala, é isso.
+[3104.42s -> 3107.16s] Estou entrando isso, e em tempo real,
+[3107.16s -> 3108.42s] listo, está a solicitude.
+[3108.42s -> 3109.42s] Acepto, não acepta, listo.
+[3109.42s -> 3111.16s] Aceptamos, iniciamos processos.
+[3111.16s -> 3112.66s] É muito rápido.
+[3112.66s -> 3116.30s] Mas, há uma parte que vai para os analistas,
+[3116.30s -> 3119.30s] onde sugera o cliente das materias primas,
+[3119.30s -> 3120.50s] da lista de materias primas,
+[3120.50s -> 3122.30s] laia de subreda.
+[3122.30s -> 3124.64s] Ojo porque estão necessitados a certificação Hala.
+[3124.64s -> 3126.64s] Ojo porque está na lista positiva.
+[3126.64s -> 3127.70s] Ojo, e isso,
+[3127.70s -> 3131.24s] vai ser muito mais fácil para que analista de processos
+[3131.24s -> 3132.26s] terminamos rápido,
+[3132.26s -> 3133.28s] e se enfoque,
+[3133.28s -> 3135.24s] o que realmente precisa de cliente
+[3135.24s -> 3137.08s] que te faz os documentos,
+[3137.08s -> 3139.24s] e que pede os formesadores
+[3139.24s -> 3141.72s] com a informação que é mais rápido.
+[3141.72s -> 3142.72s] Sim.
+[3142.72s -> 3144.72s] Não é o ideal,
+[3144.72s -> 3147.84s] para que você não demora 7 meses e 8 meses
+[3147.84s -> 3149.24s] para certificar.
+[3149.24s -> 3149.84s] Ok?
+[3149.84s -> 3150.72s] O contrário,
+[3150.72s -> 3153.68s] está a melhor rendimento em sua mão,
+[3153.68s -> 3155.68s] para certificar.
+[3155.68s -> 3156.68s] Ok?
+[3157.70s -> 3159.50s] Mas não explicas,
+[3159.50s -> 3160.92s] depois do contrário,
+[3160.92s -> 3161.92s] a seguinte parte.
+[3163.92s -> 3164.60s] É isso,
+[3164.60s -> 3167.12s] o que explica Andréa Osano.
+[3167.12s -> 3168.76s] Quero exterrar muito
+[3168.76s -> 3169.92s] em explicar os detalhes,
+[3169.92s -> 3171.52s] mas eu posso responder.
+[3171.52s -> 3172.52s] Vamos tiempo.
+[3172.52s -> 3173.52s] Vamos tiempo.
+[3173.52s -> 3174.82s] Vamos a campo.
+[3174.82s -> 3175.42s] E que,
+[3175.42s -> 3177.22s] a L'Ovea.
+[3180.16s -> 3180.66s] Ok.
+[3180.66s -> 3183.76s] Estos passos que nós estamos dizendo,
+[3184.32s -> 3186.34s] aqui, por exemplo,
+[3186.34s -> 3189.44s] o cliente está em a fase.
+[3189.44s -> 3190.36s] Depois de a fase,
+[3190.36s -> 3191.36s] está como o salto.
+[3191.36s -> 3192.36s] Sim.
+[3192.36s -> 3193.36s] Sim.
+[3196.86s -> 3198.04s] Então, esse aqui, o cliente,
+[3198.04s -> 3200.04s] o que tem que fazer,
+[3200.04s -> 3201.88s] é ter este archivo,
+[3201.88s -> 3202.60s] a solicitude,
+[3202.60s -> 3203.80s] ela pode subir,
+[3203.80s -> 3205.00s] uma vez que ela está fermando,
+[3205.00s -> 3205.24s] ou seja,
+[3205.24s -> 3205.72s] a descarga,
+[3205.72s -> 3207.04s] a firma, a suba,
+[3207.04s -> 3208.68s] eu aqui como cliente,
+[3208.68s -> 3210.84s] já he recebido esta documentação,
+[3210.84s -> 3212.00s] obviamente,
+[3212.00s -> 3213.24s] gostaria de ir a esto.
+[3213.32s -> 3214.08s] Então, aqui,
+[3214.08s -> 3216.68s] vou ver a proposta fermada,
+[3216.68s -> 3217.60s] a proposta comercial,
+[3217.60s -> 3218.48s] a casta fermada,
+[3218.48s -> 3220.40s] uma vez que este formado,
+[3220.40s -> 3222.08s] ela é a assistente,
+[3222.08s -> 3222.84s] como tal,
+[3222.84s -> 3223.92s] se vai chegar aqui
+[3223.92s -> 3226.40s] e vai adicionar a preparação em contrato.
+[3226.40s -> 3228.32s] Quando ele diz preparação em contrato,
+[3228.32s -> 3229.36s] o cliente como tal,
+[3229.36s -> 3231.00s] em sua página,
+[3231.00s -> 3232.12s] ele vai chegar aqui,
+[3232.12s -> 3233.24s] que estão fazendo,
+[3233.24s -> 3234.60s] estão fazendo a preparação
+[3234.60s -> 3235.84s] de contrato.
+[3235.84s -> 3237.56s] Aqui, em preparação de contrato,
+[3237.56s -> 3240.16s] o que vai dizer é criar um contrato.
+[3240.92s -> 3242.96s] Quando eu quero criar um contrato,
+[3242.96s -> 3244.60s] vou ir a contrato,
+[3244.60s -> 3245.96s] essa é a pessoa encargada,
+[3245.96s -> 3246.88s] porque, obviamente,
+[3246.88s -> 3248.24s] a pessoa que faz o contrato
+[3248.24s -> 3249.44s] é diferente a autor,
+[3249.44s -> 3251.28s] diferente a técnica,
+[3251.28s -> 3251.72s] e aqui,
+[3251.72s -> 3252.88s] me vai chegar ao contrato,
+[3252.88s -> 3254.24s] este é o modo de contrato,
+[3254.24s -> 3255.84s] aqui está o contrato enviado,
+[3255.84s -> 3257.16s] vou haver o contrato.
+[3259.76s -> 3261.28s] E te parece a identificação
+[3261.28s -> 3261.88s] de lá,
+[3261.88s -> 3262.24s] de lá,
+[3262.24s -> 3262.88s] se peam,
+[3262.88s -> 3263.96s] salem o contrato,
+[3263.96s -> 3264.60s] o código,
+[3264.60s -> 3265.68s] o contrato,
+[3265.68s -> 3266.76s] e perdonças,
+[3266.76s -> 3267.80s] é um error de
+[3267.80s -> 3268.48s] lá, de lá,
+[3268.48s -> 3269.20s] vaciados,
+[3269.20s -> 3269.60s] mas aqui,
+[3269.60s -> 3270.36s] se vai aparecer,
+[3270.36s -> 3271.04s] como tal,
+[3271.04s -> 3272.20s] o contenido,
+[3272.76s -> 3274.32s] isto passa um error,
+[3274.32s -> 3275.28s] porque não é muito llenado
+[3275.28s -> 3277.00s] como toda a informação completa,
+[3277.00s -> 3278.12s] mas aqui,
+[3278.12s -> 3278.72s] se vai aparecer,
+[3278.72s -> 3279.32s] como tal,
+[3279.32s -> 3281.36s] o contrato,
+[3281.36s -> 3282.36s] salem-se com o lado,
+[3282.36s -> 3282.72s] ou,
+[3282.72s -> 3282.92s] ou,
+[3282.92s -> 3283.12s] ou,
+[3283.12s -> 3283.72s] ou,
+[3283.72s -> 3284.12s] e lá,
+[3284.12s -> 3284.32s] que nós estamos juntos?
+[3284.32s -> 3285.60s] Que nós fizemos o contrato?
+[3285.60s -> 3287.40s] Porque podemos nos contrato,
+[3287.40s -> 3288.36s] estamos,
+[3288.36s -> 3289.36s] ok?
+[3289.36s -> 3290.36s] Um contrato,
+[3290.36s -> 3291.36s] um contrato,
+[3291.36s -> 3292.36s] estándar,
+[3292.36s -> 3294.36s] é uns 20 faixinhos,
+[3294.36s -> 3295.36s] não dizemos isso.
+[3295.36s -> 3295.84s] O ultimário.
+[3295.84s -> 3297.16s] Desparamos para a gráfico,
+[3297.16s -> 3298.16s] para a gráfico.
+[3298.16s -> 3298.84s] O entende,
+[3298.84s -> 3301.24s] o avocado de cliente poder
+[3301.24s -> 3303.28s] poder realizar cada para a gráfico
+[3303.28s -> 3306.04s] e poder comentar em cada para a gráfico,
+[3306.04s -> 3307.16s] em cada para a gráfico,
+[3307.16s -> 3308.16s] poder comentar,
+[3308.16s -> 3308.96s] ok?
+[3308.96s -> 3310.12s] E devolver.
+[3310.12s -> 3313.04s] Então, o contrato não é uns 15 faixinhos,
+[3313.04s -> 3315.16s] que tem que tener tempo,
+[3315.16s -> 3317.28s] e meus abogados para leer,
+[3317.28s -> 3317.80s] e não sei que,
+[3317.80s -> 3319.28s] não, não é mais esta.
+[3319.28s -> 3320.80s] Ele poder realizar para a gráfico,
+[3320.80s -> 3321.60s] para a gráfico,
+[3321.60s -> 3323.04s] guardar para a gráfico,
+[3323.04s -> 3323.84s] para a gráfico.
+[3323.84s -> 3325.60s] Vai almoçar e regresar
+[3325.60s -> 3327.64s] com o contrato,
+[3327.64s -> 3328.24s] ok?
+[3328.24s -> 3330.12s] Los contrato são estándar
+[3330.12s -> 3332.12s] para industrial
+[3332.12s -> 3334.12s] para para para a gráfico,
+[3334.12s -> 3337.12s] e estes são estándar,
+[3337.12s -> 3338.12s] ok?
+[3338.12s -> 3341.12s] estão abertos para modificar,
+[3341.12s -> 3342.12s] mas,
+[3342.12s -> 3344.12s] em tempo muito compacto
+[3344.12s -> 3346.12s] e muito limite,
+[3346.12s -> 3347.12s] ok?
+[3347.12s -> 3348.12s] Nós fizemos isso
+[3348.12s -> 3349.12s] em esta maneira,
+[3349.12s -> 3350.12s] para que não
+[3350.12s -> 3351.12s] quem se diz,
+[3351.12s -> 3352.12s] estamos revisando o contrato.
+[3352.12s -> 3353.12s] Bem,
+[3353.12s -> 3354.12s] o tempo estava,
+[3354.12s -> 3356.12s] o contrato está nois e tenamos.
+[3356.12s -> 3357.12s] Ok?
+[3357.12s -> 3359.12s] Vamos.
+[3359.12s -> 3360.12s] Vamos.
+[3360.12s -> 3361.12s] Sim,
+[3361.12s -> 3362.12s] então aqui,
+[3362.12s -> 3363.12s] se vai ver,
+[3363.12s -> 3364.12s] é a parte que,
+[3364.12s -> 3366.12s] que o seu laptop estava dizendo,
+[3366.12s -> 3367.12s] pode editar.
+[3367.12s -> 3369.12s] Se pode poner comentário
+[3369.12s -> 3370.12s] e pode visir ao cliente,
+[3370.12s -> 3372.12s] o cliente vai fazer o mesmo processo,
+[3372.12s -> 3373.12s] uma vez que está,
+[3373.12s -> 3376.12s] internamente também,
+[3376.12s -> 3377.12s] em todos casos,
+[3377.12s -> 3378.12s] se pode aqui cargar,
+[3378.12s -> 3380.12s] como tal todo o documento,
+[3380.12s -> 3381.12s] eu quero cargar a nisso,
+[3381.12s -> 3382.12s] então, eu lligo aqui,
+[3382.12s -> 3384.12s] pode cargar este documento a ellos,
+[3384.12s -> 3385.12s] para que eles lo podem ver.
+[3385.12s -> 3386.12s] E o cliente aqui,
+[3386.12s -> 3388.12s] eu posso ver como tal,
+[3388.12s -> 3389.12s] em documento.
+[3389.12s -> 3390.12s] Isso pode ser, como entimbrir.
+[3390.12s -> 3391.12s] É isso que ajuda,
+[3391.12s -> 3392.12s] isso ajuda,
+[3392.12s -> 3395.12s] que o contrato que vai aparecer aqui,
+[3395.12s -> 3396.12s] é o contrato,
+[3396.12s -> 3397.12s] o que é,
+[3397.12s -> 3399.12s] não é uma versão anterior, etc.
+[3399.12s -> 3400.12s] Então,
+[3400.12s -> 3402.12s] ele facilita muito ter vários documentos
+[3402.12s -> 3404.12s] e ter só um documento que é
+[3404.12s -> 3406.12s] a última atualização, etc.
+[3406.12s -> 3409.12s] Uma vez que este o estado
+[3409.12s -> 3410.12s] do contrato,
+[3410.12s -> 3413.12s] como tal, fermado por ambos partes,
+[3413.12s -> 3415.12s] aqui,
+[3415.12s -> 3417.12s] o administrador pode ter
+[3417.12s -> 3418.12s] marcado como fermado,
+[3418.12s -> 3419.12s] já está fermado.
+[3419.12s -> 3421.12s] E quando já está fermado,
+[3421.12s -> 3423.12s] o cliente também le nutifica,
+[3423.12s -> 3424.12s] quando está aqui,
+[3424.12s -> 3426.12s] que agora já contrato está
+[3426.12s -> 3427.12s] informado e
+[3427.12s -> 3428.12s] faunbras já
+[3428.12s -> 3429.12s] em seu próprio
+[3429.12s -> 3430.12s] estúdio.
+[3430.12s -> 3431.12s] Ou seja,
+[3431.12s -> 3432.12s] fermar o contrato,
+[3432.12s -> 3433.12s] empieza a fazer 2,
+[3433.12s -> 3434.12s] a fase 2,
+[3434.12s -> 3435.12s] se iniciar com o estúdio.
+[3435.12s -> 3437.12s] E é isso que estava como explicando aqui,
+[3437.12s -> 3438.12s] a parte de
+[3438.12s -> 3439.12s] reportes,
+[3439.12s -> 3440.12s] onde,
+[3440.12s -> 3441.12s] uma vez com o AI,
+[3441.12s -> 3443.12s] é o primeiro passo,
+[3443.12s -> 3444.12s] depois do contrato,
+[3444.12s -> 3445.12s] o auditor,
+[3445.12s -> 3447.12s] chega aqui com o AI e vai
+[3447.12s -> 3449.12s] chatear com o AI sobre esta
+[3449.12s -> 3450.12s] solucitude.
+[3450.12s -> 3452.12s] Agora, aqui é isso que quero ver,
+[3452.12s -> 3454.12s] este vai a dizer uma lista de produtos,
+[3454.12s -> 3455.12s] é isso, os produtos que têm que
+[3455.12s -> 3456.12s] analisar,
+[3456.12s -> 3458.12s] aqui, te diz o estado,
+[3458.12s -> 3459.12s] o contrato,
+[3459.12s -> 3460.12s] e já está fermado,
+[3460.12s -> 3462.12s] já puedes avançar e te dar toda a
+[3462.12s -> 3463.12s] informação.
+[3463.12s -> 3464.12s] Uma vez que terem toda a
+[3464.12s -> 3465.12s] informação,
+[3465.12s -> 3466.12s] o auditor mesmo,
+[3466.12s -> 3468.12s] pode ir a reportes
+[3468.12s -> 3469.12s] e cargar,
+[3469.12s -> 3471.12s] que tem 3 aspectos
+[3471.12s -> 3472.12s] fundamentais em este mol.
+[3472.12s -> 3473.12s] Uma,
+[3473.12s -> 3474.12s] a caso pode cargar,
+[3474.12s -> 3476.12s] unos observações,
+[3476.12s -> 3477.12s] por exemplo,
+[3477.12s -> 3478.12s] eu quero cargar
+[3478.12s -> 3479.12s] tal cliente,
+[3479.12s -> 3480.12s] eu posso, primeiro,
+[3480.12s -> 3481.12s] criar uma planilla.
+[3481.12s -> 3482.12s] Uma planilla,
+[3482.12s -> 3483.12s] é isso,
+[3483.12s -> 3484.12s] ela é cada auditor.
+[3484.12s -> 3486.12s] Pode ter uma planilla
+[3486.12s -> 3487.12s] especializada de units,
+[3487.12s -> 3488.12s] etc.
+[3488.12s -> 3489.12s] e que pode
+[3489.12s -> 3490.12s] criar,
+[3490.12s -> 3491.12s] para que guardar uma vez
+[3491.12s -> 3492.12s] e depois enviar-la
+[3492.12s -> 3493.12s] em caso que
+[3493.12s -> 3494.12s] é necessário
+[3494.12s -> 3496.12s] a outro cliente.
+[3496.12s -> 3497.12s] E aqui pode ver,
+[3497.12s -> 3498.12s] como o que é
+[3498.12s -> 3500.12s] as plantillas
+[3500.12s -> 3501.12s] disponíveis que eu
+[3501.12s -> 3502.12s] ai criado,
+[3502.12s -> 3504.12s] como auditor.
+[3504.12s -> 3506.12s] Isso é um demo.
+[3506.12s -> 3507.12s] Ou seja,
+[3507.12s -> 3508.12s] são reales,
+[3508.12s -> 3509.12s] são não só um exemplo,
+[3509.12s -> 3510.12s] mas a ideia aqui, cada uno,
+[3510.12s -> 3511.12s] aqui pode,
+[3511.12s -> 3512.12s] cada auditor,
+[3512.12s -> 3513.12s] pode ter, tem a
+[3513.12s -> 3514.12s] esta como uma
+[3514.12s -> 3515.12s] herramienta,
+[3515.12s -> 3516.12s] para poder gestionar e cargar
+[3516.12s -> 3518.12s] todas as observações que ele
+[3518.12s -> 3519.12s] quer,
+[3519.12s -> 3522.12s] que o cliente pode chequear.
+[3522.12s -> 3523.12s] E aqui em reportes,
+[3523.12s -> 3526.12s] se já auditor tem suporto final,
+[3526.12s -> 3527.12s] aqui pode cargar,
+[3527.12s -> 3528.12s] normalmente,
+[3528.12s -> 3529.12s] e em tiempo real
+[3529.12s -> 3530.12s] ele vai chegar
+[3530.12s -> 3531.12s] ao cliente.
+[3531.12s -> 3532.12s] Então, o cliente,
+[3532.12s -> 3533.12s] quando vai reportes,
+[3533.12s -> 3534.12s] aqui pode ver,
+[3534.12s -> 3535.12s] aqui,
+[3535.12s -> 3536.12s] reportes que foi enviado
+[3536.12s -> 3537.12s] por
+[3537.12s -> 3538.12s] auditor.
+[3538.12s -> 3539.12s] Então, ele facilita em
+[3539.12s -> 3540.12s] tiempo real.
+[3540.12s -> 3541.12s] Pode ser que o auditor está
+[3541.12s -> 3542.12s] em visitar
+[3542.12s -> 3543.12s] em lugar e uma vez que
+[3543.12s -> 3544.12s] o carga
+[3544.12s -> 3545.12s] vai aparecer aqui
+[3545.12s -> 3547.12s] a
+[3547.12s -> 3548.12s] entenda real,
+[3548.12s -> 3549.12s] ao cliente e não precisa
+[3549.12s -> 3550.12s] esperar
+[3550.12s -> 3552.12s] muito tempo para que
+[3552.12s -> 3553.12s] envia
+[3553.12s -> 3554.12s] o reportes.
+[3554.12s -> 3555.12s] Por que,
+[3555.12s -> 3556.12s] pode ouvir que o
+[3556.12s -> 3557.12s] momento,
+[3557.12s -> 3558.12s] eu tenho uma
+[3558.12s -> 3559.12s] duda,
+[3559.12s -> 3560.12s] ele reporte,
+[3560.12s -> 3561.12s] basa,
+[3561.12s -> 3562.12s] por exemplo,
+[3562.12s -> 3563.12s] ele reporte
+[3563.12s -> 3564.12s] é genado durante
+[3564.12s -> 3565.12s] ela auditoria.
+[3565.12s -> 3566.12s] Ah,
+[3566.12s -> 3567.12s] ai,
+[3567.12s -> 3568.12s] controla e de pragas,
+[3568.12s -> 3569.12s] ai,
+[3569.12s -> 3570.12s] estos vão ser
+[3570.12s -> 3571.12s] genados em
+[3571.12s -> 3572.12s] la plataforma,
+[3572.12s -> 3573.12s] tem?
+[3573.12s -> 3574.12s] La plataforma e
+[3574.12s -> 3575.12s] porque a
+[3575.12s -> 3576.12s] pai está me
+[3576.12s -> 3577.12s] dizendo de cargar,
+[3577.12s -> 3578.12s] mas não necessitando cargar
+[3578.12s -> 3579.12s] ele em forte,
+[3579.12s -> 3580.12s] ele em forte.
+[3580.12s -> 3581.12s] Os pontos estão
+[3581.12s -> 3582.12s] aqui.
+[3582.12s -> 3583.12s] Estão novo.
+[3583.12s -> 3584.12s] É claro,
+[3584.12s -> 3585.12s] um besesse de
+[3585.12s -> 3586.12s] ele e o leones,
+[3586.12s -> 3587.12s] boa volta.
+[3587.12s -> 3588.12s] Mato está viajando.
+[3588.12s -> 3589.12s] Mírculo está
+[3589.12s -> 3590.12s] um
+[3590.12s -> 3591.12s] encador
+[3591.12s -> 3592.12s] viernes,
+[3592.12s -> 3593.12s] está
+[3593.12s -> 3594.12s] um
+[3594.12s -> 3595.12s] fósforo.
+[3595.12s -> 3596.12s] Ok,
+[3596.12s -> 3597.12s] quando você
+[3597.12s -> 3598.12s] reporte,
+[3598.12s -> 3599.12s] quando regressa,
+[3599.12s -> 3600.12s] ok?
+[3600.12s -> 3601.12s] Gá,
+[3601.12s -> 3603.12s] não há mais
+[3603.12s -> 3604.12s] isto.
+[3604.12s -> 3605.12s] É ele
+[3605.12s -> 3606.12s] la plataforma,
+[3606.12s -> 3607.12s] está terminando
+[3607.12s -> 3608.12s] reporte e
+[3608.12s -> 3609.12s] reportando
+[3609.12s -> 3610.12s] directamente.
+[3610.12s -> 3612.12s] A cliente e a
+[3612.12s -> 3616.82s] cliente
+[3616.82s -> 3621.12s] passa com
+[3621.12s -> 3623.12s] ığını e
+[3623.12s -> 3624.12s] cały jornal.
+[3624.12s -> 3626.12s] É
+[3626.12s -> 3627.12s] departas que
+[3627.12s -> 3628.12s] 始 temps.
+[3628.12s -> 3630.12s] Le ano wrapping
+[3630.12s -> 3632.12s] que
+[3632.12s -> 3632.36s] esta
+[3632.36s -> 3633.12s] prova.
+[3633.12s -> 3635.12s] É
+[3635.12s -> 3637.12s] nosso
+[3639.12s -> 3641.12s] namorado.
+[3671.12s -> 3672.12s] em viem.
+[3672.12s -> 3682.68s] É a única coisa que me pensa, por exemplo, que às vezes,
+[3682.68s -> 3687.40s] hay pontos que necessitam de validação, por exemplo, de responsável técnico,
+[3687.40s -> 3689.12s] em um uniforme.
+[3689.12s -> 3692.12s] Mas o problema é perfecto.
+[3692.12s -> 3697.12s] Sim, ou seja, isso vai tener contorro absoluto, essa é a pessoa técnica,
+[3697.12s -> 3700.12s] essa é a seção de pessoa tecnicar de todo o técnico.
+[3700.12s -> 3705.32s] E aqui, ou seja, uma vez que eu quero, o que ele vai criar, o que quer para este cliente,
+[3705.32s -> 3708.52s] se quer ir de uma forma muito fácil, ou seja, desde o celular,
+[3708.52s -> 3712.52s] ele pode fazer, é muito fácil, eu posso criar, e uma vez que eu quero,
+[3712.52s -> 3716.12s] aí eu posso segmentar para a plana, eu posso segmentar para um cliente.
+[3716.12s -> 3720.52s] Então, aqui é a única cliente, é a única cliente que retenemos como de demo,
+[3720.52s -> 3724.32s] e eu vou criar, e se quer ir de uma forma automática, então,
+[3724.32s -> 3727.12s] esse cliente vai aqui, em repórter,
+[3728.12s -> 3731.52s] então, isso vai aparecer em tempo, e ela é o cliente, então,
+[3731.52s -> 3734.12s] isso vai aparecer, isso é o que é, obviamente isso é um demo,
+[3734.12s -> 3738.80s] mas o cliente, o autor pode poner o que quer, então, aqui ele vai aparecer o que
+[3738.80s -> 3741.92s] tem que fazer, e o que quer fazer, o que quer fazer, o que quer fazer,
+[3741.92s -> 3744.12s] sim, sim, com o que quer.
+[3744.12s -> 3749.12s] É um exemplo, para como funciona, mas isso, você pode exponer o que quer,
+[3749.12s -> 3754.12s] ou seja, o templet que quer, você pode encargar, e aqui você vai ver o cliente,
+[3754.12s -> 3758.12s] você pode ver, já é hecho isso, então, eu vou marcar como completo,
+[3758.12s -> 3762.12s] já é hecho isso, eu vou marcar como completo, já é hecho isso,
+[3762.12s -> 3766.12s] e deixo isso pendiente, então, é o autor mesmo, também pode tener
+[3766.12s -> 3772.12s] em conta o que é hecho, é isso, então, isso ajuda o cliente como tal,
+[3772.12s -> 3776.52s] o autor como tal, tem esta informação, então, aqui,
+[3776.52s -> 3779.12s] disse que já é completo, é isso, já é completo, é isso,
+[3779.12s -> 3781.12s] ele falta isso.
+[3781.12s -> 3785.12s] Então, isso é uma forma muito fácil para que a comunicação,
+[3785.12s -> 3788.12s] não é que está entre os dois, uma vez que este completo,
+[3788.12s -> 3792.12s] eu como auditor, eu posso já eliminar isto, já sei que ele vai hecho,
+[3792.12s -> 3793.12s] etc.
+[3793.12s -> 3795.12s] Listo, esta parte está clara?
+[3795.12s -> 3797.12s] Sim, é isso.
+[3797.12s -> 3800.12s] Listo, isso é uma vez que está, ou seja,
+[3800.12s -> 3805.12s] a última parte, é isso por isso, reporte, isso, o que diz é cargar,
+[3805.12s -> 3808.12s] isso, é algo, por exemplo, escrito a mano,
+[3808.12s -> 3811.12s] há algo como extra que não está aqui, pode subir,
+[3811.12s -> 3815.12s] que seja, ou seja, aqui, como uma opção de mandar um
+[3815.12s -> 3818.12s] reporte, de uma forma que não está em a plataforma, algo,
+[3818.12s -> 3823.12s] algum documento, pode ter em PDF e a cargar, isso é como para facilitar.
+[3823.12s -> 3826.12s] Listo, isto, isto, todo, se tem alguma pergunta,
+[3826.12s -> 3831.12s] não quero hablar muito, e esta é a ideia, e que me dizem,
+[3831.12s -> 3833.12s] se tem ganado algo, não é?
+[3833.12s -> 3839.12s] Depois está o controle do dia, o controle do dia não vai aponhar o mano,
+[3839.12s -> 3841.12s] vai decidir, não é?
+[3841.12s -> 3846.12s] E passa para o Comité e o Comité, sabe-se, etc.
+[3846.12s -> 3850.12s] Sim, aqui por exemplo, uma vez que isto já está firmado,
+[3850.12s -> 3854.12s] aqui só ele sale, o Comité é só ele sale, os contratos firmados,
+[3854.12s -> 3858.12s] antes de isto, não vai aparecer nada, isso é para sua marra a decisão.
+[3858.12s -> 3861.12s] Então, isto aqui, eles podem ver resumen, como o que ha passado,
+[3861.12s -> 3865.12s] podem ver, obviamente, as pessoas de Comité e o Comité e o Traneira
+[3865.12s -> 3868.12s] estão também a todo, e aqui se pode ter,
+[3868.12s -> 3872.12s] que você pode ter, sem problema, então, podem aprovar ou rechazar.
+[3872.12s -> 3875.12s] Se o cliente antes de isto, diziam como fazer uma reunião,
+[3875.12s -> 3878.12s] por exemplo, então, o cliente como tal,
+[3878.12s -> 3887.12s] agora, tenho uma duda, necessito, como generar uma recebada,
+[3888.12s -> 3894.12s] reservar como um espaço com auditoria e perguntar sobre algo,
+[3894.12s -> 3897.12s] então, eu como cliente, tenho acesso.
+[3897.12s -> 3900.12s] Esta é muito importante, isto aí, isto é muito importante.
+[3900.12s -> 3906.12s] Esta página, lá d'Ocno, esta é muito importante,
+[3906.12s -> 3912.12s] temos 22 auditores em fambras, temos 600 ou 700 empresas em fambras,
+[3913.12s -> 3918.12s] todos vão seguir um calendário, não há que decir, não há auditoria.
+[3918.12s -> 3922.12s] É impossível que decir que não há auditoria.
+[3922.12s -> 3930.12s] Já, esta calendário nunca vai ser conflito entre os auditores,
+[3930.12s -> 3933.12s] dos même dia para um solo auditoria.
+[3933.12s -> 3940.12s] Todos, todos, todos, os 22 auditores vão estar em esta calendário
+[3940.12s -> 3946.12s] e lá ai vai mandar a auditores que têm em tiempo,
+[3946.12s -> 3951.12s] vai apuntar a fecha de auditoria.
+[3951.12s -> 3955.12s] Então, o auditor não decide que, se eu cedo ou não cedo,
+[3955.12s -> 3959.12s] o departamento industrial não decide que eu cedo ou não cedo,
+[3959.12s -> 3962.12s] o departamento do foco é cada vez que não decide.
+[3962.12s -> 3966.12s] Esta é o calendário que decide o tempo de auditoria,
+[3966.12s -> 3971.12s] e auditores sim conflito em tempos e auditores.
+[3971.12s -> 3975.12s] E como o calendário considera o trajeto de la viaje?
+[3975.12s -> 3978.12s] Aqui, do que é, do que é, do que é...
+[3978.12s -> 3980.12s] Porque esta é muito importante, muitas vezes,
+[3980.12s -> 3984.12s] eu não sei se tomaste, mas para ir volvindo o que é no auditoria.
+[3984.12s -> 3986.12s] Esta é o meu maior problema.
+[3986.12s -> 3989.12s] Se eu cero em dia, certo?
+[3989.12s -> 3992.12s] De la viaje? Não entendi a pergunta, perdon.
+[4052.12s -> 4055.12s] Não se toma a decisão por si mesma.
+[4055.12s -> 4058.12s] Ou seja, se toma a decisão, segunos para metros,
+[4058.12s -> 4061.12s] dependendo de, por exemplo, vocês dizem que em Brasil,
+[4061.12s -> 4065.12s] temos tantos auditores, temos tantos técnicos,
+[4065.12s -> 4067.12s] temos, podemos...
+[4067.12s -> 4069.12s] Cada um vai ter um usuário aqui.
+[4069.12s -> 4072.12s] Aqui, no tema de aqui, em usuários,
+[4072.12s -> 4074.12s] vamos ter todos os que estão disponíveis,
+[4074.12s -> 4078.12s] todos os nossos usuários, em todas as 6, com o seu rol.
+[4078.12s -> 4080.12s] Então, aqui eu posso ver quem é quem.
+[4080.12s -> 4083.12s] Uma vez que tenho isto, o AI por dentro,
+[4083.12s -> 4087.12s] já pode saber o calendário de cada uno.
+[4087.12s -> 4090.12s] Se eu vou agregar uma nova, um novo calendário,
+[4090.12s -> 4092.12s] pode dar uma coisa que seja.
+[4092.12s -> 4094.12s] E aqui, vai aparecer, como toda a lista,
+[4094.12s -> 4097.12s] de lo que os auditores disponíveis.
+[4097.12s -> 4099.12s] Esta disponibilidade, perdon,
+[4099.12s -> 4103.12s] e viene, viene, segun, o calendário de cada auditor.
+[4103.12s -> 4105.12s] E isto é o que se me vai determinar.
+[4105.12s -> 4107.12s] Então, se você está aqui,
+[4107.12s -> 4109.12s] você já pode determinar.
+[4109.12s -> 4111.12s] E na área também, pode também acertar,
+[4111.12s -> 4113.12s] digamos, industrializados químicos,
+[4113.12s -> 4116.12s] industrializados alimentos, industrializados formacos,
+[4116.12s -> 4118.12s] e ele já te saca, qual é isto?
+[4118.12s -> 4119.12s] É isto?
+[4119.12s -> 4121.12s] É químico, isso não é...
+[4121.12s -> 4123.12s] Perdona.
+[4125.12s -> 4127.12s] Esta não é...
+[4127.12s -> 4130.12s] Esta é esclógica, por exemplo,
+[4130.12s -> 4134.12s] os têm de determinar os auditores,
+[4134.12s -> 4136.12s] é o mesmo que trabaja em tempo,
+[4136.12s -> 4138.12s] e é assim que é só ler,
+[4138.12s -> 4148.34s] e é fazer poder feitar esta
+[4148.34s -> 4150.34s] segunidade, isto é o que é isto?
+[4150.34s -> 4151.34s] Bom, muito.
+[4151.34s -> 4155.12s] O auditorice terão de onde eles vão sair sem...
+[4155.12s -> 4158.12s] Alguns estão saindo de um lugar,
+[4158.12s -> 4160.12s] então, tem o ponto de origem.
+[4160.12s -> 4163.12s] Obviamente, dá basicá o celular, basear uma situação de logística do país.
+[4163.12s -> 4165.12s] Tem que ser legal, ele está livre,
+[4165.12s -> 4167.12s] mas você tem a distância, a viagem,
+[4167.12s -> 4169.12s] tudo aquilo que ele...
+[4169.12s -> 4172.12s] Eu acho que é possível colocar parâmetros,
+[4172.12s -> 4175.12s] de dizer quando ele vai estar disponível naquele local.
+[4175.12s -> 4177.12s] Mas o que é isto?
+[4177.12s -> 4179.12s] Descolar uma auditoricep, basear o vene,
+[4179.12s -> 4181.12s] é para a gente de origem, onde ele está.
+[4181.12s -> 4183.12s] Isaú, e há,
+[4183.12s -> 4187.12s] há, e há, e há, e há, e é, e há, e há, e há, e há, e há, e há, e há, e há, e há, e há, e há, e há...
+[4187.12s -> 4189.12s] Há, e há, e há, e há, e há, e há, e há, e há, e há, e há, e há, e há, e há, e há, e há, e há, e há, e há...
+[4279.12s -> 4281.12s] é a auditor bem fa?
+[4281.12s -> 4282.12s] Não.
+[4282.12s -> 4285.12s] Então, a mão que filala,
+[4285.12s -> 4286.12s] é a 6.
+[4286.12s -> 4290.12s] Então, a gente precisa,
+[4290.12s -> 4293.12s] efetivamente, ter a quantidade de adequado de auditores,
+[4293.12s -> 4297.12s] educar e colocar nossos contratos para as empresas,
+[4297.12s -> 4301.12s] ter que receber auditoria no tempo que nós determinamos,
+[4301.12s -> 4303.12s] não no tempo que eles quiserem,
+[4303.12s -> 4307.12s] aqui não acumulha os teorias para poucos auditores que temos,
+[4307.12s -> 4310.12s] mas isso não é um problema do sistema,
+[4310.12s -> 4314.12s] isso é um programa de origem que nós temos corrigir antes do sistema.
+[4314.12s -> 4319.12s] Então, esse talvez seja poucos aqui que não estão no médio,
+[4319.12s -> 4321.12s] então, a gente tem que analisar o sistema de si,
+[4321.12s -> 4324.12s] sem discutir os problemas que nós já temos hoje,
+[4324.12s -> 4326.12s] que precisamos fazer o problema.
+[4326.12s -> 4327.12s] Sim.
+[4327.12s -> 4329.12s] Para fugir de amor?
+[4329.12s -> 4331.12s] Olá, oura,
+[4331.12s -> 4334.12s] assim, você tem alguma pergunta sobre isso ou o outro?
+[4424.12s -> 4430.12s] É geral, quando venha a ecohaleia aqui, pro contexto,
+[4430.12s -> 4434.12s] é que a ecohaleia que possa nos direcionar,
+[4434.12s -> 4437.12s] faz as plataformas,
+[4437.12s -> 4441.12s] elas estão inquecíveis de nós implementarmos
+[4441.12s -> 4444.12s] dentro de um plano geral que nós queremos.
+[4444.12s -> 4446.12s] Faz as perguntas agora.
+[4446.12s -> 4449.12s] A ecohaleia tem dentro do seu escopro,
+[4449.12s -> 4451.12s] um projeto similar a isso,
+[4451.12s -> 4452.12s] essa é uma pergunta.
+[4452.12s -> 4454.12s] Não, não tem dentro do seu escopro,
+[4454.12s -> 4456.12s] um projeto similar,
+[4456.12s -> 4461.12s] vocês passariam a discutir com estes marmotas,
+[4461.12s -> 4466.12s] a ideia ou conceito dessa estrutura,
+[4466.12s -> 4469.12s] desse projeto é claro que vocês fazem uma análise técnica,
+[4469.12s -> 4472.12s] de enuguagem, segurança inúvida,
+[4472.12s -> 4474.12s] explica o que precisa,
+[4474.12s -> 4481.12s] desse projeto ser incorporado dentro do padrão faler de controle
+[4481.12s -> 4483.12s] e essa é a ideia.
+[4483.12s -> 4487.12s] Então, acho que seria interessante a gente aproveitar os estes marmotas
+[4487.12s -> 4490.12s] para fazer perguntas agora,
+[4490.12s -> 4494.12s] para fazer perguntas sobre aquilo que nós,
+[4494.12s -> 4499.12s] efetivamente, temos dúvidas com relação ao próprio sistema
+[4499.12s -> 4501.12s] que foi apresentado aqui.
+[4501.12s -> 4504.12s] Eu vou confessar algo aqui,
+[4504.12s -> 4507.12s] para traduzir por um poespa,
+[4507.12s -> 4512.12s] primeiro que eu estou muito feliz de ter observado a apresentação
+[4512.12s -> 4513.12s] desse sistema.
+[4513.12s -> 4516.12s] Este sistema tocou em pontos,
+[4516.12s -> 4519.12s] são debates que nós temos aqui,
+[4519.12s -> 4523.12s] há muito tempo para tentar agilizar processos.
+[4523.12s -> 4527.12s] Este é uma falando em questões aqui,
+[4527.12s -> 4532.12s] que é como utilizar essa ferramenta necessária
+[4532.12s -> 4535.12s] que era a inteligência artificial em vários setores.
+[4535.12s -> 4538.12s] Eu vou se estar alguns aqui,
+[4538.12s -> 4540.12s] setores como, por exemplo, SAC,
+[4540.12s -> 4546.12s] a ideia de você automatizar isso sem demandar tempo de pessoas
+[4546.12s -> 4549.12s] e são caro, tempo das pessoas aqui,
+[4549.12s -> 4551.12s] um valor cátric,
+[4551.12s -> 4553.12s] eu vim aqui,
+[4553.12s -> 4558.12s] algo bastante importante que é um problema que temos,
+[4558.12s -> 4562.12s] que é a entre a proposta comercial
+[4562.12s -> 4565.12s] e o processo como um todo,
+[4565.12s -> 4568.12s] a quantidade de dias assim como a dar uma firma de fato,
+[4568.12s -> 4570.12s] é esse sim.
+[4570.12s -> 4573.12s] Nós perdemos clientes por conta
+[4573.12s -> 4578.12s] desse período de demora que nós temos aqui dentro da estrutura.
+[4578.12s -> 4580.12s] A nossa estrutura ainda,
+[4580.12s -> 4583.12s] ela é uma estrutura, eu diria,
+[4583.12s -> 4585.12s] manual.
+[4585.12s -> 4588.12s] Manual e segura.
+[4588.12s -> 4591.12s] Ela precisa ser segura e não manual.
+[4592.12s -> 4595.12s] E é o que está se propondo aqui.
+[4595.12s -> 4600.12s] Então, eu vi muitos pontos que vocês devem estar enfrentando
+[4600.12s -> 4603.12s] dificuldades lá na Colombe, nós aqui,
+[4603.12s -> 4607.12s] e que foi abordado aqui como tentar resolver esses pontos,
+[4607.12s -> 4612.12s] esses problemas que nós estamos enfrentando como um grupo.
+[4612.12s -> 4615.12s] A única questão, que é assim,
+[4615.12s -> 4619.12s] nós temos uma empresa que é a Corralhalla.
+[4620.12s -> 4625.12s] É Corralhalla uma empresa similar que vocês marram o que faz.
+[4625.12s -> 4629.12s] A corralhalla é que dá os rumos do que nós estamos fazendo.
+[4629.12s -> 4633.12s] Mas lá atrás nós discutimos o que precisava fazer.
+[4633.12s -> 4634.12s] E está para um,
+[4634.12s -> 4636.12s] e está para dois, e está para três,
+[4636.12s -> 4640.12s] até chegar a astralhabilidade.
+[4640.12s -> 4642.12s] Então nós estamos em curso,
+[4642.12s -> 4644.12s] isso já está acontecendo.
+[4644.12s -> 4646.12s] O que é importante daqui?
+[4646.12s -> 4652.12s] É importante que aja um encontro, uma sinergia entre o que a corralhalla
+[4652.12s -> 4655.12s] está fazendo e o que está sendo propósito.
+[4655.12s -> 4663.12s] Então, a ideia é que a corralhalla possa conversar com este esmermêutro.
+[4663.12s -> 4664.12s] E na minha opinião,
+[4664.12s -> 4667.12s] se está fora do esclopo do que está sendo feito,
+[4667.12s -> 4670.12s] trazer o que adentro pro projeto.
+[4670.12s -> 4672.12s] Essa é minha opinião.
+[4672.12s -> 4674.12s] A grosso modo, porque eu ouvi aqui,
+[4674.12s -> 4677.12s] mas é claro que nós temos conversável,
+[4677.12s -> 4680.12s] com a época para entender isso melhor.
+[4680.12s -> 4682.12s] E mais do que isso.
+[4682.12s -> 4688.12s] E você tem uma questão que é uma proposta comercial desse projeto.
+[4688.12s -> 4693.12s] Quanto vai apostar de que maneira eles estão sendo construídos.
+[4693.12s -> 4697.12s] Eu já vi que tem agora um piloto já pronto.
+[4697.12s -> 4701.12s] Ele mostrou que isso já está quase em funcionamento.
+[4731.12s -> 4735.12s] E esta vez, em chara, em cada vez, na época,
+[4735.12s -> 4738.12s] a corralhalla achei um zabete do mundo.
+[4738.12s -> 4740.12s] Essa é a minha observação.
+[4740.12s -> 4745.12s] É que agora vocês, todos, favorem fazer ter butas.
+[4745.12s -> 4747.12s] E aí, fica a boa forma.
+[4747.12s -> 4749.12s] Comprende-se.
+[4749.12s -> 4751.12s] Pode eu traduzir?
+[4751.12s -> 4752.12s] Só no momento.
+[4752.12s -> 4756.12s] Deja-me só traduzir a ela que eu não compreendo tudo.
+[4756.12s -> 4760.12s] A ideia é traer este projeto de Marmon,
+[4760.12s -> 4763.12s] dentro do que eu estou com a corralhalla.
+[4763.12s -> 4768.12s] Então, o Dr. Alivio viu muitas coisas buenas
+[4768.12s -> 4773.12s] em este projeto que vão fazer mais rápido
+[4773.12s -> 4775.12s] coisas que hoje são manuales.
+[4775.12s -> 4778.12s] Então, isso vai dar a realidade a nosso processo.
+[4778.12s -> 4783.12s] E ele vê o uso da inteligência artificial em vários sectores.
+[4783.12s -> 4786.12s] Por exemplo, esta inteligência artificial
+[4786.12s -> 4791.12s] é automatizar o contato de cliente que é zécio inelicite.
+[4791.12s -> 4793.12s] E que isso é algo que, hoje, por exemplo,
+[4793.12s -> 4796.12s] a qualidade tem que responder, outros departamentos respondem.
+[4796.12s -> 4800.12s] E custa tempo, porque custa me tempo e me tempo é splata.
+[4800.12s -> 4803.12s] Então, nós temos que automatizar isto.
+[4803.12s -> 4807.12s] E ele também vê com muito os olhos que vão se quedar mais rápidas,
+[4807.12s -> 4810.12s] como o tempo entre a propuesta
+[4810.12s -> 4814.12s] e ele pesca o processo de dar documentação de cliente.
+[4814.12s -> 4817.12s] Por exemplo, o Omar diz que a cliente está pronto
+[4817.12s -> 4821.12s] e acha que linda ou em pé,
+[4821.12s -> 4824.12s] você vai falar com o cliente há tempo e a plataforma,
+[4824.12s -> 4828.12s] a inteligência artificial vai fazer isto ser mais rápido.
+[4828.12s -> 4834.12s] Então, ele gosta muito porque você traz maneiras de resolver,
+[4834.12s -> 4839.12s] frailidades do grupo que tu enfrentas em colombia,
+[4839.12s -> 4841.12s] nós outros enfrentamos, tendrás tudo.
+[4841.12s -> 4846.12s] Então, isso é muito importante que existe uma sinergia,
+[4846.12s -> 4850.12s] sinergia entre um ecuhalal
+[4850.12s -> 4854.12s] e a propuesta que vocês estão atraindo.
+[4854.12s -> 4856.12s] Por isso, ele gostaria, por exemplo,
+[4856.12s -> 4859.12s] que é erica que é representante de ecuhalal?
+[4859.12s -> 4862.12s] Há perguntas a Mahmoud, a respeito de a seguridad
+[4862.12s -> 4864.12s] de estes dados, de como vão ser.
+[4864.12s -> 4868.12s] E a doutora também lep�es pensar, por exemplo,
+[4868.12s -> 4870.12s] sobre o custo deste projeto.
+[4870.12s -> 4873.12s] Com os custos comerciales para traer-lo.
+[4873.12s -> 4877.12s] E também, ele gostaria saber se, hoje, em ecuhalal,
+[4877.12s -> 4881.12s] já havia algo hecho similar a isto,
+[4881.12s -> 4883.12s] se aún você vai ser desenvolvido,
+[4883.12s -> 4886.12s] se você quer estar em um planejamento de ecuhalal,
+[4886.12s -> 4890.12s] então, você também vai entender como um todo,
+[4890.12s -> 4891.12s] para isso me dámente.
+[4891.12s -> 4894.12s] Vou começar com uma pergunta, então.
+[4894.12s -> 4897.12s] E ele gostaria de começar com uma pergunta a Mahmoud.
+[4897.12s -> 4898.12s] Claro, claro.
+[4898.12s -> 4899.12s] E o que você disse?
+[4899.12s -> 4902.12s] É a inteligência artificial,
+[4902.12s -> 4904.12s] de que nós nos infelizamos.
+[4904.12s -> 4908.12s] É uma inteligência artificial que ainda está se formando.
+[4908.12s -> 4913.12s] Alguns conteúdos ainda requerem
+[4913.12s -> 4916.12s] se consolidem dentro da inteligência artificial.
+[4916.12s -> 4919.12s] Então, isso leva a irros.
+[4919.12s -> 4925.12s] A irros bastante evidentes, principalmente quando você fala do Slay,
+[4925.12s -> 4928.12s] e principalmente quando você fala do Alcaler.
+[4928.12s -> 4931.12s] O dá um exemplo que simpense.
+[4931.12s -> 4936.12s] A questão da do Alcaler é bastante complexo dentro do Alcaler.
+[4936.12s -> 4938.12s] A inteligência artificial,
+[4938.12s -> 4945.12s] se você for consultada acerca das questões do Alcaler,
+[4945.12s -> 4950.12s] obviamente que ela não tem a resposta absoluta para essas questões,
+[4950.12s -> 4953.12s] porque existem quatos diversas,
+[4953.12s -> 4956.12s] visões diferentes,
+[4956.12s -> 4960.12s] e mesmo dentro da norma, existem duvios com relação a isso.
+[4960.12s -> 4962.12s] A pergunta que eu faço,
+[4962.12s -> 4967.12s] essa inteligência artificial que vocês vão estar falando,
+[4967.12s -> 4971.12s] é a mesma que nós usamos no nosso dia a dia,
+[4971.12s -> 4976.12s] porque nós alimentamos ela de maneira separada.
+[4977.12s -> 4980.12s] Ele já tinha adiantado esse tema,
+[4980.12s -> 4983.12s] mas eu vou deixar ele responder, mas ele falou simplesmente a alimentaria.
+[4983.12s -> 4986.12s] Marludo, ela pergunta as outras das questões do Alcaler.
+[4986.12s -> 4989.12s] Eu acho que ele vai entender o que está usando a americana.
+[4989.12s -> 4990.12s] Confendi-se.
+[4990.12s -> 4992.12s] Eu acho que sim.
+[4992.12s -> 4994.12s] Foi o de responder.
+[4994.12s -> 4998.12s] Obviamente, isso é muito importante saber se eu vou,
+[4998.12s -> 5001.12s] por exemplo, a Shadjipit.
+[5001.12s -> 5004.12s] E ele é a água a pergunta a Shadjipit.
+[5004.12s -> 5007.12s] Shadjipit, o que é material?
+[5007.12s -> 5009.12s] O que está de produtos?
+[5009.12s -> 5011.12s] Tem que ter uma pergunta.
+[5011.12s -> 5014.12s] A resposta é muito génerica.
+[5014.12s -> 5017.12s] Nós não podemos confiar em essas respuestas,
+[5017.12s -> 5019.12s] porque não tem contexto.
+[5019.12s -> 5022.12s] Ou seja, pode ser algo bom, pode ser algo malo.
+[5022.12s -> 5024.12s] Isso não tem contexto, não entende.
+[5024.12s -> 5026.12s] Você pode buscar por internet,
+[5026.12s -> 5028.12s] mas a informação não é confiada.
+[5028.12s -> 5030.12s] O que nós temos aqui,
+[5030.12s -> 5034.12s] a diferença entre Shadjipit e Shadjipit, por exemplo,
+[5034.12s -> 5037.12s] Shadjipit tem toda a informação de vocês.
+[5037.12s -> 5041.12s] Por exemplo, Andrea me compatou todas as resoluciones.
+[5041.12s -> 5042.12s] É o momento.
+[5042.12s -> 5044.12s] É o momento.
+[5044.12s -> 5045.12s] É o momento.
+[5045.12s -> 5047.12s] Ainda não tem a creatividade.
+[5047.12s -> 5051.12s] Não tem a creatividade em esta pergunta.
+[5051.12s -> 5053.12s] Ser o que é a creatividade.
+[5053.12s -> 5057.12s] O que você com a Lei Ausk,
+[5057.12s -> 5060.12s] é o prohibido trair de uma resposta
+[5060.12s -> 5062.12s] de outra parte do mundo.
+[5062.12s -> 5064.12s] É porque é muito confiável.
+[5064.12s -> 5066.12s] O que nós temos,
+[5066.12s -> 5069.12s] você pode ponhar uma biblioteca com o tempo.
+[5069.12s -> 5071.12s] 10 milígros você pode ponhar.
+[5071.12s -> 5074.12s] E você diz a Lei Ausk,
+[5074.12s -> 5077.12s] só 10 milígros.
+[5077.12s -> 5080.12s] Não há outra coisa de outra pessoa.
+[5080.12s -> 5082.12s] Sim, é isso.
+[5082.12s -> 5084.12s] Em resumen aqui,
+[5084.12s -> 5087.12s] a Lei Ausk está alimentado com a informação confiável
+[5087.12s -> 5090.12s] que vocês consideram de um fuente confiável.
+[5090.12s -> 5091.12s] E esta informação.
+[5091.12s -> 5093.12s] Adicionalmente a isto,
+[5093.12s -> 5097.12s] a Lei Ausk está integrado com toda a documentação
+[5097.12s -> 5102.12s] e a informação que está aprovido por o cliente.
+[5102.12s -> 5104.12s] O que é este cliente?
+[5104.12s -> 5106.12s] O que é que o material tem?
+[5106.12s -> 5111.12s] Então, tem muito mais contexto que eu vou já dividir
+[5111.12s -> 5114.12s] e eu pregunto algo porque não tem nada de contexto.
+[5114.12s -> 5117.12s] Esta é a grande diferença, a grande vantagem é isto.
+[5117.12s -> 5118.12s] Tercero,
+[5118.12s -> 5120.12s] eu posso aqui em Gbiti cargar as coisas.
+[5120.12s -> 5123.12s] Por exemplo, cargaram as coisas depois de perguntar-lhe.
+[5123.12s -> 5127.12s] Mas é quando eu hago este processo de cargar a informação,
+[5127.12s -> 5130.12s] esta está na nuvem de Chat GPT,
+[5130.12s -> 5132.12s] ou seja, não tem acesso.
+[5132.12s -> 5133.12s] Então estão usando meus dados,
+[5133.12s -> 5135.12s] pode ser algo crítico,
+[5135.12s -> 5136.12s] pode ser algo não seguro,
+[5136.12s -> 5139.12s] mas pular a informação crítica aqui.
+[5139.12s -> 5141.12s] Entre as que é a cânere e o sistema,
+[5141.12s -> 5143.12s] toda a informação de esta é,
+[5143.12s -> 5145.12s] está protegida, está em uma nuvem,
+[5145.12s -> 5147.12s] é uma vacilada se llada,
+[5147.12s -> 5148.12s] não se pode, nada mais,
+[5148.12s -> 5149.12s] pode comunicar,
+[5149.12s -> 5150.12s] só através de a plataforma,
+[5150.12s -> 5154.12s] pode comunicar ou fazer o uso de esta informação guardada.
+[5154.12s -> 5156.12s] Então, por a nível de seguridade,
+[5156.12s -> 5157.12s] é muito mais seguro,
+[5157.12s -> 5160.12s] e a nível de confiar em a informação
+[5160.12s -> 5164.12s] é muito mais sofisticado em fazer este tipo de análises.
+[5164.12s -> 5166.12s] Não sei se, com isto,
+[5166.12s -> 5168.12s] eu entendi o bem na pergunta.
+[5169.12s -> 5170.12s] Entendi o labid.
+[5171.12s -> 5174.12s] Outra coisa muito boa na esta aticação.
+[5174.12s -> 5176.12s] Pode, por favor,
+[5176.12s -> 5178.12s] a ver igual, me vão descarro o processo
+[5178.12s -> 5179.12s] de pronaca,
+[5179.12s -> 5180.12s] de...
+[5180.12s -> 5181.12s] de...
+[5181.12s -> 5182.12s] de...
+[5182.12s -> 5183.12s] de boia aqui,
+[5183.12s -> 5186.12s] e que passou, por favor, com os meus confórtidos.
+[5186.12s -> 5187.12s] Acomente.
+[5187.12s -> 5188.12s] O que você precisa, Tatiem?
+[5188.12s -> 5191.12s] Obviamente, para você consultar,
+[5191.12s -> 5194.12s] como é que nós fazemos para consultar este processo?
+[5194.12s -> 5196.12s] Sim, eu estou sempre perguntando a qualidade,
+[5196.12s -> 5197.12s] que é a gente que está muito distinto.
+[5197.12s -> 5198.12s] É uma necessidade.
+[5198.12s -> 5200.12s] Sim, assim, você tem que fazer o caso,
+[5200.12s -> 5202.12s] e a gente vai saber,
+[5202.12s -> 5203.12s] saber, ok?
+[5203.12s -> 5205.12s] Você tem um processo.
+[5205.12s -> 5206.12s] Ok?
+[5206.12s -> 5209.12s] Eu não necessito chamar a nadie.
+[5209.12s -> 5211.12s] Eu não quero escuchar bem a nem.
+[5211.12s -> 5212.12s] Eu quero saber,
+[5212.12s -> 5213.12s] onde está o processo,
+[5213.12s -> 5215.12s] o momento que você precisa.
+[5215.12s -> 5216.12s] Ok?
+[5216.12s -> 5219.12s] Você está frente a sua cliente.
+[5219.12s -> 5221.12s] E está aproveitando o curso de suprisos.
+[5221.12s -> 5222.12s] Ok?
+[5222.12s -> 5223.12s] Quanto vezes você vai chamar,
+[5223.12s -> 5225.12s] vai chamar a 15 pessoas.
+[5225.12s -> 5226.12s] A 15 pessoas.
+[5227.12s -> 5229.12s] Você tem problema em uma certificação de canal?
+[5229.12s -> 5230.12s] Ok?
+[5230.12s -> 5233.12s] Oh, la, la, la, la, la, la, la, la, la, la, la, la, la, la, la, la.
+[5233.12s -> 5234.12s] El fin.
+[5234.12s -> 5235.12s] Passim.
+[5235.12s -> 5237.12s] Por favor, terminame.
+[5237.12s -> 5240.12s] Esta está passando sempre.
+[5240.12s -> 5241.12s] E em todo,
+[5241.12s -> 5243.12s] e perguntar como se há.
+[5243.12s -> 5244.12s] Exáctimente.
+[5244.12s -> 5245.12s] É.
+[5245.12s -> 5246.12s] É.
+[5246.12s -> 5247.12s] É.
+[5247.12s -> 5248.12s] E está a esta idea.
+[5248.12s -> 5249.12s] É.
+[5249.12s -> 5250.12s] Vai dar a ideia de autonomia.
+[5250.12s -> 5252.12s] Então, se a Bélia está fazendo uma reunião
+[5252.12s -> 5253.12s] por você perguntar,
+[5253.12s -> 5259.12s] A questão da planta X, se abre na forma da sua mão e vê a planta X.
+[5259.12s -> 5261.12s] É.
+[5261.12s -> 5262.12s] É.
+[5262.12s -> 5263.12s] É isso.
+[5263.12s -> 5265.12s] É isso.
+[5265.12s -> 5267.12s] Isso é muito importante, Dr. Ali, que sabe as vinte.
+[5267.12s -> 5271.12s] Que esta é um parte solamente, um parte de algo completo.
+[5271.12s -> 5277.12s] Então, se conv予 de um galco, tinte, ai para cá.
+[5307.12s -> 5317.12s] É um projeto mais grande que inclui a marketing da AI, a administração da AI.
+[5317.12s -> 5320.12s] Tu tene a la siviana na Vlick.
+[5320.12s -> 5325.12s] A questão do máximo, nós não vamos debater hoje.
+[5325.12s -> 5328.12s] É a questão da marketing da uma saída, hoje?
+[5328.12s -> 5331.12s] Não há nada.
+[5331.12s -> 5337.12s] Mas eu entendi claramente o que isso faz parte de um médio.
+[5337.12s -> 5345.12s] Se você foi implementar no marketing para conseguir mais clientes, você tem como agilizar todo esse processo.
+[5345.12s -> 5352.12s] Se foi implementar na inteligência comercial, que já temos o sistema que foi comprar por nós,
+[5352.12s -> 5362.12s] já temos como então integrar a minha preocupação à dada, abreia, esteja sempre.
+[5362.12s -> 5367.12s] Nós não podemos ter movimentos em separar.
+[5367.12s -> 5370.12s] A nossa cultura é uma só.
+[5370.12s -> 5378.12s] Nós precisamos o que beneficia o Brasil, beneficia o Paraguai, beneficia a Argentina, colômbia, qualquer lugar que seja.
+[5378.12s -> 5380.12s] Quais ser um sistema unho?
+[5380.12s -> 5382.12s] Essa é a ideia, o conceito.
+[5382.12s -> 5389.12s] Então, se esse sistema, como está se mostrando, é um sistema que pode nos atender,
+[5389.12s -> 5393.12s] então esse será o sistema utilizar para todo mundo.
+[5393.12s -> 5399.12s] Então, aqui eu tenho um cuidado enorme, que às vezes a qualidade nem me pediu.
+[5399.12s -> 5405.12s] Para comprar um sistema, a inteligência nem me pedia para comprar um sistema.
+[5405.12s -> 5409.12s] Porque eles querem resolver o problema deles, eles têm razão.
+[5409.12s -> 5417.12s] Quando você permite essa compra de vários sistemas, vira uma coisa que não era um padrão da FAMBLAS FAMBLAS FAMBLAS.
+[5417.12s -> 5426.12s] Nós precisamos, aqui, essa reunião para a medida, ela começa com a ideia como conceito que nós precisamos ter o padrão falado.
+[5426.12s -> 5432.12s] Para o grupo, como o teu, que isso tem que ser utilizado por todos. Essa é a ideia.
+[5432.12s -> 5434.12s] Se comprensa?
+[5434.12s -> 5436.12s] É...
+[5436.12s -> 5446.12s] Não sei se entendi bem, mas eu queria dizer algo que é o que tem que ver com o que é entendido sobre a integração com o EcoHalal.
+[5446.12s -> 5452.12s] Essa plataforma, se pode integrar, ou seja, está escrita em um linguagem,
+[5452.12s -> 5459.12s] é o que mais usado em um dia em desarrollo de aplicação no web.
+[5459.12s -> 5461.12s] Se pode...
+[5461.12s -> 5465.12s] Uma consulta permiso.
+[5465.12s -> 5471.12s] Claro, e eu estou mirando aqui, estou gostando muito muito o que estou mirando.
+[5471.12s -> 5479.12s] Mas há uma dura, essa plataforma que você desenvolve este e está em produção, não é?
+[5479.12s -> 5485.12s] Está local, não está, mas está em local, podemos fazer de implementos em qualquer momento.
+[5485.12s -> 5487.12s] Ah, é perfeito.
+[5487.12s -> 5497.12s] E é possível então, então, nós podemos ter uma charla e compartilhamos a informação e compartilhamos os dados, porque...
+[5497.12s -> 5509.12s] Eu acho que nós temos, em um plano de produto de EcoHalal, de EcoHalal, algo muito, muito parecido, que não é um pouco distinto.
+[5509.12s -> 5517.12s] E podemos reutilizar totalmente para que nós temos tanto nem Brasil como em toda a América de Sur,
+[5517.12s -> 5527.12s] a mesma plataforma. Eu gostaria muito de ter uma charla com este separado, para que nós não...
+[5527.12s -> 5541.12s] Nós temos coisas em distinto, porque se nós temos a mesma plataforma, nós temos a mesma direção em uma sua companhia e em uma sua implia,
+[5541.12s -> 5549.12s] nós temos que trabalhar juntos, eu me gostou muito, e podemos acelerar muito o desarrollo de todo o projeto,
+[5549.12s -> 5559.12s] se compartilhamos o desarrollo de EcoHalal e o desarrollo da FAMBA das Pasta Fúram, e que eu estou a mirar aqui.
+[5559.12s -> 5561.12s] O que é isso?
+[5561.12s -> 5567.12s] O que seria muito interessante, vou falar em português aqui para vocês.
+[5567.12s -> 5571.12s] Eu acho que eu posso entender depois dessa minha ilha para a Espanha.
+[5573.12s -> 5577.12s] Eu comecei a entender um pouco melhor a ideia, você está perfeito.
+[5577.12s -> 5585.12s] O primeiro, você manifestou que gostou demais do que eu ouviu, mas está dentro de um escopo contratado por nós,
+[5585.12s -> 5590.12s] para que a EcoHalal é o desenvolver esse projeto na área de governança.
+[5590.12s -> 5598.12s] E o Estesis marcou, ele só mostrou a parte um pedaço, porque tem a parte do Marte, tem outras partes também,
+[5598.12s -> 5608.12s] que interessa para nós e se encontram e essa se energia para que a gente possa se alavancar tanto o Estesis,
+[5608.12s -> 5613.12s] o Marmolto como nós. Então eu acho que concordo que você tem que ter essa...
+[5613.12s -> 5616.12s] Eu só... como é que eu ouviu?
+[5616.12s -> 5618.12s] Não, não, não, não.
+[5618.12s -> 5622.12s] É um bate-papo, na verdade.
+[5622.12s -> 5632.12s] Então o que nós podemos fazer,is que a Dala pode organizar essa reunião entre vocês, essa Dala,
+[5632.12s -> 5639.12s] e vocês, e vocês podem então dialogar no sentido de a gente tomar uma decidão.
+[5639.12s -> 5646.12s] E essa decisão são várias, que podendo se tomar dentro da... o que eu me parece,
+[5646.12s -> 5656.12s] depois dessa sua reunião, que você entender, tecnicamente, que o Estesismar botou uma proposta que já totalmente adaptava para nós,
+[5656.12s -> 5663.12s] depois de estar tecnicando, e nuvem, segurança, linguagem, vocês sabem se está, você tem uma...
+[5663.12s -> 5672.12s] Aí nós vamos receber, estesismarbrou de uma proposta comercial, e aí a gente volta a conversar com calma,
+[5672.12s -> 5682.12s] ecorhaler, fã braço, e a própria empresa de César Marmolto, para que a gente possa viabilizar essa...
+[5682.12s -> 5687.12s] Essa junção, vamos chamar assim, muito bem vindo.
+[5687.12s -> 5690.12s] Sim, é uma coisa de editar.
+[5690.12s -> 5693.12s] E uma coisa de editar.
+[5693.12s -> 5699.12s] Claro, uma das coisas só que me chamou atenção, e é por isso que eu quero conversar com eles, Ali.
+[5699.12s -> 5703.12s] É que ainda não está em produção, isso é apenas um projeto.
+[5703.12s -> 5712.12s] Então, existem muitas coisas aí, a serem definidas, parte de segurança de dados, parte de maturidade, do processo, etc.
+[5712.12s -> 5714.12s] Que a gente tem que conversar.
+[5714.12s -> 5724.12s] Mas sim, como estamos indo no mesmo caminho, ali a gente pode conversar com eles e de repente juntar essas forças a esse foro caso.
+[5724.12s -> 5730.12s] É mais, a gente tem que entender se vai ser esse caso.
+[5730.12s -> 5732.12s] Mas já está, essa rojada é um sugrame parte.
+[5732.12s -> 5736.12s] Todos os formulários do CPM, e fã braço já estão em la plataforma.
+[5736.12s -> 5738.12s] Las normas também.
+[5738.12s -> 5742.12s] Os critérios da selección, Harami, Halal, já está.
+[5742.12s -> 5748.12s] O que é a plataforma? A plataforma está que está vindo, é lista para o deployment.
+[5748.12s -> 5753.12s] Então, assim podemos fazer, ou seja, terem todas as partes.
+[5753.12s -> 5762.12s] Claro, claro. Vamos, vamos tener uma, uma charla aqui entre nós, os acais.
+[5762.12s -> 5770.12s] E Ali, se também podemos começar uma terra com eles, depois de, de la nuestra charla, eu me gostaria muito.
+[5770.12s -> 5777.12s] Mas vamos alinhar completamente primeiro e ver como está o Proyecto em Brasil.
+[5777.12s -> 5785.12s] E aí se conversar com você, a respeito de toda a plataforma que é presente.
+[5785.12s -> 5788.12s] Perfecto.
+[5789.12s -> 5795.12s] É realmente, eu acho, muito promissor à nossa reunião.
+[5795.12s -> 5807.12s] Eu me entendi aqui, que vários pontos que foram tocados aqui, nós vamos ter que trazer, e resolver, dentro da nossa própria estrutura,
+[5807.12s -> 5810.12s] essa é uma preocupação que nós temos de algum tempo.
+[5810.12s -> 5819.12s] Para bem-nisso, a dar de ter buscado soluções, os caminhos que ele encontrou para trazer para nós,
+[5819.12s -> 5822.12s] também vocês marcam outro projeto em si.
+[5822.12s -> 5832.12s] Agora, uma próxima etapa seria, de fato, uma reunião muito rápida, Vuevich, com o ex-adar poder organizar.
+[5833.12s -> 5843.12s] Para você tirar todas as dúvidas, para a gente poder, então, abasear na sua anuência, a gente buscar uma proposta comercial,
+[5843.12s -> 5854.12s] a gente poder tentar integrar tudo isso, porque aparentemente, pelo que vi, isso já está formatado e consolidado.
+[5854.12s -> 5860.12s] Ali, ali, já está desenhado, já tem um caminho muito grande, já está pronto, né?
+[5860.12s -> 5863.12s] Foi a primeira pergunta que você fez para ele, né?
+[5863.12s -> 5871.12s] Quando ele fala que já está em atividade local, isso significa que é um sistema que já está funcionando, obviamente.
+[5871.12s -> 5877.12s] Não, não, quando ele falou que é local, é que o ambiente, onde ele está rodando, ali, é na máquina dele, tá ali.
+[5877.12s -> 5883.12s] Mas eu já entendi, ele está pronto para produção, eu acho que é só a gente fazer realmente o deploy,
+[5883.12s -> 5887.12s] mas eu acho que o nosso ponto aqui é além disso, tá?
+[5887.12s -> 5893.12s] Eu acho que não é tecnologia, não é nada disso, até porque eles utilizam, basicamente, a mesma tecnologia que nós.
+[5893.12s -> 5900.12s] Mais assuntos comerciais estratégicos, a interessa corralal e essa plataforma, tá?
+[5900.12s -> 5902.12s] Perfeito, perfeito.
+[5902.12s -> 5904.12s] Ok, eu fiz.
+[5904.12s -> 5906.12s] Termina pra você?
+[5906.12s -> 5908.12s] É, você não tem.
+[5908.12s -> 5912.12s] Você não tem que falar ou não, não tem jeito de falar, pede.
+[5912.12s -> 5917.12s] Não, porém, é um momento, não, é só que não entendi essa última parte,
+[5917.12s -> 5920.12s] mas se não há a tradução, está bem, não sei, eu quedo atento.
+[5920.12s -> 5929.12s] A última parte é que depois Eric de acuhar a Lava, vai falar com você, e quem vai fazer esse cambio de informação
+[5929.12s -> 5935.12s] que você e Eric, é sabidalo, por orientação de doctoral, sí?
+[5935.12s -> 5936.12s] Perfeito, sim.
+[5936.12s -> 5940.12s] O que necessita, eu quedo muito atento qualquer coisa com muito tempo.
+[5940.12s -> 5942.12s] Perfeito.
+[5942.12s -> 5949.12s] Eu vou involucar Flavio e Sintio, que é o de My Team, que Flavio é o CEO de a companhia,
+[5949.12s -> 5956.12s] também, que nós temos que falar com eles, primeiro, e assim que nós nós falamos aqui,
+[5956.12s -> 5960.12s] já marcamos uma fecha para falamos.
+[5960.12s -> 5961.12s] Perfeito.
+[5961.12s -> 5964.12s] Perfeito, perfeito, sim, um muito gostoso.
+[5964.12s -> 5969.12s] E depois, dá-nos dois opções para poder concordar bem, na fecha seria, porém,
+[5969.12s -> 5970.12s] vocês que vão...
+[5970.12s -> 5973.12s] E não, é qualquer momento que...
+[5973.12s -> 5977.12s] Sim, Andrea, que eu não estava falando, quando...
+[5977.12s -> 5978.12s] Sim.
+[5978.12s -> 5982.12s] Não é problema, se não é problema, se acuadramos e me dizem, é o dia de fecha,
+[5982.12s -> 5985.12s] e não tem nenhum problema.
+[5985.12s -> 5990.12s] Estava desvundida, de acuhar a Lava, em um que...
+[5990.12s -> 5994.12s] Nós temos um ritmo um pouco rápido de trabalhos.
+[5994.12s -> 5998.12s] É o estator do trabalho que fizemos, realizamos, em menos de três meses.
+[5998.12s -> 5999.12s] Em um, nos três em...
+[5999.12s -> 6003.12s] Não, em julho, em julho, empezamos, certamente, como é?
+[6003.12s -> 6005.12s] Sim, sim, sim, melhor.
+[6005.12s -> 6008.12s] Ok, esta está lista, esta...
+[6008.12s -> 6013.12s] está perfecta completa em... em... em... em octubre.
+[6013.12s -> 6015.12s] Então, se nós estamos...
+[6015.12s -> 6019.12s] de uma aplicação completa, plataforma completa de junho,
+[6019.12s -> 6021.12s] é octubre, ok?
+[6021.12s -> 6024.12s] E podemos terminar outras projetos,
+[6024.12s -> 6027.12s] tenhamos necessitados o apoio de...
+[6027.12s -> 6030.12s] e desvundida de acuhar a Lava, para participar
+[6030.12s -> 6032.12s] em o projeto.
+[6032.12s -> 6036.12s] Que é possível ir nos pases, dois fechas tentativas para a próxima semana,
+[6036.12s -> 6039.12s] dentro da cursa de esta semana, a mais tardar, é ver, não é?
+[6039.12s -> 6040.12s] É possível?
+[6041.12s -> 6042.12s] Completamente, é possível.
+[6042.12s -> 6043.12s] Eu vou tentar...
+[6043.12s -> 6045.12s] eu vou tentar do... doz de cá, para cá.
+[6045.12s -> 6046.12s] Ah, uma curiosidade.
+[6046.12s -> 6051.12s] Ustedes já estão utilizando Inteligência Artificial para o processo de desarrollo,
+[6051.12s -> 6052.12s] toda dia?
+[6052.12s -> 6053.12s] Ou não?
+[6053.12s -> 6057.12s] Claro, o... o ea está como assistente para a revisión,
+[6057.12s -> 6059.12s] revisión dicoidico, está...
+[6059.12s -> 6062.12s] 100% com os outros...
+[6062.12s -> 6064.12s] os melhores modelos, obviamente.
+[6064.12s -> 6066.12s] Isso é uma coisa muito por isso.
+[6066.12s -> 6068.12s] Ah, por supuesto.
+[6070.12s -> 6071.12s] Gracias.
+[6071.12s -> 6073.12s] Gracias, gracias.
+[6073.12s -> 6075.12s] Claro que é isso.
+[6075.12s -> 6077.12s] É porque a paz seja com todos estes,
+[6077.12s -> 6079.12s] mafom, barca, lafique.
+[6079.12s -> 6081.12s] Não é pra que não sutem, não sutem.
+[6081.12s -> 6083.12s] Ah, muito obrigado.
+[6083.12s -> 6084.12s] Jogado.
+[6084.12s -> 6085.12s] Jogado.
+[6085.12s -> 6086.12s] Eu não tenho tempo para te refletir.
+[6086.12s -> 6088.12s] Chucran, mas...
+[6088.12s -> 6090.12s] Estar o ego, coenze muito.
+[6090.12s -> 6091.12s] Chucran.
