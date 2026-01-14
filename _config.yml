@@ -1,0 +1,55 @@
+# GitHub Pages Configuration for HalalSphere Documentation
+
+# Theme
+theme: jekyll-theme-cayman
+title: HalalSphere - Documentação Oficial
+description: Sistema de Gestão de Certificação Halal - Documentação Completa
+
+# Repository Info
+repository: Ecohalal/halalsphere-docs
+url: https://ecohalal.github.io
+baseurl: /halalsphere-docs
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-relative-links
+
+# Enable relative links
+relative_links:
+  enabled: true
+  collections: true
+
+# Use README.md as index
+readme_index:
+  enabled: true
+  remove_originals: false
+
+# Include/Exclude
+include:
+  - README.md
+  - "*.md"
+
+exclude:
+  - .git
+  - .gitignore
+  - .claude
+  - node_modules
+  - vendor
+
+# Collections
+collections_dir: .
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
