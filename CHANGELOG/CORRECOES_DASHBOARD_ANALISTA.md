@@ -29,7 +29,7 @@ Após implementação do Sprint 2, o dashboard do analista apresentou os seguint
 **Antes:**
 ```tsx
 <div className="overflow-x-auto pb-4">
-  <div className="flex gap-4" style={{ minWidth: '1600px' }}>
+  <div className="flex gap-4" style={% raw %}{{ minWidth: '1600px' }}{% endraw %}>
     {columns.map((column) => (
       <div key={column.id} className="flex-1 min-w-[200px]">
         <KanbanColumn {...column} />
