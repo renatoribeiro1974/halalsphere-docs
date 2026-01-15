@@ -672,7 +672,7 @@ O sistema está **funcional**, **seguro**, **escalável** e **bem documentado**.
 
 **Data de Início**: 14 de Janeiro de 2026
 **Repositório**: halalsphere-backend-nest
-**Status Atual**: 🚧 **Fase 1.2 CONCLUÍDA** (25% do total)
+**Status Atual**: 🚧 **Fase 1.3 CONCLUÍDA** (33% do total)
 
 ### Motivação
 
@@ -729,23 +729,52 @@ Migração do backend de Fastify para NestJS mantendo 95% da performance atravé
 - `src/auth/decorators/public.decorator.ts` - Decorator @Public() (4 linhas)
 - `src/auth/dto/login.dto.ts` - DTOs de login (28 linhas)
 
+**✅ Fase 1.3: Migrate User Module** (Concluída - 14/01/2026)
+- Commits: `126ad59`, `e85d55b`
+- UserService com CRUD completo (create, findAll, findOne, update, remove, getUserStats)
+- UserController com 6 endpoints REST
+- RolesGuard para controle de acesso baseado em roles
+- @Roles() decorator para autorização declarativa
+- CreateUserDto e UpdateUserDto com validação class-validator
+- Suporte a criação de empresa com dados aninhados
+- Validação de email e CNPJ únicos
+- **25 testes** implementados (100% passando)
+
+**Funcionalidades Implementadas**:
+- CRUD completo de usuários
+- Role-Based Access Control (RBAC): admin, gestor, analista
+- Criação de usuário empresa com company aninhado
+- Validação de unicidade (email, CNPJ)
+- Hashing de senha com bcrypt
+- Estatísticas de usuários (total, por role, ativos, bloqueados)
+- Filtros de busca (role, search)
+
+**Arquivos Criados**:
+- `src/user/user.service.ts` - Lógica de negócio (288 linhas)
+- `src/user/user.controller.ts` - Endpoints REST (95 linhas)
+- `src/user/dto/create-user.dto.ts` - DTO de criação com nested validation (157 linhas)
+- `src/user/dto/update-user.dto.ts` - DTO de atualização (25 linhas)
+- `src/user/user.module.ts` - Módulo NestJS (10 linhas)
+- `src/auth/guards/roles.guard.ts` - Guard RBAC (25 linhas)
+- `src/auth/decorators/roles.decorator.ts` - Decorator @Roles (4 linhas)
+- `src/__tests__/phase1.3/user.spec.ts` - Testes unitários (597 linhas)
+
 **Próximas Fases**:
-- 🔜 Fase 1.2.1: Adicionar testes E2E para Auth Module
-- 🔜 Fase 1.3: Migrate User Module
-- 🔜 Fase 1.4: Migrate Product Module
+- 🔜 Fase 1.4: Migrate Process Module
+- 🔜 Fase 1.5: Migrate Proposal Module
 - ... (Total: 12 fases)
 
 ### Métricas Atuais
 
 | Métrica | Valor | Status |
 |---------|-------|--------|
-| Fases Concluídas | 3/12 | 25% |
-| Commits | 4 | ✅ |
-| Testes | 13 | ✅ 100% passing |
-| Linhas de Código | ~1,250 | ✅ |
+| Fases Concluídas | 4/12 | 33% |
+| Commits | 6 | ✅ |
+| Testes | 38 | ✅ 100% passing |
+| Linhas de Código | ~2,450 | ✅ |
 | Build Time | ~4s | ✅ |
 | Startup Time | ~1.5s | ✅ |
-| Endpoints Implementados | 3 | ✅ |
+| Endpoints Implementados | 9 | ✅ |
 
 ### Decisões Técnicas Importantes
 
@@ -772,6 +801,11 @@ Migração do backend de Fastify para NestJS mantendo 95% da performance atravé
    - Usado select com company relation
    - companyId extraído de user.company?.id
 
+6. **Schema Brasil-Específico com cnpj**
+   - Company model usa campo `cnpj` (Brasil-específico)
+   - UserService adaptado para usar `cnpj` ao invés de `taxId` internacionalizado
+   - Validação de CNPJ único implementada
+
 ### Tracking de Tokens (Custo de IA)
 
 | Fase | Tokens Usados | Descrição |
@@ -779,9 +813,10 @@ Migração do backend de Fastify para NestJS mantendo 95% da performance atravé
 | Fase 1.1.1 | ~15,000 | Setup inicial do projeto NestJS |
 | Fase 1.1.3 | ~66,000 | Config e JWT modules (13 testes) |
 | Fase 1.2 | ~23,000 | Auth Module completo (login, guards, strategy) |
-| **Total Sessão** | **~104,000** | 3 fases concluídas (25% migração) |
+| Fase 1.3 | ~48,000 | User Module completo (CRUD, RBAC, 25 testes) |
+| **Total Sessão** | **~152,000** | 4 fases concluídas (33% migração) |
 
-**Custo estimado**: ~$0.31 USD (baseado em Claude Sonnet 4.5 pricing)
+**Custo estimado**: ~$0.46 USD (baseado em Claude Sonnet 4.5 pricing)
 
 ### Documentação Relacionada
 
@@ -792,9 +827,9 @@ Migração do backend de Fastify para NestJS mantendo 95% da performance atravé
 ---
 
 **Documento gerado**: 14 de Janeiro de 2026
-**Última atualização**: 14 de Janeiro de 2026 - 23:00 (Fase 1.2 concluída)
-**Próxima atualização**: Após conclusão Fase 1.3 ou deployment em staging
+**Última atualização**: 14 de Janeiro de 2026 - 23:45 (Fase 1.3 concluída)
+**Próxima atualização**: Após conclusão Fase 1.4 ou deployment em staging
 **Mantenedor**: Equipe HalalSphere
 **Versão do Sistema**: 2.0
 **Status Backend Fastify**: ✅ **PRODUCTION READY** (95%)
-**Status Backend NestJS**: 🚧 **EM MIGRAÇÃO** (25% - 3/12 fases)
+**Status Backend NestJS**: 🚧 **EM MIGRAÇÃO** (33% - 4/12 fases)
