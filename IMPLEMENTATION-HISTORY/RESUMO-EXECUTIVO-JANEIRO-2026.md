@@ -672,7 +672,7 @@ O sistema está **funcional**, **seguro**, **escalável** e **bem documentado**.
 
 **Data de Início**: 14 de Janeiro de 2026
 **Repositório**: halalsphere-backend-nest
-**Status Atual**: 🚧 **Fase 1.1.3 CONCLUÍDA** (16.7% do total)
+**Status Atual**: 🚧 **Fase 1.2 CONCLUÍDA** (25% do total)
 
 ### Motivação
 
@@ -705,8 +705,32 @@ Migração do backend de Fastify para NestJS mantendo 95% da performance atravé
 - `src/auth/auth.module.ts` - Módulo de autenticação
 - `src/__tests__/phase1.1.3/config.spec.ts` - Testes completos
 
+**✅ Fase 1.2: Migrate Auth Module** (Concluída - 14/01/2026)
+- Commit: `df99437`
+- AuthService com login, validação e lockout de conta
+- AuthController com endpoints `/auth/login`, `/auth/me`, `/auth/logout`
+- JWT Strategy (Passport) com validação de tokens RS256/HS256
+- JwtAuthGuard global com decorator `@Public()`
+- LoginDto com validação class-validator
+
+**Funcionalidades Implementadas**:
+- Autenticação com bcrypt (hash de senha)
+- Lockout após 5 tentativas falhas (15 minutos)
+- Tracking de último login
+- Suporte a relação Company
+- JWT com claim `sub` (user ID)
+- Guard global aplicado automaticamente
+
+**Arquivos Criados**:
+- `src/auth/auth.service.ts` - Lógica de autenticação (145 linhas)
+- `src/auth/auth.controller.ts` - Endpoints REST (56 linhas)
+- `src/auth/strategies/jwt.strategy.ts` - Passport JWT Strategy (41 linhas)
+- `src/auth/guards/jwt-auth.guard.ts` - Guard de autenticação (25 linhas)
+- `src/auth/decorators/public.decorator.ts` - Decorator @Public() (4 linhas)
+- `src/auth/dto/login.dto.ts` - DTOs de login (28 linhas)
+
 **Próximas Fases**:
-- 🔜 Fase 1.2: Migrate Auth Module (AuthController, AuthService, Guards)
+- 🔜 Fase 1.2.1: Adicionar testes E2E para Auth Module
 - 🔜 Fase 1.3: Migrate User Module
 - 🔜 Fase 1.4: Migrate Product Module
 - ... (Total: 12 fases)
@@ -715,12 +739,13 @@ Migração do backend de Fastify para NestJS mantendo 95% da performance atravé
 
 | Métrica | Valor | Status |
 |---------|-------|--------|
-| Fases Concluídas | 2/12 | 16.7% |
-| Commits | 3 | ✅ |
+| Fases Concluídas | 3/12 | 25% |
+| Commits | 4 | ✅ |
 | Testes | 13 | ✅ 100% passing |
-| Linhas de Código | ~950 | ✅ |
+| Linhas de Código | ~1,250 | ✅ |
 | Build Time | ~4s | ✅ |
 | Startup Time | ~1.5s | ✅ |
+| Endpoints Implementados | 3 | ✅ |
 
 ### Decisões Técnicas Importantes
 
@@ -737,6 +762,27 @@ Migração do backend de Fastify para NestJS mantendo 95% da performance atravé
    - @prisma/adapter-pg para PostgreSQL
    - Melhor controle de connection pool
 
+4. **Global JWT Guard com @Public() Decorator**
+   - JwtAuthGuard aplicado globalmente via APP_GUARD
+   - Rotas públicas marcadas com @Public() decorator
+   - Simplifica proteção de rotas (opt-out ao invés de opt-in)
+
+5. **Company Relation via Prisma Select**
+   - User não tem companyId direto no schema
+   - Usado select com company relation
+   - companyId extraído de user.company?.id
+
+### Tracking de Tokens (Custo de IA)
+
+| Fase | Tokens Usados | Descrição |
+|------|---------------|-----------|
+| Fase 1.1.1 | ~15,000 | Setup inicial do projeto NestJS |
+| Fase 1.1.3 | ~66,000 | Config e JWT modules (13 testes) |
+| Fase 1.2 | ~23,000 | Auth Module completo (login, guards, strategy) |
+| **Total Sessão** | **~104,000** | 3 fases concluídas (25% migração) |
+
+**Custo estimado**: ~$0.31 USD (baseado em Claude Sonnet 4.5 pricing)
+
 ### Documentação Relacionada
 
 - **Plano Completo**: [PLANNING/MIGRATION-NESTJS.md](../PLANNING/MIGRATION-NESTJS.md)
@@ -746,8 +792,9 @@ Migração do backend de Fastify para NestJS mantendo 95% da performance atravé
 ---
 
 **Documento gerado**: 14 de Janeiro de 2026
-**Próxima atualização**: Após conclusão Fase 1.2 ou deployment em staging
+**Última atualização**: 14 de Janeiro de 2026 - 23:00 (Fase 1.2 concluída)
+**Próxima atualização**: Após conclusão Fase 1.3 ou deployment em staging
 **Mantenedor**: Equipe HalalSphere
 **Versão do Sistema**: 2.0
 **Status Backend Fastify**: ✅ **PRODUCTION READY** (95%)
-**Status Backend NestJS**: 🚧 **EM MIGRAÇÃO** (16.7%)
+**Status Backend NestJS**: 🚧 **EM MIGRAÇÃO** (25% - 3/12 fases)
