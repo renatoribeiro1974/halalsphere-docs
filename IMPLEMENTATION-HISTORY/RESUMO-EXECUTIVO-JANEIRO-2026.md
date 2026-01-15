@@ -666,8 +666,88 @@ O sistema está **funcional**, **seguro**, **escalável** e **bem documentado**.
 
 ---
 
+## 🔄 MIGRAÇÃO NESTJS (Janeiro 2026)
+
+### Status da Migração
+
+**Data de Início**: 14 de Janeiro de 2026
+**Repositório**: halalsphere-backend-nest
+**Status Atual**: 🚧 **Fase 1.1.3 CONCLUÍDA** (16.7% do total)
+
+### Motivação
+
+Migração do backend de Fastify para NestJS mantendo 95% da performance através do adaptador @nestjs/platform-fastify, ganhando os benefícios de:
+- **Dependency Injection** nativa
+- **Modular Architecture** escalável
+- **TypeScript First** com decorators
+- **Ecosystem maduro** (Passport, Swagger, Testing)
+
+### Progresso por Fase
+
+**✅ Fase 1.1.1: Criar Projeto NestJS** (Concluída - 14/01/2026)
+- Commit: `4e4e17e`
+- Criado projeto com Fastify adapter
+- Configurado Prisma 7 com schema completo
+- HealthModule com endpoints Kubernetes-ready
+- Swagger/OpenAPI configurado
+
+**✅ Fase 1.1.3: Setup ConfigModule** (Concluída - 14/01/2026)
+- Commits: `a799964`, `55645b5`
+- AwsConfigService (AWS Secrets Manager + local env)
+- JwtConfigService (RS256 + HS256 support)
+- AuthModule com Passport integration
+- Prisma PostgreSQL adapter (@prisma/adapter-pg)
+- **13 testes** implementados (100% passando)
+
+**Arquivos Principais Criados**:
+- `src/config/aws-config.service.ts` - Gerenciamento de configurações
+- `src/auth/jwt/jwt.service.ts` - Configuração JWT
+- `src/auth/auth.module.ts` - Módulo de autenticação
+- `src/__tests__/phase1.1.3/config.spec.ts` - Testes completos
+
+**Próximas Fases**:
+- 🔜 Fase 1.2: Migrate Auth Module (AuthController, AuthService, Guards)
+- 🔜 Fase 1.3: Migrate User Module
+- 🔜 Fase 1.4: Migrate Product Module
+- ... (Total: 12 fases)
+
+### Métricas Atuais
+
+| Métrica | Valor | Status |
+|---------|-------|--------|
+| Fases Concluídas | 2/12 | 16.7% |
+| Commits | 3 | ✅ |
+| Testes | 13 | ✅ 100% passing |
+| Linhas de Código | ~950 | ✅ |
+| Build Time | ~4s | ✅ |
+| Startup Time | ~1.5s | ✅ |
+
+### Decisões Técnicas Importantes
+
+1. **Inicialização Síncrona do AwsConfigService em Development**
+   - Evita race conditions com JwtModule
+   - Mantém compatibilidade com AWS Secrets Manager em produção
+
+2. **RS256 como Padrão para JWT**
+   - Criptografia assimétrica (RSA 2048-bit)
+   - Maior segurança que HS256
+   - Alinhado com mudanças AWS de Janeiro 2026
+
+3. **Prisma 7 com Adapter**
+   - @prisma/adapter-pg para PostgreSQL
+   - Melhor controle de connection pool
+
+### Documentação Relacionada
+
+- **Plano Completo**: [PLANNING/MIGRATION-NESTJS.md](../PLANNING/MIGRATION-NESTJS.md)
+- **Guia Multi-Repo**: [GUIDES/MULTI-REPO-DEVELOPMENT-GUIDE.md](../GUIDES/MULTI-REPO-DEVELOPMENT-GUIDE.md)
+- **JWT RS256**: [ARCHITECTURE/JWT-RS256-SETUP.md](../ARCHITECTURE/JWT-RS256-SETUP.md)
+
+---
+
 **Documento gerado**: 14 de Janeiro de 2026
-**Próxima atualização**: Após deployment em staging
+**Próxima atualização**: Após conclusão Fase 1.2 ou deployment em staging
 **Mantenedor**: Equipe HalalSphere
 **Versão do Sistema**: 2.0
-**Status**: ✅ **PRODUCTION READY**
+**Status Backend Fastify**: ✅ **PRODUCTION READY** (95%)
+**Status Backend NestJS**: 🚧 **EM MIGRAÇÃO** (16.7%)
