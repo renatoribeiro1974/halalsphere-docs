@@ -9,11 +9,13 @@
 
 | Métrica | Valor |
 |---------|-------|
-| **Total de Tokens Usados** | TBD |
-| **Custo Estimado** | TBD |
-| **Tempo de Desenvolvimento** | TBD |
-| **Linhas de Código Geradas** | TBD |
-| **Arquivos Modificados** | TBD |
+| **Total de Tokens Usados** | ~597.000 tokens |
+| **Custo Estimado** | ~$1.79 USD |
+| **Tempo de Desenvolvimento** | 2 dias |
+| **Linhas de Código Geradas** | ~3.511 linhas |
+| **Arquivos Criados/Modificados** | 62 arquivos |
+| **Commits** | 9 commits |
+| **Módulos Implementados** | 5 módulos completos |
 
 ---
 
@@ -64,13 +66,23 @@
 
 ---
 
-### Fase 1: Setup NestJS (Semana 1)
+### Fase 1: Setup NestJS e Migração Core Modules (Semanas 1-2)
 
-| Dia | Passo | Tokens Usados | Arquivos | Status |
-|-----|-------|---------------|----------|--------|
-| - | - | - | - | ⏳ Não iniciado |
+| Fase | Passo | Tokens Usados | Arquivos | Status |
+|------|-------|---------------|----------|--------|
+| 1.1 | Setup NestJS + PrismaModule | ~50.000 | 12 | ✅ Completo |
+| 1.2 | AuthModule + Guards | ~80.000 | 15 | ✅ Completo |
+| 1.3 | UserModule + CRUD | ~120.000 | 8 | ✅ Completo |
+| 1.4 | ProcessModule (17-phase FSM) | ~183.000 | 6 | ✅ Completo |
+| 1.5 | ProposalModule (5-stage calc) | ~104.000 | 14 | ✅ Completo |
 
-**Subtotal Fase 1:** TBD
+**Subtotal Fase 1:** ~537.000 tokens (~$1.61 USD) | 55 arquivos | ~2.900 linhas adicionadas
+
+**Commits:**
+- `3c7e1bb` - feat(phase1.1): setup NestJS infrastructure
+- `2c88b93` - feat(phase1.2): implement AuthModule with JWT guards
+- `0d33912` - test: add comprehensive tests for Process Module (Phase 1.4)
+- `3387bad` - feat: implement Proposal Module (Phase 1.5) - complete pricing and workflow system
 
 ---
 
