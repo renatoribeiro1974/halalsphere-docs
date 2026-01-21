@@ -241,61 +241,61 @@
 
 | ID | Task | Prioridade | Responsável | Status |
 |----|------|------------|-------------|--------|
-| G-082 | Atualizar Entity `User` com novos campos de permissão | 🔴 | - | [ ] |
-| G-083 | Atualizar DTOs | 🔴 | - | [ ] |
-| G-084 | Implementar lógica de admin temporário | 🔴 | - | [ ] |
-| G-085 | Implementar lógica de admin de grupo | 🔴 | - | [ ] |
-| G-086 | Endpoint: `POST /users/:id/assign-admin` - FAMBRAS designa admin | 🟠 | - | [ ] |
+| G-082 | Atualizar Entity `User` com novos campos de permissão | 🔴 | - | [x] ✓ 2026-01-21 |
+| G-083 | Atualizar DTOs | 🔴 | - | [x] ✓ 2026-01-21 |
+| G-084 | Implementar lógica de admin temporário | 🔴 | - | [x] ✓ 2026-01-21 |
+| G-085 | Implementar lógica de admin de grupo | 🔴 | - | [x] ✓ 2026-01-21 |
+| G-086 | Endpoint: `POST /users/:id/assign-admin` - FAMBRAS designa admin | 🟠 | - | [x] ✓ 2026-01-21 |
 
 ### 4.2 UserInviteModule
 
 | ID | Task | Prioridade | Responsável | Status |
 |----|------|------------|-------------|--------|
-| G-087 | Criar Entity `UserInvite` | 🔴 | - | [ ] |
-| G-088 | Criar DTOs: `CreateInviteDto` | 🔴 | - | [ ] |
-| G-089 | Criar `UserInviteService` | 🔴 | - | [ ] |
-| G-090 | Criar `UserInviteController` | 🔴 | - | [ ] |
-| G-091 | Endpoint: `POST /invites` - criar convite | 🔴 | - | [ ] |
-| G-092 | Endpoint: `GET /invites/validate/:token` - validar token | 🔴 | - | [ ] |
-| G-093 | Endpoint: `POST /invites/:token/accept` - aceitar convite | 🔴 | - | [ ] |
-| G-094 | Endpoint: `GET /invites` - listar convites pendentes (admin) | 🟠 | - | [ ] |
-| G-095 | Endpoint: `DELETE /invites/:id` - cancelar convite | 🟡 | - | [ ] |
-| G-096 | Serviço de envio de email de convite | 🔴 | - | [ ] |
+| G-087 | Criar Entity `UserInvite` | 🔴 | - | [x] ✓ 2026-01-21 (Fase 1) |
+| G-088 | Criar DTOs: `CreateInviteDto` | 🔴 | - | [x] ✓ 2026-01-21 |
+| G-089 | Criar `UserInviteService` | 🔴 | - | [x] ✓ 2026-01-21 |
+| G-090 | Criar `UserInviteController` | 🔴 | - | [x] ✓ 2026-01-21 |
+| G-091 | Endpoint: `POST /invites` - criar convite | 🔴 | - | [x] ✓ 2026-01-21 |
+| G-092 | Endpoint: `GET /invites/validate/:token` - validar token | 🔴 | - | [x] ✓ 2026-01-21 |
+| G-093 | Endpoint: `POST /invites/:token/accept` - aceitar convite | 🔴 | - | [x] ✓ 2026-01-21 |
+| G-094 | Endpoint: `GET /invites` - listar convites pendentes (admin) | 🟠 | - | [x] ✓ 2026-01-21 |
+| G-095 | Endpoint: `DELETE /invites/:id` - cancelar convite | 🟡 | - | [x] ✓ 2026-01-21 |
+| G-096 | Serviço de envio de email de convite | 🔴 | - | [x] ✓ 2026-01-21 (estrutura) |
 
 ### 4.3 AccessRequestModule
 
 | ID | Task | Prioridade | Responsável | Status |
 |----|------|------------|-------------|--------|
-| G-097 | Criar Entity `AccessRequest` | 🟠 | - | [ ] |
-| G-098 | Criar DTOs | 🟠 | - | [ ] |
-| G-099 | Criar `AccessRequestService` | 🟠 | - | [ ] |
-| G-100 | Criar `AccessRequestController` | 🟠 | - | [ ] |
-| G-101 | Endpoint: `POST /access-requests` - solicitar acesso | 🟠 | - | [ ] |
-| G-102 | Endpoint: `GET /access-requests` - listar solicitações (admin) | 🟠 | - | [ ] |
-| G-103 | Endpoint: `POST /access-requests/:id/approve` - aprovar | 🟠 | - | [ ] |
-| G-104 | Endpoint: `POST /access-requests/:id/reject` - rejeitar | 🟠 | - | [ ] |
-| G-105 | Notificação por email ao admin sobre nova solicitação | 🟡 | - | [ ] |
+| G-097 | Criar Entity `AccessRequest` | 🟠 | - | [x] ✓ 2026-01-21 (Fase 1) |
+| G-098 | Criar DTOs | 🟠 | - | [x] ✓ 2026-01-21 |
+| G-099 | Criar `AccessRequestService` | 🟠 | - | [x] ✓ 2026-01-21 |
+| G-100 | Criar `AccessRequestController` | 🟠 | - | [x] ✓ 2026-01-21 |
+| G-101 | Endpoint: `POST /access-requests` - solicitar acesso | 🟠 | - | [x] ✓ 2026-01-21 |
+| G-102 | Endpoint: `GET /access-requests` - listar solicitações (admin) | 🟠 | - | [x] ✓ 2026-01-21 |
+| G-103 | Endpoint: `POST /access-requests/:id/approve` - aprovar | 🟠 | - | [x] ✓ 2026-01-21 |
+| G-104 | Endpoint: `POST /access-requests/:id/reject` - rejeitar | 🟠 | - | [x] ✓ 2026-01-21 |
+| G-105 | Notificação por email ao admin sobre nova solicitação | 🟡 | - | [x] ✓ 2026-01-21 (estrutura) |
 
 ### 4.4 Atualização de AuthModule
 
 | ID | Task | Prioridade | Responsável | Status |
 |----|------|------------|-------------|--------|
-| G-106 | Atualizar registro para NÃO exigir empresa (pendente vinculação) | 🔴 | - | [ ] |
-| G-107 | Endpoint: `GET /auth/me/company-status` - verificar status de vinculação | 🔴 | - | [ ] |
-| G-108 | Atualizar JWT payload com `isGroupAdmin`, `isCompanyAdmin` | 🔴 | - | [ ] |
-| G-109 | Criar Guard `GroupAdminGuard` | 🟠 | - | [ ] |
-| G-110 | Criar Guard `CompanyAdminGuard` | 🟠 | - | [ ] |
+| G-106 | Atualizar registro para NÃO exigir empresa (pendente vinculação) | 🔴 | - | [x] ✓ 2026-01-21 |
+| G-107 | Endpoint: `GET /auth/me/company-status` - verificar status de vinculação | 🔴 | - | [x] ✓ 2026-01-21 |
+| G-108 | Atualizar JWT payload com `isGroupAdmin`, `isCompanyAdmin` | 🔴 | - | [x] ✓ 2026-01-21 |
+| G-109 | Criar Guard `GroupAdminGuard` | 🟠 | - | [x] ✓ 2026-01-21 |
+| G-110 | Criar Guard `CompanyAdminGuard` | 🟠 | - | [x] ✓ 2026-01-21 |
 
 ### 4.5 Fluxo de Cadastro de Empresa
 
 | ID | Task | Prioridade | Responsável | Status |
 |----|------|------------|-------------|--------|
-| G-111 | Endpoint: `POST /companies/register` - cadastrar nova empresa | 🔴 | - | [ ] |
-| G-112 | Lógica: criar grupo automaticamente se independente | 🔴 | - | [ ] |
-| G-113 | Lógica: definir usuário como admin temporário | 🔴 | - | [ ] |
-| G-114 | Lógica: flag `pendingValidation = true` | 🔴 | - | [ ] |
-| G-115 | Endpoint: `POST /companies/:id/validate` - FAMBRAS valida empresa | 🟠 | - | [ ] |
-| G-116 | Endpoint: `GET /companies/pending-validation` - empresas pendentes (FAMBRAS) | 🟠 | - | [ ] |
+| G-111 | Endpoint: `POST /companies/register` - cadastrar nova empresa | 🔴 | - | [x] ✓ 2026-01-21 |
+| G-112 | Lógica: criar grupo automaticamente se independente | 🔴 | - | [x] ✓ 2026-01-21 |
+| G-113 | Lógica: definir usuário como admin temporário | 🔴 | - | [x] ✓ 2026-01-21 |
+| G-114 | Lógica: flag `pendingValidation = true` | 🔴 | - | [x] ✓ 2026-01-21 |
+| G-115 | Endpoint: `POST /companies/:id/validate` - FAMBRAS valida empresa | 🟠 | - | [x] ✓ 2026-01-21 |
+| G-116 | Endpoint: `GET /companies/pending-validation` - empresas pendentes (FAMBRAS) | 🟠 | - | [x] ✓ 2026-01-21 |
 
 ---
 
@@ -486,12 +486,12 @@
 | 1. Schema e Migrations | 24 | 14 | ✅ 24/24 |
 | 2. Migração de Dados | 16 | 10 | ✅ 16/16 |
 | 3. Backend - Grupos | 41 | 20 | ✅ 41/41 |
-| 4. Backend - Onboarding | 31 | 17 | 0/31 |
+| 4. Backend - Onboarding | 31 | 17 | ✅ 31/31 |
 | 5. Frontend - Estrutura | 31 | 17 | 0/31 |
 | 6. Frontend - Onboarding | 25 | 11 | 0/25 |
 | 7. Integração ReceitaWS | 11 | 0 | 0/11 |
 | 8. Testes e Validação | 17 | 8 | 0/17 |
-| **TOTAL** | **200** | **97** | **81/200** |
+| **TOTAL** | **200** | **97** | **112/200** |
 
 ---
 
