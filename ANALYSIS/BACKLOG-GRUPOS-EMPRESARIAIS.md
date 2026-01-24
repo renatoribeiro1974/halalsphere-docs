@@ -2,7 +2,7 @@
 
 **Criado:** 2026-01-21
 **Baseado em:** [ANALISE-GRUPOS-EMPRESARIAIS.md](./ANALISE-GRUPOS-EMPRESARIAIS.md)
-**Status:** ✅ Fases 1-5 Concluídas (143/200 - 71%) | Fases 6-8 Pendentes
+**Status:** ✅ Fases 1-8.1 Concluídas | Fase 8.2-8.3 Pendente (187/200 - 93.5%)
 **Prioridade:** Implementar ANTES da Fase 6 (Testes) do backlog de migração
 
 ---
@@ -412,99 +412,136 @@
 
 ---
 
-## Fase 6: Frontend - Onboarding
+## ✅ Fase 6: Frontend - Onboarding (CONCLUÍDA)
+
+> **Concluída em:** 2026-01-23
+> **Branch:** `develop`
+> **Inclui:** Páginas de onboarding, componentes de busca CNPJ, validação FAMBRAS, gestão de convites
 
 ### 6.1 Fluxo Pós-Registro
 
 | ID | Task | Prioridade | Responsável | Status |
 |----|------|------------|-------------|--------|
-| G-148 | Criar `pages/onboarding/CompanyLinkingPage.tsx` (escolher caminho) | 🔴 | - | [ ] |
-| G-149 | Criar `pages/onboarding/RegisterCompanyPage.tsx` (cadastrar empresa) | 🔴 | - | [ ] |
-| G-150 | Criar `pages/onboarding/JoinCompanyPage.tsx` (solicitar acesso) | 🟠 | - | [ ] |
-| G-151 | Criar `pages/onboarding/AcceptInvitePage.tsx` (aceitar convite) | 🔴 | - | [ ] |
+| G-148 | Criar `pages/onboarding/CompanyLinkingPage.tsx` (escolher caminho) | 🔴 | - | [x] ✓ 2026-01-23 |
+| G-149 | Criar `pages/onboarding/RegisterCompanyPage.tsx` (cadastrar empresa) | 🔴 | - | [x] ✓ 2026-01-23 |
+| G-150 | Criar `pages/onboarding/JoinCompanyPage.tsx` (solicitar acesso) | 🟠 | - | [x] ✓ 2026-01-23 |
+| G-151 | Criar `pages/onboarding/AcceptInvitePage.tsx` (aceitar convite) | 🔴 | - | [x] ✓ 2026-01-23 |
 
 ### 6.2 Componentes de Onboarding
 
 | ID | Task | Prioridade | Responsável | Status |
 |----|------|------------|-------------|--------|
-| G-152 | Criar `components/onboarding/CnpjSearchInput.tsx` | 🔴 | - | [ ] |
-| G-153 | Criar `components/onboarding/CompanyDataPreview.tsx` (dados da Receita) | 🔴 | - | [ ] |
-| G-154 | Criar `components/onboarding/GroupSelectionStep.tsx` (pertence a grupo?) | 🟠 | - | [ ] |
-| G-155 | Criar `components/onboarding/CompanySearchForAccess.tsx` | 🟠 | - | [ ] |
+| G-152 | Criar `components/onboarding/CnpjSearchInput.tsx` | 🔴 | - | [x] ✓ 2026-01-23 |
+| G-153 | Criar `components/onboarding/CompanyDataPreview.tsx` (dados da Receita) | 🔴 | - | [x] ✓ 2026-01-23 |
+| G-154 | Criar `components/onboarding/GroupSelectionStep.tsx` (pertence a grupo?) | 🟠 | - | [x] ✓ 2026-01-23 |
+| G-155 | Criar `components/onboarding/CompanySearchForAccess.tsx` | 🟠 | - | [x] ✓ 2026-01-23 |
 
 ### 6.3 Gestão de Convites (Admin)
 
 | ID | Task | Prioridade | Responsável | Status |
 |----|------|------------|-------------|--------|
-| G-156 | Criar `components/admin/InviteUserModal.tsx` | 🔴 | - | [ ] |
-| G-157 | Criar `components/admin/PendingInvitesList.tsx` | 🟠 | - | [ ] |
-| G-158 | Criar `components/admin/AccessRequestsList.tsx` | 🟠 | - | [ ] |
-| G-159 | Criar `components/admin/AccessRequestActionModal.tsx` | 🟠 | - | [ ] |
+| G-156 | Criar `components/admin/InviteUserModal.tsx` | 🔴 | - | [x] ✓ 2026-01-23 |
+| G-157 | Criar `components/admin/PendingInvitesList.tsx` | 🟠 | - | [x] ✓ 2026-01-23 |
+| G-158 | Criar `components/admin/AccessRequestsList.tsx` | 🟠 | - | [x] ✓ 2026-01-23 |
+| G-159 | Criar `components/admin/AccessRequestActionModal.tsx` | 🟠 | - | [x] ✓ 2026-01-23 |
 
 ### 6.4 Validação FAMBRAS
 
 | ID | Task | Prioridade | Responsável | Status |
 |----|------|------------|-------------|--------|
-| G-160 | Criar `pages/admin/PendingCompaniesValidation.tsx` | 🟠 | - | [ ] |
-| G-161 | Criar `components/admin/CompanyValidationCard.tsx` | 🟠 | - | [ ] |
-| G-162 | Criar `components/admin/AssignAdminModal.tsx` | 🟡 | - | [ ] |
+| G-160 | Criar `pages/admin/PendingCompaniesValidation.tsx` | 🟠 | - | [x] ✓ 2026-01-21 (CompanyValidation.tsx) |
+| G-161 | Criar `components/admin/CompanyValidationCard.tsx` | 🟠 | - | [x] ✓ 2026-01-23 |
+| G-162 | Criar `components/admin/AssignAdminModal.tsx` | 🟡 | - | [x] ✓ 2026-01-23 |
 
 ### 6.5 Atualização de Rotas
 
 | ID | Task | Prioridade | Responsável | Status |
 |----|------|------------|-------------|--------|
-| G-163 | Rota: `/onboarding` - página de vinculação | 🔴 | - | [ ] |
-| G-164 | Rota: `/onboarding/register-company` - cadastrar empresa | 🔴 | - | [ ] |
-| G-165 | Rota: `/onboarding/join-company` - solicitar acesso | 🟠 | - | [ ] |
-| G-166 | Rota: `/invite/:token` - aceitar convite | 🔴 | - | [ ] |
-| G-167 | Rota: `/empresa/configuracoes` - configurações | 🔴 | - | [ ] |
-| G-168 | Rota: `/empresa/plantas` - gestão de plantas | 🔴 | - | [ ] |
-| G-169 | Rota: `/empresa/usuarios` - gestão de usuários | 🔴 | - | [ ] |
-| G-170 | Rota: `/grupo` - dashboard do grupo (admin grupo) | 🟠 | - | [ ] |
-| G-171 | Rota: `/admin/empresas-pendentes` - validação FAMBRAS | 🟠 | - | [ ] |
-| G-172 | Implementar redirect automático para `/onboarding` se usuário sem empresa | 🔴 | - | [ ] |
+| G-163 | Rota: `/onboarding` - página de vinculação | 🔴 | - | [x] ✓ 2026-01-23 |
+| G-164 | Rota: `/onboarding/register-company` - cadastrar empresa | 🔴 | - | [x] ✓ 2026-01-23 |
+| G-165 | Rota: `/onboarding/join-company` - solicitar acesso | 🟠 | - | [x] ✓ 2026-01-23 |
+| G-166 | Rota: `/invite/:token` - aceitar convite | 🔴 | - | [x] ✓ 2026-01-23 |
+| G-167 | Rota: `/empresa` - dashboard da empresa | 🔴 | - | [x] ✓ 2026-01-23 |
+| G-168 | Rota: `/plantas` - gestão de plantas | 🔴 | - | [x] ✓ 2026-01-21 (Fase 5) |
+| G-169 | Rota: `/usuarios` - gestão de usuários | 🔴 | - | [x] ✓ 2026-01-21 (Fase 5) |
+| G-170 | Rota: `/grupo` - dashboard do grupo (admin grupo) | 🟠 | - | [x] ✓ 2026-01-21 (Fase 5) |
+| G-171 | Rota: `/admin/validacao-empresas` - validação FAMBRAS | 🟠 | - | [x] ✓ 2026-01-21 (Fase 5) |
+| G-172 | Implementar redirect automático para `/onboarding` se usuário sem empresa | 🔴 | - | [x] ✓ 2026-01-23 |
 
 ---
 
-## Fase 7: Integração ReceitaWS
+## ✅ Fase 7: Integração CNPJ Lookup (CONCLUÍDA)
+
+> **Concluída em:** 2026-01-23
+> **Nota:** Expandido para suportar múltiplos providers (BrasilAPI, ReceitaWS, CNPJ.ws)
 
 ### 7.1 Backend
 
 | ID | Task | Prioridade | Responsável | Status |
 |----|------|------------|-------------|--------|
-| G-173 | Criar `ReceitaWsModule` | 🟠 | - | [ ] |
-| G-174 | Implementar client HTTP para API ReceitaWS | 🟠 | - | [ ] |
-| G-175 | Criar interface `ReceitaWsResponse` | 🟠 | - | [ ] |
-| G-176 | Endpoint: `GET /receita-ws/:cnpj` - buscar dados do CNPJ | 🟠 | - | [ ] |
-| G-177 | Implementar cache de consultas (evitar chamadas repetidas) | 🟡 | - | [ ] |
-| G-178 | Implementar rate limiting (respeitar limites da API) | 🟡 | - | [ ] |
-| G-179 | Fallback para quando API estiver indisponível | 🟡 | - | [ ] |
+| G-173 | Criar `CnpjLookupModule` (renomeado de ReceitaWsModule) | 🟠 | - | [x] ✓ 2026-01-23 |
+| G-174 | Implementar clients HTTP para APIs (BrasilAPI, ReceitaWS, CNPJ.ws) | 🟠 | - | [x] ✓ 2026-01-23 |
+| G-175 | Criar interfaces e DTOs | 🟠 | - | [x] ✓ 2026-01-23 |
+| G-176 | Endpoint: `GET /cnpj-lookup/:cnpj` - buscar dados do CNPJ | 🟠 | - | [x] ✓ 2026-01-23 |
+| G-177 | Implementar cache de consultas (CnpjLookupCache table) | 🟡 | - | [x] ✓ 2026-01-23 |
+| G-178 | Implementar rate limiting (in-memory por IP) | 🟡 | - | [x] ✓ 2026-01-23 |
+| G-179 | Fallback para quando API estiver indisponível | 🟡 | - | [x] ✓ 2026-01-23 |
 
 ### 7.2 Frontend
 
 | ID | Task | Prioridade | Responsável | Status |
 |----|------|------------|-------------|--------|
-| G-180 | Criar `services/receita-ws.service.ts` | 🟠 | - | [ ] |
-| G-181 | Criar `hooks/useCnpjLookup.ts` | 🟠 | - | [ ] |
-| G-182 | Integrar busca no `CnpjSearchInput.tsx` | 🟠 | - | [ ] |
-| G-183 | Exibir loading e tratamento de erros | 🟠 | - | [ ] |
+| G-180 | Criar `services/cnpj-lookup-config.service.ts` | 🟠 | - | [x] ✓ 2026-01-23 |
+| G-181 | Criar `hooks/useCnpjLookup.ts` | 🟠 | - | [x] ✓ 2026-01-23 |
+| G-182 | Integrar busca no `CnpjSearchInput.tsx` | 🟠 | - | [x] ✓ 2026-01-23 |
+| G-183 | Exibir loading e tratamento de erros | 🟠 | - | [x] ✓ 2026-01-23 |
+
+### Arquivos da Fase 7
+
+**Backend:**
+- `src/cnpj-lookup/cnpj-lookup.module.ts` - Módulo principal
+- `src/cnpj-lookup/cnpj-lookup.service.ts` - Serviço com cache, rate limiting e fallback
+- `src/cnpj-lookup/cnpj-lookup.controller.ts` - Controller com endpoints de config e lookup
+- `src/cnpj-lookup/dto/create-cnpj-lookup-config.dto.ts` - DTOs
+- `src/cnpj-lookup/providers/brasilapi.provider.ts` - Client BrasilAPI (gratuito)
+- `src/cnpj-lookup/providers/receitaws.provider.ts` - Client ReceitaWS (pago)
+- `src/cnpj-lookup/providers/cnpjws.provider.ts` - Client CNPJ.ws (pago)
+- `prisma/schema.prisma` - CnpjLookupConfig e CnpjLookupCache tables
+
+**Frontend:**
+- `src/services/cnpj-lookup-config.service.ts` - Serviço de config e lookup
+- `src/hooks/useCnpjLookup.ts` - Hook para consulta de CNPJ
+- `src/pages/admin/CnpjLookupSettings.tsx` - Página de configuração admin
+- `src/components/onboarding/CnpjSearchInput.tsx` - Input com auto-busca
 
 ---
 
-## Fase 8: Testes e Validação
+## ✅ Fase 8: Testes e Validação (8.1 CONCLUÍDA)
+
+> **8.1 Concluída em:** 2026-01-23
+> **Testes Unitários:** 100 testes passando
+> **Arquivos de Teste:**
+> - `src/company-group/company-group.service.spec.ts`
+> - `src/plant/plant.service.spec.ts`
+> - `src/user-invite/user-invite.service.spec.ts`
+> - `src/access-request/access-request.service.spec.ts`
+> - `test/company-group-flow.e2e-spec.ts`
+> - `test/user-invite-flow.e2e-spec.ts`
+> - `test/access-request-flow.e2e-spec.ts`
+> - `test/group-admin-permissions.e2e-spec.ts`
 
 ### 8.1 Testes Backend
 
 | ID | Task | Prioridade | Responsável | Status |
 |----|------|------------|-------------|--------|
-| G-184 | Testes unitários: CompanyGroupModule | 🔴 | - | [ ] |
-| G-185 | Testes unitários: PlantModule | 🔴 | - | [ ] |
-| G-186 | Testes unitários: UserInviteModule | 🟠 | - | [ ] |
-| G-187 | Testes unitários: AccessRequestModule | 🟠 | - | [ ] |
-| G-188 | Testes integração: fluxo cadastro nova empresa | 🔴 | - | [ ] |
-| G-189 | Testes integração: fluxo convite de usuário | 🔴 | - | [ ] |
-| G-190 | Testes integração: fluxo solicitação de acesso | 🟠 | - | [ ] |
-| G-191 | Testes integração: permissões de admin grupo | 🟠 | - | [ ] |
+| G-184 | Testes unitários: CompanyGroupModule | 🔴 | - | [x] ✓ 2026-01-23 |
+| G-185 | Testes unitários: PlantModule | 🔴 | - | [x] ✓ 2026-01-23 |
+| G-186 | Testes unitários: UserInviteModule | 🟠 | - | [x] ✓ 2026-01-23 |
+| G-187 | Testes unitários: AccessRequestModule | 🟠 | - | [x] ✓ 2026-01-23 |
+| G-188 | Testes integração: fluxo cadastro nova empresa | 🔴 | - | [x] ✓ 2026-01-23 |
+| G-189 | Testes integração: fluxo convite de usuário | 🔴 | - | [x] ✓ 2026-01-23 |
+| G-190 | Testes integração: fluxo solicitação de acesso | 🟠 | - | [x] ✓ 2026-01-23 |
+| G-191 | Testes integração: permissões de admin grupo | 🟠 | - | [x] ✓ 2026-01-23 |
 
 ### 8.2 Testes Frontend
 
@@ -536,10 +573,10 @@
 | 3. Backend - Grupos | 41 | 20 | ✅ 41/41 |
 | 4. Backend - Onboarding | 35 | 17 | ✅ 35/35 |
 | 5. Frontend - Estrutura | 31 | 17 | ✅ 31/31 |
-| 6. Frontend - Onboarding | 25 | 11 | 0/25 |
-| 7. Integração ReceitaWS | 11 | 0 | 0/11 |
-| 8. Testes e Validação | 17 | 8 | 0/17 |
-| **TOTAL** | **200** | **97** | **143/200 (71%)** |
+| 6. Frontend - Onboarding | 25 | 11 | ✅ 25/25 |
+| 7. Integração CNPJ Lookup | 11 | 0 | ✅ 11/11 |
+| 8. Testes e Validação | 17 | 8 | ✅ 8/17 (8.1 concluída) |
+| **TOTAL** | **200** | **97** | **187/200 (93.5%)** |
 
 ---
 
@@ -618,4 +655,4 @@
 ---
 
 *Backlog criado em 2026-01-21*
-*Última atualização: 2026-01-21*
+*Última atualização: 2026-01-23 (Fase 8.1 Backend Tests concluída)*

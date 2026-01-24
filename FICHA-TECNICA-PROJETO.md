@@ -322,11 +322,12 @@ User (Usuários)
 - ✅ Migração completa para NestJS
 - ✅ Deploy em produção (23/01/2026)
 
-### Fase 2: Grupos Empresariais - 🟡 EM ANDAMENTO (Q1 2026)
+### Fase 2: Grupos Empresariais - 🟢 93.5% CONCLUÍDO (Q1 2026)
 - ✅ Schema e migrations de grupos empresariais
-- ✅ Backend completo para grupos
-- 🔄 Frontend de gestão de grupos (71% concluído)
-- 🔄 Integração ReceitaWS para consulta CNPJ
+- ✅ Backend completo para grupos e onboarding
+- ✅ Frontend de gestão de grupos e onboarding
+- ✅ Integração CNPJ Lookup (BrasilAPI, ReceitaWS, CNPJ.ws)
+- 🔄 Testes frontend E2E pendentes (8.2-8.3)
 
 ### Fase 3: Post-MVP - Q2 2026
 - 🔄 Auditorias de manutenção anual
@@ -477,18 +478,18 @@ OPENAI_API_KEY=your-openai-key
 O **HalalSphere** representa uma transformação digital completa no setor de certificação Halal, combinando automação inteligente, IA e conformidade normativa para reduzir drasticamente tempos de certificação enquanto aumenta qualidade e satisfação.
 
 **Conquistas Recentes (Janeiro 2026)**:
-1. ✅ MVP concluído e em produção
+1. ✅ MVP concluído e em produção (23/01/2026)
 2. ✅ Migração completa para NestJS
-3. ✅ Deploy em produção realizado (23/01/2026)
-4. ✅ 301 endpoints de API documentados
-5. ✅ Sistema de grupos empresariais em desenvolvimento (71%)
+3. ✅ 301 endpoints de API documentados
+4. ✅ Grupos empresariais 93.5% concluído (Fases 1-7)
+5. ✅ Integração CNPJ Lookup com múltiplos providers
 
 **Próximos Passos**:
-1. 🔄 Concluir frontend de grupos empresariais
-2. 🔄 Integração ReceitaWS para consulta CNPJ
-3. 🧪 Testes com usuários piloto (5-10 empresas)
-4. 📊 Coletar feedback e iterar
-5. 📈 Implementar auditorias de manutenção e renovação
+1. 🔄 Concluir testes E2E frontend (Fase 8.2-8.3)
+2. 🧪 Testes com usuários piloto (5-10 empresas)
+3. 📊 Coletar feedback e iterar
+4. 📈 Implementar auditorias de manutenção e renovação
+5. 🔗 Integrações com ERPs
 
 ---
 

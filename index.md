@@ -27,7 +27,7 @@ title: HalalSphere Docs
 |------|-----------|-----------|
 | **2026-01-23** | [FICHA-TECNICA-PROJETO](FICHA-TECNICA-PROJETO.md) | **MVP em Produção** |
 | **2026-01-23** | [Status Implementação](01-prd/05-user-stories/STATUS-IMPLEMENTACAO-TODOS-EPICOS.md) | **95% Implementado** |
-| **2026-01-21** | [Backlog Grupos Empresariais](ANALYSIS/BACKLOG-GRUPOS-EMPRESARIAIS.md) | Analise - **Fase 5 concluida (71%)** |
+| **2026-01-23** | [Backlog Grupos Empresariais](ANALYSIS/BACKLOG-GRUPOS-EMPRESARIAIS.md) | Analise - **Fases 1-7 concluidas (93.5%)** |
 | 2026-01-21 | [Analise Conformidade PR 7.1](ANALYSIS/ANALISE-CONFORMIDADE-PR71-REV22.md) | Analise |
 | 2026-01-21 | [Analise Layouts Certificados](ANALYSIS/ANALISE-LAYOUTS-CERTIFICADOS.md) | Analise |
 
@@ -424,7 +424,7 @@ git clone https://github.com/Ecohalal/halalsphere-frontend.git
 | Frontend React | 95% | ✅ Em Produção |
 | Database | 98% | ✅ Em Produção |
 | API Gateway | 100% | ✅ 301 endpoints |
-| Grupos Empresariais | 71% (143/200 tasks) | 🔄 Em Desenvolvimento |
+| Grupos Empresariais | 93.5% (187/200 tasks) | 🟢 Fases 1-7 Concluídas |
 | Testes | 80% | 🔄 Em Andamento |
 | Documentacao | 95% | ✅ Atualizada |
 
@@ -440,9 +440,9 @@ git clone https://github.com/Ecohalal/halalsphere-frontend.git
 | 3. Backend - Grupos | ✅ Concluida |
 | 4. Backend - Onboarding | ✅ Concluida |
 | 5. Frontend - Estrutura | ✅ Concluida |
-| 6. Frontend - Onboarding | Pendente |
-| 7. Integracao ReceitaWS | Pendente |
-| 8. Testes e Validacao | Pendente |
+| 6. Frontend - Onboarding | ✅ Concluida |
+| 7. Integracao CNPJ Lookup | ✅ Concluida |
+| 8. Testes e Validacao | 🟡 8.1 Concluida (8/17) |
 
 ---
 

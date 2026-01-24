@@ -383,8 +383,9 @@ Total: 30 semanas (7.5 meses) até Go-Live
 **Status Atual (Janeiro 2026)**:
 - ✅ 301 endpoints de API documentados
 - ✅ Sistema em produção desde 23/01/2026
-- 🔄 Grupos Empresariais em desenvolvimento (71%)
-- 🔄 Integração ReceitaWS pendente
+- ✅ Grupos Empresariais 93.5% concluído (Fases 1-7)
+- ✅ Integração CNPJ Lookup implementada
+- 🔄 Testes E2E frontend pendentes
 
 ---
 
@@ -452,12 +453,12 @@ Total: 30 semanas (7.5 meses) até Go-Live
 
 ## 6.8 Próximas Fases (2026)
 
-### Fase 5: Grupos Empresariais (Q1 2026 - EM ANDAMENTO 71%)
+### Fase 5: Grupos Empresariais (Q1 2026 - 🟢 93.5% CONCLUÍDO)
 - ✅ Schema e migrations de grupos empresariais
-- ✅ Backend completo para grupos
-- ✅ Frontend de gestão de grupos (estrutura)
-- 🔄 Frontend onboarding de grupos
-- 🔄 Integração ReceitaWS para consulta CNPJ
+- ✅ Backend completo para grupos e onboarding
+- ✅ Frontend de gestão de grupos e onboarding
+- ✅ Integração CNPJ Lookup (BrasilAPI, ReceitaWS, CNPJ.ws)
+- 🔄 Testes E2E frontend pendentes (8.2-8.3)
 
 ### Fase 6: Gestão do Ciclo de Vida (Q2 2026)
 - Auditorias de manutenção anual (PR 7.1 10.10)
